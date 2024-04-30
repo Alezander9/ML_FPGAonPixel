@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/u1/hjia625/conifer/pruned_cnn/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="/u1/hjia625/conifer/pruned_cnn/tb_data"/>
+    <originFiles name="weights" path="/u1/hjia625/conifer/pruned_cnn/firmware/weights"/>
+    <originFiles name="myproject_test.cpp" path="/u1/hjia625/conifer/pruned_cnn/myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

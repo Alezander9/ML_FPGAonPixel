@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s'
+================================================================
+* Date:           Mon Apr 29 02:51:15 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.426 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      644|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      1|        0|        5|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|        -|     -|
+|Register             |        -|      -|        -|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      1|        0|      649|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     ~0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|     ~0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +------------------------+--------------------+---------+----+---+----+-----+
+    |        Instance        |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +------------------------+--------------------+---------+----+---+----+-----+
+    |mul_16s_5ns_21_1_1_U19  |mul_16s_5ns_21_1_1  |        0|   1|  0|   5|    0|
+    +------------------------+--------------------+---------+----+---+----+-----+
+    |Total                   |                    |        0|   1|  0|   5|    0|
+    +------------------------+--------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln58_72_fu_673_p2  |         +|   0|  0|  22|          22|          22|
+    |add_ln58_73_fu_679_p2  |         +|   0|  0|  26|          19|          19|
+    |add_ln58_74_fu_689_p2  |         +|   0|  0|  22|          22|          22|
+    |add_ln58_75_fu_695_p2  |         +|   0|  0|  25|          18|          18|
+    |add_ln58_76_fu_705_p2  |         +|   0|  0|  24|          17|          17|
+    |add_ln58_77_fu_715_p2  |         +|   0|  0|  26|          19|          19|
+    |add_ln58_79_fu_731_p2  |         +|   0|  0|  26|          19|          19|
+    |add_ln58_80_fu_741_p2  |         +|   0|  0|  25|          18|          17|
+    |add_ln58_81_fu_751_p2  |         +|   0|  0|  20|          20|          20|
+    |add_ln58_82_fu_757_p2  |         +|   0|  0|  18|          18|          18|
+    |add_ln58_83_fu_763_p2  |         +|   0|  0|  22|          15|          15|
+    |add_ln58_84_fu_773_p2  |         +|   0|  0|  18|          18|          18|
+    |add_ln58_fu_667_p2     |         +|   0|  0|  22|          22|          22|
+    |x_4_fu_783_p2          |         +|   0|  0|  20|          20|          20|
+    |x_fu_725_p2            |         +|   0|  0|  22|          22|          22|
+    |sub_ln73_10_fu_615_p2  |         -|   0|  0|  27|           1|          20|
+    |sub_ln73_11_fu_647_p2  |         -|   0|  0|  25|           1|          18|
+    |sub_ln73_1_fu_289_p2   |         -|   0|  0|  27|          20|          20|
+    |sub_ln73_2_fu_325_p2   |         -|   0|  0|  28|           1|          21|
+    |sub_ln73_3_fu_365_p2   |         -|   0|  0|  26|           1|          19|
+    |sub_ln73_4_fu_385_p2   |         -|   0|  0|  24|           1|          17|
+    |sub_ln73_5_fu_465_p2   |         -|   0|  0|  28|          21|          21|
+    |sub_ln73_6_fu_497_p2   |         -|   0|  0|  28|          21|          21|
+    |sub_ln73_7_fu_537_p2   |         -|   0|  0|  20|           1|          20|
+    |sub_ln73_8_fu_543_p2   |         -|   0|  0|  20|          20|          20|
+    |sub_ln73_9_fu_579_p2   |         -|   0|  0|  27|           1|          20|
+    |sub_ln73_fu_245_p2     |         -|   0|  0|  26|           1|          19|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 644|         379|         524|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+|                                   RTL Ports                                  | Dir | Bits|  Protocol  |                                  Source Object                                  |    C Type    |
++------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+|ap_ready                                                                      |  out|    1|  ap_ctrl_hs|  dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2_mult>|  return value|
+|ap_return_0                                                                   |  out|   16|  ap_ctrl_hs|  dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2_mult>|  return value|
+|ap_return_1                                                                   |  out|   16|  ap_ctrl_hs|  dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2_mult>|  return value|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_18  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_18|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_17  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_17|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_16  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_16|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_15  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_15|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_14  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_14|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_13  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_13|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_12  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_12|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_11  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_11|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_10  |   in|   16|     ap_none|     void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_10|       pointer|
++------------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+

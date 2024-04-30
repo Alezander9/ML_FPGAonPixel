@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1712556241321">
+  <ports id="1" name="in_elem_0_0_0_0_0_val" type="PortType" coreId="62" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="in_elem_0_1_0_0_0_val" type="PortType" coreId="68" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="in_elem_0_2_0_0_0_val" type="PortType" coreId="57" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6" type="PortType" coreId="57" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="5" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5" type="PortType" coreId="1250280896" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="6" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4" type="PortType" coreId="57" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="7" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14" type="PortType" coreId="1255592192" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="8" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13" type="PortType" coreId="1969516397" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="9" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12" type="PortType" coreId="1255322160" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="10" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5" type="PortType" coreId="78" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="11" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4" type="PortType" coreId="4294967295" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="12" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3" type="PortType" coreId="4294967295" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="13" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3" type="PortType" coreId="4294967295" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="14" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2" type="PortType" coreId="144" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="15" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1" type="PortType" coreId="1254850952" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="16" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11" type="PortType" coreId="1255754096" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="17" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10" type="PortType" coreId="1253571536" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="18" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9" type="PortType" coreId="1255631312" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="19" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2" type="PortType" coreId="1255070064" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="20" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1" type="PortType" coreId="1255631312" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="21" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9" type="PortType" coreId="1252786976" bitwidth="16" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="22" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9" type="PortType" coreId="1253579120" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="23" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8" type="PortType" coreId="121" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="24" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7" type="PortType" coreId="542329928" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="25" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig" type="PortType" coreId="542329928" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="26" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_16" type="PortType" coreId="542329928" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="27" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_15" type="PortType" coreId="1253069120" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="28" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_8" type="PortType" coreId="1256391408" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="29" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_7" type="PortType" coreId="1255328736" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="30" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_6" type="PortType" coreId="1255328736" bitwidth="16" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <edges id="90" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="92" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="94" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="139" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="140" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="141" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="142" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="143" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="144" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="145" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="146" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="147" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="148" source_obj="//@ports.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="149" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="150" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="151" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="152" source_obj="//@ports.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="153" source_obj="//@ports.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="154" source_obj="//@ports.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="155" source_obj="//@ports.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="156" source_obj="//@ports.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@ports.21"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@ports.22"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@ports.23"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@ports.24"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="166" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@ports.25"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@ports.26"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@ports.27"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@ports.28"/>
+  <edges id="173" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@ports.29"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="176" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="178" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="179" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="180" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="181" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="182" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="184" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="185" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="186" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="188" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="190" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="192" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="194" source_obj="//@ports.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="196" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="198" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="199" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="200" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="202" source_obj="//@ports.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="204" source_obj="//@ports.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="205" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="206" source_obj="//@ports.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="208" source_obj="//@ports.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="210" source_obj="//@ports.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="221" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="222" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="223" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="224" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="225" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="226" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="227" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="228" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="229" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="230" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="231" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="232" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="233" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="234" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="235" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="236" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="237" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="238" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="-139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@ports.3"/>
+  <edges id="-140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@ports.4"/>
+  <edges id="-141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@ports.5"/>
+  <edges id="-142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@ports.6"/>
+  <edges id="-143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@ports.7"/>
+  <edges id="-144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@ports.8"/>
+  <edges id="-145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@ports.9"/>
+  <edges id="-146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@ports.10"/>
+  <edges id="-147" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@ports.11"/>
+  <edges id="-148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@ports.12"/>
+  <edges id="-149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@ports.13"/>
+  <edges id="-150" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@ports.14"/>
+  <edges id="-151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@ports.15"/>
+  <edges id="-152" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@ports.16"/>
+  <edges id="-153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.17"/>
+  <edges id="-154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@ports.18"/>
+  <edges id="-155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@ports.19"/>
+  <edges id="-156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@ports.20"/>
+  <edges id="-176" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@ports.3"/>
+  <edges id="-178" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@ports.4"/>
+  <edges id="-180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@ports.5"/>
+  <edges id="-182" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@ports.6"/>
+  <edges id="-184" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@ports.7"/>
+  <edges id="-186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@ports.8"/>
+  <edges id="-188" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@ports.9"/>
+  <edges id="-190" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@ports.10"/>
+  <edges id="-192" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@ports.11"/>
+  <edges id="-194" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@ports.12"/>
+  <edges id="-196" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@ports.13"/>
+  <edges id="-198" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@ports.14"/>
+  <edges id="-200" source_obj="//@regions.0/@basic_blocks.0/@node_objs.48" sink_obj="//@ports.15"/>
+  <edges id="-202" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@ports.16"/>
+  <edges id="-204" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@ports.17"/>
+  <edges id="-206" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@ports.18"/>
+  <edges id="-208" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@ports.19"/>
+  <edges id="-210" source_obj="//@regions.0/@basic_blocks.0/@node_objs.53" sink_obj="//@ports.20"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="277" pipe_depth="1" RegionName="shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0>, 3u>, config6>">
+    <basic_blocks id="87" name="shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0>, 3u>, config6>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="in_elem_0_2_0_0_0_val_read" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1717530721" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>in_elem_0_2_0_0_0_val</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="in_elem_0_1_0_0_0_val_read" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="539767593" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>in_elem_0_1_0_0_0_val</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="in_elem_0_0_0_0_0_val_read" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="539767593" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>in_elem_0_0_0_0_0_val</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="p_i" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="ShiftReg" implIndex="auto" control="no" opType="shiftreg" coreId="77" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="memshiftread" m_display="0" m_delay="0.61" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="p_1_i" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="ShiftReg" implIndex="auto" control="no" opType="shiftreg" coreId="77" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="memshiftread" m_display="0" m_delay="0.61" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="p_2_i" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="ShiftReg" implIndex="auto" control="no" opType="shiftreg" coreId="77" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="memshiftread" m_display="0" m_delay="0.61" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="p_3_i" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="ShiftReg" implIndex="auto" control="no" opType="shiftreg" coreId="77" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="memshiftread" m_display="0" m_delay="0.61" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="p_4_i" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="ShiftReg" implIndex="auto" control="no" opType="shiftreg" coreId="77" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="memshiftread" m_display="0" m_delay="0.61" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="p_0_i" lineNumber="246" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="ShiftReg" implIndex="auto" control="no" opType="shiftreg" coreId="77" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="memshiftread" m_display="0" m_delay="0.61" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="246" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_19" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255121056" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255187904" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253562128" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_17" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1256388448" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_18" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255070064" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_19" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255070064" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_20" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252297824" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_21" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252580640" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_22" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="3221254368" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1657498432" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254335904" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1249852528" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_23" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255614912" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_24" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254117456" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_25" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254118064" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_26" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252024624" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_27" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1665191280" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_28" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253866640" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" bitwidth="16" opcode="load" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1250298864" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252580288" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252580288" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255335744" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_16_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252580288" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_16</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_15_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="542329928" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_15</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_8_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="539767593" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_8</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_7_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253562128" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_7</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_6_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253573200" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_6</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1397508187" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253572944" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254774784" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253556192" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254273200" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255520016" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254791648" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1397508187" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3_write_ln201" lineNumber="201" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254360896" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="201" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254253072" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254996512" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255190976" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataInputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1</dataInputObjs>
+        <dataOutputObjs>void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1254016000" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1330007625" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1255543296" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253073424" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1252154752" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_write_ln214" lineNumber="214" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253737616" contextFuncName="kernel_shift_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="store" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="214" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="kernel_shift_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="252" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9</dataInputObjs>
+        <dataOutputObjs>p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="_ln241" lineNumber="241" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1253571536" contextFuncName="shift_line_buffer_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_3_config6_s" opcode="ret" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="241" fileDirectory="/u1/hjia625/conifer/pruned_cnn" functionName="shift_line_buffer&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3&amp;gt;, config6&amp;gt;"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+        <validLinenumbers>246</validLinenumbers>
+        <validLinenumbers>201</validLinenumbers>
+        <validLinenumbers>214</validLinenumbers>
+        <validLinenumbers>241</validLinenumbers>
+        <validLinenumbers>252</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <expressionNodes realName="p_0_i_fu_166">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_i_fu_116">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_3_i_fu_146">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_1_i_fu_126">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_2_i_fu_136">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_4_i_fu_156">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln201_store_fu_284">
+    <nodeIds>65</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_20_load_fu_200">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_23_load_fu_224">
+    <nodeIds>53</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_24_load_fu_228">
+    <nodeIds>54</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_320">
+    <nodeIds>71</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_21_load_fu_204">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_266">
+    <nodeIds>62</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_344">
+    <nodeIds>75</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_302">
+    <nodeIds>68</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_18_load_fu_192">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20_load_fu_180">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_404">
+    <nodeIds>85</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_19_load_fu_196">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_260">
+    <nodeIds>61</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_elem_0_1_0_0_0_val_read_read_fu_104">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_368">
+    <nodeIds>79</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_386">
+    <nodeIds>82</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_elem_0_2_0_0_0_val_read_read_fu_98">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24_load_fu_220">
+    <nodeIds>52</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_248">
+    <nodeIds>59</nodeIds>
+  </ioNodes>
+  <ioNodes realName="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21_load_fu_184">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_326">
+    <nodeIds>72</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_362">
+    <nodeIds>78</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_308">
+    <nodeIds>69</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_25_load_fu_232">
+    <nodeIds>55</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_380">
+    <nodeIds>81</nodeIds>
+  </ioNodes>
+  <ioNodes realName="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_19_load_fu_176">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_350">
+    <nodeIds>76</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_296">
+    <nodeIds>67</nodeIds>
+  </ioNodes>
+  <ioNodes realName="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23_load_fu_216">
+    <nodeIds>51</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_254">
+    <nodeIds>60</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_332">
+    <nodeIds>73</nodeIds>
+  </ioNodes>
+  <ioNodes realName="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22_load_fu_212">
+    <nodeIds>50</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_278">
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_26_load_fu_236">
+    <nodeIds>56</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_290">
+    <nodeIds>66</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_272">
+    <nodeIds>63</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_27_load_fu_240">
+    <nodeIds>57</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_28_load_fu_244">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_356">
+    <nodeIds>77</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_17_load_fu_188">
+    <nodeIds>44</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_374">
+    <nodeIds>80</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_398">
+    <nodeIds>84</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_314">
+    <nodeIds>70</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln214_store_fu_392">
+    <nodeIds>83</nodeIds>
+  </ioNodes>
+  <ioNodes realName="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_22_load_fu_208">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln201_store_fu_338">
+    <nodeIds>74</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_elem_0_0_0_0_0_val_read_read_fu_110">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioPorts name="in_elem_0_0_0_0_0_val">
+    <contents name="read">
+      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_elem_0_1_0_0_0_val">
+    <contents name="read">
+      <nodeIds>33</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="in_elem_0_2_0_0_0_val">
+    <contents name="read">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_1"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_10"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_11"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_12"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_13"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_14"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_15"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_16"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_2"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_3"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_4"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_5"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_6"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_7"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_8"/>
+  <ioPorts name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9_9"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8"/>
+  <ioPorts name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9"/>
+  <fsm>
+    <states id="1">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config6_s" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>87</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

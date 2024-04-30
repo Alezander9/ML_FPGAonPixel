@@ -1,0 +1,253 @@
+
+
+================================================================
+== Vitis HLS Report for 'concatenate1d_array_array_array_ap_fixed_16_6_5_3_0_25u_config14_s'
+================================================================
+* Date:           Sun Apr 28 19:53:16 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.095 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       16|       16|  80.000 ns|  80.000 ns|   16|   16|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%out_data = alloca i64 1" [firmware/nnet_utils/nnet_merge_stream.h:344]   --->   Operation 10 'alloca' 'out_data' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%out_data_1 = alloca i64 1" [firmware/nnet_utils/nnet_merge_stream.h:344]   --->   Operation 11 'alloca' 'out_data_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 12 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln0 = call void @concatenate1d<array,array,array<ap_fixed,25u>,config14>_Pipeline_ConcatLoop1, i16 %out_data_1, i16 %out_data, i64 %layer11_out"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 14 [1/2] (0.00ns)   --->   "%call_ln0 = call void @concatenate1d<array,array,array<ap_fixed,25u>,config14>_Pipeline_ConcatLoop1, i16 %out_data_1, i16 %out_data, i64 %layer11_out"   --->   Operation 14 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.68>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%out_data_addr = getelementptr i16 %out_data, i64 0, i64 0"   --->   Operation 15 'getelementptr' 'out_data_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%out_data_1_addr = getelementptr i16 %out_data_1, i64 0, i64 0"   --->   Operation 16 'getelementptr' 'out_data_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%empty_55 = wait i32 @_ssdm_op_Wait"   --->   Operation 17 'wait' 'empty_55' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%out_data_addr_1 = getelementptr i16 %out_data, i64 0, i64 1" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 18 'getelementptr' 'out_data_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%out_data_1_addr_1 = getelementptr i16 %out_data_1, i64 0, i64 1" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 19 'getelementptr' 'out_data_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [2/2] (0.68ns)   --->   "%out_data_load = load i4 %out_data_addr" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 20 'load' 'out_data_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_3 : Operation 21 [2/2] (0.68ns)   --->   "%out_data_1_load = load i4 %out_data_1_addr" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 21 'load' 'out_data_1_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_3 : Operation 22 [2/2] (0.68ns)   --->   "%out_data_load_1 = load i4 %out_data_addr_1" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 22 'load' 'out_data_load_1' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_3 : Operation 23 [2/2] (0.68ns)   --->   "%out_data_1_load_1 = load i4 %out_data_1_addr_1" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 23 'load' 'out_data_1_load_1' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+
+State 4 <SV = 3> <Delay = 0.68>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%out_data_addr_2 = getelementptr i16 %out_data, i64 0, i64 2" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 24 'getelementptr' 'out_data_addr_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%out_data_1_addr_2 = getelementptr i16 %out_data_1, i64 0, i64 2" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 25 'getelementptr' 'out_data_1_addr_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%out_data_addr_3 = getelementptr i16 %out_data, i64 0, i64 3" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 26 'getelementptr' 'out_data_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%out_data_1_addr_3 = getelementptr i16 %out_data_1, i64 0, i64 3" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 27 'getelementptr' 'out_data_1_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/2] (0.68ns)   --->   "%out_data_load = load i4 %out_data_addr" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 28 'load' 'out_data_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 29 [1/2] (0.68ns)   --->   "%out_data_1_load = load i4 %out_data_1_addr" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 29 'load' 'out_data_1_load' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 30 [1/2] (0.68ns)   --->   "%out_data_load_1 = load i4 %out_data_addr_1" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 30 'load' 'out_data_load_1' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 31 [1/2] (0.68ns)   --->   "%out_data_1_load_1 = load i4 %out_data_1_addr_1" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 31 'load' 'out_data_1_load_1' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 32 [2/2] (0.68ns)   --->   "%out_data_load_2 = load i4 %out_data_addr_2" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 32 'load' 'out_data_load_2' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 33 [2/2] (0.68ns)   --->   "%out_data_1_load_2 = load i4 %out_data_1_addr_2" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 33 'load' 'out_data_1_load_2' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 34 [2/2] (0.68ns)   --->   "%out_data_load_3 = load i4 %out_data_addr_3" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 34 'load' 'out_data_load_3' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_4 : Operation 35 [2/2] (0.68ns)   --->   "%out_data_1_load_3 = load i4 %out_data_1_addr_3" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 35 'load' 'out_data_1_load_3' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+
+State 5 <SV = 4> <Delay = 0.68>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%out_data_addr_4 = getelementptr i16 %out_data, i64 0, i64 4" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 36 'getelementptr' 'out_data_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%out_data_1_addr_4 = getelementptr i16 %out_data_1, i64 0, i64 4" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 37 'getelementptr' 'out_data_1_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%out_data_addr_5 = getelementptr i16 %out_data, i64 0, i64 5" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 38 'getelementptr' 'out_data_addr_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%out_data_1_addr_5 = getelementptr i16 %out_data_1, i64 0, i64 5" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 39 'getelementptr' 'out_data_1_addr_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/2] (0.68ns)   --->   "%out_data_load_2 = load i4 %out_data_addr_2" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 40 'load' 'out_data_load_2' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 41 [1/2] (0.68ns)   --->   "%out_data_1_load_2 = load i4 %out_data_1_addr_2" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 41 'load' 'out_data_1_load_2' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 42 [1/2] (0.68ns)   --->   "%out_data_load_3 = load i4 %out_data_addr_3" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 42 'load' 'out_data_load_3' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 43 [1/2] (0.68ns)   --->   "%out_data_1_load_3 = load i4 %out_data_1_addr_3" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 43 'load' 'out_data_1_load_3' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 44 [2/2] (0.68ns)   --->   "%out_data_load_4 = load i4 %out_data_addr_4" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 44 'load' 'out_data_load_4' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 45 [2/2] (0.68ns)   --->   "%out_data_1_load_4 = load i4 %out_data_1_addr_4" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 45 'load' 'out_data_1_load_4' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 46 [2/2] (0.68ns)   --->   "%out_data_load_5 = load i4 %out_data_addr_5" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 46 'load' 'out_data_load_5' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_5 : Operation 47 [2/2] (0.68ns)   --->   "%out_data_1_load_5 = load i4 %out_data_1_addr_5" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 47 'load' 'out_data_1_load_5' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+
+State 6 <SV = 5> <Delay = 0.68>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%out_data_addr_6 = getelementptr i16 %out_data, i64 0, i64 6" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 48 'getelementptr' 'out_data_addr_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%out_data_1_addr_6 = getelementptr i16 %out_data_1, i64 0, i64 6" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 49 'getelementptr' 'out_data_1_addr_6' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "%out_data_addr_7 = getelementptr i16 %out_data, i64 0, i64 7" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 50 'getelementptr' 'out_data_addr_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 51 [1/1] (0.00ns)   --->   "%out_data_1_addr_7 = getelementptr i16 %out_data_1, i64 0, i64 7" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 51 'getelementptr' 'out_data_1_addr_7' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 52 [1/2] (0.68ns)   --->   "%out_data_load_4 = load i4 %out_data_addr_4" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 52 'load' 'out_data_load_4' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 53 [1/2] (0.68ns)   --->   "%out_data_1_load_4 = load i4 %out_data_1_addr_4" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 53 'load' 'out_data_1_load_4' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 54 [1/2] (0.68ns)   --->   "%out_data_load_5 = load i4 %out_data_addr_5" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 54 'load' 'out_data_load_5' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 55 [1/2] (0.68ns)   --->   "%out_data_1_load_5 = load i4 %out_data_1_addr_5" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 55 'load' 'out_data_1_load_5' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 56 [2/2] (0.68ns)   --->   "%out_data_load_6 = load i4 %out_data_addr_6" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 56 'load' 'out_data_load_6' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 57 [2/2] (0.68ns)   --->   "%out_data_1_load_6 = load i4 %out_data_1_addr_6" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 57 'load' 'out_data_1_load_6' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 58 [2/2] (0.68ns)   --->   "%out_data_load_7 = load i4 %out_data_addr_7" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 58 'load' 'out_data_load_7' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_6 : Operation 59 [2/2] (0.68ns)   --->   "%out_data_1_load_7 = load i4 %out_data_1_addr_7" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 59 'load' 'out_data_1_load_7' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+
+State 7 <SV = 6> <Delay = 0.68>
+ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%out_data_addr_8 = getelementptr i16 %out_data, i64 0, i64 8" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 60 'getelementptr' 'out_data_addr_8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%out_data_1_addr_8 = getelementptr i16 %out_data_1, i64 0, i64 8" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 61 'getelementptr' 'out_data_1_addr_8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%out_data_addr_9 = getelementptr i16 %out_data, i64 0, i64 9" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 62 'getelementptr' 'out_data_addr_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%out_data_1_addr_9 = getelementptr i16 %out_data_1, i64 0, i64 9" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 63 'getelementptr' 'out_data_1_addr_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 64 [1/2] (0.68ns)   --->   "%out_data_load_6 = load i4 %out_data_addr_6" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 64 'load' 'out_data_load_6' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 65 [1/2] (0.68ns)   --->   "%out_data_1_load_6 = load i4 %out_data_1_addr_6" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 65 'load' 'out_data_1_load_6' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 66 [1/2] (0.68ns)   --->   "%out_data_load_7 = load i4 %out_data_addr_7" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 66 'load' 'out_data_load_7' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 67 [1/2] (0.68ns)   --->   "%out_data_1_load_7 = load i4 %out_data_1_addr_7" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 67 'load' 'out_data_1_load_7' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 68 [2/2] (0.68ns)   --->   "%out_data_load_8 = load i4 %out_data_addr_8" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 68 'load' 'out_data_load_8' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 69 [2/2] (0.68ns)   --->   "%out_data_1_load_8 = load i4 %out_data_1_addr_8" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 69 'load' 'out_data_1_load_8' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 70 [2/2] (0.68ns)   --->   "%out_data_load_9 = load i4 %out_data_addr_9" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 70 'load' 'out_data_load_9' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_7 : Operation 71 [2/2] (0.68ns)   --->   "%out_data_1_load_9 = load i4 %out_data_1_addr_9" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 71 'load' 'out_data_1_load_9' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+
+State 8 <SV = 7> <Delay = 0.68>
+ST_8 : Operation 72 [1/1] (0.00ns)   --->   "%out_data_addr_10 = getelementptr i16 %out_data, i64 0, i64 10" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 72 'getelementptr' 'out_data_addr_10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 73 [1/1] (0.00ns)   --->   "%out_data_1_addr_10 = getelementptr i16 %out_data_1, i64 0, i64 10" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 73 'getelementptr' 'out_data_1_addr_10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 74 [1/1] (0.00ns)   --->   "%out_data_addr_11 = getelementptr i16 %out_data, i64 0, i64 11" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 74 'getelementptr' 'out_data_addr_11' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%out_data_1_addr_11 = getelementptr i16 %out_data_1, i64 0, i64 11" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 75 'getelementptr' 'out_data_1_addr_11' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 76 [1/2] (0.68ns)   --->   "%out_data_load_8 = load i4 %out_data_addr_8" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 76 'load' 'out_data_load_8' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 77 [1/2] (0.68ns)   --->   "%out_data_1_load_8 = load i4 %out_data_1_addr_8" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 77 'load' 'out_data_1_load_8' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 78 [1/2] (0.68ns)   --->   "%out_data_load_9 = load i4 %out_data_addr_9" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 78 'load' 'out_data_load_9' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 79 [1/2] (0.68ns)   --->   "%out_data_1_load_9 = load i4 %out_data_1_addr_9" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 79 'load' 'out_data_1_load_9' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 80 [2/2] (0.68ns)   --->   "%out_data_load_10 = load i4 %out_data_addr_10" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 80 'load' 'out_data_load_10' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 81 [2/2] (0.68ns)   --->   "%out_data_1_load_10 = load i4 %out_data_1_addr_10" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 81 'load' 'out_data_1_load_10' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 82 [2/2] (0.68ns)   --->   "%out_data_load_11 = load i4 %out_data_addr_11" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 82 'load' 'out_data_load_11' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_8 : Operation 83 [2/2] (0.68ns)   --->   "%out_data_1_load_11 = load i4 %out_data_1_addr_11" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 83 'load' 'out_data_1_load_11' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+
+State 9 <SV = 8> <Delay = 2.09>
+ST_9 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i400 %layer14_out, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 84 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %layer11_out, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %y0_input, void @empty_10, i32 1, i32 1, void @empty_7, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 86 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 87 [1/1] (0.00ns)   --->   "%y0_input_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %y0_input" [firmware/nnet_utils/nnet_merge_stream.h:359]   --->   Operation 87 'read' 'y0_input_read' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 88 [1/2] (0.68ns)   --->   "%out_data_load_10 = load i4 %out_data_addr_10" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 88 'load' 'out_data_load_10' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_9 : Operation 89 [1/2] (0.68ns)   --->   "%out_data_1_load_10 = load i4 %out_data_1_addr_10" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 89 'load' 'out_data_1_load_10' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_9 : Operation 90 [1/2] (0.68ns)   --->   "%out_data_load_11 = load i4 %out_data_addr_11" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 90 'load' 'out_data_load_11' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_9 : Operation 91 [1/2] (0.68ns)   --->   "%out_data_1_load_11 = load i4 %out_data_1_addr_11" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 91 'load' 'out_data_1_load_11' <Predicate = true> <Delay = 0.68> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.68> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 13> <RAM>
+ST_9 : Operation 92 [1/1] (0.00ns)   --->   "%p_s = bitconcatenate i400 @_ssdm_op_BitConcatenate.i400.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16, i16 %y0_input_read, i16 %out_data_1_load_11, i16 %out_data_load_11, i16 %out_data_1_load_10, i16 %out_data_load_10, i16 %out_data_1_load_9, i16 %out_data_load_9, i16 %out_data_1_load_8, i16 %out_data_load_8, i16 %out_data_1_load_7, i16 %out_data_load_7, i16 %out_data_1_load_6, i16 %out_data_load_6, i16 %out_data_1_load_5, i16 %out_data_load_5, i16 %out_data_1_load_4, i16 %out_data_load_4, i16 %out_data_1_load_3, i16 %out_data_load_3, i16 %out_data_1_load_2, i16 %out_data_load_2, i16 %out_data_1_load_1, i16 %out_data_load_1, i16 %out_data_1_load, i16 %out_data_load" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 92 'bitconcatenate' 'p_s' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 93 [1/1] (1.41ns)   --->   "%write_ln366 = write void @_ssdm_op_Write.ap_fifo.volatile.i400P0A, i400 %layer14_out, i400 %p_s" [firmware/nnet_utils/nnet_merge_stream.h:366]   --->   Operation 93 'write' 'write_ln366' <Predicate = true> <Delay = 1.41> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.41> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 400> <Depth = 1> <FIFO>
+ST_9 : Operation 94 [1/1] (0.00ns)   --->   "%ret_ln367 = ret" [firmware/nnet_utils/nnet_merge_stream.h:367]   --->   Operation 94 'ret' 'ret_ln367' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.683ns
+The critical path consists of the following:
+	'getelementptr' operation ('out_data_addr') [9]  (0.000 ns)
+	'load' operation ('out_data_load', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [37]  (0.683 ns)
+
+ <State 4>: 0.683ns
+The critical path consists of the following:
+	'load' operation ('out_data_load', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [37]  (0.683 ns)
+
+ <State 5>: 0.683ns
+The critical path consists of the following:
+	'load' operation ('out_data_load_2', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [41]  (0.683 ns)
+
+ <State 6>: 0.683ns
+The critical path consists of the following:
+	'load' operation ('out_data_load_4', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [45]  (0.683 ns)
+
+ <State 7>: 0.683ns
+The critical path consists of the following:
+	'load' operation ('out_data_load_6', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [49]  (0.683 ns)
+
+ <State 8>: 0.683ns
+The critical path consists of the following:
+	'load' operation ('out_data_load_8', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [53]  (0.683 ns)
+
+ <State 9>: 2.095ns
+The critical path consists of the following:
+	'load' operation ('out_data_load_10', firmware/nnet_utils/nnet_merge_stream.h:366) on array 'out_data', firmware/nnet_utils/nnet_merge_stream.h:344 [57]  (0.683 ns)
+	fifo write operation ('write_ln366', firmware/nnet_utils/nnet_merge_stream.h:366) on port 'layer14_out' (firmware/nnet_utils/nnet_merge_stream.h:366) [62]  (1.412 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

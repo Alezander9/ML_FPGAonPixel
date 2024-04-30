@@ -1,0 +1,30 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1",
+    "file": "my_prj.cpp",
+    "fileloc": 5,
+    "instructions": 55,
+    "loads": {
+      "L": 1,
+      "T": 7
+    },
+    "name": "my_prj",
+    "stores": {
+      "T": 3
+    },
+    "total_instructions": 109
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 24,
+    "instructions": 54,
+    "name": "decision_function",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 54
+  }
+}

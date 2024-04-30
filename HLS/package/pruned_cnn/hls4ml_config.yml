@@ -1,0 +1,134 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    concat:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    conv1:
+      Precision:
+        bias: fixed<24,9>
+        result: fixed<16,6>
+        weight: fixed<24,9>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    conv1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    conv2:
+      Precision:
+        bias: fixed<24,9>
+        result: fixed<16,6>
+        weight: fixed<24,9>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    conv2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    dense1:
+      Precision:
+        bias: fixed<24,9>
+        result: fixed<16,6>
+        weight: fixed<24,9>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    dense1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    dense2:
+      Precision:
+        bias: fixed<24,9>
+        result: fixed<16,6>
+        weight: fixed<24,9>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    dense2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    flattened:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    maxpool1:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    maxpool2:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    output_sigmoid:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    q_activation_10:
+      Precision:
+        result: ufixed<24,8,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    q_activation_11:
+      Precision:
+        result: ufixed<24,8,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    q_activation_9:
+      Precision:
+        result: ufixed<24,8,RND_CONV,SAT>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    y0_input:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+    y_profile_input:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 1
+      Strategy: Stable
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<32,10>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'pruned_cnn//keras_model.h5'
+OutputDir: pruned_cnn/
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+Stamp: cF1BEfe2
+Version: 1.0.0
+XilinxPart: xcku040-ffva1156-2-e

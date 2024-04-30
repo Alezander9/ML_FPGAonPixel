@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "my_prj",
+        "file": "my_prj.cpp",
+        "fileloc": "5",
+        "instructions": "45",
+        "total_instructions": "102",
+        "calls": "1",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "decision_function",
+        "file": "my_prj.cpp",
+        "fileloc": "0",
+        "instructions": "57",
+        "total_instructions": "57",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

@@ -1,0 +1,103 @@
+---
+MainSourceFile:  /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          57297
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          286189
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          286657
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          287126
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          571205
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_1:  '
+    FileOffset:      87
+    FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/firmware/BDT.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          942468
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_1:  '
+    FileOffset:      108
+    FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/firmware/BDT.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          943049
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_2:  '
+    FileOffset:      119
+    FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/firmware/BDT.h
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          943335
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/firmware/my_prj.cpp
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          945641
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
+    FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/firmware/my_prj.cpp
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          945807
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_1:  '
+    FileOffset:      28
+    FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/firmware/my_prj.cpp
+    Replacements:    
+      - FilePath:        /u1/hjia625/conifer/final_prj_unscaled_testforscore/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          946094
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_1: '
+...

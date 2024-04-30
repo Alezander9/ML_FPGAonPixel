@@ -1,0 +1,56 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "my_prj.cpp",
+    "fileloc": 5,
+    "instructions": 2,
+    "name": "my_prj",
+    "total_instructions": 1062
+  },
+  "1": {
+    "basicblocks": 35,
+    "calls": "3",
+    "file": "BDT.h",
+    "fileloc": 105,
+    "instructions": 77,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 1060
+  },
+  "2": {
+    "basicblocks": 313,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 24,
+    "instructions": 971,
+    "loads": {
+      "L": 125
+    },
+    "name": "decision_function",
+    "stores": {
+      "L": 135
+    },
+    "total_instructions": 971
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "BDT.cpp",
+    "fileloc": 5,
+    "instructions": 12,
+    "loads": {
+      "L": 1
+    },
+    "name": "tree_scores",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 983
+  }
+}
