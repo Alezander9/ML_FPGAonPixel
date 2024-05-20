@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /u1/hjia625/conifer/pruned_cnn/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp
