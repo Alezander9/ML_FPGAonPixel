@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716237918119">
+  <ports id="1" name="in_elem_0_0_0_0_0_val" type="PortType" coreId="3621216858" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="layer2_out" type="PortType" coreName="FIFO" coreId="4201133104" bitwidth="64" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="81" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="85" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="89" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="90" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="91" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="93" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="94" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="95" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="99" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="104" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="111" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="113" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="114" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="115" source_obj="//@blocks.1/@node_objs.5" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="116" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.6"/>
+  <edges id="117" source_obj="//@blocks.1/@node_objs.6" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.7"/>
+  <edges id="122" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="123" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="124" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="125" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="128" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="129" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="130" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="131" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="134" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@ports.1"/>
+  <edges id="135" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="139" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="142" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="143" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="147" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="149" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="152" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="155" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="159" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="160" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="161" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="162" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="163" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="165" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="167" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="169" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="170" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="171" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="175" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="176" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="178" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="179" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="180" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="184" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="185" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="186" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="187" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="188" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="189" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="190" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="191" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="192" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="193" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="194" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="195" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="196" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="197" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="198" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="199" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="200" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="201" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="202" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="203" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="204" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="205" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="206" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="207" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="208" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="209" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="233" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="234" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="235" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="236" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="237" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.9"/>
+  <edges id="241" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="242" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="243" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8"/>
+  <edges id="244" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="245" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="246" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="247" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="248" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="249" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="250" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="251" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="252" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="253" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="254" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="255" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <blocks id="29" name="entry" type="BlockType">
+    <controlOutputObjs>land.lhs.true</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="in_elem_0_0_0_0_0_val_read" coreId="539767593" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataInputObjs>in_elem_0_0_0_0_0_val</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln286" lineNumber="286" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_95" coreId="539767593" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="call" m_display="0" m_delay="1.22" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="286" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <constName>shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="sX_3_load" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="539767593" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln289" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="icmp_ln289_fu_158_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.88" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="sY_3_load" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="539767593" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="pY_3_load" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="694510703" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="pX_3_load" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="694510703" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln289" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1966546988" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+      <controlInputObjs>land.lhs.true</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>286</validLinenumbers>
+      <validLinenumbers>289</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="38" name="land.lhs.true" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.then</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="icmp_ln289_4" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="grp_fu_149_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.88" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="tmp_5" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="tmp_5_fu_177_p4" coreId="1953394531" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="31" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="icmp_ln289_5" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="icmp_ln289_5_fu_187_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.87" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp_6" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="tmp_6_fu_193_p4" coreId="4203768160" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="31" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="icmp_ln289_6" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="icmp_ln289_6_fu_203_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.87" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="and_ln289" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="and_ln289_fu_209_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="and_ln289_2" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="and_ln289_2_fu_215_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_delay="0.12" m_topoIndex="15" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln289" lineNumber="289" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4294967295" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="289" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>289</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="47" name="if.then" type="BlockType">
+    <controlInputObjs>land.lhs.true</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="tmp" lineNumber="297" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_123" coreId="4294967295" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="64" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="297" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+      <dataOutputObjs>extractvalue</dataOutputObjs>
+      <constName>dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="res_out" lineNumber="297" originalName="res_out" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4200572544" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="297" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="res_out_13" lineNumber="297" originalName="res_out" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4294967295" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="297" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="res_out_14" lineNumber="297" originalName="res_out" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4203068400" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="297" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="res_out_15" lineNumber="297" originalName="res_out" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1953849204" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="16" opcode="extractvalue" nodeLabel="2.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="297" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>call</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="p_0" lineNumber="309" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="layer2_out_din" coreId="1702258035" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="64" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="309" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataInputObjs>extractvalue</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="layer2_out_write_ln309" lineNumber="309" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.26" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="309" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>layer2_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="br_ln310" lineNumber="310" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4201489280" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="310" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <controlInputObjs>if.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>297</validLinenumbers>
+      <validLinenumbers>309</validLinenumbers>
+      <validLinenumbers>310</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="51" name="if.end" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>land.lhs.true</controlInputObjs>
+    <controlInputObjs>if.then</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.then17</controlOutputObjs>
+    <controlOutputObjs>if.else28</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="add_ln313" lineNumber="313" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="add_ln313_fu_250_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="313" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="icmp_ln313" lineNumber="313" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="icmp_ln313_fu_255_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="313" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln313" lineNumber="313" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="2037146996" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="313" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>if.else28</controlInputObjs>
+      <controlInputObjs>if.then17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>313</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="57" name="if.else28" type="BlockType">
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end39</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="pX_3_write_ln326" lineNumber="326" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1953394531" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="326" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="add_ln328" lineNumber="328" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="add_ln328_fu_267_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="328" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="select_ln328" lineNumber="328" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="select_ln328_fu_272_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.22" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="328" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="sX_3_write_ln328" lineNumber="328" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="1886220131" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="328" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln0" coreId="1953394531" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <controlInputObjs>if.end39</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>326</validLinenumbers>
+      <validLinenumbers>328</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="63" name="if.then17" type="BlockType">
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.then20</controlOutputObjs>
+    <controlOutputObjs>if.else</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="pX_3_write_ln315" lineNumber="315" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4201679520" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="315" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="sX_3_write_ln316" lineNumber="316" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4202726368" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="316" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="add_ln317" lineNumber="317" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="add_ln317_fu_297_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="317" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="icmp_ln317" lineNumber="317" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="icmp_ln317_fu_302_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="317" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="br_ln317" lineNumber="317" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4202748608" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="317" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>if.then20</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>315</validLinenumbers>
+      <validLinenumbers>316</validLinenumbers>
+      <validLinenumbers>317</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="69" name="if.else" type="BlockType">
+    <controlInputObjs>if.then17</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>if.end27</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="pY_3_write_ln321" lineNumber="321" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4202821888" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="321" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="icmp_ln323" lineNumber="323" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="grp_fu_149_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="323" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln323" lineNumber="323" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="add_ln323_fu_314_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="0.88" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="323" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="select_ln323" lineNumber="323" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." rtlName="select_ln323_fu_319_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.22" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="323" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <controlInputObjs>if.end27</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>321</validLinenumbers>
+      <validLinenumbers>323</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="72" name="if.then20" type="BlockType">
+    <controlInputObjs>if.then17</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>if.end27</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="pY_3_write_ln318" lineNumber="318" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4203923760" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="318" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="br_ln320" lineNumber="320" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4202212848" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="2.0" m_display="0" m_delay="0.38" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="320" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <controlInputObjs>if.end27</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>318</validLinenumbers>
+      <validLinenumbers>320</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="76" name="if.end27" type="BlockType">
+    <controlInputObjs>if.else</controlInputObjs>
+    <controlInputObjs>if.then20</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end39</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="storemerge" lineNumber="323" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4203923760" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="323" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>if.then20</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="sY_3_write_ln319" lineNumber="319" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4203048096" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="319" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="br_ln325" lineNumber="325" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="0" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="325" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+      <controlInputObjs>if.end39</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>323</validLinenumbers>
+      <validLinenumbers>319</validLinenumbers>
+      <validLinenumbers>325</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="78" name="if.end39" type="BlockType">
+    <controlInputObjs>if.else28</controlInputObjs>
+    <controlInputObjs>if.end27</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln330" lineNumber="330" fileName="firmware/nnet_utils/nnet_conv_stream.h" fileDirectory="../." coreId="4203737216" contextFuncName="compute_output_buffer_2d_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_4_config2_s" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_conv_stream.h" linenumber="330" fileDirectory="/u1/hjia625/conifer/cnn_small" functionName="compute_output_buffer_2d&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4&amp;gt;, config2&amp;gt;"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_conv_stream.h">
+      <validLinenumbers>330</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="storemerge_reg_85">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln289_2_reg_357">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln289_reg_343">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <expressionNodes realName="icmp_ln313_fu_255">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln313_fu_250">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_149">
+    <nodeIds>30</nodeIds>
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="storemerge_phi_fu_88">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln328_fu_267">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln323_fu_319">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_out_15_fu_233">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_193">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_177">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln317_fu_297">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln289_6_fu_203">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_out_13_fu_225">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln328_fu_272">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln289_fu_209">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_out_fu_221">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_out_14_fu_229">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln289_5_fu_187">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln323_fu_314">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln289_fu_158">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln317_fu_302">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln289_2_fu_215">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_0_fu_237">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="call_ln286_shift_line_buffer_array_ap_fixed_16_6_5_3_0_1u_config2_s_fu_95">
+    <nodeIds>22</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_123">
+    <nodeIds>39</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="pX_3_load_load_fu_173">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="pY_3_load_load_fu_169">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln319_store_fu_334">
+    <nodeIds>74</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln321_store_fu_308">
+    <nodeIds>64</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln326_store_fu_261">
+    <nodeIds>52</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sX_3_load_load_fu_154">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="in_elem_0_0_0_0_0_val_read_read_fu_72">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln315_store_fu_285">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln328_store_fu_279">
+    <nodeIds>55</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln318_store_fu_328">
+    <nodeIds>70</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln309_write_fu_78">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sY_3_load_load_fu_164">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln316_store_fu_291">
+    <nodeIds>59</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="outidx_2" portID="100">
+    <nodeIds>39</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_conv_2d_buffer_resource_cl_stream_stream_weight_t_bias_t_line_buffer" portID="100">
+    <nodeIds>22</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_conv_2d_buffer_resource_cl_stream_stream_weight_t_bias_t_line_buffer_1" portID="100">
+    <nodeIds>22</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="w2" portID="100">
+    <nodeIds>39</nodeIds>
+  </memoryPorts>
+  <ioPorts name="in_elem_0_0_0_0_0_val">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="layer2_out">
+    <contents name="write">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="39" stage="1" latency="2"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="39">
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>47</basicBlocks>
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>63</basicBlocks>
+      <basicBlocks>69</basicBlocks>
+      <basicBlocks>72</basicBlocks>
+      <basicBlocks>76</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

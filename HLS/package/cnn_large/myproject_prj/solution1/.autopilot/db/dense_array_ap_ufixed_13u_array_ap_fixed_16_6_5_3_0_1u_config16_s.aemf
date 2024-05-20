@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1716237682689">
+  <ports id="1" name="layer15_out" type="PortType" coreName="FIFO_SRL" coreId="2147483647" bitwidth="130" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="layer16_out" type="PortType" coreName="FIFO_SRL" coreId="3621216858" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="83" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="92" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="104" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="110" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="122" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="128" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="134" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="139" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="145" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="157" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="160" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="161" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="166" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="175" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="180" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="183" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="184" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="185" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="190" source_obj="//@blocks.0/@node_objs.28" sink_obj="//@blocks.0/@node_objs.29"/>
+  <edges id="194" source_obj="//@blocks.0/@node_objs.29" sink_obj="//@blocks.0/@node_objs.30"/>
+  <edges id="195" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.31"/>
+  <edges id="196" source_obj="//@blocks.0/@node_objs.31" sink_obj="//@blocks.0/@node_objs.32"/>
+  <edges id="200" source_obj="//@blocks.0/@node_objs.32" sink_obj="//@blocks.0/@node_objs.33"/>
+  <edges id="203" source_obj="//@blocks.0/@node_objs.33" sink_obj="//@blocks.0/@node_objs.34"/>
+  <edges id="206" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.35"/>
+  <edges id="209" source_obj="//@blocks.0/@node_objs.35" sink_obj="//@blocks.0/@node_objs.36"/>
+  <edges id="212" source_obj="//@blocks.0/@node_objs.36" sink_obj="//@blocks.0/@node_objs.37"/>
+  <edges id="213" source_obj="//@blocks.0/@node_objs.37" sink_obj="//@blocks.0/@node_objs.38"/>
+  <edges id="216" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.39"/>
+  <edges id="219" source_obj="//@blocks.0/@node_objs.39" sink_obj="//@blocks.0/@node_objs.40"/>
+  <edges id="220" source_obj="//@blocks.0/@node_objs.38" sink_obj="//@blocks.0/@node_objs.41"/>
+  <edges id="221" source_obj="//@blocks.0/@node_objs.40" sink_obj="//@blocks.0/@node_objs.41"/>
+  <edges id="223" source_obj="//@blocks.0/@node_objs.41" sink_obj="//@blocks.0/@node_objs.42"/>
+  <edges id="226" source_obj="//@blocks.0/@node_objs.42" sink_obj="//@blocks.0/@node_objs.43"/>
+  <edges id="227" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.44"/>
+  <edges id="228" source_obj="//@blocks.0/@node_objs.44" sink_obj="//@blocks.0/@node_objs.45"/>
+  <edges id="232" source_obj="//@blocks.0/@node_objs.45" sink_obj="//@blocks.0/@node_objs.46"/>
+  <edges id="235" source_obj="//@blocks.0/@node_objs.46" sink_obj="//@blocks.0/@node_objs.47"/>
+  <edges id="236" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.48"/>
+  <edges id="237" source_obj="//@blocks.0/@node_objs.48" sink_obj="//@blocks.0/@node_objs.49"/>
+  <edges id="241" source_obj="//@blocks.0/@node_objs.49" sink_obj="//@blocks.0/@node_objs.50"/>
+  <edges id="244" source_obj="//@blocks.0/@node_objs.50" sink_obj="//@blocks.0/@node_objs.51"/>
+  <edges id="246" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.52"/>
+  <edges id="251" source_obj="//@blocks.0/@node_objs.52" sink_obj="//@blocks.0/@node_objs.53"/>
+  <edges id="252" source_obj="//@blocks.0/@node_objs.53" sink_obj="//@blocks.0/@node_objs.54"/>
+  <edges id="257" source_obj="//@blocks.0/@node_objs.54" sink_obj="//@blocks.0/@node_objs.55"/>
+  <edges id="261" source_obj="//@blocks.0/@node_objs.55" sink_obj="//@blocks.0/@node_objs.56"/>
+  <edges id="262" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.57"/>
+  <edges id="265" source_obj="//@blocks.0/@node_objs.57" sink_obj="//@blocks.0/@node_objs.58"/>
+  <edges id="266" source_obj="//@blocks.0/@node_objs.58" sink_obj="//@blocks.0/@node_objs.59"/>
+  <edges id="267" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.59"/>
+  <edges id="268" source_obj="//@blocks.0/@node_objs.59" sink_obj="//@blocks.0/@node_objs.60"/>
+  <edges id="269" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.61"/>
+  <edges id="270" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.61"/>
+  <edges id="271" source_obj="//@blocks.0/@node_objs.61" sink_obj="//@blocks.0/@node_objs.62"/>
+  <edges id="272" source_obj="//@blocks.0/@node_objs.62" sink_obj="//@blocks.0/@node_objs.63"/>
+  <edges id="273" source_obj="//@blocks.0/@node_objs.60" sink_obj="//@blocks.0/@node_objs.63"/>
+  <edges id="274" source_obj="//@blocks.0/@node_objs.63" sink_obj="//@blocks.0/@node_objs.64"/>
+  <edges id="275" source_obj="//@blocks.0/@node_objs.47" sink_obj="//@blocks.0/@node_objs.65"/>
+  <edges id="276" source_obj="//@blocks.0/@node_objs.56" sink_obj="//@blocks.0/@node_objs.65"/>
+  <edges id="277" source_obj="//@blocks.0/@node_objs.65" sink_obj="//@blocks.0/@node_objs.66"/>
+  <edges id="278" source_obj="//@blocks.0/@node_objs.34" sink_obj="//@blocks.0/@node_objs.66"/>
+  <edges id="279" source_obj="//@blocks.0/@node_objs.66" sink_obj="//@blocks.0/@node_objs.67"/>
+  <edges id="280" source_obj="//@blocks.0/@node_objs.30" sink_obj="//@blocks.0/@node_objs.68"/>
+  <edges id="281" source_obj="//@blocks.0/@node_objs.64" sink_obj="//@blocks.0/@node_objs.68"/>
+  <edges id="282" source_obj="//@blocks.0/@node_objs.51" sink_obj="//@blocks.0/@node_objs.69"/>
+  <edges id="283" source_obj="//@blocks.0/@node_objs.43" sink_obj="//@blocks.0/@node_objs.69"/>
+  <edges id="284" source_obj="//@blocks.0/@node_objs.69" sink_obj="//@blocks.0/@node_objs.70"/>
+  <edges id="285" source_obj="//@blocks.0/@node_objs.70" sink_obj="//@blocks.0/@node_objs.71"/>
+  <edges id="286" source_obj="//@blocks.0/@node_objs.68" sink_obj="//@blocks.0/@node_objs.71"/>
+  <edges id="287" source_obj="//@blocks.0/@node_objs.71" sink_obj="//@blocks.0/@node_objs.72"/>
+  <edges id="288" source_obj="//@blocks.0/@node_objs.67" sink_obj="//@blocks.0/@node_objs.72"/>
+  <edges id="291" source_obj="//@blocks.0/@node_objs.73" sink_obj="//@ports.1"/>
+  <edges id="292" source_obj="//@blocks.0/@node_objs.72" sink_obj="//@blocks.0/@node_objs.73"/>
+  <blocks id="80" name="dense&lt;array&lt;ap_ufixed,13u>,array&lt;ap_fixed&lt;16,6,5,3,0>,1u>,config16>" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="layer15_out_read" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="130" opcode="read" m_display="0" m_delay="2.26" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>layer15_out</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="data" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_fu_123_p4" coreId="539767593" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="data_1" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_1_fu_133_p4" coreId="539767593" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="data_2" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_2_fu_143_p4" coreId="539767593" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="trunc_ln43_3" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="trunc_ln43_3_fu_153_p4" coreId="539767593" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="data_3" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_3_fu_163_p4" coreId="1851858983" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="data_4" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_4_fu_173_p4" coreId="1851858983" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="trunc_ln43_6" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="trunc_ln43_6_fu_183_p4" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="data_5" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_5_fu_193_p4" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="data_6" lineNumber="43" originalName="data" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_6_fu_203_p4" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="data_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_1_i_i_fu_217_p00" coreId="1110491088" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="mul_i_i_1_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_10ns_19_1_1_U1175" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="tmp_fu_223_p4" coreId="1110496288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="12" opcode="partselect" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="conv5_i_i_i_1_i_i_cast_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="conv5_i_i_i_1_i_i_cast_cast_fu_233_p1" coreId="144" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="zext" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="conv_i_i5_2_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_2_i_i_fu_241_p00" coreId="694510703" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="zext" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="mul_i_i_2_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_10s_20_1_1_U1176" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="p_cast1" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast1_fu_247_p4" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="partselect" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="p_cast15_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast15_cast_fu_257_p1" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="14" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="conv_i_i5_3_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_3_i_i_fu_265_p00" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="zext" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="mul_i_i_3_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_10s_20_1_1_U1177" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="p_cast2" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast2_fu_271_p4" coreId="542329928" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="partselect" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="p_cast16_cast29" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast16_cast29_fu_281_p1" coreId="1110857360" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="14" opcode="sext" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="p_shl2" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_shl2_fu_285_p3" coreId="1104593280" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="bitconcatenate" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="p_shl2_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_shl2_cast_fu_293_p1" coreId="1110169904" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="zext" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="mul_i_i_4_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_4_i_i_fu_297_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="sub" m_display="0" m_delay="1.43" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="p_cast3" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast3_fu_303_p4" coreId="320" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="partselect" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="p_cast17_cast30" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast17_cast30_fu_313_p1" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="14" opcode="sext" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="data_4_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_6_i_i_fu_321_p00" coreId="1110856288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="18" opcode="zext" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="mul_i_i_6_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_9ns_18_1_1_U1178" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="18" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_1" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="tmp_1_fu_327_p4" coreId="1110875760" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="11" opcode="partselect" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="conv5_i_i_i_6_i_i_cast_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="conv5_i_i_i_6_i_i_cast_cast_fu_337_p1" coreId="1135565120" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="16" opcode="zext" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="data_5_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_7_i_i_fu_345_p00" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="mul_i_i_7_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_10ns_19_1_1_U1179" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_2" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="tmp_2_fu_351_p4" coreId="0" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="12" opcode="partselect" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="conv5_i_i_i_7_i_i_cast_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="conv5_i_i_i_7_i_i_cast_cast_fu_361_p1" coreId="1136639120" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="zext" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="p_shl" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_shl_fu_365_p3" coreId="1111909776" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="17" opcode="bitconcatenate" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="p_shl_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_shl_cast_fu_373_p1" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="18" opcode="zext" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="p_neg" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_neg_fu_377_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="18" opcode="sub" m_display="0" m_delay="1.42" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="p_neg_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_neg_cast_fu_383_p1" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="sext" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="p_shl1" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_shl1_fu_387_p3" coreId="1110726288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="14" opcode="bitconcatenate" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="p_shl1_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_shl1_cast_fu_395_p1" coreId="1110909456" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="mul_i_i_8_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_8_i_i_fu_399_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="sub" m_display="0" m_delay="1.42" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="p_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast_fu_405_p4" coreId="1110909456" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="12" opcode="partselect" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="p_cast_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast_cast_fu_415_p1" coreId="1136411632" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="14" opcode="sext" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="data_7_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_9_i_i_fu_423_p00" coreId="1135784176" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="zext" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="mul_i_i_9_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_10ns_19_1_1_U1180" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="19" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp_3" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="tmp_3_fu_429_p4" coreId="1339857616" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="12" opcode="partselect" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="conv5_i_i_i_9_i_i_cast_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="conv5_i_i_i_9_i_i_cast_cast_fu_439_p1" coreId="1110721088" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="zext" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="conv_i_i5_10_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_10_i_i_fu_447_p00" coreId="1110448112" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="zext" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="mul_i_i_10_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_10s_20_1_1_U1181" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="20" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="p_cast4" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast4_fu_453_p4" coreId="1110390080" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="13" opcode="partselect" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="p_cast23_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="p_cast23_cast_fu_463_p1" coreId="1110664288" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="14" opcode="sext" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="data_9_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="data_9_cast_fu_467_p4" coreId="1110353248" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="data_9_cast_cast" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_i_i_12_i_i_fu_481_p00" coreId="1110334128" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="17" opcode="zext" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="mul_i_i_12_i_i" lineNumber="43" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." rtlName="mul_10ns_8ns_17_1_1_U1182" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="data_prepare_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_config16_s" bitwidth="17" opcode="mul" m_display="0" m_delay="2.52" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="43" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="data_prepare&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="93" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="tmp_4" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="tmp_4_fu_487_p4" coreId="1110334736" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="zext_ln53_1" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="zext_ln53_1_fu_497_p1" coreId="1135644336" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="13" opcode="zext" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="add_ln53" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_fu_501_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="13" opcode="add" m_display="0" m_delay="1.35" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="sext_ln53" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="sext_ln53_fu_507_p1" coreId="1136007136" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="14" opcode="sext" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="add_ln53_994" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_994_fu_511_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="14" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="sext_ln53_595" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="sext_ln53_595_fu_517_p1" coreId="1110664288" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="15" opcode="sext" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln53_995" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_995_fu_521_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="14" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="sext_ln53_596" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="sext_ln53_596_fu_527_p1" coreId="1110727312" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="15" opcode="sext" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="add_ln53_996" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_996_fu_531_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="15" opcode="add" m_display="0" m_delay="1.38" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="sext_ln53_597" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="sext_ln53_597_fu_537_p1" coreId="1339858224" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="16" opcode="sext" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="add_ln53_997" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_997_fu_541_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="13" opcode="add" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="add_ln53_998" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_998_fu_547_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="13" opcode="add" m_display="0" m_delay="1.07" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="zext_ln53" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="zext_ln53_fu_553_p1" coreId="1110727920" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="16" opcode="zext" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="add_ln53_999" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_999_fu_557_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="16" opcode="add" m_display="0" m_delay="1.4" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="add_ln53_1000" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_1000_fu_563_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="14" opcode="add" m_display="0" m_delay="1.36" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="sext_ln53_598" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="sext_ln53_598_fu_569_p1" coreId="1110824064" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="16" opcode="sext" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="add_ln53_1001" lineNumber="53" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="add_ln53_1001_fu_573_p2" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="16" opcode="add" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="res" lineNumber="53" originalName="res" fileName="firmware/nnet_utils/nnet_dense_resource.h" fileDirectory="../." rtlName="layer16_out_din" coreName="TAddSub" implIndex="tadder" control="no" opType="all" coreId="10" contextFuncName="dense_resource_rf_leq_nin_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_config16_s" bitwidth="16" opcode="add" m_display="0" m_delay="0.99" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="240" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_resource.h" linenumber="53" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_rf_leq_nin&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="97" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="24" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense_resource_wrapper&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="layer16_out_write_ln77" lineNumber="77" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="res_write_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_config16_s" opcode="write" m_display="0" m_delay="2.26" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="100" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="77" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="res_write&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>layer16_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="_ln101" lineNumber="101" fileName="firmware/nnet_utils/nnet_dense_stream.h" fileDirectory="../." coreId="1110909456" contextFuncName="dense_nnet_array_ap_ufixed_10_0_AP_RND_CONV_AP_SAT_0_13_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_1_config16_s" opcode="ret" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense_stream.h" linenumber="101" fileDirectory="/u1/hjia625/conifer/cnn_large" functionName="dense&amp;lt;nnet::array&amp;lt;ap_ufixed&amp;lt;10, 0, AP_RND_CONV, AP_SAT, 0&amp;gt;, 13&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 1&amp;gt;, config16&amp;gt;"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_dense_stream.h">
+      <validLinenumbers>43</validLinenumbers>
+      <validLinenumbers>77</validLinenumbers>
+      <validLinenumbers>101</validLinenumbers>
+      <validLinenumbers>93</validLinenumbers>
+      <validLinenumbers>97</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>100</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_dense_resource.h">
+      <validLinenumbers>53</validLinenumbers>
+      <validLinenumbers>240</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="p_cast17_cast30_fu_313">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv5_i_i_i_6_i_i_cast_cast_fu_337">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_fu_365">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln43_6_fu_183">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_neg_cast_fu_383">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_9_cast_fu_467">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_4_fu_173">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_351">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="res_fu_579">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_6_fu_203">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl2_fu_285">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv5_i_i_i_9_i_i_cast_cast_fu_439">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_7_cast_fu_419">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_9_cast_cast_fu_477">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_598_fu_569">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_8_i_i_fu_399">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_596_fu_527">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_cast_fu_395">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_995_fu_521">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_cast_fu_213">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv_i_i5_10_i_i_fu_443">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_4_i_i_fu_297">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast15_cast_fu_257">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_fu_405">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_fu_507">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast4_fu_453">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_223">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_1_i_i_fu_217">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_9_i_i_fu_423">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_327">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl2_cast_fu_293">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_994_fu_511">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_1_fu_133">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast_cast_fu_415">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_5_cast_fu_341">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_12_i_i_fu_481">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_597_fu_537">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast3_fu_303">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_1000_fu_563">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln53_1_fu_497">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_7_i_i_fu_345">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln53_fu_553">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_998_fu_547">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_5_fu_193">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_2_fu_143">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_997_fu_541">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv_i_i5_3_i_i_fu_261">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_4_cast_fu_317">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_6_i_i_fu_321">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_fu_387">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_10_i_i_fu_447">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_2_i_i_fu_241">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_1001_fu_573">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_429">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln43_3_fu_153">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_fu_501">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_487">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast16_cast29_fu_281">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_fu_123">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast2_fu_271">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv_i_i5_2_i_i_fu_237">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="data_3_fu_163">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_i_i_3_i_i_fu_265">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast23_cast_fu_463">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_999_fu_557">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln53_996_fu_531">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln53_595_fu_517">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv5_i_i_i_7_i_i_cast_cast_fu_361">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_cast1_fu_247">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_neg_fu_377">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="conv5_i_i_i_1_i_i_cast_cast_fu_233">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_cast_fu_373">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="layer15_out_read_read_fu_110">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln77_write_fu_116">
+    <nodeIds>78</nodeIds>
+  </ioNodes>
+  <ioPorts name="layer15_out">
+    <contents name="read">
+      <nodeIds>5</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="layer16_out">
+    <contents name="write">
+      <nodeIds>78</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dense_array_ap_ufixed_13u_array_ap_fixed_16_6_5_3_0_1u_config16_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>80</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
