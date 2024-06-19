@@ -1,7 +1,6 @@
 /negative-charge/
 /positive-charge/
 /MLP-MNIST/
-*.hdf5
 /cp.ckpt/
 /.venv/
 /data_v2/
