@@ -13,6 +13,6 @@ Similarly, we have a environment file for setting up the conda environment. A se
 ### source code
 Source code for synthesis can by found under HLS/src, and all model synthesis part are store in \<\>onChip subdirectories. For CNN, since the RTL code are large, only non-automatic generated part are store in this repo.
 ## Debugging and other Issues
-The scripts are written specifically for myself, compatibilities are not promised. Please feel free to contact Kenny Jia through email: hjia625@stanford.edu, or haoyi.jia@cern.ch. I would be happy to help with the debugging process or questions! 
+The scripts are written specifically for myself, compatibilities are not promised and will be add later. Please feel free to contact Kenny Jia through email: hjia625@stanford.edu, or haoyi.jia@cern.ch. I would be happy to help with the debugging process or questions! 
 
 
