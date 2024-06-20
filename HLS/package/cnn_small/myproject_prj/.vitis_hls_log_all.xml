@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:20.421-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.523-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_1' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.520-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_2' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.516-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_3' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.513-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_4' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.510-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_5' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.506-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_6' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.503-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_7' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.499-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_8' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.496-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_9' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.492-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN4nnet22compute_pool_buffer_2dINS_5arrayI9ap_ufixedILi10ELi0EL9ap_q_mode4EL9a_10' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.489-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.486-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_1' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.482-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'void_compute_pool_buffer_2d_array_const_ap_shift_reg_n_filt_stream_kernel_2' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.479-0700" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'sX' is power-on initialization." projectName="myproject_prj" solutionName="solution1" date="2024-05-20T13:45:19.475-0700" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

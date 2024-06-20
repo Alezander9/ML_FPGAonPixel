@@ -1,0 +1,166 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dense_array_ap_ufixed_7u_array_ap_fixed_16_6_5_3_0_1u_config16_s'" level="0">
+<item name = "Date">Mon May 20 13:45:20 2024
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">25.00 ns, 6.164 ns, 6.75 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">7, 8, 0.175 us, 0.200 us, 7, 7, loop rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- ReuseLoop">7, 7, 2, 1, 1, 7, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 52, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 0, 0, 99, -</column>
+<column name="Memory">0, -, 16, 17, -</column>
+<column name="Multiplexer">-, -, -, 189, -</column>
+<column name="Register">-, -, 98, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_10s_10ns_20_1_1_U171">mul_10s_10ns_20_1_1, 0, 0, 0, 62, 0</column>
+<column name="mux_7_3_10_1_1_U170">mux_7_3_10_1_1, 0, 0, 0, 37, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="w16_U">dense_array_ap_ufixed_7u_array_ap_fixed_16_6_5_3_0_1u_config16_s_w16_ROM_AUTOJfO, 0, 16, 17, 0, 7, 10, 1, 70</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="in_index_fu_344_p2">+, 0, 0, 10, 3, 1</column>
+<column name="x_fu_475_p2">+, 0, 0, 22, 15, 15</column>
+<column name="ap_condition_95">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln42_fu_350_p2">icmp, 0, 0, 10, 3, 3</column>
+<column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state3_pp0_stage0_iter1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_phi_mux_data_1_phi_phi_fu_295_p4">14, 3, 10, 30</column>
+<column name="ap_phi_mux_data_2_phi_phi_fu_283_p4">14, 3, 10, 30</column>
+<column name="ap_phi_mux_data_3_phi_phi_fu_271_p4">14, 3, 10, 30</column>
+<column name="ap_phi_mux_data_4_phi_phi_fu_259_p4">14, 3, 10, 30</column>
+<column name="ap_phi_mux_data_5_phi_phi_fu_319_p4">14, 3, 10, 30</column>
+<column name="ap_phi_mux_data_6_phi_phi_fu_307_p4">14, 3, 10, 30</column>
+<column name="ap_phi_mux_in_index3_phi_fu_132_p6">14, 3, 3, 9</column>
+<column name="ap_phi_mux_p_phi_phi_fu_331_p4">14, 3, 10, 30</column>
+<column name="in_index3_reg_128">9, 2, 3, 6</column>
+<column name="layer15_out_blk_n">9, 2, 1, 2</column>
+<column name="layer16_out_blk_n">9, 2, 1, 2</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="res4_reg_241">9, 2, 15, 30</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="data_1_rewind_reg_185">10, 0, 10, 0</column>
+<column name="data_2_rewind_reg_171">10, 0, 10, 0</column>
+<column name="data_3_rewind_reg_157">10, 0, 10, 0</column>
+<column name="data_4_rewind_reg_143">10, 0, 10, 0</column>
+<column name="data_5_rewind_reg_213">10, 0, 10, 0</column>
+<column name="data_6_rewind_reg_199">10, 0, 10, 0</column>
+<column name="do_init_reg_112">1, 0, 1, 0</column>
+<column name="icmp_ln42_reg_498">1, 0, 1, 0</column>
+<column name="in_index3_reg_128">3, 0, 3, 0</column>
+<column name="in_index_reg_493">3, 0, 3, 0</column>
+<column name="p_rewind_reg_227">10, 0, 10, 0</column>
+<column name="res4_reg_241">15, 0, 15, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_ufixed,7u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,1u&gt;,config16&gt;, return value</column>
+<column name="layer15_out_dout">in, 70, ap_fifo, layer15_out, pointer</column>
+<column name="layer15_out_num_data_valid">in, 2, ap_fifo, layer15_out, pointer</column>
+<column name="layer15_out_fifo_cap">in, 2, ap_fifo, layer15_out, pointer</column>
+<column name="layer15_out_empty_n">in, 1, ap_fifo, layer15_out, pointer</column>
+<column name="layer15_out_read">out, 1, ap_fifo, layer15_out, pointer</column>
+<column name="layer16_out_din">out, 16, ap_fifo, layer16_out, pointer</column>
+<column name="layer16_out_num_data_valid">in, 2, ap_fifo, layer16_out, pointer</column>
+<column name="layer16_out_fifo_cap">in, 2, ap_fifo, layer16_out, pointer</column>
+<column name="layer16_out_full_n">in, 1, ap_fifo, layer16_out, pointer</column>
+<column name="layer16_out_write">out, 1, ap_fifo, layer16_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

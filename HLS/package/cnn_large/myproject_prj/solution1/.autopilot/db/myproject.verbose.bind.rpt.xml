@@ -1,0 +1,58 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Mon May 20 13:41:05 2024
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">kintexu</item>
+<item name = "Target device">xcku040-ffva1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">25.00 ns, 14.884 ns, 6.75 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">311, 311, 7.775 us, 7.775 us, 303, 303, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_zeropad2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_1u_config19_s_fu_502">zeropad2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_1u_config19_s, 163, 163, 4.075 us, 4.075 us, 163, 163, no</column>
+<column name="grp_conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_8u_config2_s_fu_509">conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_16_6_5_3_0_8u_config2_s, 302, 302, 7.550 us, 7.550 us, 302, 302, no</column>
+<column name="grp_relu_array_ap_fixed_8u_array_ap_ufixed_10_0_4_0_0_8u_relu_config4_s_fu_545">relu_array_ap_fixed_8u_array_ap_ufixed_10_0_4_0_0_8u_relu_config4_s, 106, 106, 2.650 us, 2.650 us, 106, 106, no</column>
+<column name="grp_pooling2d_cl_array_ap_ufixed_8u_array_ap_fixed_16_6_5_3_0_8u_config5_s_fu_551">pooling2d_cl_array_ap_ufixed_8u_array_ap_fixed_16_6_5_3_0_8u_config5_s, 106, 106, 2.650 us, 2.650 us, 106, 106, no</column>
+<column name="grp_zeropad2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_config20_s_fu_613">zeropad2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_8u_config20_s, 61, 61, 1.525 us, 1.525 us, 61, 61, no</column>
+<column name="grp_conv_2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_13u_config6_s_fu_619">conv_2d_cl_array_ap_fixed_8u_array_ap_fixed_16_6_5_3_0_13u_config6_s, 98, 98, 2.450 us, 2.450 us, 98, 98, no</column>
+<column name="grp_relu_array_ap_fixed_13u_array_ap_ufixed_10_0_4_0_0_13u_relu_config8_s_fu_809">relu_array_ap_fixed_13u_array_ap_ufixed_10_0_4_0_0_13u_relu_config8_s, 26, 26, 0.650 us, 0.650 us, 26, 26, no</column>
+<column name="grp_pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_13u_config9_s_fu_815">pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_13u_config9_s, 26, 26, 0.650 us, 0.650 us, 26, 26, no</column>
+<column name="grp_concatenate1d_array_array_array_ap_fixed_16_6_5_3_0_79u_config12_s_fu_907">concatenate1d_array_array_array_ap_fixed_16_6_5_3_0_79u_config12_s, 13, 13, 0.325 us, 0.325 us, 13, 13, no</column>
+<column name="call_ln76_dense_array_ap_fixed_79u_array_ap_fixed_16_6_5_3_0_13u_config13_s_fu_915">dense_array_ap_fixed_79u_array_ap_fixed_16_6_5_3_0_13u_config13_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ln80_relu_array_ap_fixed_13u_array_ap_ufixed_10_0_4_0_0_13u_relu_config15_s_fu_921">relu_array_ap_fixed_13u_array_ap_ufixed_10_0_4_0_0_13u_relu_config15_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ln84_dense_array_ap_ufixed_13u_array_ap_fixed_16_6_5_3_0_1u_config16_s_fu_927">dense_array_ap_ufixed_13u_array_ap_fixed_16_6_5_3_0_1u_config16_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config18_s_fu_933">sigmoid_array_array_ap_fixed_16_6_5_3_0_1u_sigmoid_config18_s, 2, 2, 50.000 ns, 50.000 ns, 2, 2, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
