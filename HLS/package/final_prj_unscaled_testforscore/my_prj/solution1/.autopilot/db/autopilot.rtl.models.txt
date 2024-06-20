@@ -1,3 +1,0 @@
-my_prj_mux_10_4_7_1_1
-decision_function
-my_prj

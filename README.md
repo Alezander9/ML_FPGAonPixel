@@ -9,4 +9,9 @@ The Smart Pixel dataset is available at https://zenodo.org/records/10783560. The
 Different model development notebook and existing models are all available at software directory.
 ## High Level Synthesis
 ### Basic Setup
+Similarly, we have a environment file for setting up the conda environment. A setup.sh script is in HLS directory for you to set up license and GUI in rdsrv machine.
+### source code
+Source code for synthesis can by found under HLS/src, and all model synthesis part are store in \<\>onChip subdirectories. For CNN, since the RTL code are large, only non-automatic generated part are store in this repo.
+## Debugging and other Issues
+The scripts are written specifically for myself, compatibilities are added later without any test. Please feel free to contact Kenny Jia through email: hjia625@stanford.edu, or haoyi.jia@cern.ch. I would be happy to help with the debugging process or questions! 
 
