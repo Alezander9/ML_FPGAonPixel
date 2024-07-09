@@ -2,13 +2,9 @@ name: Smart_Pixel
 channels:
   - defaults
 dependencies:
-  - python=3.8
-  - keras
-  - qkeras
-  - tensorflow 
+  - python=3.8.18
   - ipython
   - matplotlib
-  - seaborn
   - pandas
   - numpy
   - scikit-learn

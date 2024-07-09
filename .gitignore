@@ -5,4 +5,4 @@
 /.venv/
 /data_v2/
 test*.txt
-
+.env
