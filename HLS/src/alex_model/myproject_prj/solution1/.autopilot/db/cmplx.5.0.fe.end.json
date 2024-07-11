@@ -1,0 +1,140 @@
+{
+    "1": {
+        "name": "normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config14>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "83",
+        "total_instructions": "83",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "relu<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<15, 0, 4, 0, 0>, relu_config4>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "290",
+        "total_instructions": "290",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "3": {
+        "name": "softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "79",
+        "total_instructions": "79",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "4"
+        }
+    },
+    "4": {
+        "name": "normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "121",
+        "total_instructions": "121",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config15>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "247",
+        "total_instructions": "247",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "relu<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<15, 0, 4, 0, 0>, relu_config8>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "146",
+        "total_instructions": "146",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "164",
+        "total_instructions": "164",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "1288",
+        "total_instructions": "1288",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config10>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "129",
+        "total_instructions": "129",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "98",
+        "total_instructions": "98",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "6",
+        "instructions": "323",
+        "total_instructions": "11057",
+        "calls": "12 8 11 2 6 9 1 13 7 4 10 5 14 3",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "8010",
+        "total_instructions": "8010",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "50",
+        "total_instructions": "50",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "14": {
+        "name": "linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config11>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "11",
+        "total_instructions": "11",
+        "calls": "",
+        "basicblocks": "1"
+    }
+}

@@ -1,0 +1,104 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    batch_normalization_10:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        scale: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    batch_normalization_9:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        scale: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    dense1:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    dense1_linear:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    dense2:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    dense2_linear:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    dense_output:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    dense_output_linear:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    output_softmax:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    q_activation_10:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: ufixed<15,0,RND_CONV,SAT>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    q_activation_9:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: ufixed<15,0,RND_CONV,SAT>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+    y_timed_input:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Latency
+      Trace: true
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<15,5>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+KerasModel: !keras_model 'alex_model//keras_model.h5'
+OutputDir: alex_model/
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+Stamp: ea19B760
+Version: 1.0.0
+XilinxPart: xcku040-ffva1156-2-e

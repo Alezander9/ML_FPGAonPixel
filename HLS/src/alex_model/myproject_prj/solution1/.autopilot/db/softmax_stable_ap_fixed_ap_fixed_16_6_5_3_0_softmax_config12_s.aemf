@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720655440486">
+  <ports id="1" name="data_0_val" type="PortType" coreId="1734960750" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="data_1_val" type="PortType" coreId="1734960750" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="data_2_val" type="PortType" coreId="1734960750" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="13" name="ap_return_0" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <ports id="14" name="ap_return_1" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <ports id="15" name="ap_return_2" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="88" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="90" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="92" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="143" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="155" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="172" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="176" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="182" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="185" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="187" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="189" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="191" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="193" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="205" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.0/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="209" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="211" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="212" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="219" source_obj="//@regions.0/@basic_blocks.0/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.0/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.0/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.0/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="227" source_obj="//@regions.0/@basic_blocks.0/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.0/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.0/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.0/@node_objs.59" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.61"/>
+  <edges id="239" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.0/@node_objs.61" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.0/@node_objs.62" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.0/@node_objs.63" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.64"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.0/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.0/@node_objs.65" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.0/@node_objs.66" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
+  <edges id="254" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.68"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.0/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.69"/>
+  <edges id="256" source_obj="//@regions.0/@basic_blocks.0/@node_objs.68" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.69"/>
+  <edges id="258" source_obj="//@regions.0/@basic_blocks.0/@node_objs.69" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
+  <edges id="261" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.0/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.0/@node_objs.71" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.0/@node_objs.72" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.73"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.0/@node_objs.67" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.74"/>
+  <edges id="271" source_obj="//@regions.0/@basic_blocks.0/@node_objs.74" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.75"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.0/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.75"/>
+  <edges id="273" source_obj="//@regions.0/@basic_blocks.0/@node_objs.75" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.76"/>
+  <edges id="274" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.76"/>
+  <edges id="275" source_obj="//@regions.0/@basic_blocks.0/@node_objs.76" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.77"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.77" sink_obj="//@ports.3"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.77" sink_obj="//@ports.4"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.77" sink_obj="//@ports.5"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="342" pipe_depth="3" RegionName="softmax_stable&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0>,softmax_config12>">
+    <basic_blocks id="85" name="softmax_stable&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0>,softmax_config12>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="data_2_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="100532368" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>data_2_val</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="data_1_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="521644332" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>data_1_val</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="data_0_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="189338096" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>data_0_val</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="icmp_ln65" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="icmp_ln65_fu_124_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.78" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="xor_ln65" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="xor_ln65_fu_130_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="operator_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="5" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="select_ln65" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="select_ln65_fu_136_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_s" bitwidth="16" opcode="select" m_display="0" m_delay="0.24" m_topoIndex="6" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln65_1" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="icmp_ln65_1_fu_144_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_s" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.78" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="xor_ln65_1" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="xor_ln65_1_fu_150_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="operator_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="8" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="x_max" lineNumber="65" originalName="x_max" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="x_max_fu_156_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_s" bitwidth="16" opcode="select" m_display="0" m_delay="0.24" m_topoIndex="9" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 3, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="sext_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_fu_164_p1" coreId="572669294" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sext_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_1_fu_168_p1" coreId="143289152" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="sub_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sub_ln245_fu_172_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sub" m_display="0" m_delay="0.78" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp_4" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_4_fu_178_p3" coreId="498372332" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_5" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_5_fu_186_p3" coreId="76860144" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="xor_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="xor_ln245_fu_194_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="15" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="and_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="and_ln245_fu_200_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="and" m_display="0" m_topoIndex="16" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="xor_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="xor_ln245_1_fu_206_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="17" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="sext_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_2_fu_212_p1" coreId="320186576" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="sub_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sub_ln245_1_fu_216_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sub" m_display="0" m_delay="0.78" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_6" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_6_fu_222_p3" coreId="320187904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_7" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_7_fu_230_p3" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="xor_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="xor_ln245_2_fu_238_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="22" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="and_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="and_ln245_1_fu_244_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="and" m_display="0" m_topoIndex="23" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="xor_ln245_3" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="xor_ln245_3_fu_250_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="24" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="sext_ln245_3" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_3_fu_256_p1" coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="sub_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sub_ln245_2_fu_260_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sub" m_display="0" m_delay="0.78" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="tmp_8" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_8_fu_266_p3" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_9" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_9_fu_274_p3" coreId="198288576" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="xor_ln245_4" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="xor_ln245_4_fu_282_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="29" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="and_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="and_ln245_2_fu_288_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="and" m_display="0" m_topoIndex="30" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="xor_ln245_5" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="xor_ln245_5_fu_294_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="31" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="select_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="select_ln245_fu_300_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="select" m_display="0" m_topoIndex="32" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="tmp" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_fu_308_p4" coreId="0" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="254" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="select_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="select_ln245_1_fu_318_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="select" m_display="0" m_delay="0.3" m_topoIndex="34" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="zext_ln255" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_fu_326_p1" coreId="1936942413" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="exp_table_addr" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="198332952" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="exp_table_load" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="load" nodeLatency="1" m_display="0" m_delay="1.2" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln245_fu_393_p1" coreId="200359120" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="select_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="select_ln245_2_fu_331_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="select" m_display="0" m_topoIndex="38" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_1" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_1_fu_339_p4" coreId="335294576" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="39" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="254" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="select_ln245_3" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="select_ln245_3_fu_349_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="select" m_display="0" m_delay="0.3" m_topoIndex="40" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln255_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_1_fu_357_p1" coreId="335293624" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="exp_table_addr_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="334039952" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="exp_table_load_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="load" nodeLatency="1" m_display="0" m_delay="1.2" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln245_1_fu_397_p1" coreId="334038544" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="select_ln245_4" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="select_ln245_4_fu_362_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="select" m_display="0" m_topoIndex="44" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp_2" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_2_fu_370_p4" coreId="198244480" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="45" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="254" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="select_ln245_5" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="select_ln245_5_fu_380_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="select" m_display="0" m_delay="0.3" m_topoIndex="46" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln255_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_2_fu_388_p1" coreId="186533328" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="exp_table_addr_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="exp_table_load_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="load" nodeLatency="1" m_display="0" m_delay="1.2" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="zext_ln50_fu_401_p1" coreId="91049728" contextFuncName="operator_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="add_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="add_ln50_fu_405_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_s" bitwidth="18" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.79" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="add_ln50_2" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="add_ln50_2_fu_411_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_s" bitwidth="17" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.79" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="tmp_10" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="tmp_10_fu_417_p3" coreId="100699040" contextFuncName="operator_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="select_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="select_ln50_fu_425_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_s" bitwidth="17" opcode="select" nodeLabel="1.0" m_display="0" m_topoIndex="56" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="zext_ln50_1" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="zext_ln50_1_fu_433_p1" coreId="181795419" contextFuncName="operator_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="add_ln50_1" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="add_ln50_1_fu_437_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_s" bitwidth="18" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.79" m_topoIndex="58" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_11" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="tmp_11_fu_443_p3" coreId="334042688" contextFuncName="operator_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_3" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_3_fu_451_p4" coreId="100699040" contextFuncName="softmax_idx_from_real_val_ap_fixed_18_8_AP_RND_AP_SAT_0_softmax_config12_s" bitwidth="10" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="select_ln50_1" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="select_ln50_1_fu_461_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_s" bitwidth="10" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.3" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln265" lineNumber="265" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln265_fu_469_p1" coreId="1936942413" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="invert_table_addr" lineNumber="265" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="484125667" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="inv_exp_sum" lineNumber="265" originalName="inv_exp_sum" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.2" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="sext_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln268_fu_474_p1" coreId="78238056" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="zext_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_fu_481_p10" coreId="104306464" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="mul_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U2129" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="trunc_ln1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_0" coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_1_fu_500_p10" coreId="335371360" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="mul_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U2130" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_1" coreId="296464851" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_2_fu_519_p10" coreId="132269824" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="mul_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U2131" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="trunc_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_2" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="mrv" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="mrv_1" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="132269784" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>insertvalue</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>insertvalue</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="mrv_2" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="77455056" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>insertvalue</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>ret</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="_ln270" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="335332944" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
+        <dataInputObjs>insertvalue</dataInputObjs>
+        <dataOutputObjs>ap_return_0</dataOutputObjs>
+        <dataOutputObjs>ap_return_1</dataOutputObjs>
+        <dataOutputObjs>ap_return_2</dataOutputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_common.h">
+        <validLinenumbers>65</validLinenumbers>
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>43</validLinenumbers>
+        <validLinenumbers>45</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_activation.h">
+        <validLinenumbers>245</validLinenumbers>
+        <validLinenumbers>145</validLinenumbers>
+        <validLinenumbers>255</validLinenumbers>
+        <validLinenumbers>265</validLinenumbers>
+        <validLinenumbers>268</validLinenumbers>
+        <validLinenumbers>270</validLinenumbers>
+        <validLinenumbers>239</validLinenumbers>
+        <validLinenumbers>254</validLinenumbers>
+        <validLinenumbers>262</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="exp_table_addr_1_reg_558">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="exp_table_addr_2_reg_563">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="exp_table_load_2_reg_578">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="exp_table_load_reg_568">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="exp_table_load_1_reg_573">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="invert_table_addr_reg_583">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="exp_table_addr_reg_553">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <expressionNodes realName="select_ln245_fu_300">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln50_1_fu_433">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exp_table_addr_gep_fu_74">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_fu_443">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln255_1_fu_357">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln245_fu_172">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln245_3_fu_349">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln50_fu_401">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_2_fu_547">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln50_1_fu_437">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln268_1_fu_506">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln245_fu_194">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln245_fu_164">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_1_fu_144">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="invert_table_addr_gep_fu_111">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln268_2_fu_516">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln245_3_fu_250">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln245_fu_393">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1_fu_487">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln255_2_fu_388">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln268_1_fu_497">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln268_2_fu_519">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln245_1_fu_318">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_230">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_274">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_1_fu_541">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln268_fu_474">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln245_2_fu_260">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln268_1_fu_500">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln65_fu_136">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln245_1_fu_206">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_308">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln245_2_fu_288">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln245_1_fu_168">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln65_fu_130">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln50_2_fu_411">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln245_fu_200">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_339">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln255_fu_326">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_451">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_178">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_370">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln65_1_fu_150">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exp_table_addr_1_gep_fu_95">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_fu_535">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_222">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_266">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln245_2_fu_331">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln268_2_fu_525">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln245_2_fu_238">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln245_5_fu_294">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln245_3_fu_256">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_417">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln50_1_fu_461">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln245_2_fu_212">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln265_fu_469">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln245_1_fu_216">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln50_fu_405">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln50_fu_425">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exp_table_addr_2_gep_fu_103">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln268_fu_481">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln245_1_fu_397">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_186">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln245_4_fu_362">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_fu_124">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln245_4_fu_282">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln268_fu_478">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln245_5_fu_380">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln245_1_fu_244">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_max_fu_156">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="data_0_val_read_read_fu_68">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_1_val_read_read_fu_62">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_2_val_read_read_fu_56">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="exp_table">
+    <nodeIds>57</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="exp_table" portID="1">
+    <nodeIds>50</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="exp_table" portID="2">
+    <nodeIds>43</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="invert_table">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <ioPorts name="data_0_val">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_1_val">
+    <contents name="read">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_2_val">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return_0">
+    <contents name="ret">
+      <nodeIds>84</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return_1">
+    <contents name="ret">
+      <nodeIds>84</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return_2">
+    <contents name="ret">
+      <nodeIds>84</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="2" latency="2"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="2" latency="2"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="43" stage="1" latency="2"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="2"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="2"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="2"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s" mII="1" mDepth="3" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="2" mMaxLatency="2">
+      <basicBlocks>85</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

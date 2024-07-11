@@ -1,0 +1,715 @@
+---
+MainSourceFile:  /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          824293
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1053185
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1053653
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1054122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1338201
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1714386
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1714761
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_1:  '
+    FileOffset:      265
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2412705
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2413092
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2413427
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_293_1:  '
+    FileOffset:      293
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2413650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_293_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_2:  '
+    FileOffset:      295
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2413745
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2414109
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_2:  '
+    FileOffset:      309
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2414191
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_1:  '
+    FileOffset:      324
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2414534
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_344_1:  '
+    FileOffset:      344
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2414987
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_344_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_2:  '
+    FileOffset:      345
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2415032
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_1:  '
+    FileOffset:      360
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2415441
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_1:  '
+    FileOffset:      367
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2415654
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_1:  '
+    FileOffset:      31
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2418848
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_1:  '
+    FileOffset:      43
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419101
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_1:  '
+    FileOffset:      57
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419462
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_1:  '
+    FileOffset:      84
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2420278
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_1:  '
+    FileOffset:      114
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2420939
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_1:  '
+    FileOffset:      151
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2422073
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_162_1:  '
+    FileOffset:      162
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2422435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_162_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_1:  '
+    FileOffset:      195
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2423338
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_2:  '
+    FileOffset:      209
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2423857
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_243_1:  '
+    FileOffset:      243
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2424697
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_243_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_252_2:  '
+    FileOffset:      252
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2424967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_252_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_266_3:  '
+    FileOffset:      266
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2425491
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_266_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_273_1:  '
+    FileOffset:      273
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2425725
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_273_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2426085
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_323_1:  '
+    FileOffset:      323
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2427014
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_323_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_328_2:  '
+    FileOffset:      328
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2427131
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_328_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_329_3:  '
+    FileOffset:      329
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2427185
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_329_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_346_4:  '
+    FileOffset:      346
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2427766
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_346_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_359_1:  '
+    FileOffset:      359
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2428253
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_359_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_2:  '
+    FileOffset:      367
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2428394
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_402_1:  '
+    FileOffset:      402
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2429359
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_402_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_432_1:  '
+    FileOffset:      432
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2429996
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_432_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_451_1:  '
+    FileOffset:      451
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2430509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_451_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_467_1:  '
+    FileOffset:      467
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2430967
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_467_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_485_1:  '
+    FileOffset:      485
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2431421
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_485_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_502_1:  '
+    FileOffset:      502
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2431808
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_502_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_519_1:  '
+    FileOffset:      519
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2432203
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_519_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_549_1:  '
+    FileOffset:      549
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2432869
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_549_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_568_1:  '
+    FileOffset:      568
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2433443
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_568_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_598_1:  '
+    FileOffset:      598
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2434109
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_598_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_617_1:  '
+    FileOffset:      617
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2434663
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_617_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_647_1:  '
+    FileOffset:      647
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2435295
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_647_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_674_1:  '
+    FileOffset:      674
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2436121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_674_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_703_1:  '
+    FileOffset:      703
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2436739
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_703_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_724_1:  '
+    FileOffset:      724
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2437350
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_724_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_742_1:  '
+    FileOffset:      742
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2437739
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_742_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_762_1:  '
+    FileOffset:      762
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2438135
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_762_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_73_1:  '
+    FileOffset:      73
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2440211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_73_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_80_2:  '
+    FileOffset:      80
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2440351
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_80_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_89_3:  '
+    FileOffset:      89
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2440616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_89_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_98_4:  '
+    FileOffset:      98
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2440810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_98_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_5:  '
+    FileOffset:      102
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2440903
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_6:  '
+    FileOffset:      113
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2441229
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_7:  '
+    FileOffset:      117
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2441339
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_141_1:  '
+    FileOffset:      141
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2442305
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_141_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_145_2:  '
+    FileOffset:      145
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2442391
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_145_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_164_1:  '
+    FileOffset:      164
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2443067
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_164_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_187_1:  '
+    FileOffset:      187
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2443999
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_187_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_2:  '
+    FileOffset:      190
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2444137
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_3:  '
+    FileOffset:      195
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2444287
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_199_4:  '
+    FileOffset:      199
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2444411
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_199_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_1:  '
+    FileOffset:      213
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450330
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_2:  '
+    FileOffset:      222
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_328_1:  '
+    FileOffset:      328
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453827
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_328_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_333_2:  '
+    FileOffset:      333
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453969
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_333_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_341_3:  '
+    FileOffset:      341
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2454173
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_341_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_1:  '
+    FileOffset:      88
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_batchnorm.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2482290
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_1:  '
+    FileOffset:      108
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_batchnorm.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2482947
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_dense_compressed.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2487364
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_1:  '
+    FileOffset:      74
+    FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/nnet_utils/nnet_dense_compressed.h
+    Replacements:    
+      - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2489235
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_1: '
+...

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-223] Checking resource limit in 'normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config15>': cannot find any operation of 'mul'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.599-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-223] Checking resource limit in 'normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config14>': cannot find any operation of 'mul'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.574-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-223] Checking resource limit in 'normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config13>': cannot find any operation of 'mul'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.571-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'softmax_stable&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0>,softmax_config12>' to 'softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.569-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'linear&lt;ap_fixed&lt;15, 5, 5, 3, 0>, ap_fixed&lt;16, 6, 5, 3, 0>, linear_config11>' to 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.564-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config15>' to 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.563-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;16, 6, 5, 3, 0>, config10>' to 'dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s'." projectName="myproject_prj" solutionName="solution1" date="2024-07-10T16:49:48.562-0700" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

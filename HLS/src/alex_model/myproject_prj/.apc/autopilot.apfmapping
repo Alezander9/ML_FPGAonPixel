@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/tb_data"/>
+    <originFiles name="weights" path="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/firmware/weights"/>
+    <originFiles name="myproject_test.cpp" path="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model/myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

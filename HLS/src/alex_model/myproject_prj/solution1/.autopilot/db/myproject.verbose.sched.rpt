@@ -1,0 +1,470 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Wed Jul 10 16:50:22 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  25.00 ns|  17.239 ns|     3.12 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        3|        3|  75.000 ns|  75.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 17.2>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%y_timed_input_read = read i1680 @_ssdm_op_Read.ap_vld.i1680P0A, i1680 %y_timed_input"   --->   Operation 5 'read' 'y_timed_input_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (6.19ns)   --->   "%call_ret1 = call i512 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>, i1680 %y_timed_input_read" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 6 'call' 'call_ret1' <Predicate = true> <Delay = 6.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%layer2_out = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 7 'extractvalue' 'layer2_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln41 = trunc i16 %layer2_out" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 8 'trunc' 'trunc_ln41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out_1 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 9 'extractvalue' 'layer2_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln41_1 = trunc i16 %layer2_out_1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 10 'trunc' 'trunc_ln41_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer2_out_2 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 11 'extractvalue' 'layer2_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln41_2 = trunc i16 %layer2_out_2" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 12 'trunc' 'trunc_ln41_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%layer2_out_3 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 13 'extractvalue' 'layer2_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln41_3 = trunc i16 %layer2_out_3" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 14 'trunc' 'trunc_ln41_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%layer2_out_4 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 15 'extractvalue' 'layer2_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln41_4 = trunc i16 %layer2_out_4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 16 'trunc' 'trunc_ln41_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%layer2_out_5 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 17 'extractvalue' 'layer2_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln41_5 = trunc i16 %layer2_out_5" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 18 'trunc' 'trunc_ln41_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%layer2_out_6 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 19 'extractvalue' 'layer2_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%layer2_out_7 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 20 'extractvalue' 'layer2_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%layer2_out_8 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 21 'extractvalue' 'layer2_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln41_6 = trunc i16 %layer2_out_8" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 22 'trunc' 'trunc_ln41_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%layer2_out_9 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 23 'extractvalue' 'layer2_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%layer2_out_10 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 24 'extractvalue' 'layer2_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln41_7 = trunc i16 %layer2_out_10" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 25 'trunc' 'trunc_ln41_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%layer2_out_11 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 26 'extractvalue' 'layer2_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%layer2_out_12 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 27 'extractvalue' 'layer2_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln41_8 = trunc i16 %layer2_out_12" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 28 'trunc' 'trunc_ln41_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%layer2_out_13 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 29 'extractvalue' 'layer2_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%trunc_ln41_9 = trunc i16 %layer2_out_13" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 30 'trunc' 'trunc_ln41_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%layer2_out_14 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 31 'extractvalue' 'layer2_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln41_10 = trunc i16 %layer2_out_14" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 32 'trunc' 'trunc_ln41_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer2_out_15 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 33 'extractvalue' 'layer2_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%trunc_ln41_11 = trunc i16 %layer2_out_15" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 34 'trunc' 'trunc_ln41_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%layer2_out_16 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 35 'extractvalue' 'layer2_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln41_12 = trunc i16 %layer2_out_16" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 36 'trunc' 'trunc_ln41_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%layer2_out_17 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 37 'extractvalue' 'layer2_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%trunc_ln41_13 = trunc i16 %layer2_out_17" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 38 'trunc' 'trunc_ln41_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%layer2_out_18 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 39 'extractvalue' 'layer2_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln41_14 = trunc i16 %layer2_out_18" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 40 'trunc' 'trunc_ln41_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%layer2_out_19 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 41 'extractvalue' 'layer2_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%trunc_ln41_15 = trunc i16 %layer2_out_19" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 42 'trunc' 'trunc_ln41_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%layer2_out_20 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 43 'extractvalue' 'layer2_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%trunc_ln41_16 = trunc i16 %layer2_out_20" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 44 'trunc' 'trunc_ln41_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%layer2_out_21 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 45 'extractvalue' 'layer2_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln41_17 = trunc i16 %layer2_out_21" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 46 'trunc' 'trunc_ln41_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%layer2_out_22 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 47 'extractvalue' 'layer2_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln41_18 = trunc i16 %layer2_out_22" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 48 'trunc' 'trunc_ln41_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%layer2_out_23 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 49 'extractvalue' 'layer2_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln41_19 = trunc i16 %layer2_out_23" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 50 'trunc' 'trunc_ln41_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%layer2_out_24 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 51 'extractvalue' 'layer2_out_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln41_20 = trunc i16 %layer2_out_24" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 52 'trunc' 'trunc_ln41_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%layer2_out_25 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 53 'extractvalue' 'layer2_out_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln41_21 = trunc i16 %layer2_out_25" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 54 'trunc' 'trunc_ln41_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%layer2_out_26 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 55 'extractvalue' 'layer2_out_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%trunc_ln41_22 = trunc i16 %layer2_out_26" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 56 'trunc' 'trunc_ln41_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%layer2_out_27 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 57 'extractvalue' 'layer2_out_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%trunc_ln41_23 = trunc i16 %layer2_out_27" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 58 'trunc' 'trunc_ln41_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%layer2_out_28 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 59 'extractvalue' 'layer2_out_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln41_24 = trunc i16 %layer2_out_28" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 60 'trunc' 'trunc_ln41_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%layer2_out_29 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 61 'extractvalue' 'layer2_out_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%trunc_ln41_25 = trunc i16 %layer2_out_29" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 62 'trunc' 'trunc_ln41_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%layer2_out_30 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 63 'extractvalue' 'layer2_out_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%layer2_out_31 = extractvalue i512 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 64 'extractvalue' 'layer2_out_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln41_26 = trunc i16 %layer2_out_31" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49]   --->   Operation 65 'trunc' 'trunc_ln41_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.83ns)   --->   "%call_ret2 = call i480 @normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>, i15 %trunc_ln41, i15 %trunc_ln41_1, i15 %trunc_ln41_2, i15 %trunc_ln41_3, i15 %trunc_ln41_4, i15 %trunc_ln41_5, i16 %layer2_out_6, i16 %layer2_out_7, i15 %trunc_ln41_6, i16 %layer2_out_9, i15 %trunc_ln41_7, i16 %layer2_out_11, i15 %trunc_ln41_8, i15 %trunc_ln41_9, i15 %trunc_ln41_10, i15 %trunc_ln41_11, i15 %trunc_ln41_12, i15 %trunc_ln41_13, i15 %trunc_ln41_14, i15 %trunc_ln41_15, i15 %trunc_ln41_16, i15 %trunc_ln41_17, i15 %trunc_ln41_18, i15 %trunc_ln41_19, i15 %trunc_ln41_20, i15 %trunc_ln41_21, i15 %trunc_ln41_22, i15 %trunc_ln41_23, i15 %trunc_ln41_24, i15 %trunc_ln41_25, i16 %layer2_out_30, i15 %trunc_ln41_26" [firmware/myproject.cpp:53]   --->   Operation 66 'call' 'call_ret2' <Predicate = true> <Delay = 0.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%layer13_out = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 67 'extractvalue' 'layer13_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%layer13_out_1 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 68 'extractvalue' 'layer13_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%layer13_out_2 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 69 'extractvalue' 'layer13_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%layer13_out_3 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 70 'extractvalue' 'layer13_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%layer13_out_4 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 71 'extractvalue' 'layer13_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%layer13_out_5 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 72 'extractvalue' 'layer13_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%layer13_out_6 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 73 'extractvalue' 'layer13_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%layer13_out_7 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 74 'extractvalue' 'layer13_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%layer13_out_8 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 75 'extractvalue' 'layer13_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%layer13_out_9 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 76 'extractvalue' 'layer13_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%layer13_out_10 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 77 'extractvalue' 'layer13_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%layer13_out_11 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 78 'extractvalue' 'layer13_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%layer13_out_12 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 79 'extractvalue' 'layer13_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%layer13_out_13 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 80 'extractvalue' 'layer13_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%layer13_out_14 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 81 'extractvalue' 'layer13_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%layer13_out_15 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 82 'extractvalue' 'layer13_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%layer13_out_16 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 83 'extractvalue' 'layer13_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%layer13_out_17 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 84 'extractvalue' 'layer13_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%layer13_out_18 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 85 'extractvalue' 'layer13_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%layer13_out_19 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 86 'extractvalue' 'layer13_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%layer13_out_20 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 87 'extractvalue' 'layer13_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%layer13_out_21 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 88 'extractvalue' 'layer13_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%layer13_out_22 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 89 'extractvalue' 'layer13_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%layer13_out_23 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 90 'extractvalue' 'layer13_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%layer13_out_24 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 91 'extractvalue' 'layer13_out_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%layer13_out_25 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 92 'extractvalue' 'layer13_out_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%layer13_out_26 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 93 'extractvalue' 'layer13_out_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%layer13_out_27 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 94 'extractvalue' 'layer13_out_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%layer13_out_28 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 95 'extractvalue' 'layer13_out_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%layer13_out_29 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 96 'extractvalue' 'layer13_out_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%layer13_out_30 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 97 'extractvalue' 'layer13_out_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%layer13_out_31 = extractvalue i480 %call_ret2" [firmware/myproject.cpp:53]   --->   Operation 98 'extractvalue' 'layer13_out_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%call_ret3 = call i512 @linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>, i15 %layer13_out, i15 %layer13_out_1, i15 %layer13_out_2, i15 %layer13_out_3, i15 %layer13_out_4, i15 %layer13_out_5, i15 %layer13_out_6, i15 %layer13_out_7, i15 %layer13_out_8, i15 %layer13_out_9, i15 %layer13_out_10, i15 %layer13_out_11, i15 %layer13_out_12, i15 %layer13_out_13, i15 %layer13_out_14, i15 %layer13_out_15, i15 %layer13_out_16, i15 %layer13_out_17, i15 %layer13_out_18, i15 %layer13_out_19, i15 %layer13_out_20, i15 %layer13_out_21, i15 %layer13_out_22, i15 %layer13_out_23, i15 %layer13_out_24, i15 %layer13_out_25, i15 %layer13_out_26, i15 %layer13_out_27, i15 %layer13_out_28, i15 %layer13_out_29, i15 %layer13_out_30, i15 %layer13_out_31" [firmware/myproject.cpp:57]   --->   Operation 99 'call' 'call_ret3' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%layer3_out = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 100 'extractvalue' 'layer3_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%layer3_out_1 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 101 'extractvalue' 'layer3_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%layer3_out_2 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 102 'extractvalue' 'layer3_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%layer3_out_3 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 103 'extractvalue' 'layer3_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%layer3_out_4 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 104 'extractvalue' 'layer3_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%layer3_out_5 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 105 'extractvalue' 'layer3_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%layer3_out_6 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 106 'extractvalue' 'layer3_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%layer3_out_7 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 107 'extractvalue' 'layer3_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%layer3_out_8 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 108 'extractvalue' 'layer3_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%layer3_out_9 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 109 'extractvalue' 'layer3_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%layer3_out_10 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 110 'extractvalue' 'layer3_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%layer3_out_11 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 111 'extractvalue' 'layer3_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%layer3_out_12 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 112 'extractvalue' 'layer3_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%layer3_out_13 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 113 'extractvalue' 'layer3_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%layer3_out_14 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 114 'extractvalue' 'layer3_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%layer3_out_15 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 115 'extractvalue' 'layer3_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%layer3_out_16 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 116 'extractvalue' 'layer3_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%layer3_out_17 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 117 'extractvalue' 'layer3_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%layer3_out_18 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 118 'extractvalue' 'layer3_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%layer3_out_19 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 119 'extractvalue' 'layer3_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%layer3_out_20 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 120 'extractvalue' 'layer3_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%layer3_out_21 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 121 'extractvalue' 'layer3_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%layer3_out_22 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 122 'extractvalue' 'layer3_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%layer3_out_23 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 123 'extractvalue' 'layer3_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%layer3_out_24 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 124 'extractvalue' 'layer3_out_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%layer3_out_25 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 125 'extractvalue' 'layer3_out_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%layer3_out_26 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 126 'extractvalue' 'layer3_out_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%layer3_out_27 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 127 'extractvalue' 'layer3_out_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%layer3_out_28 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 128 'extractvalue' 'layer3_out_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%layer3_out_29 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 129 'extractvalue' 'layer3_out_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%layer3_out_30 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 130 'extractvalue' 'layer3_out_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%layer3_out_31 = extractvalue i512 %call_ret3" [firmware/myproject.cpp:57]   --->   Operation 131 'extractvalue' 'layer3_out_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (1.07ns)   --->   "%call_ret4 = call i480 @relu<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<15, 0, 4, 0, 0>, relu_config4>, i16 %layer3_out, i16 %layer3_out_1, i16 %layer3_out_2, i16 %layer3_out_3, i16 %layer3_out_4, i16 %layer3_out_5, i16 %layer3_out_6, i16 %layer3_out_7, i16 %layer3_out_8, i16 %layer3_out_9, i16 %layer3_out_10, i16 %layer3_out_11, i16 %layer3_out_12, i16 %layer3_out_13, i16 %layer3_out_14, i16 %layer3_out_15, i16 %layer3_out_16, i16 %layer3_out_17, i16 %layer3_out_18, i16 %layer3_out_19, i16 %layer3_out_20, i16 %layer3_out_21, i16 %layer3_out_22, i16 %layer3_out_23, i16 %layer3_out_24, i16 %layer3_out_25, i16 %layer3_out_26, i16 %layer3_out_27, i16 %layer3_out_28, i16 %layer3_out_29, i16 %layer3_out_30, i16 %layer3_out_31" [firmware/myproject.cpp:61]   --->   Operation 132 'call' 'call_ret4' <Predicate = true> <Delay = 1.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%layer4_out = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 133 'extractvalue' 'layer4_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%layer4_out_1 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 134 'extractvalue' 'layer4_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%layer4_out_2 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 135 'extractvalue' 'layer4_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%layer4_out_3 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 136 'extractvalue' 'layer4_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 137 [1/1] (0.00ns)   --->   "%layer4_out_4 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 137 'extractvalue' 'layer4_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 138 [1/1] (0.00ns)   --->   "%layer4_out_5 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 138 'extractvalue' 'layer4_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 139 [1/1] (0.00ns)   --->   "%layer4_out_6 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 139 'extractvalue' 'layer4_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 140 [1/1] (0.00ns)   --->   "%layer4_out_7 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 140 'extractvalue' 'layer4_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 141 [1/1] (0.00ns)   --->   "%layer4_out_8 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 141 'extractvalue' 'layer4_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 142 [1/1] (0.00ns)   --->   "%layer4_out_9 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 142 'extractvalue' 'layer4_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 143 [1/1] (0.00ns)   --->   "%layer4_out_10 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 143 'extractvalue' 'layer4_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 144 [1/1] (0.00ns)   --->   "%layer4_out_11 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 144 'extractvalue' 'layer4_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 145 [1/1] (0.00ns)   --->   "%layer4_out_12 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 145 'extractvalue' 'layer4_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 146 [1/1] (0.00ns)   --->   "%layer4_out_13 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 146 'extractvalue' 'layer4_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 147 [1/1] (0.00ns)   --->   "%layer4_out_14 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 147 'extractvalue' 'layer4_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 148 [1/1] (0.00ns)   --->   "%layer4_out_15 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 148 'extractvalue' 'layer4_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 149 [1/1] (0.00ns)   --->   "%layer4_out_16 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 149 'extractvalue' 'layer4_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 150 [1/1] (0.00ns)   --->   "%layer4_out_17 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 150 'extractvalue' 'layer4_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 151 [1/1] (0.00ns)   --->   "%layer4_out_18 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 151 'extractvalue' 'layer4_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 152 [1/1] (0.00ns)   --->   "%layer4_out_19 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 152 'extractvalue' 'layer4_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 153 [1/1] (0.00ns)   --->   "%layer4_out_20 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 153 'extractvalue' 'layer4_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 154 [1/1] (0.00ns)   --->   "%layer4_out_21 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 154 'extractvalue' 'layer4_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 155 [1/1] (0.00ns)   --->   "%layer4_out_22 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 155 'extractvalue' 'layer4_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 156 [1/1] (0.00ns)   --->   "%layer4_out_23 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 156 'extractvalue' 'layer4_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 157 [1/1] (0.00ns)   --->   "%layer4_out_24 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 157 'extractvalue' 'layer4_out_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 158 [1/1] (0.00ns)   --->   "%layer4_out_25 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 158 'extractvalue' 'layer4_out_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 159 [1/1] (0.00ns)   --->   "%layer4_out_26 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 159 'extractvalue' 'layer4_out_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 160 [1/1] (0.00ns)   --->   "%layer4_out_27 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 160 'extractvalue' 'layer4_out_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 161 [1/1] (0.00ns)   --->   "%layer4_out_28 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 161 'extractvalue' 'layer4_out_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 162 [1/1] (0.00ns)   --->   "%layer4_out_29 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 162 'extractvalue' 'layer4_out_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 163 [1/1] (0.00ns)   --->   "%layer4_out_30 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 163 'extractvalue' 'layer4_out_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 164 [1/1] (0.00ns)   --->   "%layer4_out_31 = extractvalue i480 %call_ret4" [firmware/myproject.cpp:61]   --->   Operation 164 'extractvalue' 'layer4_out_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 165 [1/1] (2.81ns)   --->   "%call_ret5 = call i512 @normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>, i15 %layer4_out, i15 %layer4_out_1, i15 %layer4_out_2, i15 %layer4_out_3, i15 %layer4_out_4, i15 %layer4_out_5, i15 %layer4_out_6, i15 %layer4_out_7, i15 %layer4_out_8, i15 %layer4_out_9, i15 %layer4_out_10, i15 %layer4_out_11, i15 %layer4_out_12, i15 %layer4_out_13, i15 %layer4_out_14, i15 %layer4_out_15, i15 %layer4_out_16, i15 %layer4_out_17, i15 %layer4_out_18, i15 %layer4_out_19, i15 %layer4_out_20, i15 %layer4_out_21, i15 %layer4_out_22, i15 %layer4_out_23, i15 %layer4_out_24, i15 %layer4_out_25, i15 %layer4_out_26, i15 %layer4_out_27, i15 %layer4_out_28, i15 %layer4_out_29, i15 %layer4_out_30, i15 %layer4_out_31" [firmware/myproject.cpp:65]   --->   Operation 165 'call' 'call_ret5' <Predicate = true> <Delay = 2.81> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 166 [1/1] (0.00ns)   --->   "%layer5_out = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 166 'extractvalue' 'layer5_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 167 [1/1] (0.00ns)   --->   "%layer5_out_1 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 167 'extractvalue' 'layer5_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 168 [1/1] (0.00ns)   --->   "%layer5_out_2 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 168 'extractvalue' 'layer5_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 169 [1/1] (0.00ns)   --->   "%layer5_out_3 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 169 'extractvalue' 'layer5_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 170 [1/1] (0.00ns)   --->   "%layer5_out_4 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 170 'extractvalue' 'layer5_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 171 [1/1] (0.00ns)   --->   "%layer5_out_5 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 171 'extractvalue' 'layer5_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 172 [1/1] (0.00ns)   --->   "%layer5_out_6 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 172 'extractvalue' 'layer5_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 173 [1/1] (0.00ns)   --->   "%layer5_out_7 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 173 'extractvalue' 'layer5_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 174 [1/1] (0.00ns)   --->   "%layer5_out_8 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 174 'extractvalue' 'layer5_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 175 [1/1] (0.00ns)   --->   "%layer5_out_9 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 175 'extractvalue' 'layer5_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 176 [1/1] (0.00ns)   --->   "%layer5_out_10 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 176 'extractvalue' 'layer5_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 177 [1/1] (0.00ns)   --->   "%layer5_out_11 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 177 'extractvalue' 'layer5_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 178 [1/1] (0.00ns)   --->   "%layer5_out_12 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 178 'extractvalue' 'layer5_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 179 [1/1] (0.00ns)   --->   "%layer5_out_13 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 179 'extractvalue' 'layer5_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 180 [1/1] (0.00ns)   --->   "%layer5_out_14 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 180 'extractvalue' 'layer5_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 181 [1/1] (0.00ns)   --->   "%layer5_out_15 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 181 'extractvalue' 'layer5_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 182 [1/1] (0.00ns)   --->   "%layer5_out_16 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 182 'extractvalue' 'layer5_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 183 [1/1] (0.00ns)   --->   "%layer5_out_17 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 183 'extractvalue' 'layer5_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 184 [1/1] (0.00ns)   --->   "%layer5_out_18 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 184 'extractvalue' 'layer5_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 185 [1/1] (0.00ns)   --->   "%layer5_out_19 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 185 'extractvalue' 'layer5_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 186 [1/1] (0.00ns)   --->   "%layer5_out_20 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 186 'extractvalue' 'layer5_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 187 [1/1] (0.00ns)   --->   "%layer5_out_21 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 187 'extractvalue' 'layer5_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 188 [1/1] (0.00ns)   --->   "%layer5_out_22 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 188 'extractvalue' 'layer5_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 189 [1/1] (0.00ns)   --->   "%layer5_out_23 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 189 'extractvalue' 'layer5_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 190 [1/1] (0.00ns)   --->   "%layer5_out_24 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 190 'extractvalue' 'layer5_out_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 191 [1/1] (0.00ns)   --->   "%layer5_out_25 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 191 'extractvalue' 'layer5_out_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 192 [1/1] (0.00ns)   --->   "%layer5_out_26 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 192 'extractvalue' 'layer5_out_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 193 [1/1] (0.00ns)   --->   "%layer5_out_27 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 193 'extractvalue' 'layer5_out_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 194 [1/1] (0.00ns)   --->   "%layer5_out_28 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 194 'extractvalue' 'layer5_out_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 195 [1/1] (0.00ns)   --->   "%layer5_out_29 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 195 'extractvalue' 'layer5_out_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 196 [1/1] (0.00ns)   --->   "%layer5_out_30 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 196 'extractvalue' 'layer5_out_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 197 [1/1] (0.00ns)   --->   "%layer5_out_31 = extractvalue i512 %call_ret5" [firmware/myproject.cpp:65]   --->   Operation 197 'extractvalue' 'layer5_out_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 198 [1/1] (5.49ns)   --->   "%call_ret6 = call i256 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6>, i16 %layer5_out, i16 %layer5_out_1, i16 %layer5_out_2, i16 %layer5_out_3, i16 %layer5_out_4, i16 %layer5_out_5, i16 %layer5_out_6, i16 %layer5_out_7, i16 %layer5_out_8, i16 %layer5_out_9, i16 %layer5_out_10, i16 %layer5_out_11, i16 %layer5_out_12, i16 %layer5_out_13, i16 %layer5_out_14, i16 %layer5_out_15, i16 %layer5_out_16, i16 %layer5_out_17, i16 %layer5_out_18, i16 %layer5_out_19, i16 %layer5_out_20, i16 %layer5_out_21, i16 %layer5_out_22, i16 %layer5_out_23, i16 %layer5_out_24, i16 %layer5_out_25, i16 %layer5_out_26, i16 %layer5_out_27, i16 %layer5_out_28, i16 %layer5_out_29, i16 %layer5_out_30, i16 %layer5_out_31" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 198 'call' 'call_ret6' <Predicate = true> <Delay = 5.49> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 199 [1/1] (0.00ns)   --->   "%layer6_out = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 199 'extractvalue' 'layer6_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 200 [1/1] (0.00ns)   --->   "%trunc_ln41_27 = trunc i16 %layer6_out" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 200 'trunc' 'trunc_ln41_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 201 [1/1] (0.00ns)   --->   "%layer6_out_1 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 201 'extractvalue' 'layer6_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 202 [1/1] (0.00ns)   --->   "%trunc_ln41_28 = trunc i16 %layer6_out_1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 202 'trunc' 'trunc_ln41_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 203 [1/1] (0.00ns)   --->   "%layer6_out_2 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 203 'extractvalue' 'layer6_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 204 [1/1] (0.00ns)   --->   "%trunc_ln41_29 = trunc i16 %layer6_out_2" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 204 'trunc' 'trunc_ln41_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 205 [1/1] (0.00ns)   --->   "%layer6_out_3 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 205 'extractvalue' 'layer6_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 206 [1/1] (0.00ns)   --->   "%trunc_ln41_30 = trunc i16 %layer6_out_3" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 206 'trunc' 'trunc_ln41_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 207 [1/1] (0.00ns)   --->   "%layer6_out_4 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 207 'extractvalue' 'layer6_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 208 [1/1] (0.00ns)   --->   "%layer6_out_5 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 208 'extractvalue' 'layer6_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 209 [1/1] (0.00ns)   --->   "%trunc_ln41_31 = trunc i16 %layer6_out_5" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 209 'trunc' 'trunc_ln41_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 210 [1/1] (0.00ns)   --->   "%layer6_out_6 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 210 'extractvalue' 'layer6_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 211 [1/1] (0.00ns)   --->   "%trunc_ln41_32 = trunc i16 %layer6_out_6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 211 'trunc' 'trunc_ln41_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 212 [1/1] (0.00ns)   --->   "%layer6_out_7 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 212 'extractvalue' 'layer6_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 213 [1/1] (0.00ns)   --->   "%layer6_out_8 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 213 'extractvalue' 'layer6_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 214 [1/1] (0.00ns)   --->   "%trunc_ln41_33 = trunc i16 %layer6_out_8" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 214 'trunc' 'trunc_ln41_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 215 [1/1] (0.00ns)   --->   "%layer6_out_9 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 215 'extractvalue' 'layer6_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 216 [1/1] (0.00ns)   --->   "%trunc_ln41_34 = trunc i16 %layer6_out_9" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 216 'trunc' 'trunc_ln41_34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 217 [1/1] (0.00ns)   --->   "%layer6_out_10 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 217 'extractvalue' 'layer6_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 218 [1/1] (0.00ns)   --->   "%trunc_ln41_35 = trunc i16 %layer6_out_10" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 218 'trunc' 'trunc_ln41_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 219 [1/1] (0.00ns)   --->   "%layer6_out_11 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 219 'extractvalue' 'layer6_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 220 [1/1] (0.00ns)   --->   "%trunc_ln41_36 = trunc i16 %layer6_out_11" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 220 'trunc' 'trunc_ln41_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 221 [1/1] (0.00ns)   --->   "%layer6_out_12 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 221 'extractvalue' 'layer6_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 222 [1/1] (0.00ns)   --->   "%layer6_out_13 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 222 'extractvalue' 'layer6_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 223 [1/1] (0.00ns)   --->   "%layer6_out_14 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 223 'extractvalue' 'layer6_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 224 [1/1] (0.00ns)   --->   "%trunc_ln41_37 = trunc i16 %layer6_out_14" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 224 'trunc' 'trunc_ln41_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 225 [1/1] (0.00ns)   --->   "%layer6_out_15 = extractvalue i256 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 225 'extractvalue' 'layer6_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 226 [1/1] (0.00ns)   --->   "%trunc_ln41_38 = trunc i16 %layer6_out_15" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69]   --->   Operation 226 'trunc' 'trunc_ln41_38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 227 [1/1] (0.82ns)   --->   "%call_ret7 = call i240 @normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config14>, i15 %trunc_ln41_27, i15 %trunc_ln41_28, i15 %trunc_ln41_29, i15 %trunc_ln41_30, i16 %layer6_out_4, i15 %trunc_ln41_31, i15 %trunc_ln41_32, i16 %layer6_out_7, i15 %trunc_ln41_33, i15 %trunc_ln41_34, i15 %trunc_ln41_35, i15 %trunc_ln41_36, i16 %layer6_out_12, i16 %layer6_out_13, i15 %trunc_ln41_37, i15 %trunc_ln41_38" [firmware/myproject.cpp:73]   --->   Operation 227 'call' 'call_ret7' <Predicate = true> <Delay = 0.82> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 228 [1/1] (0.00ns)   --->   "%layer14_out = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 228 'extractvalue' 'layer14_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 229 [1/1] (0.00ns)   --->   "%layer14_out_1 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 229 'extractvalue' 'layer14_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 230 [1/1] (0.00ns)   --->   "%layer14_out_2 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 230 'extractvalue' 'layer14_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 231 [1/1] (0.00ns)   --->   "%layer14_out_3 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 231 'extractvalue' 'layer14_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 232 [1/1] (0.00ns)   --->   "%layer14_out_4 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 232 'extractvalue' 'layer14_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 233 [1/1] (0.00ns)   --->   "%layer14_out_5 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 233 'extractvalue' 'layer14_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 234 [1/1] (0.00ns)   --->   "%layer14_out_6 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 234 'extractvalue' 'layer14_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 235 [1/1] (0.00ns)   --->   "%layer14_out_7 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 235 'extractvalue' 'layer14_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 236 [1/1] (0.00ns)   --->   "%layer14_out_8 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 236 'extractvalue' 'layer14_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 237 [1/1] (0.00ns)   --->   "%layer14_out_9 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 237 'extractvalue' 'layer14_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 238 [1/1] (0.00ns)   --->   "%layer14_out_10 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 238 'extractvalue' 'layer14_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 239 [1/1] (0.00ns)   --->   "%layer14_out_11 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 239 'extractvalue' 'layer14_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 240 [1/1] (0.00ns)   --->   "%layer14_out_12 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 240 'extractvalue' 'layer14_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 241 [1/1] (0.00ns)   --->   "%layer14_out_13 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 241 'extractvalue' 'layer14_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 242 [1/1] (0.00ns)   --->   "%layer14_out_14 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 242 'extractvalue' 'layer14_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 243 [1/1] (0.00ns)   --->   "%layer14_out_15 = extractvalue i240 %call_ret7" [firmware/myproject.cpp:73]   --->   Operation 243 'extractvalue' 'layer14_out_15' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 13.8>
+ST_2 : Operation 244 [1/1] (0.00ns)   --->   "%call_ret8 = call i256 @linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>, i15 %layer14_out, i15 %layer14_out_1, i15 %layer14_out_2, i15 %layer14_out_3, i15 %layer14_out_4, i15 %layer14_out_5, i15 %layer14_out_6, i15 %layer14_out_7, i15 %layer14_out_8, i15 %layer14_out_9, i15 %layer14_out_10, i15 %layer14_out_11, i15 %layer14_out_12, i15 %layer14_out_13, i15 %layer14_out_14, i15 %layer14_out_15" [firmware/myproject.cpp:77]   --->   Operation 244 'call' 'call_ret8' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 245 [1/1] (0.00ns)   --->   "%layer7_out = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 245 'extractvalue' 'layer7_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 246 [1/1] (0.00ns)   --->   "%layer7_out_1 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 246 'extractvalue' 'layer7_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 247 [1/1] (0.00ns)   --->   "%layer7_out_2 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 247 'extractvalue' 'layer7_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 248 [1/1] (0.00ns)   --->   "%layer7_out_3 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 248 'extractvalue' 'layer7_out_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 249 [1/1] (0.00ns)   --->   "%layer7_out_4 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 249 'extractvalue' 'layer7_out_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 250 [1/1] (0.00ns)   --->   "%layer7_out_5 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 250 'extractvalue' 'layer7_out_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 251 [1/1] (0.00ns)   --->   "%layer7_out_6 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 251 'extractvalue' 'layer7_out_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 252 [1/1] (0.00ns)   --->   "%layer7_out_7 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 252 'extractvalue' 'layer7_out_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 253 [1/1] (0.00ns)   --->   "%layer7_out_8 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 253 'extractvalue' 'layer7_out_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 254 [1/1] (0.00ns)   --->   "%layer7_out_9 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 254 'extractvalue' 'layer7_out_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 255 [1/1] (0.00ns)   --->   "%layer7_out_10 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 255 'extractvalue' 'layer7_out_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 256 [1/1] (0.00ns)   --->   "%layer7_out_11 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 256 'extractvalue' 'layer7_out_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 257 [1/1] (0.00ns)   --->   "%layer7_out_12 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 257 'extractvalue' 'layer7_out_12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 258 [1/1] (0.00ns)   --->   "%layer7_out_13 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 258 'extractvalue' 'layer7_out_13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 259 [1/1] (0.00ns)   --->   "%layer7_out_14 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 259 'extractvalue' 'layer7_out_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 260 [1/1] (0.00ns)   --->   "%layer7_out_15 = extractvalue i256 %call_ret8" [firmware/myproject.cpp:77]   --->   Operation 260 'extractvalue' 'layer7_out_15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 261 [1/1] (1.07ns)   --->   "%call_ret9 = call i240 @relu<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<15, 0, 4, 0, 0>, relu_config8>, i16 %layer7_out, i16 %layer7_out_1, i16 %layer7_out_2, i16 %layer7_out_3, i16 %layer7_out_4, i16 %layer7_out_5, i16 %layer7_out_6, i16 %layer7_out_7, i16 %layer7_out_8, i16 %layer7_out_9, i16 %layer7_out_10, i16 %layer7_out_11, i16 %layer7_out_12, i16 %layer7_out_13, i16 %layer7_out_14, i16 %layer7_out_15" [firmware/myproject.cpp:81]   --->   Operation 261 'call' 'call_ret9' <Predicate = true> <Delay = 1.07> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 262 [1/1] (0.00ns)   --->   "%layer8_out = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 262 'extractvalue' 'layer8_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 263 [1/1] (0.00ns)   --->   "%layer8_out_1 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 263 'extractvalue' 'layer8_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 264 [1/1] (0.00ns)   --->   "%layer8_out_2 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 264 'extractvalue' 'layer8_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 265 [1/1] (0.00ns)   --->   "%layer8_out_3 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 265 'extractvalue' 'layer8_out_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 266 [1/1] (0.00ns)   --->   "%layer8_out_4 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 266 'extractvalue' 'layer8_out_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 267 [1/1] (0.00ns)   --->   "%layer8_out_5 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 267 'extractvalue' 'layer8_out_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 268 [1/1] (0.00ns)   --->   "%layer8_out_6 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 268 'extractvalue' 'layer8_out_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 269 [1/1] (0.00ns)   --->   "%layer8_out_7 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 269 'extractvalue' 'layer8_out_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 270 [1/1] (0.00ns)   --->   "%layer8_out_8 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 270 'extractvalue' 'layer8_out_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 271 [1/1] (0.00ns)   --->   "%layer8_out_9 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 271 'extractvalue' 'layer8_out_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 272 [1/1] (0.00ns)   --->   "%layer8_out_10 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 272 'extractvalue' 'layer8_out_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 273 [1/1] (0.00ns)   --->   "%layer8_out_11 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 273 'extractvalue' 'layer8_out_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 274 [1/1] (0.00ns)   --->   "%layer8_out_12 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 274 'extractvalue' 'layer8_out_12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 275 [1/1] (0.00ns)   --->   "%layer8_out_13 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 275 'extractvalue' 'layer8_out_13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 276 [1/1] (0.00ns)   --->   "%layer8_out_14 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 276 'extractvalue' 'layer8_out_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 277 [1/1] (0.00ns)   --->   "%layer8_out_15 = extractvalue i240 %call_ret9" [firmware/myproject.cpp:81]   --->   Operation 277 'extractvalue' 'layer8_out_15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 278 [1/1] (2.78ns)   --->   "%call_ret10 = call i256 @normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>, i15 %layer8_out, i15 %layer8_out_1, i15 %layer8_out_2, i15 %layer8_out_3, i15 %layer8_out_4, i15 %layer8_out_5, i15 %layer8_out_6, i15 %layer8_out_7, i15 %layer8_out_8, i15 %layer8_out_9, i15 %layer8_out_10, i15 %layer8_out_11, i15 %layer8_out_12, i15 %layer8_out_13, i15 %layer8_out_14, i15 %layer8_out_15" [firmware/myproject.cpp:85]   --->   Operation 278 'call' 'call_ret10' <Predicate = true> <Delay = 2.78> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 279 [1/1] (0.00ns)   --->   "%layer9_out = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 279 'extractvalue' 'layer9_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 280 [1/1] (0.00ns)   --->   "%layer9_out_1 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 280 'extractvalue' 'layer9_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 281 [1/1] (0.00ns)   --->   "%layer9_out_2 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 281 'extractvalue' 'layer9_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 282 [1/1] (0.00ns)   --->   "%layer9_out_3 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 282 'extractvalue' 'layer9_out_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 283 [1/1] (0.00ns)   --->   "%layer9_out_4 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 283 'extractvalue' 'layer9_out_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 284 [1/1] (0.00ns)   --->   "%layer9_out_5 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 284 'extractvalue' 'layer9_out_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 285 [1/1] (0.00ns)   --->   "%layer9_out_6 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 285 'extractvalue' 'layer9_out_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 286 [1/1] (0.00ns)   --->   "%layer9_out_7 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 286 'extractvalue' 'layer9_out_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 287 [1/1] (0.00ns)   --->   "%layer9_out_8 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 287 'extractvalue' 'layer9_out_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 288 [1/1] (0.00ns)   --->   "%layer9_out_9 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 288 'extractvalue' 'layer9_out_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 289 [1/1] (0.00ns)   --->   "%layer9_out_10 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 289 'extractvalue' 'layer9_out_10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 290 [1/1] (0.00ns)   --->   "%layer9_out_11 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 290 'extractvalue' 'layer9_out_11' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 291 [1/1] (0.00ns)   --->   "%layer9_out_12 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 291 'extractvalue' 'layer9_out_12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 292 [1/1] (0.00ns)   --->   "%layer9_out_13 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 292 'extractvalue' 'layer9_out_13' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 293 [1/1] (0.00ns)   --->   "%layer9_out_14 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 293 'extractvalue' 'layer9_out_14' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 294 [1/1] (0.00ns)   --->   "%layer9_out_15 = extractvalue i256 %call_ret10" [firmware/myproject.cpp:85]   --->   Operation 294 'extractvalue' 'layer9_out_15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 295 [1/1] (4.80ns)   --->   "%call_ret11 = call i48 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config10>, i16 %layer9_out, i16 %layer9_out_1, i16 %layer9_out_2, i16 %layer9_out_3, i16 %layer9_out_4, i16 %layer9_out_5, i16 %layer9_out_6, i16 %layer9_out_7, i16 %layer9_out_8, i16 %layer9_out_9, i16 %layer9_out_10, i16 %layer9_out_11, i16 %layer9_out_12, i16 %layer9_out_13, i16 %layer9_out_14, i16 %layer9_out_15" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 295 'call' 'call_ret11' <Predicate = true> <Delay = 4.80> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 296 [1/1] (0.00ns)   --->   "%layer10_out = extractvalue i48 %call_ret11" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 296 'extractvalue' 'layer10_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 297 [1/1] (0.00ns)   --->   "%trunc_ln41_39 = trunc i16 %layer10_out" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 297 'trunc' 'trunc_ln41_39' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 298 [1/1] (0.00ns)   --->   "%layer10_out_1 = extractvalue i48 %call_ret11" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 298 'extractvalue' 'layer10_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 299 [1/1] (0.00ns)   --->   "%trunc_ln41_40 = trunc i16 %layer10_out_1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 299 'trunc' 'trunc_ln41_40' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 300 [1/1] (0.00ns)   --->   "%layer10_out_2 = extractvalue i48 %call_ret11" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 300 'extractvalue' 'layer10_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 301 [1/1] (0.00ns)   --->   "%trunc_ln41_41 = trunc i16 %layer10_out_2" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89]   --->   Operation 301 'trunc' 'trunc_ln41_41' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 302 [1/1] (0.82ns)   --->   "%call_ret12 = call i45 @normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config15>, i15 %trunc_ln41_39, i15 %trunc_ln41_40, i15 %trunc_ln41_41" [firmware/myproject.cpp:93]   --->   Operation 302 'call' 'call_ret12' <Predicate = true> <Delay = 0.82> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 303 [1/1] (0.00ns)   --->   "%layer15_out = extractvalue i45 %call_ret12" [firmware/myproject.cpp:93]   --->   Operation 303 'extractvalue' 'layer15_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 304 [1/1] (0.00ns)   --->   "%layer15_out_1 = extractvalue i45 %call_ret12" [firmware/myproject.cpp:93]   --->   Operation 304 'extractvalue' 'layer15_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 305 [1/1] (0.00ns)   --->   "%layer15_out_2 = extractvalue i45 %call_ret12" [firmware/myproject.cpp:93]   --->   Operation 305 'extractvalue' 'layer15_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 306 [1/1] (0.00ns)   --->   "%call_ret13 = call i48 @linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config11>, i15 %layer15_out, i15 %layer15_out_1, i15 %layer15_out_2" [firmware/myproject.cpp:97]   --->   Operation 306 'call' 'call_ret13' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 307 [1/1] (0.00ns)   --->   "%layer11_out = extractvalue i48 %call_ret13" [firmware/myproject.cpp:97]   --->   Operation 307 'extractvalue' 'layer11_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 308 [1/1] (0.00ns)   --->   "%layer11_out_1 = extractvalue i48 %call_ret13" [firmware/myproject.cpp:97]   --->   Operation 308 'extractvalue' 'layer11_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 309 [1/1] (0.00ns)   --->   "%layer11_out_2 = extractvalue i48 %call_ret13" [firmware/myproject.cpp:97]   --->   Operation 309 'extractvalue' 'layer11_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 310 [3/3] (4.34ns)   --->   "%call_ret = call i48 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>, i16 %layer11_out, i16 %layer11_out_1, i16 %layer11_out_2, i17 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 310 'call' 'call_ret' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.34>
+ST_3 : Operation 311 [2/3] (4.34ns)   --->   "%call_ret = call i48 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>, i16 %layer11_out, i16 %layer11_out_1, i16 %layer11_out_2, i17 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 311 'call' 'call_ret' <Predicate = true> <Delay = 4.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 3.23>
+ST_4 : Operation 312 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 312 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 313 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2"   --->   Operation 313 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 314 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1680 %y_timed_input"   --->   Operation 314 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 315 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1680 %y_timed_input, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 315 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 316 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer12_out_0"   --->   Operation 316 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 317 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer12_out_0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 317 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 318 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer12_out_1"   --->   Operation 318 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 319 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer12_out_1, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 319 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 320 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %layer12_out_2"   --->   Operation 320 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 321 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer12_out_2, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 321 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 322 [1/3] (3.23ns)   --->   "%call_ret = call i48 @softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>, i16 %layer11_out, i16 %layer11_out_1, i16 %layer11_out_2, i17 %exp_table, i18 %invert_table" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 322 'call' 'call_ret' <Predicate = true> <Delay = 3.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 323 [1/1] (0.00ns)   --->   "%layer12_out_0_ret = extractvalue i48 %call_ret" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 323 'extractvalue' 'layer12_out_0_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 324 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_vld.i16P0A, i16 %layer12_out_0, i16 %layer12_out_0_ret" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 324 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 325 [1/1] (0.00ns)   --->   "%layer12_out_1_ret = extractvalue i48 %call_ret" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 325 'extractvalue' 'layer12_out_1_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 326 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_vld.i16P0A, i16 %layer12_out_1, i16 %layer12_out_1_ret" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 326 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 327 [1/1] (0.00ns)   --->   "%layer12_out_2_ret = extractvalue i48 %call_ret" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 327 'extractvalue' 'layer12_out_2_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 328 [1/1] (0.00ns)   --->   "%write_ln386 = write void @_ssdm_op_Write.ap_vld.i16P0A, i16 %layer12_out_2, i16 %layer12_out_2_ret" [firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99]   --->   Operation 328 'write' 'write_ln386' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 329 [1/1] (0.00ns)   --->   "%ret_ln101 = ret" [firmware/myproject.cpp:101]   --->   Operation 329 'ret' 'ret_ln101' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25.000ns, clock uncertainty: 3.125ns.
+
+ <State 1>: 17.239ns
+The critical path consists of the following:
+	wire read operation ('y_timed_input_read') on port 'y_timed_input' [17]  (0.000 ns)
+	'call' operation ('call_ret1', firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:49) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2>' [18]  (6.192 ns)
+	'call' operation ('call_ret2', firmware/myproject.cpp:53) to 'normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>' [78]  (0.833 ns)
+	'call' operation ('call_ret3', firmware/myproject.cpp:57) to 'linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>' [111]  (0.000 ns)
+	'call' operation ('call_ret4', firmware/myproject.cpp:61) to 'relu<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<15, 0, 4, 0, 0>, relu_config4>' [144]  (1.078 ns)
+	'call' operation ('call_ret5', firmware/myproject.cpp:65) to 'normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config5>' [177]  (2.814 ns)
+	'call' operation ('call_ret6', firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:69) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6>' [210]  (5.497 ns)
+	'call' operation ('call_ret7', firmware/myproject.cpp:73) to 'normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config14>' [239]  (0.827 ns)
+
+ <State 2>: 13.829ns
+The critical path consists of the following:
+	'call' operation ('call_ret8', firmware/myproject.cpp:77) to 'linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>' [256]  (0.000 ns)
+	'call' operation ('call_ret9', firmware/myproject.cpp:81) to 'relu<ap_fixed<16, 6, 5, 3, 0>, ap_ufixed<15, 0, 4, 0, 0>, relu_config8>' [273]  (1.078 ns)
+	'call' operation ('call_ret10', firmware/myproject.cpp:85) to 'normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>' [290]  (2.780 ns)
+	'call' operation ('call_ret11', firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:89) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config10>' [307]  (4.801 ns)
+	'call' operation ('call_ret12', firmware/myproject.cpp:93) to 'normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config15>' [314]  (0.827 ns)
+	'call' operation ('call_ret13', firmware/myproject.cpp:97) to 'linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config11>' [318]  (0.000 ns)
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>' [322]  (4.344 ns)
+
+ <State 3>: 4.344ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>' [322]  (4.344 ns)
+
+ <State 4>: 3.233ns
+The critical path consists of the following:
+	'call' operation ('call_ret', firmware/nnet_utils/nnet_activation.h:386->firmware/myproject.cpp:99) to 'softmax_stable<ap_fixed,ap_fixed<16,6,5,3,0>,softmax_config12>' [322]  (3.233 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

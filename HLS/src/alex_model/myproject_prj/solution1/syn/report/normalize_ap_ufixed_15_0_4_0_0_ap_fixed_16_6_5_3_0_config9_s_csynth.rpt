@@ -1,0 +1,177 @@
+
+
+================================================================
+== Vitis HLS Report for 'normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config9_s'
+================================================================
+* Date:           Wed Jul 10 16:50:39 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  2.780 ns|     3.12 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      555|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|     16|        0|       32|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|        -|     -|
+|Register             |        -|      -|        -|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|     16|        0|      587|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     ~0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|     ~0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance          |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +----------------------------+----------------------+---------+----+---+----+-----+
+    |mul_15ns_12ns_26_1_1_U2049  |mul_15ns_12ns_26_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_12ns_26_1_1_U2055  |mul_15ns_12ns_26_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2048  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2050  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2052  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2053  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2056  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2061  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_13ns_27_1_1_U2062  |mul_15ns_13ns_27_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2047  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2051  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2054  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2057  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2058  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2059  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    |mul_15ns_14ns_28_1_1_U2060  |mul_15ns_14ns_28_1_1  |        0|   1|  0|   2|    0|
+    +----------------------------+----------------------+---------+----+---+----+-----+
+    |Total                       |                      |        0|  16|  0|  32|    0|
+    +----------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln54_10_fu_1656_p2  |         +|   0|  0|  36|          29|          26|
+    |add_ln54_11_fu_1681_p2  |         +|   0|  0|  35|          28|          26|
+    |add_ln54_12_fu_1706_p2  |         +|   0|  0|  35|          28|          27|
+    |add_ln54_13_fu_1731_p2  |         +|   0|  0|  35|          28|          25|
+    |add_ln54_14_fu_1760_p2  |         +|   0|  0|  35|          28|          26|
+    |add_ln54_15_fu_1785_p2  |         +|   0|  0|  35|          28|          26|
+    |add_ln54_1_fu_1411_p2   |         +|   0|  0|  34|          27|          27|
+    |add_ln54_2_fu_1440_p2   |         +|   0|  0|  35|          28|          26|
+    |add_ln54_3_fu_1465_p2   |         +|   0|  0|  33|          26|          24|
+    |add_ln54_4_fu_1490_p2   |         +|   0|  0|  34|          27|          22|
+    |add_ln54_5_fu_1515_p2   |         +|   0|  0|  35|          28|          28|
+    |add_ln54_6_fu_1544_p2   |         +|   0|  0|  35|          28|          25|
+    |add_ln54_7_fu_1573_p2   |         +|   0|  0|  36|          29|          26|
+    |add_ln54_8_fu_1598_p2   |         +|   0|  0|  34|          27|          26|
+    |add_ln54_9_fu_1627_p2   |         +|   0|  0|  34|          27|          24|
+    |add_ln54_fu_1386_p2     |         +|   0|  0|  34|          27|          27|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 555|         443|         411|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |                              Source Object                              |    C Type    |
++--------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|ap_ready      |  out|    1|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_0   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_1   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_2   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_3   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_4   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_5   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_6   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_7   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_8   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_9   |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_10  |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_11  |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_12  |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_13  |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_14  |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|ap_return_15  |  out|   16|  ap_ctrl_hs|  normalize<ap_ufixed<15, 0, 4, 0, 0>, ap_fixed<16, 6, 5, 3, 0>, config9>|  return value|
+|data_0_val    |   in|   15|     ap_none|                                                               data_0_val|        scalar|
+|data_1_val    |   in|   15|     ap_none|                                                               data_1_val|        scalar|
+|data_2_val    |   in|   15|     ap_none|                                                               data_2_val|        scalar|
+|data_3_val    |   in|   15|     ap_none|                                                               data_3_val|        scalar|
+|data_4_val    |   in|   15|     ap_none|                                                               data_4_val|        scalar|
+|data_5_val    |   in|   15|     ap_none|                                                               data_5_val|        scalar|
+|data_6_val    |   in|   15|     ap_none|                                                               data_6_val|        scalar|
+|data_7_val    |   in|   15|     ap_none|                                                               data_7_val|        scalar|
+|data_8_val    |   in|   15|     ap_none|                                                               data_8_val|        scalar|
+|data_9_val    |   in|   15|     ap_none|                                                               data_9_val|        scalar|
+|data_10_val   |   in|   15|     ap_none|                                                              data_10_val|        scalar|
+|data_11_val   |   in|   15|     ap_none|                                                              data_11_val|        scalar|
+|data_12_val   |   in|   15|     ap_none|                                                              data_12_val|        scalar|
+|data_13_val   |   in|   15|     ap_none|                                                              data_13_val|        scalar|
+|data_14_val   |   in|   15|     ap_none|                                                              data_14_val|        scalar|
+|data_15_val   |   in|   15|     ap_none|                                                              data_15_val|        scalar|
++--------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+
