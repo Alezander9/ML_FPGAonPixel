@@ -4,5 +4,6 @@
 /cp.ckpt/
 /.venv/
 /data_v2/
+/alex_model/
 test*.txt
 .env
