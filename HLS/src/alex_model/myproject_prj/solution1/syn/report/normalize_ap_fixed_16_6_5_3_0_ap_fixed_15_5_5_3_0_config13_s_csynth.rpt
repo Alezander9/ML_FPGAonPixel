@@ -1,0 +1,204 @@
+
+
+================================================================
+== Vitis HLS Report for 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config13_s'
+================================================================
+* Date:           Wed Jul 10 16:50:37 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  0.833 ns|     3.12 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      992|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        -|        -|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        -|        -|     -|
+|Register             |        -|      -|        -|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|        0|      992|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|        0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln54_64_fu_388_p2   |         +|   0|  0|  31|          24|          16|
+    |add_ln54_65_fu_412_p2   |         +|   0|  0|  31|          24|          18|
+    |add_ln54_66_fu_436_p2   |         +|   0|  0|  31|          24|          17|
+    |add_ln54_67_fu_460_p2   |         +|   0|  0|  31|          24|          15|
+    |add_ln54_68_fu_484_p2   |         +|   0|  0|  31|          24|          19|
+    |add_ln54_69_fu_508_p2   |         +|   0|  0|  31|          24|          18|
+    |add_ln54_70_fu_532_p2   |         +|   0|  0|  31|          24|          20|
+    |add_ln54_71_fu_556_p2   |         +|   0|  0|  31|          24|          19|
+    |add_ln54_72_fu_580_p2   |         +|   0|  0|  31|          24|          19|
+    |add_ln54_73_fu_604_p2   |         +|   0|  0|  31|          24|          15|
+    |add_ln54_74_fu_628_p2   |         +|   0|  0|  31|          24|          18|
+    |add_ln54_75_fu_652_p2   |         +|   0|  0|  31|          24|          15|
+    |add_ln54_76_fu_676_p2   |         +|   0|  0|  31|          24|          16|
+    |add_ln54_77_fu_700_p2   |         +|   0|  0|  31|          24|          20|
+    |add_ln54_78_fu_724_p2   |         +|   0|  0|  31|          24|          19|
+    |add_ln54_79_fu_748_p2   |         +|   0|  0|  31|          24|          17|
+    |add_ln54_80_fu_772_p2   |         +|   0|  0|  31|          24|          17|
+    |add_ln54_81_fu_796_p2   |         +|   0|  0|  31|          24|          17|
+    |add_ln54_82_fu_820_p2   |         +|   0|  0|  31|          24|          17|
+    |add_ln54_83_fu_844_p2   |         +|   0|  0|  31|          24|          15|
+    |add_ln54_84_fu_868_p2   |         +|   0|  0|  31|          24|          16|
+    |add_ln54_85_fu_892_p2   |         +|   0|  0|  31|          24|          20|
+    |add_ln54_86_fu_916_p2   |         +|   0|  0|  31|          24|          19|
+    |add_ln54_87_fu_940_p2   |         +|   0|  0|  31|          24|          16|
+    |add_ln54_88_fu_964_p2   |         +|   0|  0|  31|          24|          12|
+    |add_ln54_89_fu_988_p2   |         +|   0|  0|  31|          24|          18|
+    |add_ln54_90_fu_1012_p2  |         +|   0|  0|  31|          24|          18|
+    |add_ln54_91_fu_1036_p2  |         +|   0|  0|  31|          24|          19|
+    |add_ln54_92_fu_1060_p2  |         +|   0|  0|  31|          24|          17|
+    |add_ln54_93_fu_1088_p2  |         +|   0|  0|  31|          24|          17|
+    |add_ln54_94_fu_1112_p2  |         +|   0|  0|  31|          24|          15|
+    |add_ln54_fu_364_p2      |         +|   0|  0|  31|          24|          14|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 992|         768|         548|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |                              Source Object                              |    C Type    |
++--------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|ap_ready      |  out|    1|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_0   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_1   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_2   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_3   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_4   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_5   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_6   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_7   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_8   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_9   |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_10  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_11  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_12  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_13  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_14  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_15  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_16  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_17  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_18  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_19  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_20  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_21  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_22  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_23  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_24  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_25  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_26  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_27  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_28  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_29  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_30  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|ap_return_31  |  out|   15|  ap_ctrl_hs|  normalize<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<15, 5, 5, 3, 0>, config13>|  return value|
+|data_0_val    |   in|   15|     ap_none|                                                               data_0_val|        scalar|
+|data_1_val    |   in|   15|     ap_none|                                                               data_1_val|        scalar|
+|data_2_val    |   in|   15|     ap_none|                                                               data_2_val|        scalar|
+|data_3_val    |   in|   15|     ap_none|                                                               data_3_val|        scalar|
+|data_4_val    |   in|   15|     ap_none|                                                               data_4_val|        scalar|
+|data_5_val    |   in|   15|     ap_none|                                                               data_5_val|        scalar|
+|data_6_val    |   in|   16|     ap_none|                                                               data_6_val|        scalar|
+|data_7_val    |   in|   16|     ap_none|                                                               data_7_val|        scalar|
+|data_8_val    |   in|   15|     ap_none|                                                               data_8_val|        scalar|
+|data_9_val    |   in|   16|     ap_none|                                                               data_9_val|        scalar|
+|data_10_val   |   in|   15|     ap_none|                                                              data_10_val|        scalar|
+|data_11_val   |   in|   16|     ap_none|                                                              data_11_val|        scalar|
+|data_12_val   |   in|   15|     ap_none|                                                              data_12_val|        scalar|
+|data_13_val   |   in|   15|     ap_none|                                                              data_13_val|        scalar|
+|data_14_val   |   in|   15|     ap_none|                                                              data_14_val|        scalar|
+|data_15_val   |   in|   15|     ap_none|                                                              data_15_val|        scalar|
+|data_16_val   |   in|   15|     ap_none|                                                              data_16_val|        scalar|
+|data_17_val   |   in|   15|     ap_none|                                                              data_17_val|        scalar|
+|data_18_val   |   in|   15|     ap_none|                                                              data_18_val|        scalar|
+|data_19_val   |   in|   15|     ap_none|                                                              data_19_val|        scalar|
+|data_20_val   |   in|   15|     ap_none|                                                              data_20_val|        scalar|
+|data_21_val   |   in|   15|     ap_none|                                                              data_21_val|        scalar|
+|data_22_val   |   in|   15|     ap_none|                                                              data_22_val|        scalar|
+|data_23_val   |   in|   15|     ap_none|                                                              data_23_val|        scalar|
+|data_24_val   |   in|   15|     ap_none|                                                              data_24_val|        scalar|
+|data_25_val   |   in|   15|     ap_none|                                                              data_25_val|        scalar|
+|data_26_val   |   in|   15|     ap_none|                                                              data_26_val|        scalar|
+|data_27_val   |   in|   15|     ap_none|                                                              data_27_val|        scalar|
+|data_28_val   |   in|   15|     ap_none|                                                              data_28_val|        scalar|
+|data_29_val   |   in|   15|     ap_none|                                                              data_29_val|        scalar|
+|data_30_val   |   in|   16|     ap_none|                                                              data_30_val|        scalar|
+|data_31_val   |   in|   15|     ap_none|                                                              data_31_val|        scalar|
++--------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+

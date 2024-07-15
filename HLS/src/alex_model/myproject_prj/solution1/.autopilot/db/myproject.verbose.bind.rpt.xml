@@ -1,0 +1,59 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Wed Jul 10 16:50:23 2024
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">25.00 ns, 17.239 ns, 3.12 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3, 3, 75.000 ns, 75.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ret1_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_89">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret2_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config13_s_fu_95">normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config13_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret3_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s_fu_131">linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret4_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config4_s_fu_167">relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret5_normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config5_s_fu_203">normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret6_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s_fu_239">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret7_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s_fu_275">normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret8_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s_fu_295">linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret9_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config8_s_fu_315">relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config8_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret10_normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config9_s_fu_335">normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret11_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s_fu_355">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret12_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s_fu_375">normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret13_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s_fu_382">linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_fu_389">softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s, 2, 2, 50.000 ns, 50.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

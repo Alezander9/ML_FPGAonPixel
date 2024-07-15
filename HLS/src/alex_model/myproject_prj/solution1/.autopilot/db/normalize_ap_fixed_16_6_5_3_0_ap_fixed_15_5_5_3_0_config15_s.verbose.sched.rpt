@@ -1,0 +1,127 @@
+
+
+================================================================
+== Vitis HLS Report for 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s'
+================================================================
+* Date:           Wed Jul 10 16:50:22 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  25.00 ns|  0.827 ns|     3.12 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.82>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specpipeline_ln48 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_0" [firmware/nnet_utils/nnet_batchnorm.h:48]   --->   Operation 2 'specpipeline' 'specpipeline_ln48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specresourcelimit_ln48 = specresourcelimit void @_ssdm_op_SpecResourceLimit, i64 3, void @empty_1, void @empty_0, void @empty_0, void @empty_0" [firmware/nnet_utils/nnet_batchnorm.h:48]   --->   Operation 3 'specresourcelimit' 'specresourcelimit_ln48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_2_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_2_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 4 'read' 'data_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%data_1_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_1_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 5 'read' 'data_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%data_0_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_0_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 6 'read' 'data_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%y = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_0_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 7 'bitconcatenate' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.82ns)   --->   "%add_ln54 = add i23 %y, i23 88064" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 8 'add' 'add_ln54' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 9 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%y_1 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_1_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 10 'bitconcatenate' 'y_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.82ns)   --->   "%add_ln54_47 = add i23 %y_1, i23 8160256" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 11 'add' 'add_ln54_47' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_47, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 12 'partselect' 'trunc_ln54_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%y_2 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_2_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 13 'bitconcatenate' 'y_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.82ns)   --->   "%add_ln54_48 = add i23 %y_2, i23 8179200" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 14 'add' 'add_ln54_48' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln54_42 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_48, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 15 'partselect' 'trunc_ln54_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv = insertvalue i45 <undef>, i15 %trunc_ln" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 16 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i45 %mrv, i15 %trunc_ln54_s" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 17 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_42" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 18 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln63 = ret i45 %mrv_2" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 19 'ret' 'ret_ln63' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 25.000ns, clock uncertainty: 3.125ns.
+
+ <State 1>: 0.827ns
+The critical path consists of the following:
+	wire read operation ('data_0_val_read', firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54) on port 'data_0_val' (firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54) [8]  (0.000 ns)
+	'add' operation ('add_ln54', firmware/nnet_utils/nnet_batchnorm.h:54) [10]  (0.827 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
