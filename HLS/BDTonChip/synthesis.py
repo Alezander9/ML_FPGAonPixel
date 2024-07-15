@@ -21,7 +21,7 @@ os.environ['PATH'] = os.environ['XILINX_AP_INCLUDE'] + '/bin:' + os.environ['PAT
 #model_path = '/u1/hjia625/Best_BDT_small.model'
 
 #skl_model_path = '/u1/hjia625/bestsofar_small_bdt_2class.joblib'
-skl_model_path = '/u1/hjia625/conifer/best_unscaled_small_bdt_2class.joblib'
+skl_model_path = './best_unscaled_small_bdt_2class.joblib'
 #skl_model_path = '/u1/hjia625/conifer/small_bdt_2class.joblib'
 clf = joblib.load(skl_model_path)
 # Load the model
@@ -41,9 +41,9 @@ def print_dict(d):
         print(f"{key}: {value}")
 print_dict(cfg)
 
-#conifer_model = conifer.model(clf, conifer.converters.sklearn, conifer.backends.vitishls, cfg)
+# conifer_model = conifer.model(clf, conifer.converters.sklearn, conifer.backends.xilinxhls, cfg)
 #conifer_model = conifer.converters.convert_from_xgboost(model, cfg)
-conifer_model = conifer.converters.convert_from_sklearn(clf, cfg)
+conifer_model = conifer.converters.convert_to_sklearn(clf, cfg)
 
 conifer_model.compile()
 conifer_model.profile()

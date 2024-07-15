@@ -70,7 +70,7 @@
         <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" uncertainty="12.5%" period="25"/>
+        <clock default="false" name="default" uncertainty="12.5%" period="5"/>
     </clockList>
 </solution>
 

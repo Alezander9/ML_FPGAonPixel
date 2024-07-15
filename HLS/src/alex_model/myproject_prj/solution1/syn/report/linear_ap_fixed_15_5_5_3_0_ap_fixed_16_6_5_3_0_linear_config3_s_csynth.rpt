@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s'
 ================================================================
-* Date:           Wed Jul 10 16:50:37 2024
+* Date:           Mon Jul 15 08:30:56 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  25.00 ns|      0 ns|     3.12 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|      0 ns|     0.62 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -131,6 +131,46 @@
 |ap_return_29  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
 |ap_return_30  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
 |ap_return_31  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_32  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_33  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_34  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_35  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_36  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_37  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_38  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_39  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_40  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_41  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_42  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_43  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_44  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_45  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_46  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_47  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_48  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_49  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_50  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_51  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_52  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_53  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_54  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_55  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_56  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_57  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_58  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_59  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_60  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_61  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_62  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_63  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_64  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_65  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_66  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_67  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_68  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_69  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_70  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
+|ap_return_71  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config3>|  return value|
 |data_0_val    |   in|   15|     ap_none|                                                                  data_0_val|        scalar|
 |data_1_val    |   in|   15|     ap_none|                                                                  data_1_val|        scalar|
 |data_2_val    |   in|   15|     ap_none|                                                                  data_2_val|        scalar|
@@ -163,5 +203,45 @@
 |data_29_val   |   in|   15|     ap_none|                                                                 data_29_val|        scalar|
 |data_30_val   |   in|   15|     ap_none|                                                                 data_30_val|        scalar|
 |data_31_val   |   in|   15|     ap_none|                                                                 data_31_val|        scalar|
+|data_32_val   |   in|   15|     ap_none|                                                                 data_32_val|        scalar|
+|data_33_val   |   in|   15|     ap_none|                                                                 data_33_val|        scalar|
+|data_34_val   |   in|   15|     ap_none|                                                                 data_34_val|        scalar|
+|data_35_val   |   in|   15|     ap_none|                                                                 data_35_val|        scalar|
+|data_36_val   |   in|   15|     ap_none|                                                                 data_36_val|        scalar|
+|data_37_val   |   in|   15|     ap_none|                                                                 data_37_val|        scalar|
+|data_38_val   |   in|   15|     ap_none|                                                                 data_38_val|        scalar|
+|data_39_val   |   in|   15|     ap_none|                                                                 data_39_val|        scalar|
+|data_40_val   |   in|   15|     ap_none|                                                                 data_40_val|        scalar|
+|data_41_val   |   in|   15|     ap_none|                                                                 data_41_val|        scalar|
+|data_42_val   |   in|   15|     ap_none|                                                                 data_42_val|        scalar|
+|data_43_val   |   in|   15|     ap_none|                                                                 data_43_val|        scalar|
+|data_44_val   |   in|   15|     ap_none|                                                                 data_44_val|        scalar|
+|data_45_val   |   in|   15|     ap_none|                                                                 data_45_val|        scalar|
+|data_46_val   |   in|   15|     ap_none|                                                                 data_46_val|        scalar|
+|data_47_val   |   in|   15|     ap_none|                                                                 data_47_val|        scalar|
+|data_48_val   |   in|   15|     ap_none|                                                                 data_48_val|        scalar|
+|data_49_val   |   in|   15|     ap_none|                                                                 data_49_val|        scalar|
+|data_50_val   |   in|   15|     ap_none|                                                                 data_50_val|        scalar|
+|data_51_val   |   in|   15|     ap_none|                                                                 data_51_val|        scalar|
+|data_52_val   |   in|   15|     ap_none|                                                                 data_52_val|        scalar|
+|data_53_val   |   in|   15|     ap_none|                                                                 data_53_val|        scalar|
+|data_54_val   |   in|   15|     ap_none|                                                                 data_54_val|        scalar|
+|data_55_val   |   in|   15|     ap_none|                                                                 data_55_val|        scalar|
+|data_56_val   |   in|   15|     ap_none|                                                                 data_56_val|        scalar|
+|data_57_val   |   in|   15|     ap_none|                                                                 data_57_val|        scalar|
+|data_58_val   |   in|   15|     ap_none|                                                                 data_58_val|        scalar|
+|data_59_val   |   in|   15|     ap_none|                                                                 data_59_val|        scalar|
+|data_60_val   |   in|   15|     ap_none|                                                                 data_60_val|        scalar|
+|data_61_val   |   in|   15|     ap_none|                                                                 data_61_val|        scalar|
+|data_62_val   |   in|   15|     ap_none|                                                                 data_62_val|        scalar|
+|data_63_val   |   in|   15|     ap_none|                                                                 data_63_val|        scalar|
+|data_64_val   |   in|   15|     ap_none|                                                                 data_64_val|        scalar|
+|data_65_val   |   in|   15|     ap_none|                                                                 data_65_val|        scalar|
+|data_66_val   |   in|   15|     ap_none|                                                                 data_66_val|        scalar|
+|data_67_val   |   in|   15|     ap_none|                                                                 data_67_val|        scalar|
+|data_68_val   |   in|   15|     ap_none|                                                                 data_68_val|        scalar|
+|data_69_val   |   in|   15|     ap_none|                                                                 data_69_val|        scalar|
+|data_70_val   |   in|   15|     ap_none|                                                                 data_70_val|        scalar|
+|data_71_val   |   in|   15|     ap_none|                                                                 data_71_val|        scalar|
 +--------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
 

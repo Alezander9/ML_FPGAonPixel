@@ -29,57 +29,57 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj/.apc/.src</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj/.apc/.tb</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj/solution1/.tcls</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/BDT.cpp</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/firmware/BDT.cpp</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/firmware/BDT.cpp</location>
 		</link>
 		<link>
 			<name>source/BDT.h</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/firmware/BDT.h</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/firmware/BDT.h</location>
 		</link>
 		<link>
 			<name>source/my_prj.cpp</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/firmware/my_prj.cpp</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/firmware/my_prj.cpp</location>
 		</link>
 		<link>
 			<name>testbench/my_prj_test.cpp</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj_test.cpp</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj_test.cpp</location>
 		</link>
 		<link>
 			<name>testbench/tb_data</name>
 			<type>2</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/tb_data</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/tb_data</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj/solution1/solution1.directive</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj/solution1/directives.tcl</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/u1/hjia625/conifer/final_prj_unscaled/my_prj/solution1/script.tcl</location>
+			<location>/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled/my_prj/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

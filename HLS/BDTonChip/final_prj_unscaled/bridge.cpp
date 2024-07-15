@@ -24,6 +24,6 @@ std::vector<double> decision_function(std::vector<double> x){
 
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
-PYBIND11_MODULE(conifer_bridge_1708113944, m){
+PYBIND11_MODULE(conifer_bridge_1719510614, m){
   m.def("decision_function", &decision_function);
 }

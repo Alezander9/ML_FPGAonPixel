@@ -1,6 +1,6 @@
 
 set TopModule "myproject"
-set ClockPeriod 25
+set ClockPeriod 5
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
@@ -42,15 +42,15 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xcvu13p:-flga2577:-2-e
-set SourceFiles {sc {} c ../../firmware/myproject.cpp}
-set SourceFlags {sc {} c -std=c++0x}
+set SourceFiles {sc {} c {../.././firmware/myproject.cpp ../../firmware/myproject.cpp}}
+set SourceFlags {sc {} c {{ -std=c++0x} {} -std=c++0x}}
 set DirectiveFile {}
-set TBFiles {verilog {../../tb_data ../../firmware/weights ../../myproject_test.cpp} bc {../../tb_data ../../firmware/weights ../../myproject_test.cpp} vhdl {../../tb_data ../../firmware/weights ../../myproject_test.cpp} sc {../../tb_data ../../firmware/weights ../../myproject_test.cpp} cas {../../tb_data ../../firmware/weights ../../myproject_test.cpp} c {}}
+set TBFiles {verilog {../../tb_data ../../firmware/weights ../../myproject_test.cpp} bc {../../tb_data ../../firmware/weights ../../myproject_test.cpp} sc {../../tb_data ../../firmware/weights ../../myproject_test.cpp} vhdl {../../tb_data ../../firmware/weights ../../myproject_test.cpp} c {} cas {../../tb_data ../../firmware/weights ../../myproject_test.cpp}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

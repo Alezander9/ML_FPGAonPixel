@@ -119,7 +119,7 @@
   ]
  ],
  "config": {
-  "output_dir": "/u1/hjia625/conifer/final_prj_unscaled",
+  "output_dir": "/home/alexyue/ML_FPGAonPixel/HLS/BDTonChip/final_prj_unscaled",
   "project_name": "my_prj",
   "backend": "xilinxhls",
   "input_precision": "ap_fixed<28,19>",
@@ -132,10 +132,10 @@
  },
  "metadata": [
   {
-   "version": "1.4",
-   "host": "rdsrv413",
-   "user": "hjia625",
-   "time": 1708113944.92238
+   "version": "1.5",
+   "host": "rdsrv409",
+   "user": "alexyue",
+   "time": 1719510614.0883
   }
  ]
 }

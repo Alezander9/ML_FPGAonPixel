@@ -6,14 +6,14 @@
           <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="1" access_type="w" src_name="layer12_out" src_type="ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="3">
-        <hw hw_usage="data" hw_interface="Register" hw_name="layer12_out_0" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+      <arg id="1" access_type="w" src_name="layer8_out" src_type="ap_fixed&lt;16, 6, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="3">
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer8_out_0" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
-        <hw hw_usage="data" hw_interface="Register" hw_name="layer12_out_1" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer8_out_1" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
-        <hw hw_usage="data" hw_interface="Register" hw_name="layer12_out_2" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
+        <hw hw_usage="data" hw_interface="Register" hw_name="layer8_out_2" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>

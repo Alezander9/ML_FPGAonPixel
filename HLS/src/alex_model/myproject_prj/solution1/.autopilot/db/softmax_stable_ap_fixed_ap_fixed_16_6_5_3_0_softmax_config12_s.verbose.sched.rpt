@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s'
 ================================================================
-* Date:           Wed Jul 10 16:50:22 2024
+* Date:           Thu Jul 11 13:47:20 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  25.00 ns|  4.344 ns|     3.12 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.344 ns|     0.62 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
     |   min   |   max   |    min    |    max    | min | max |   Type  |
     +---------+---------+-----------+-----------+-----+-----+---------+
-    |        2|        2|  50.000 ns|  50.000 ns|    1|    1|      yes|
+    |        2|        2|  10.000 ns|  10.000 ns|    1|    1|      yes|
     +---------+---------+-----------+-----------+-----+-----+---------+
 
     + Detail: 
@@ -173,7 +173,7 @@ ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%ret_ln270 = ret i48 %mrv_2" [firmw
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 25.000ns, clock uncertainty: 3.125ns.
+Target clock period: 5.000ns, clock uncertainty: 0.625ns.
 
  <State 1>: 4.344ns
 The critical path consists of the following:
@@ -185,7 +185,6 @@ The critical path consists of the following:
 	'xor' operation ('xor_ln65_1', firmware/nnet_utils/nnet_common.h:65->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_activation.h:239) [14]  (0.000 ns)
 	'select' operation ('x_max', firmware/nnet_utils/nnet_common.h:65->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_activation.h:239) [15]  (0.243 ns)
 	'sub' operation ('sub_ln245', firmware/nnet_utils/nnet_activation.h:245) [18]  (0.785 ns)
-	'xor' operation ('xor_ln245_1', firmware/nnet_utils/nnet_activation.h:245) [23]  (0.000 ns)
 	'select' operation ('select_ln245_1', firmware/nnet_utils/nnet_activation.h:245) [40]  (0.303 ns)
 	'getelementptr' operation ('exp_table_addr', firmware/nnet_utils/nnet_activation.h:255) [42]  (0.000 ns)
 	'load' operation ('exp_table_load', firmware/nnet_utils/nnet_activation.h:255) on array 'exp_table' [43]  (1.200 ns)

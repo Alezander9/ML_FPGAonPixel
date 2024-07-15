@@ -59,11 +59,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
                                     								
                                 </option>
                                 								
@@ -97,11 +95,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
                                     								
                                 </option>
                                 								
@@ -295,11 +291,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
                                     								
                                 </option>
                                 								
@@ -323,11 +317,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/lnx64/tools/systemc/include"/>
                                     								
                                 </option>
                                 								

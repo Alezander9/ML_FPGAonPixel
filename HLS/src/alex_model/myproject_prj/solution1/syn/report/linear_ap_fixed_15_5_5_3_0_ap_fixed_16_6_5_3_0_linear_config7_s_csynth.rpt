@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s'
 ================================================================
-* Date:           Wed Jul 10 16:50:39 2024
+* Date:           Mon Jul 15 08:30:58 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  25.00 ns|      0 ns|     3.12 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|      0 ns|     0.62 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -95,41 +95,15 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |                                Source Object                               |    C Type    |
-+--------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
-|ap_ready      |  out|    1|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_0   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_1   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_2   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_3   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_4   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_5   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_6   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_7   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_8   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_9   |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_10  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_11  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_12  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_13  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_14  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|ap_return_15  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
-|data_0_val    |   in|   15|     ap_none|                                                                  data_0_val|        scalar|
-|data_1_val    |   in|   15|     ap_none|                                                                  data_1_val|        scalar|
-|data_2_val    |   in|   15|     ap_none|                                                                  data_2_val|        scalar|
-|data_3_val    |   in|   15|     ap_none|                                                                  data_3_val|        scalar|
-|data_4_val    |   in|   15|     ap_none|                                                                  data_4_val|        scalar|
-|data_5_val    |   in|   15|     ap_none|                                                                  data_5_val|        scalar|
-|data_6_val    |   in|   15|     ap_none|                                                                  data_6_val|        scalar|
-|data_7_val    |   in|   15|     ap_none|                                                                  data_7_val|        scalar|
-|data_8_val    |   in|   15|     ap_none|                                                                  data_8_val|        scalar|
-|data_9_val    |   in|   15|     ap_none|                                                                  data_9_val|        scalar|
-|data_10_val   |   in|   15|     ap_none|                                                                 data_10_val|        scalar|
-|data_11_val   |   in|   15|     ap_none|                                                                 data_11_val|        scalar|
-|data_12_val   |   in|   15|     ap_none|                                                                 data_12_val|        scalar|
-|data_13_val   |   in|   15|     ap_none|                                                                 data_13_val|        scalar|
-|data_14_val   |   in|   15|     ap_none|                                                                 data_14_val|        scalar|
-|data_15_val   |   in|   15|     ap_none|                                                                 data_15_val|        scalar|
-+--------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
++-------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                                Source Object                               |    C Type    |
++-------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
+|ap_ready     |  out|    1|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
+|ap_return_0  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
+|ap_return_1  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
+|ap_return_2  |  out|   16|  ap_ctrl_hs|  linear<ap_fixed<15, 5, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, linear_config7>|  return value|
+|data_0_val   |   in|   15|     ap_none|                                                                  data_0_val|        scalar|
+|data_1_val   |   in|   15|     ap_none|                                                                  data_1_val|        scalar|
+|data_2_val   |   in|   15|     ap_none|                                                                  data_2_val|        scalar|
++-------------+-----+-----+------------+----------------------------------------------------------------------------+--------------+
 

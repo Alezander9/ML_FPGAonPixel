@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2015 \
+    id 4589 \
     name data_0_val \
     type other \
     dir I \
@@ -25,7 +25,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2016 \
+    id 4590 \
     name data_1_val \
     type other \
     dir I \
@@ -40,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2017 \
+    id 4591 \
     name data_2_val \
     type other \
     dir I \
@@ -49,201 +49,6 @@ eval "cg_default_interface_gen_dc { \
     corename dc_data_2_val \
     op interface \
     ports { data_2_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2018 \
-    name data_3_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_3_val \
-    op interface \
-    ports { data_3_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2019 \
-    name data_4_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_4_val \
-    op interface \
-    ports { data_4_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2020 \
-    name data_5_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_5_val \
-    op interface \
-    ports { data_5_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2021 \
-    name data_6_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_6_val \
-    op interface \
-    ports { data_6_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2022 \
-    name data_7_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_7_val \
-    op interface \
-    ports { data_7_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2023 \
-    name data_8_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_8_val \
-    op interface \
-    ports { data_8_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2024 \
-    name data_9_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_9_val \
-    op interface \
-    ports { data_9_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2025 \
-    name data_10_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_10_val \
-    op interface \
-    ports { data_10_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2026 \
-    name data_11_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_11_val \
-    op interface \
-    ports { data_11_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2027 \
-    name data_12_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_12_val \
-    op interface \
-    ports { data_12_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2028 \
-    name data_13_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_13_val \
-    op interface \
-    ports { data_13_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2029 \
-    name data_14_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_14_val \
-    op interface \
-    ports { data_14_val { I 15 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 2030 \
-    name data_15_val \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_data_15_val \
-    op interface \
-    ports { data_15_val { I 15 vector } } \
 } "
 }
 

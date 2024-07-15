@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vitis HLS Report for 'linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_s'
+================================================================
+* Date:           Thu Jul 11 13:34:27 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus
+* Target device:  xcvu13p-flga2577-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.818 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.81>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i48 %layer11_out, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i45 %layer15_out, void @empty_8, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.40ns)   --->   "%layer15_out_read = read i45 @_ssdm_op_Read.ap_fifo.volatile.i45P0A, i45 %layer15_out" [firmware/nnet_utils/nnet_activation_stream.h:22]   --->   Operation 4 'read' 'layer15_out_read' <Predicate = true> <Delay = 1.40> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 45> <Depth = 1> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%trunc_ln22 = trunc i45 %layer15_out_read" [firmware/nnet_utils/nnet_activation_stream.h:22]   --->   Operation 5 'trunc' 'trunc_ln22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%trunc_ln22_1 = partselect i15 @_ssdm_op_PartSelect.i15.i45.i32.i32, i45 %layer15_out_read, i32 15, i32 29" [firmware/nnet_utils/nnet_activation_stream.h:22]   --->   Operation 6 'partselect' 'trunc_ln22_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln22_2 = partselect i15 @_ssdm_op_PartSelect.i15.i45.i32.i32, i45 %layer15_out_read, i32 30, i32 44" [firmware/nnet_utils/nnet_activation_stream.h:22]   --->   Operation 7 'partselect' 'trunc_ln22_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln29 = sext i15 %trunc_ln22" [firmware/nnet_utils/nnet_activation_stream.h:29]   --->   Operation 8 'sext' 'sext_ln29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln32 = sext i15 %trunc_ln22_1" [firmware/nnet_utils/nnet_activation_stream.h:32]   --->   Operation 9 'sext' 'sext_ln32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i47 @_ssdm_op_BitConcatenate.i47.i15.i16.i16, i15 %trunc_ln22_2, i16 %sext_ln32, i16 %sext_ln29" [firmware/nnet_utils/nnet_activation_stream.h:32]   --->   Operation 10 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln32_1 = sext i47 %tmp" [firmware/nnet_utils/nnet_activation_stream.h:32]   --->   Operation 11 'sext' 'sext_ln32_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.40ns)   --->   "%write_ln32 = write void @_ssdm_op_Write.ap_fifo.volatile.i48P0A, i48 %layer11_out, i48 %sext_ln32_1" [firmware/nnet_utils/nnet_activation_stream.h:32]   --->   Operation 12 'write' 'write_ln32' <Predicate = true> <Delay = 1.40> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.40> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 48> <Depth = 1> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln34 = ret" [firmware/nnet_utils/nnet_activation_stream.h:34]   --->   Operation 13 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 2.818ns
+The critical path consists of the following:
+	fifo read operation ('layer15_out_read', firmware/nnet_utils/nnet_activation_stream.h:22) on port 'layer15_out' (firmware/nnet_utils/nnet_activation_stream.h:22) [5]  (1.409 ns)
+	fifo write operation ('write_ln32', firmware/nnet_utils/nnet_activation_stream.h:32) on port 'layer11_out' (firmware/nnet_utils/nnet_activation_stream.h:32) [13]  (1.409 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

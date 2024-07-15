@@ -1,0 +1,215 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s'" level="0">
+<item name = "Date">Thu Jul 11 13:31:03 2024
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu13p-flga2577-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.314 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">36, 37, 0.180 us, 0.185 us, 36, 36, loop rewind stp(delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- ReuseLoop">36, 36, 2, 1, 1, 36, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 239, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 1, 0, 74, -</column>
+<column name="Memory">0, -, 18, 20, -</column>
+<column name="Multiplexer">-, -, -, 303, -</column>
+<column name="Register">-, -, 433, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, ~0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_16s_9s_22_1_1_U20">mul_16s_9s_22_1_1, 0, 1, 0, 5, 0</column>
+<column name="mux_4_2_15_1_1_U21">mux_4_2_15_1_1, 0, 0, 0, 20, 0</column>
+<column name="mux_9_4_16_1_1_U19">mux_9_4_16_1_1, 0, 0, 0, 49, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="outidx_2_U">dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_outidx_dEe, 0, 2, 3, 0, 36, 2, 1, 72</column>
+<column name="w2_U">dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_w2_ROM_eOg, 0, 16, 17, 0, 36, 9, 1, 324</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="acc_19_fu_628_p2">+, 0, 0, 22, 15, 15</column>
+<column name="in_index_2_fu_672_p2">+, 0, 0, 12, 4, 1</column>
+<column name="ir_fu_490_p2">+, 0, 0, 13, 6, 1</column>
+<column name="sub_ln133_fu_572_p2">-, 0, 0, 23, 1, 16</column>
+<column name="ap_condition_176">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_39">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln124_fu_496_p2">icmp, 0, 0, 13, 6, 6</column>
+<column name="icmp_ln133_7_fu_584_p2">icmp, 0, 0, 9, 2, 1</column>
+<column name="icmp_ln133_8_fu_590_p2">icmp, 0, 0, 10, 2, 3</column>
+<column name="icmp_ln133_9_fu_596_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="icmp_ln133_fu_578_p2">icmp, 0, 0, 9, 2, 1</column>
+<column name="icmp_ln141_fu_678_p2">icmp, 0, 0, 12, 4, 5</column>
+<column name="or_ln133_10_fu_608_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln133_11_fu_614_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln133_12_fu_634_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln133_fu_602_p2">or, 0, 0, 2, 1, 1</column>
+<column name="acc_18_fu_620_p3">select, 0, 0, 15, 1, 15</column>
+<column name="acc_20_fu_656_p3">select, 0, 0, 15, 1, 15</column>
+<column name="acc_21_fu_648_p3">select, 0, 0, 15, 1, 15</column>
+<column name="acc_22_fu_640_p3">select, 0, 0, 15, 1, 15</column>
+<column name="acc_fu_664_p3">select, 0, 0, 15, 1, 15</column>
+<column name="in_index_fu_684_p3">select, 0, 0, 4, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="acc16_reg_284">9, 2, 15, 30</column>
+<column name="acc_1614_reg_298">9, 2, 15, 30</column>
+<column name="acc_1712_reg_312">9, 2, 15, 30</column>
+<column name="acc_1810_reg_326">9, 2, 15, 30</column>
+<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_phi_mux_do_init_phi_fu_118_p6">14, 3, 1, 3</column>
+<column name="ap_phi_mux_ir17_phi_fu_134_p6">14, 3, 6, 18</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_61_phi_fu_344_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_62_phi_fu_356_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_63_phi_fu_368_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_64_phi_fu_380_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_65_phi_fu_392_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_66_phi_fu_404_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_67_phi_fu_416_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_68_phi_fu_428_p4">9, 2, 16, 32</column>
+<column name="ap_phi_mux_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_69_phi_fu_440_p4">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_61_reg_340">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_62_reg_352">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_63_reg_364">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_64_reg_376">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_65_reg_388">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_66_reg_400">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_67_reg_412">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_68_reg_424">9, 2, 16, 32</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_69_reg_436">9, 2, 16, 32</column>
+<column name="ap_return_0">9, 2, 16, 32</column>
+<column name="ap_return_1">9, 2, 16, 32</column>
+<column name="ap_return_2">9, 2, 16, 32</column>
+<column name="ap_return_3">9, 2, 16, 32</column>
+<column name="in_index18_reg_270">9, 2, 4, 8</column>
+<column name="ir17_reg_130">9, 2, 6, 12</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="acc16_reg_284">15, 0, 15, 0</column>
+<column name="acc_1614_reg_298">15, 0, 15, 0</column>
+<column name="acc_1712_reg_312">15, 0, 15, 0</column>
+<column name="acc_1810_reg_326">15, 0, 15, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_61_reg_340">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_62_reg_352">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_63_reg_364">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_64_reg_376">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_65_reg_388">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_66_reg_400">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_67_reg_412">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_68_reg_424">16, 0, 16, 0</column>
+<column name="ap_phi_reg_pp0_iter1_void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_69_reg_436">16, 0, 16, 0</column>
+<column name="ap_return_0_preg">16, 0, 16, 0</column>
+<column name="ap_return_1_preg">16, 0, 16, 0</column>
+<column name="ap_return_2_preg">16, 0, 16, 0</column>
+<column name="ap_return_3_preg">16, 0, 16, 0</column>
+<column name="do_init_reg_114">1, 0, 1, 0</column>
+<column name="icmp_ln124_reg_796">1, 0, 1, 0</column>
+<column name="in_index18_reg_270">4, 0, 4, 0</column>
+<column name="ir17_reg_130">6, 0, 6, 0</column>
+<column name="ir_reg_791">6, 0, 6, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_79_reg_144">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_80_reg_158">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_81_reg_172">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_82_reg_186">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_83_reg_200">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_84_reg_214">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_85_reg_228">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_86_reg_242">16, 0, 16, 0</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_87_reg_256">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_return_0">out, 16, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_return_1">out, 16, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_return_2">out, 16, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="ap_return_3">out, 16, ap_ctrl_hs, dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;, return value</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_18">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_18, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_17">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_17, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_16">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_16, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_15">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_15, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_14">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_14, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_13">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_13, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_12">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_12, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_11">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_11, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_10">in, 16, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_10, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s'" level="0">
-<item name = "Date">Wed Jul 10 16:50:37 2024
+<item name = "Date">Mon Jul 15 08:30:56 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00 ns, 0 ns, 3.12 ns</column>
+<column name="ap_clk">5.00 ns, 0 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -129,6 +129,46 @@
 <column name="ap_return_29">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
 <column name="ap_return_30">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
 <column name="ap_return_31">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_32">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_33">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_34">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_35">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_36">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_37">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_38">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_39">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_40">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_41">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_42">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_43">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_44">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_45">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_46">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_47">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_48">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_49">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_50">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_51">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_52">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_53">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_54">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_55">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_56">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_57">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_58">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_59">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_60">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_61">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_62">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_63">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_64">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_65">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_66">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_67">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_68">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_69">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_70">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
+<column name="ap_return_71">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config3&gt;, return value</column>
 <column name="data_0_val">in, 15, ap_none, data_0_val, scalar</column>
 <column name="data_1_val">in, 15, ap_none, data_1_val, scalar</column>
 <column name="data_2_val">in, 15, ap_none, data_2_val, scalar</column>
@@ -161,6 +201,46 @@
 <column name="data_29_val">in, 15, ap_none, data_29_val, scalar</column>
 <column name="data_30_val">in, 15, ap_none, data_30_val, scalar</column>
 <column name="data_31_val">in, 15, ap_none, data_31_val, scalar</column>
+<column name="data_32_val">in, 15, ap_none, data_32_val, scalar</column>
+<column name="data_33_val">in, 15, ap_none, data_33_val, scalar</column>
+<column name="data_34_val">in, 15, ap_none, data_34_val, scalar</column>
+<column name="data_35_val">in, 15, ap_none, data_35_val, scalar</column>
+<column name="data_36_val">in, 15, ap_none, data_36_val, scalar</column>
+<column name="data_37_val">in, 15, ap_none, data_37_val, scalar</column>
+<column name="data_38_val">in, 15, ap_none, data_38_val, scalar</column>
+<column name="data_39_val">in, 15, ap_none, data_39_val, scalar</column>
+<column name="data_40_val">in, 15, ap_none, data_40_val, scalar</column>
+<column name="data_41_val">in, 15, ap_none, data_41_val, scalar</column>
+<column name="data_42_val">in, 15, ap_none, data_42_val, scalar</column>
+<column name="data_43_val">in, 15, ap_none, data_43_val, scalar</column>
+<column name="data_44_val">in, 15, ap_none, data_44_val, scalar</column>
+<column name="data_45_val">in, 15, ap_none, data_45_val, scalar</column>
+<column name="data_46_val">in, 15, ap_none, data_46_val, scalar</column>
+<column name="data_47_val">in, 15, ap_none, data_47_val, scalar</column>
+<column name="data_48_val">in, 15, ap_none, data_48_val, scalar</column>
+<column name="data_49_val">in, 15, ap_none, data_49_val, scalar</column>
+<column name="data_50_val">in, 15, ap_none, data_50_val, scalar</column>
+<column name="data_51_val">in, 15, ap_none, data_51_val, scalar</column>
+<column name="data_52_val">in, 15, ap_none, data_52_val, scalar</column>
+<column name="data_53_val">in, 15, ap_none, data_53_val, scalar</column>
+<column name="data_54_val">in, 15, ap_none, data_54_val, scalar</column>
+<column name="data_55_val">in, 15, ap_none, data_55_val, scalar</column>
+<column name="data_56_val">in, 15, ap_none, data_56_val, scalar</column>
+<column name="data_57_val">in, 15, ap_none, data_57_val, scalar</column>
+<column name="data_58_val">in, 15, ap_none, data_58_val, scalar</column>
+<column name="data_59_val">in, 15, ap_none, data_59_val, scalar</column>
+<column name="data_60_val">in, 15, ap_none, data_60_val, scalar</column>
+<column name="data_61_val">in, 15, ap_none, data_61_val, scalar</column>
+<column name="data_62_val">in, 15, ap_none, data_62_val, scalar</column>
+<column name="data_63_val">in, 15, ap_none, data_63_val, scalar</column>
+<column name="data_64_val">in, 15, ap_none, data_64_val, scalar</column>
+<column name="data_65_val">in, 15, ap_none, data_65_val, scalar</column>
+<column name="data_66_val">in, 15, ap_none, data_66_val, scalar</column>
+<column name="data_67_val">in, 15, ap_none, data_67_val, scalar</column>
+<column name="data_68_val">in, 15, ap_none, data_68_val, scalar</column>
+<column name="data_69_val">in, 15, ap_none, data_69_val, scalar</column>
+<column name="data_70_val">in, 15, ap_none, data_70_val, scalar</column>
+<column name="data_71_val">in, 15, ap_none, data_71_val, scalar</column>
 </table>
 </item>
 </section>

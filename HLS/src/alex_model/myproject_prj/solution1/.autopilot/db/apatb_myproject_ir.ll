@@ -8,17 +8,17 @@ target triple = "fpga64-xilinx-none"
 %"struct.ssdm_int<16, true>" = type { i16 }
 
 ; Function Attrs: inaccessiblemem_or_argmemonly noinline
-define void @apatb_myproject_ir(%"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="105" %y_timed_input, %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* noalias nocapture nonnull "fpga.decayed.dim.hint"="3" "partition" %layer12_out) local_unnamed_addr #0 {
+define void @apatb_myproject_ir(%"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="105" %y_timed_input, %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* noalias nocapture nonnull "fpga.decayed.dim.hint"="3" "partition" %layer8_out) local_unnamed_addr #0 {
 entry:
   %y_timed_input_copy5 = alloca i1680, align 512
-  %layer12_out_copy_0 = alloca i16, align 512
-  %layer12_out_copy_1 = alloca i16, align 512
-  %layer12_out_copy_2 = alloca i16, align 512
+  %layer8_out_copy_0 = alloca i16, align 512
+  %layer8_out_copy_1 = alloca i16, align 512
+  %layer8_out_copy_2 = alloca i16, align 512
   %0 = bitcast %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* %y_timed_input to [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]*
-  %1 = bitcast %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* %layer12_out to [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]*
-  call void @copy_in([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %0, i1680* nonnull align 512 %y_timed_input_copy5, [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %1, i16* nonnull align 512 %layer12_out_copy_0, i16* nonnull align 512 %layer12_out_copy_1, i16* nonnull align 512 %layer12_out_copy_2)
-  call void @apatb_myproject_hw(i1680* %y_timed_input_copy5, i16* %layer12_out_copy_0, i16* %layer12_out_copy_1, i16* %layer12_out_copy_2)
-  call void @copy_back([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %0, i1680* %y_timed_input_copy5, [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %1, i16* %layer12_out_copy_0, i16* %layer12_out_copy_1, i16* %layer12_out_copy_2)
+  %1 = bitcast %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"* %layer8_out to [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]*
+  call void @copy_in([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %0, i1680* nonnull align 512 %y_timed_input_copy5, [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %1, i16* nonnull align 512 %layer8_out_copy_0, i16* nonnull align 512 %layer8_out_copy_1, i16* nonnull align 512 %layer8_out_copy_2)
+  call void @apatb_myproject_hw(i1680* %y_timed_input_copy5, i16* %layer8_out_copy_0, i16* %layer8_out_copy_1, i16* %layer8_out_copy_2)
+  call void @copy_back([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %0, i1680* %y_timed_input_copy5, [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %1, i16* %layer8_out_copy_0, i16* %layer8_out_copy_1, i16* %layer8_out_copy_2)
   ret void
 }
 
@@ -89,7 +89,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define void @"arraycpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.111"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* "orig.arg.no"="0" "unpacked"="0" %dst, i16* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i16* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i16* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.2" %src_2, i64 "orig.arg.no"="2" "unpacked"="2" %num) #2 {
+define void @"arraycpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.84"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* "orig.arg.no"="0" "unpacked"="0" %dst, i16* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i16* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i16* nocapture readonly "orig.arg.no"="1" "unpacked"="1.0.2" %src_2, i64 "orig.arg.no"="2" "unpacked"="2" %num) #2 {
 entry:
   %0 = icmp eq [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %dst, null
   br i1 %0, label %ret, label %copy
@@ -139,13 +139,13 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define internal void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.108"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias "orig.arg.no"="0" "unpacked"="0" %dst, i16* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i16* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i16* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %src_2) #3 {
+define internal void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.81"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias "orig.arg.no"="0" "unpacked"="0" %dst, i16* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.0" %src_0, i16* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.1" %src_1, i16* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0.2" %src_2) #3 {
 entry:
   %0 = icmp eq [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %dst, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @"arraycpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.111"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %dst, i16* %src_0, i16* %src_1, i16* %src_2, i64 3)
+  call void @"arraycpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.84"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %dst, i16* %src_0, i16* %src_1, i16* %src_2, i64 3)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -153,7 +153,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define void @"arraycpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.121"(i1680* nocapture "orig.arg.no"="0" "unpacked"="0.0" %dst, i64 %dst_shift, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* readonly "orig.arg.no"="1" "unpacked"="1" %src, i64 "orig.arg.no"="2" "unpacked"="2" %num) #2 {
+define void @"arraycpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.94"(i1680* nocapture "orig.arg.no"="0" "unpacked"="0.0" %dst, i64 %dst_shift, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* readonly "orig.arg.no"="1" "unpacked"="1" %src, i64 "orig.arg.no"="2" "unpacked"="2" %num) #2 {
 entry:
   %0 = icmp eq [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %src, null
   br i1 %0, label %ret, label %copy
@@ -192,13 +192,13 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse
-define internal void @"onebyonecpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.118"(i1680* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0" %dst, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias readonly "orig.arg.no"="1" "unpacked"="1" %src) #3 {
+define internal void @"onebyonecpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.91"(i1680* noalias nocapture align 512 "orig.arg.no"="0" "unpacked"="0.0" %dst, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias readonly "orig.arg.no"="1" "unpacked"="1" %src) #3 {
 entry:
   %0 = icmp eq [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %src, null
   br i1 %0, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @"arraycpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.121"(i1680* %dst, i64 0, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %src, i64 105)
+  call void @"arraycpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.94"(i1680* %dst, i64 0, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* nonnull %src, i64 105)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -208,7 +208,7 @@ ret:                                              ; preds = %copy, %entry
 ; Function Attrs: argmemonly noinline norecurse
 define internal void @copy_in([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias readonly "orig.arg.no"="0" "unpacked"="0", i1680* noalias nocapture align 512 "orig.arg.no"="1" "unpacked"="1.0", [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias readonly "orig.arg.no"="2" "unpacked"="2", i16* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.0" %_0, i16* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.1" %_1, i16* noalias nocapture align 512 "orig.arg.no"="3" "unpacked"="3.0.2" %_2) #4 {
 entry:
-  call void @"onebyonecpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.118"(i1680* align 512 %1, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %0)
+  call void @"onebyonecpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.91"(i1680* align 512 %1, [105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %0)
   call void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"(i16* align 512 %_0, i16* align 512 %_1, i16* align 512 %_2, [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %2)
   ret void
 }
@@ -265,7 +265,7 @@ ret:                                              ; preds = %copy, %entry
 define internal void @copy_out([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias "orig.arg.no"="0" "unpacked"="0", i1680* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0", [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias "orig.arg.no"="2" "unpacked"="2", i16* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.0" %_0, i16* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.1" %_1, i16* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.2" %_2) #5 {
 entry:
   call void @"onebyonecpy_hls.p0a105struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %0, i1680* align 512 %1)
-  call void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.108"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %2, i16* align 512 %_0, i16* align 512 %_1, i16* align 512 %_2)
+  call void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.81"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %2, i16* align 512 %_0, i16* align 512 %_1, i16* align 512 %_2)
   ret void
 }
 
@@ -274,7 +274,7 @@ declare void @apatb_myproject_hw(i1680*, i16*, i16*, i16*)
 ; Function Attrs: argmemonly noinline norecurse
 define internal void @copy_back([105 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias "orig.arg.no"="0" "unpacked"="0", i1680* noalias nocapture readonly align 512 "orig.arg.no"="1" "unpacked"="1.0", [3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* noalias "orig.arg.no"="2" "unpacked"="2", i16* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.0" %_0, i16* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.1" %_1, i16* noalias nocapture readonly align 512 "orig.arg.no"="3" "unpacked"="3.0.2" %_2) #5 {
 entry:
-  call void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.108"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %2, i16* align 512 %_0, i16* align 512 %_1, i16* align 512 %_2)
+  call void @"onebyonecpy_hls.p0a3struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>.81"([3 x %"struct.ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>"]* %2, i16* align 512 %_0, i16* align 512 %_1, i16* align 512 %_2)
   ret void
 }
 

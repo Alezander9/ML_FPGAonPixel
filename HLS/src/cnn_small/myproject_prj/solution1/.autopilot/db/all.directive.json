@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/build_prj.tcl",
+    "sourceLine": 183,
+    "success": true
+  }
+]

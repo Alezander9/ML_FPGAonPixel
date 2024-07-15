@@ -5,4 +5,4 @@ set clock_period 25
 set flow_target vivado
 set export_format ip_catalog
 set m_axi_addr64 false
-set version 1.4
+set version 1.5

@@ -1,5 +1,5 @@
 # PATH OF MODEL TO SYNTHESIZE
-skl_model_path = '../../software/ALEX/DNN_L2_S32_best_performance.h5'
+skl_model_path = '../../software/ALEX/DNN_L1_S72_best_performance.h5'
 
 # IMPORTS
 import hls4ml
@@ -30,6 +30,7 @@ objects['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
 
 # DISPLAY FUNCTIONS
 def printWeights(model):
+    print("PRINTING WEIGHTS")
     for layer in model.layers:
         for i, w in enumerate(layer.weights):
             try:
@@ -39,7 +40,7 @@ def printWeights(model):
 
 # LOAD MODEL
 model = tf.keras.models.load_model(skl_model_path, custom_objects=objects)
-printWeights(model)
+# printWeights(model)
 model = strip_pruning(model)
 
 # MODEL SYNTHESIS CONFIG
@@ -77,12 +78,12 @@ hls_model.compile()
 hls_model.build()
 
 print("HLS SYNTHESIS TO C++ SUCCESS")
-printWeights(hls_model)
+# printWeights(hls_model)
 
 # PRINT RESULTS
-# hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
-# hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
-# hls4ml.report.read_vivado_report('./alex_model/myproject_prj')
+hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
+hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
+hls4ml.report.read_vivado_report('./alex_model/myproject_prj')
 
 # TEST MODEL
 def testModel():
@@ -101,7 +102,6 @@ def testModel():
     perfect_pred = model.predict([X_sum_test, y0_test])
     pred = hls_model.predict([np.ascontiguousarray(X_sum_test), np.ascontiguousarray(y0_test)])
     hls_model.compile()
-
 
     from sklearn.metrics import confusion_matrix
 
@@ -162,5 +162,5 @@ def testModel():
     print(f"Signal Efficiency:{signal_efficiencies[index_995]*100:.1f}%",f"Background Rejections:{background_rejections[index_995]*100:.1f}%")
     print(f"Signal Efficiency:{signal_efficiencies[index_997]*100:.1f}%",f"Background Rejections:{background_rejections[index_997]*100:.1f}%")
 
-# testModel()
+testModel()
 

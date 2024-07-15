@@ -1,0 +1,104 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    batch_normalization_10:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        scale: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    batch_normalization_9:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        scale: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    dense1:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    dense1_linear:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    dense2:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    dense2_linear:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    dense_output:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    dense_output_linear:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    output_softmax:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    q_activation_10:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: ufixed<15,0,RND_CONV,SAT>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    q_activation_9:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: ufixed<15,0,RND_CONV,SAT>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+    y_timed_input:
+      Precision:
+        bias: ap_fixed<15,5>
+        result: fixed<16,6>
+        weight: ap_fixed<15,5>
+      Strategy: Resource
+      Trace: true
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<15,5>
+    ReuseFactor: 10000
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'cnn_small//keras_model.h5'
+OutputDir: cnn_small/
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+Stamp: 3De138f0
+Version: 1.0.0
+XilinxPart: xcku040-ffva1156-2-e

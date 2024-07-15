@@ -16,7 +16,7 @@ set Interface "wire"
 set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "layer12_out_0"
+set PortName "layer8_out_0"
 set BitWidth "16"
 set ArrayOpt ""
 set Const "0"
@@ -28,7 +28,7 @@ set Interface "wire"
 set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "layer12_out_1"
+set PortName "layer8_out_1"
 set BitWidth "16"
 set ArrayOpt ""
 set Const "0"
@@ -40,7 +40,7 @@ set Interface "wire"
 set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "layer12_out_2"
+set PortName "layer8_out_2"
 set BitWidth "16"
 set ArrayOpt ""
 set Const "0"

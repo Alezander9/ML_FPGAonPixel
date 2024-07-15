@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s'
 ================================================================
-* Date:           Wed Jul 10 16:50:22 2024
+* Date:           Thu Jul 11 13:47:20 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -17,11 +17,11 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  25.00 ns|      0 ns|     3.12 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|      0 ns|     0.62 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
@@ -95,7 +95,7 @@ ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln34 = ret i48 %mrv_2" [firmwa
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 25.000ns, clock uncertainty: 3.125ns.
+Target clock period: 5.000ns, clock uncertainty: 0.625ns.
 
  <State 1>: 0.000ns
 The critical path consists of the following:

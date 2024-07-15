@@ -23,7 +23,7 @@ _add_supported_quantized_objects(co)
 co['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
 
 # Path to the saved model
-skl_model_path = '/u1/hjia625/conifer/CNN_noBN_small_quantized_pruned.h5'
+skl_model_path = '../../software/ALEX/DNN_L2_S32_best_performance.h5'
 # Load the model
 model = tf.keras.models.load_model(skl_model_path, custom_objects=co)
 for layer in model.layers:
@@ -64,7 +64,7 @@ for Layer in hls_config['LayerName'].keys():
 #hls_config['LayerName']['dense2']['ReuseFactor'] = 1
 #hls_config['LayerName']['dense2']['ReuseFactor'] = 7
 # If you want best numerical performance for high-accuray models, while the default latency strategy is faster but numerically more unstable
-hls_config['LayerName']['output_sigmoid']['Strategy'] = 'Stable'
+# hls_config['LayerName']['output_sigmoid']['Strategy'] = 'Stable'
 #hls_config['LayerName']['output_sigmoid']['Precision'] = 'ap_fixed<64,16>'
 
 cfg = hls4ml.converters.create_config(backend='Vitis')

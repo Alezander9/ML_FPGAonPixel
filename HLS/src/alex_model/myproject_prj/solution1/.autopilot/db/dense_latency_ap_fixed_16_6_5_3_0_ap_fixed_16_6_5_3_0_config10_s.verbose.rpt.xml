@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config10_s'" level="0">
-<item name = "Date">Wed Jul 10 16:50:40 2024
+<item name = "Date">Thu Jul 11 13:47:39 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00 ns, 4.801 ns, 3.12 ns</column>
+<column name="ap_clk">5.00 ns, 4.106 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="">1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
@@ -51,46 +51,46 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 28, 0, 140, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, -, -</column>
-<column name="Register">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 42, -</column>
+<column name="Register">-, -, 124, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, ~0, 0, ~0, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, ~0, ~0, ~0, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
-<specialColumn name="Utilization (%)">0, ~0, 0, ~0, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_16s_10ns_24_1_1_U2081">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2084">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2085">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2088">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2095">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2100">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2103">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10ns_24_1_1_U2104">mul_16s_10ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2080">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2082">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2086">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2087">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2089">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2092">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2094">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2096">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2099">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2101">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_10s_24_1_1_U2102">mul_16s_10s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_8s_24_1_1_U2079">mul_16s_8s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_8s_24_1_1_U2093">mul_16s_8s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9ns_24_1_1_U2097">mul_16s_9ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9ns_24_1_1_U2098">mul_16s_9ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9ns_24_1_1_U2106">mul_16s_9ns_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9s_24_1_1_U2083">mul_16s_9s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9s_24_1_1_U2090">mul_16s_9s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9s_24_1_1_U2091">mul_16s_9s_24_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_16s_9s_24_1_1_U2105">mul_16s_9s_24_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2081">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2084">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2085">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2088">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2095">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2100">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2103">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10ns_24_1_0_U2104">mul_16s_10ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2080">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2082">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2086">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2087">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2089">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2092">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2094">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2096">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2099">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2101">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_10s_24_1_0_U2102">mul_16s_10s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_8s_24_1_0_U2079">mul_16s_8s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_8s_24_1_0_U2093">mul_16s_8s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9ns_24_1_0_U2097">mul_16s_9ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9ns_24_1_0_U2098">mul_16s_9ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9ns_24_1_0_U2106">mul_16s_9ns_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9s_24_1_0_U2083">mul_16s_9s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9s_24_1_0_U2090">mul_16s_9s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9s_24_1_0_U2091">mul_16s_9s_24_1_0, 0, 1, 0, 5, 0</column>
+<column name="mul_16s_9s_24_1_0_U2105">mul_16s_9s_24_1_0, 0, 1, 0, 5, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -122,15 +122,15 @@
 <column name="add_ln58_2285_fu_4196_p2">+, 0, 0, 16, 15, 15</column>
 <column name="add_ln58_2286_fu_4202_p2">+, 0, 0, 16, 15, 15</column>
 <column name="add_ln58_2287_fu_4208_p2">+, 0, 0, 16, 15, 15</column>
-<column name="add_ln58_2288_fu_4214_p2">+, 0, 0, 16, 15, 15</column>
-<column name="add_ln58_2289_fu_4220_p2">+, 0, 0, 22, 15, 15</column>
-<column name="add_ln58_2290_fu_4226_p2">+, 0, 0, 16, 15, 15</column>
-<column name="add_ln58_2291_fu_4232_p2">+, 0, 0, 16, 15, 15</column>
-<column name="add_ln58_2292_fu_4238_p2">+, 0, 0, 22, 15, 15</column>
-<column name="add_ln58_2293_fu_4244_p2">+, 0, 0, 16, 15, 15</column>
-<column name="add_ln58_2294_fu_4250_p2">+, 0, 0, 16, 15, 15</column>
+<column name="add_ln58_2288_fu_4250_p2">+, 0, 0, 16, 15, 15</column>
+<column name="add_ln58_2289_fu_4214_p2">+, 0, 0, 22, 15, 15</column>
+<column name="add_ln58_2290_fu_4220_p2">+, 0, 0, 16, 15, 15</column>
+<column name="add_ln58_2291_fu_4226_p2">+, 0, 0, 16, 15, 15</column>
+<column name="add_ln58_2292_fu_4232_p2">+, 0, 0, 22, 15, 15</column>
+<column name="add_ln58_2293_fu_4238_p2">+, 0, 0, 16, 15, 15</column>
+<column name="add_ln58_2294_fu_4244_p2">+, 0, 0, 16, 15, 15</column>
 <column name="add_ln58_fu_4106_p2">+, 0, 0, 22, 15, 15</column>
-<column name="x_47_fu_4256_p2">+, 0, 0, 16, 15, 15</column>
+<column name="x_47_fu_4254_p2">+, 0, 0, 16, 15, 15</column>
 <column name="x_48_fu_4160_p2">+, 0, 0, 16, 15, 15</column>
 <column name="x_fu_4184_p2">+, 0, 0, 16, 15, 15</column>
 <column name="sub_ln73_390_fu_4038_p2">-, 0, 0, 24, 24, 24</column>
@@ -139,10 +139,22 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_return_0">14, 3, 16, 48</column>
+<column name="ap_return_1">14, 3, 16, 48</column>
+<column name="ap_return_2">14, 3, 16, 48</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln58_2285_reg_4297">15, 0, 15, 0</column>
+<column name="add_ln58_2287_reg_4302">15, 0, 15, 0</column>
+<column name="add_ln58_2294_reg_4307">15, 0, 15, 0</column>
+<column name="ap_ce_reg">1, 0, 1, 0</column>
+<column name="ap_return_0_int_reg">16, 0, 16, 0</column>
+<column name="ap_return_1_int_reg">16, 0, 16, 0</column>
+<column name="ap_return_2_int_reg">16, 0, 16, 0</column>
+<column name="x_48_reg_4287">15, 0, 15, 0</column>
+<column name="x_reg_4292">15, 0, 15, 0</column>
 </table>
 </item>
 </section>
@@ -152,10 +164,12 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
-<column name="ap_ready">out, 1, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
 <column name="ap_return_0">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
 <column name="ap_return_1">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
 <column name="ap_return_2">out, 16, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config10&gt;, return value</column>
 <column name="data_0_val">in, 16, ap_none, data_0_val, scalar</column>
 <column name="data_1_val">in, 16, ap_none, data_1_val, scalar</column>
 <column name="data_2_val">in, 16, ap_none, data_2_val, scalar</column>

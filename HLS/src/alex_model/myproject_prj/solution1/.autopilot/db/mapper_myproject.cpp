@@ -353,8 +353,8 @@ using hls::sim::Byte;
 struct __cosim_s210__ { char data[256]; };
 struct __cosim_s256__ { char data[256]; };
 extern "C" void myproject(volatile void *, volatile void *, volatile void *, volatile void *);
-extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_timed_input, volatile void * __xlx_apatb_param_layer12_out_0, volatile void * __xlx_apatb_param_layer12_out_1, volatile void * __xlx_apatb_param_layer12_out_2) {
+extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_timed_input, volatile void * __xlx_apatb_param_layer8_out_0, volatile void * __xlx_apatb_param_layer8_out_1, volatile void * __xlx_apatb_param_layer8_out_2) {
 using hls::sim::createStream;
   // DUT call
-  myproject(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer12_out_0, __xlx_apatb_param_layer12_out_1, __xlx_apatb_param_layer12_out_2);
+  myproject(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer8_out_0, __xlx_apatb_param_layer8_out_1, __xlx_apatb_param_layer8_out_2);
 }
