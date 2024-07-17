@@ -1,0 +1,149 @@
+{
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [72], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6869998545031282,
+        "max_sum_br": 0.36700669079741144,
+        "metrics": "(0.87, 0.17), (0.90, 0.13), (0.93, 0.10), (0.96, 0.07), (0.98, 0.04), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6934006214141846,
+        "pruned_val_loss": 0.691597044467926
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [72], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6887821911828895,
+        "max_sum_br": 0.35874373880296884,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.07), (0.98, 0.04), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6913557052612305,
+        "pruned_val_loss": 0.6929180026054382
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [72], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.629055725301906,
+        "max_sum_br": 0.4186684216299221,
+        "metrics": "(0.87, 0.17), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.04), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6921283602714539,
+        "pruned_val_loss": 0.6918785572052002
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [64], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6001018478102721,
+        "max_sum_br": 0.44923403166246206,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.09), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6920203566551208,
+        "pruned_val_loss": 0.6921747326850891
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [64], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.7742252291575731,
+        "max_sum_br": 0.27238492194069686,
+        "metrics": "(0.87, 0.17), (0.90, 0.14), (0.93, 0.11), (0.96, 0.07), (0.98, 0.04), (0.99, 0.02), (0.99, 0.02), (1.00, 0.00)",
+        "val_loss": 0.6923161745071411,
+        "pruned_val_loss": 0.693838357925415
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [64], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.7139531500072749,
+        "max_sum_br": 0.3384885378962378,
+        "metrics": "(0.87, 0.17), (0.90, 0.14), (0.93, 0.10), (0.96, 0.06), (0.98, 0.04), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6915477514266968,
+        "pruned_val_loss": 0.6911848783493042
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [48], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6325840244434745,
+        "max_sum_br": 0.4196921501956053,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6920749545097351,
+        "pruned_val_loss": 0.6918308138847351
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [48], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.5591081041757602,
+        "max_sum_br": 0.4858688896201236,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6923734545707703,
+        "pruned_val_loss": 0.691619873046875
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [48], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.635894078277317,
+        "max_sum_br": 0.41983839713356,
+        "metrics": "(0.87, 0.17), (0.90, 0.14), (0.93, 0.10), (0.96, 0.07), (0.98, 0.04), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6915496587753296,
+        "pruned_val_loss": 0.6912674307823181
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [32], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6083587952859013,
+        "max_sum_br": 0.43844831998830025,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.09), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6920368671417236,
+        "pruned_val_loss": 0.6924906373023987
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [32], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6497162810999564,
+        "max_sum_br": 0.40214251764103687,
+        "metrics": "(0.87, 0.17), (0.90, 0.13), (0.93, 0.10), (0.96, 0.07), (0.98, 0.04), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6920315027236938,
+        "pruned_val_loss": 0.6918396949768066
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [32], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.7102793539938891,
+        "max_sum_br": 0.3284340609118497,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.04), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6912769675254822,
+        "pruned_val_loss": 0.6926102638244629
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [24], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6596100683835298,
+        "max_sum_br": 0.3928192753464224,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.04), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6929969787597656,
+        "pruned_val_loss": 0.6912440657615662
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [24], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6622653862941946,
+        "max_sum_br": 0.3873350151731198,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.09), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.692359209060669,
+        "pruned_val_loss": 0.6924670934677124
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [24], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.644114651534992,
+        "max_sum_br": 0.40663961098314505,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6926193833351135,
+        "pruned_val_loss": 0.6920605897903442
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [16], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6665211697948494,
+        "max_sum_br": 0.36484954846257905,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.09), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6925969123840332,
+        "pruned_val_loss": 0.6926622986793518
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [16], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.49498035792230466,
+        "max_sum_br": 0.543234251032869,
+        "metrics": "(0.87, 0.15), (0.90, 0.12), (0.93, 0.09), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6927711367607117,
+        "pruned_val_loss": 0.6921312808990479
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [16], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6860177506183617,
+        "max_sum_br": 0.35223575006398306,
+        "metrics": "(0.87, 0.16), (0.90, 0.13), (0.93, 0.10), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (1.00, 0.01), (1.00, 0.00)",
+        "val_loss": 0.693252444267273,
+        "pruned_val_loss": 0.6924728155136108
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [8], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.3, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6645933362432708,
+        "max_sum_br": 0.3585243683960367,
+        "metrics": "(0.87, 0.14), (0.90, 0.11), (0.93, 0.08), (0.96, 0.05), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6927787065505981,
+        "pruned_val_loss": 0.6941177248954773
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [8], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.35, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6198894223774188,
+        "max_sum_br": 0.4134400935980403,
+        "metrics": "(0.87, 0.16), (0.90, 0.12), (0.93, 0.09), (0.96, 0.06), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6926707029342651,
+        "pruned_val_loss": 0.6921283006668091
+    },
+    "{\"ACTIVATION_BITS\": 6, \"BATCH_SIZE\": 1024, \"BIAS_BITS\": 4, \"CONV_LAYER_DEPTHS\": [4, 7], \"CONV_LAYER_KERNELS\": [[3, 3], [3, 3]], \"CONV_LAYER_STRIDES\": [[1, 1], [1, 1]], \"DNN_LAYERS\": [8], \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.4, \"FLATTENED_LAYERS\": [7], \"INTEGER_BITS\": 2, \"LEARNING_RATE\": 0.001, \"MAX_POOLING_SIZE\": [2, 2], \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SINGLE\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"WEIGHTS_BITS\": 4}": {
+        "max_sum_se": 0.6400771133420632,
+        "max_sum_br": 0.3892727871010201,
+        "metrics": "(0.87, 0.15), (0.90, 0.12), (0.93, 0.09), (0.96, 0.05), (0.98, 0.03), (0.99, 0.02), (0.99, 0.01), (1.00, 0.00)",
+        "val_loss": 0.6924787163734436,
+        "pruned_val_loss": 0.6927821040153503
+    }
+}
