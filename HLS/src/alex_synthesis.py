@@ -1,5 +1,5 @@
 # PATH OF MODEL TO SYNTHESIZE
-skl_model_path = '../../software/ALEX/DNN_L1_S72_best_performance.h5'
+skl_model_path = '../../software/ALEX/4_slice_L2_S24_10_15_best.h5'
 
 # IMPORTS
 import hls4ml
@@ -45,23 +45,17 @@ model = strip_pruning(model)
 
 # MODEL SYNTHESIS CONFIG
 hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
-hls_config['Model']['Precision'] = 'ap_fixed<15,5>'
+# hls_config['Model']['Precision'] = 'ap_fixed<10,2>'
 
 hls_config['Model']['ReuseFactor'] = 1 # MOST RELAVANT PARAMETER
 
 for Layer in hls_config['LayerName'].keys():
     print(Layer)
     hls_config['LayerName'][Layer]['Strategy'] = 'Latency'
-    hls_config['LayerName'][Layer]['Precision']['weight'] = 'ap_fixed<15,5>'
-    hls_config['LayerName'][Layer]['Precision']['bias'] = 'ap_fixed<15,5>'
-    #hls_config['LayerName'][Layer]['Precision']['result'] = 'ap_fixed<64,16>'
-    #hls_config['LayerName'][Layer]['Precision'] = 'ap_fixed<64,16>'
+    hls_config['LayerName'][Layer]['Precision']['weight'] = 'ap_fixed<10,2>'
+    hls_config['LayerName'][Layer]['Precision']['bias'] = 'ap_fixed<10,2>'
+    hls_config['LayerName'][Layer]['Precision']['result'] = 'ap_fixed<15,2>'
     hls_config['LayerName'][Layer]['Trace'] = True
-
-# Can specify layer reuse factors and precision individually
-# May want to do this for the output layer
-# hls_config['LayerName']['LAYER_NAME']['ReuseFactor'] = 1
-# hls_config['LayerName']['OUTPUT NAME']['Precision'] = 'ap_fixed<64,16>'
 
 cfg = hls4ml.converters.create_config(backend='Vitis')
 
@@ -70,7 +64,6 @@ cfg['HLSConfig'] = hls_config
 cfg['KerasModel'] = model
 cfg['OutputDir'] = 'alex_model/'
 cfg['XilinxPart'] = 'xcku040-ffva1156-2-e'
-#cfg['Precision'] = 'ap_fixed<32,8>'
 
 # SYNTHESIZE MODEL
 hls_model = hls4ml.converters.keras_to_hls(cfg)
@@ -81,10 +74,16 @@ print("HLS SYNTHESIS TO C++ SUCCESS")
 # printWeights(hls_model)
 
 # PRINT RESULTS
+print('###################### PROFILING MODEL ######################')
 hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
+print('###################### PLOTTING MODEL ######################')
 hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
-hls4ml.report.read_vivado_report('./alex_model/myproject_prj')
+print('###################### PRINTING REPORT  ######################')
+print(hls4ml.__version__)
+print(os.listdir('./alex_model/myproject_prj/solution1/syn/report'))
+hls4ml.report.read_vivado_report('./alex_model/myproject_prj/solution1/syn/report')
 
+print('###################### TESTING MODEL  ######################')
 # TEST MODEL
 def testModel():
     data_file_path = './tb_input_features_small.dat'

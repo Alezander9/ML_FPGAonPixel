@@ -11,7 +11,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4601 \
+    id 951 \
     name y_timed_input \
     type other \
     dir I \
@@ -19,52 +19,22 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_y_timed_input \
     op interface \
-    ports { y_timed_input_ap_vld { I 1 bit } y_timed_input { I 1680 vector } } \
+    ports { y_timed_input_ap_vld { I 1 bit } y_timed_input { I 795 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 4602 \
-    name layer8_out_0 \
+    id 952 \
+    name layer10_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_layer8_out_0 \
+    corename dc_layer10_out \
     op interface \
-    ports { layer8_out_0 { O 16 vector } layer8_out_0_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4603 \
-    name layer8_out_1 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_layer8_out_1 \
-    op interface \
-    ports { layer8_out_1 { O 16 vector } layer8_out_1_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 4604 \
-    name layer8_out_2 \
-    type other \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_layer8_out_2 \
-    op interface \
-    ports { layer8_out_2 { O 16 vector } layer8_out_2_ap_vld { O 1 bit } } \
+    ports { layer10_out { O 15 vector } layer10_out_ap_vld { O 1 bit } } \
 } "
 }
 

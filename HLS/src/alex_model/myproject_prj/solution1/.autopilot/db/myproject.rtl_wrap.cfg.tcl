@@ -5,7 +5,7 @@ set rawDecl ""
 set globalVariable ""
 set PortList ""
 set PortName "y_timed_input"
-set BitWidth "1680"
+set BitWidth "795"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"
@@ -16,32 +16,8 @@ set Interface "wire"
 set DataType "void"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "layer8_out_0"
-set BitWidth "16"
-set ArrayOpt ""
-set Const "0"
-set Volatile "1"
-set Pointer "1"
-set Reference "0"
-set Dims [list 0]
-set Interface "wire"
-set DataType "void"
-set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
-lappend PortList $Port
-set PortName "layer8_out_1"
-set BitWidth "16"
-set ArrayOpt ""
-set Const "0"
-set Volatile "1"
-set Pointer "1"
-set Reference "0"
-set Dims [list 0]
-set Interface "wire"
-set DataType "void"
-set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
-lappend PortList $Port
-set PortName "layer8_out_2"
-set BitWidth "16"
+set PortName "layer10_out"
+set BitWidth "15"
 set ArrayOpt ""
 set Const "0"
 set Volatile "1"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720655440486">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1721857158016">
   <ports id="1" name="data_0_val" type="PortType" coreId="1734960750" bitwidth="16">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
@@ -136,7 +136,7 @@
   <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.77" sink_obj="//@ports.5"/>
   <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="342" pipe_depth="3" RegionName="softmax_stable&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0>,softmax_config12>">
     <basic_blocks id="85" name="softmax_stable&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0>,softmax_config12>" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="data_2_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="100532368" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="data_2_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="1717530721" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -146,7 +146,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="data_1_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="521644332" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="data_1_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="1717530721" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -156,7 +156,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="data_0_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="189338096" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="data_0_val_read" lineNumber="65" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." coreId="1717530721" contextFuncName="operator_s" bitwidth="16" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="239" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -220,12 +220,12 @@
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="sext_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_fu_164_p1" coreId="572669294" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="sext_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_fu_164_p1" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sext_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_1_fu_168_p1" coreId="143289152" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="sext_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_1_fu_168_p1" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -240,14 +240,14 @@
         <dataOutputObjs>bitselect</dataOutputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp_4" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_4_fu_178_p3" coreId="498372332" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp_4" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_4_fu_178_p3" coreId="4294967295" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_5" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_5_fu_186_p3" coreId="76860144" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp_5" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_5_fu_186_p3" coreId="1177266592" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
@@ -272,7 +272,7 @@
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="sext_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_2_fu_212_p1" coreId="320186576" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="sext_ln245_2" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_2_fu_212_p1" coreId="1204707808" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -285,14 +285,14 @@
         <dataOutputObjs>bitselect</dataOutputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_6" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_6_fu_222_p3" coreId="320187904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_6" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_6_fu_222_p3" coreId="1204706528" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_7" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_7_fu_230_p3" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="tmp_7" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_7_fu_230_p3" coreId="1189089904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
@@ -317,7 +317,7 @@
         <dataInputObjs>bitselect</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="sext_ln245_3" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_3_fu_256_p1" coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="sext_ln245_3" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln245_3_fu_256_p1" coreId="1199238672" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="17" opcode="sext" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>sub</dataOutputObjs>
@@ -337,7 +337,7 @@
         <dataOutputObjs>xor</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_9" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_9_fu_274_p3" coreId="198288576" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="tmp_9" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_9_fu_274_p3" coreId="1177275272" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="1" opcode="bitselect" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
         <dataOutputObjs>and</dataOutputObjs>
@@ -368,7 +368,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="tmp" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_fu_308_p4" coreId="0" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="3">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="tmp" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_fu_308_p4" coreId="567" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="3">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="254" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
@@ -382,12 +382,12 @@
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="zext_ln255" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_fu_326_p1" coreId="1936942413" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="zext_ln255" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_fu_326_p1" coreId="1199208576" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="exp_table_addr" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="198332952" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="exp_table_addr" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1154772000" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -400,7 +400,7 @@
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln245_fu_393_p1" coreId="200359120" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="zext_ln245" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln245_fu_393_p1" coreId="176" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -411,7 +411,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_1" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_1_fu_339_p4" coreId="335294576" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="39" m_clusterGroupNumber="4">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_1" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_1_fu_339_p4" coreId="1199284256" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="39" m_clusterGroupNumber="4">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="254" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
@@ -425,12 +425,12 @@
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln255_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_1_fu_357_p1" coreId="335293624" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln255_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_1_fu_357_p1" coreId="1153123680" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="exp_table_addr_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="334039952" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="exp_table_addr_1" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1199233024" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -443,7 +443,7 @@
         <dataOutputObjs>add</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln245_1_fu_397_p1" coreId="334038544" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="zext_ln245_1" lineNumber="245" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln245_1_fu_397_p1" coreId="1177285472" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="245" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -454,7 +454,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp_2" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_2_fu_370_p4" coreId="198244480" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="45" m_clusterGroupNumber="5">
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="tmp_2" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_2_fu_370_p4" coreId="1186118896" contextFuncName="softmax_idx_from_real_val_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="partselect" m_display="0" m_topoIndex="45" m_clusterGroupNumber="5">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="254" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sub</dataInputObjs>
@@ -468,12 +468,12 @@
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln255_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_2_fu_388_p1" coreId="186533328" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln255_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln255_2_fu_388_p1" coreId="20302648" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="exp_table_addr_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="exp_table_addr_2" lineNumber="255" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1166119216" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="255" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -485,7 +485,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <dataOutputObjs>zext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="zext_ln50_fu_401_p1" coreId="91049728" contextFuncName="operator_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="6">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="zext_ln50" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="zext_ln50_fu_401_p1" coreId="50767629" contextFuncName="operator_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="6">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -511,7 +511,7 @@
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>select</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="tmp_10" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="tmp_10_fu_417_p3" coreId="100699040" contextFuncName="operator_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="6">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="tmp_10" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="tmp_10_fu_417_p3" coreId="542329928" contextFuncName="operator_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="6">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -530,7 +530,7 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="zext_ln50_1" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="zext_ln50_1_fu_433_p1" coreId="181795419" contextFuncName="operator_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="6">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="zext_ln50_1" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="zext_ln50_1_fu_433_p1" coreId="43645177" contextFuncName="operator_s" bitwidth="18" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="6">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -546,7 +546,7 @@
         <dataOutputObjs>bitselect</dataOutputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_11" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="tmp_11_fu_443_p3" coreId="334042688" contextFuncName="operator_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_11" lineNumber="50" fileName="firmware/nnet_utils/nnet_common.h" fileDirectory="../." rtlName="tmp_11_fu_443_p3" coreId="39861941" contextFuncName="operator_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="262" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="50" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="operator()"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_common.h" linenumber="45" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="reduce&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 3, nnet::Op_add&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt; &amp;gt; &amp;gt;"/>
@@ -554,7 +554,7 @@
         <dataOutputObjs>select</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_3" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_3_fu_451_p4" coreId="100699040" contextFuncName="softmax_idx_from_real_val_ap_fixed_18_8_AP_RND_AP_SAT_0_softmax_config12_s" bitwidth="10" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="tmp_3" lineNumber="145" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="tmp_3_fu_451_p4" coreId="1153049288" contextFuncName="softmax_idx_from_real_val_ap_fixed_18_8_AP_RND_AP_SAT_0_softmax_config12_s" bitwidth="10" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="145" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
@@ -570,12 +570,12 @@
         <dataOutputObjs>zext</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln265" lineNumber="265" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln265_fu_469_p1" coreId="1936942413" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="zext_ln265" lineNumber="265" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="zext_ln265_fu_469_p1" coreId="63873315" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>select</dataInputObjs>
         <dataOutputObjs>getelementptr</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="invert_table_addr" lineNumber="265" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="484125667" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="invert_table_addr" lineNumber="265" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="63876685" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="10" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="265" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>load</dataOutputObjs>
@@ -586,83 +586,83 @@
         <dataInputObjs>getelementptr</dataInputObjs>
         <dataOutputObjs>sext</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="sext_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln268_fu_474_p1" coreId="78238056" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="sext_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="sext_ln268_fu_474_p1" coreId="80" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="zext_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_fu_481_p10" coreId="104306464" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="zext_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_fu_481_p10" coreId="1189089904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="mul_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U2129" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="mul_ln268" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U1256" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="67" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="trunc_ln1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_0" coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="trunc_ln1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_0" coreId="1189089904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_1_fu_500_p10" coreId="335371360" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="zext_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_1_fu_500_p10" coreId="1204595168" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="mul_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U2130" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="mul_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U1257" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="70" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_1" coreId="296464851" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="trunc_ln268_1" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_1" coreId="63917824" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_2_fu_519_p10" coreId="132269824" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="zext_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_ln268_2_fu_519_p10" coreId="63916835" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>load</dataInputObjs>
         <dataOutputObjs>mul</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="mul_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U2131" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="mul_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="mul_18s_17ns_26_1_1_U1258" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="26" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.03" m_topoIndex="73" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>sext</dataInputObjs>
         <dataInputObjs>zext</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="trunc_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_2" coreId="0" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="trunc_ln268_2" lineNumber="268" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." rtlName="ap_return_2" coreId="1189631504" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="16" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="268" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>mul</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="mrv" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="100699040" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="mrv" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1189089904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="mrv_1" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="132269784" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="mrv_1" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1164217456" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="mrv_2" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="77455056" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="mrv_2" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1199228576" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" bitwidth="48" opcode="insertvalue" nodeLabel="2.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>ret</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="_ln270" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="335332944" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="_ln270" lineNumber="270" fileName="firmware/nnet_utils/nnet_activation.h" fileDirectory="../." coreId="1189089904" contextFuncName="softmax_stable_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_16_6_AP_TRN_AP_WRAP_0_softmax_config12_s" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_activation.h" linenumber="270" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="softmax_stable&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, softmax_config12&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataOutputObjs>ap_return_0</dataOutputObjs>

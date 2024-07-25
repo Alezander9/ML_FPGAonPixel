@@ -20,10 +20,6 @@ module myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s (
         data_9_val,
         data_10_val,
         data_11_val,
-        data_12_val,
-        data_13_val,
-        data_14_val,
-        data_15_val,
         ap_return_0,
         ap_return_1,
         ap_return_2,
@@ -35,11 +31,7 @@ module myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s (
         ap_return_8,
         ap_return_9,
         ap_return_10,
-        ap_return_11,
-        ap_return_12,
-        ap_return_13,
-        ap_return_14,
-        ap_return_15
+        ap_return_11
 );
 
 
@@ -48,18 +40,14 @@ input  [14:0] data_0_val;
 input  [14:0] data_1_val;
 input  [14:0] data_2_val;
 input  [14:0] data_3_val;
-input  [15:0] data_4_val;
+input  [14:0] data_4_val;
 input  [14:0] data_5_val;
 input  [14:0] data_6_val;
-input  [15:0] data_7_val;
+input  [14:0] data_7_val;
 input  [14:0] data_8_val;
 input  [14:0] data_9_val;
 input  [14:0] data_10_val;
 input  [14:0] data_11_val;
-input  [15:0] data_12_val;
-input  [15:0] data_13_val;
-input  [14:0] data_14_val;
-input  [14:0] data_15_val;
 output  [14:0] ap_return_0;
 output  [14:0] ap_return_1;
 output  [14:0] ap_return_2;
@@ -72,140 +60,104 @@ output  [14:0] ap_return_8;
 output  [14:0] ap_return_9;
 output  [14:0] ap_return_10;
 output  [14:0] ap_return_11;
-output  [14:0] ap_return_12;
-output  [14:0] ap_return_13;
-output  [14:0] ap_return_14;
-output  [14:0] ap_return_15;
 
-wire   [22:0] y_fu_194_p3;
-wire   [22:0] add_ln54_fu_202_p2;
-wire   [22:0] y_3_fu_218_p3;
-wire   [22:0] add_ln54_49_fu_226_p2;
-wire   [22:0] y_4_fu_242_p3;
-wire   [22:0] add_ln54_50_fu_250_p2;
-wire   [22:0] y_5_fu_266_p3;
-wire   [22:0] add_ln54_51_fu_274_p2;
-wire   [22:0] y_6_fu_290_p3;
-wire   [22:0] add_ln54_52_fu_298_p2;
-wire   [22:0] y_7_fu_314_p3;
-wire   [22:0] add_ln54_53_fu_322_p2;
-wire   [22:0] y_8_fu_338_p3;
-wire   [22:0] add_ln54_54_fu_346_p2;
-wire   [22:0] y_9_fu_362_p3;
-wire   [22:0] add_ln54_55_fu_370_p2;
-wire   [22:0] y_16_fu_386_p3;
-wire   [22:0] add_ln54_56_fu_394_p2;
-wire   [22:0] y_1_fu_410_p3;
-wire   [22:0] add_ln54_57_fu_418_p2;
-wire   [22:0] y_2_fu_434_p3;
-wire   [22:0] add_ln54_58_fu_442_p2;
-wire   [22:0] y_10_fu_458_p3;
-wire   [22:0] add_ln54_59_fu_466_p2;
-wire   [22:0] y_11_fu_482_p3;
-wire   [22:0] add_ln54_60_fu_490_p2;
-wire   [22:0] y_12_fu_506_p3;
-wire   [22:0] add_ln54_61_fu_514_p2;
-wire   [22:0] y_13_fu_530_p3;
-wire   [22:0] add_ln54_62_fu_538_p2;
-wire   [22:0] y_14_fu_554_p3;
-wire   [22:0] add_ln54_63_fu_562_p2;
+wire   [22:0] y_fu_148_p3;
+wire   [22:0] add_ln54_fu_156_p2;
+wire   [22:0] y_3_fu_172_p3;
+wire   [22:0] add_ln54_37_fu_180_p2;
+wire   [22:0] y_4_fu_196_p3;
+wire   [22:0] add_ln54_38_fu_204_p2;
+wire   [22:0] y_5_fu_220_p3;
+wire   [22:0] add_ln54_39_fu_228_p2;
+wire   [22:0] y_6_fu_244_p3;
+wire   [22:0] add_ln54_40_fu_252_p2;
+wire   [22:0] y_7_fu_268_p3;
+wire   [22:0] add_ln54_41_fu_276_p2;
+wire   [22:0] y_8_fu_292_p3;
+wire   [22:0] add_ln54_42_fu_300_p2;
+wire   [22:0] y_9_fu_316_p3;
+wire   [22:0] add_ln54_43_fu_324_p2;
+wire   [22:0] y_12_fu_340_p3;
+wire   [22:0] add_ln54_44_fu_348_p2;
+wire   [22:0] y_1_fu_364_p3;
+wire   [22:0] add_ln54_45_fu_372_p2;
+wire   [22:0] y_2_fu_388_p3;
+wire   [22:0] add_ln54_46_fu_396_p2;
+wire   [22:0] y_10_fu_412_p3;
+wire   [22:0] add_ln54_47_fu_420_p2;
 
-assign add_ln54_49_fu_226_p2 = (y_3_fu_218_p3 + 23'd75776);
+assign add_ln54_37_fu_180_p2 = (y_3_fu_172_p3 + 23'd8192);
 
-assign add_ln54_50_fu_250_p2 = ($signed(y_4_fu_242_p3) + $signed(23'd8384000));
+assign add_ln54_38_fu_204_p2 = ($signed(y_4_fu_196_p3) + $signed(23'd8377856));
 
-assign add_ln54_51_fu_274_p2 = (y_5_fu_266_p3 + 23'd4608);
+assign add_ln54_39_fu_228_p2 = (y_5_fu_220_p3 + 23'd5120);
 
-assign add_ln54_52_fu_298_p2 = (y_6_fu_290_p3 + 23'd120832);
+assign add_ln54_40_fu_252_p2 = (y_6_fu_244_p3 + 23'd31744);
 
-assign add_ln54_53_fu_322_p2 = (y_7_fu_314_p3 + 23'd77824);
+assign add_ln54_41_fu_276_p2 = (y_7_fu_268_p3 + 23'd3072);
 
-assign add_ln54_54_fu_346_p2 = ($signed(y_8_fu_338_p3) + $signed(23'd8357376));
+assign add_ln54_42_fu_300_p2 = (y_8_fu_292_p3 + 23'd512);
 
-assign add_ln54_55_fu_370_p2 = (y_9_fu_362_p3 + 23'd18432);
+assign add_ln54_43_fu_324_p2 = ($signed(y_9_fu_316_p3) + $signed(23'd8385536));
 
-assign add_ln54_56_fu_394_p2 = (y_16_fu_386_p3 + 23'd39936);
+assign add_ln54_44_fu_348_p2 = (y_12_fu_340_p3 + 23'd26112);
 
-assign add_ln54_57_fu_418_p2 = (y_1_fu_410_p3 + 23'd38400);
+assign add_ln54_45_fu_372_p2 = (y_1_fu_364_p3 + 23'd4608);
 
-assign add_ln54_58_fu_442_p2 = ($signed(y_2_fu_434_p3) + $signed(23'd8275456));
+assign add_ln54_46_fu_396_p2 = (y_2_fu_388_p3 + 23'd10752);
 
-assign add_ln54_59_fu_466_p2 = ($signed(y_10_fu_458_p3) + $signed(23'd8303616));
+assign add_ln54_47_fu_420_p2 = (y_10_fu_412_p3 + 23'd32256);
 
-assign add_ln54_60_fu_490_p2 = (y_11_fu_482_p3 + 23'd138752);
-
-assign add_ln54_61_fu_514_p2 = ($signed(y_12_fu_506_p3) + $signed(23'd8294912));
-
-assign add_ln54_62_fu_538_p2 = ($signed(y_13_fu_530_p3) + $signed(23'd8310272));
-
-assign add_ln54_63_fu_562_p2 = ($signed(y_14_fu_554_p3) + $signed(23'd8325120));
-
-assign add_ln54_fu_202_p2 = (y_fu_194_p3 + 23'd65024);
+assign add_ln54_fu_156_p2 = (y_fu_148_p3 + 23'd3584);
 
 assign ap_ready = 1'b1;
 
-assign y_10_fu_458_p3 = {{data_11_val}, {8'd0}};
+assign y_10_fu_412_p3 = {{data_11_val}, {8'd0}};
 
-assign y_11_fu_482_p3 = {{data_12_val}, {7'd0}};
+assign y_12_fu_340_p3 = {{data_8_val}, {8'd0}};
 
-assign y_12_fu_506_p3 = {{data_13_val}, {7'd0}};
+assign y_1_fu_364_p3 = {{data_9_val}, {8'd0}};
 
-assign y_13_fu_530_p3 = {{data_14_val}, {8'd0}};
+assign y_2_fu_388_p3 = {{data_10_val}, {8'd0}};
 
-assign y_14_fu_554_p3 = {{data_15_val}, {8'd0}};
+assign y_3_fu_172_p3 = {{data_1_val}, {8'd0}};
 
-assign y_16_fu_386_p3 = {{data_8_val}, {8'd0}};
+assign y_4_fu_196_p3 = {{data_2_val}, {8'd0}};
 
-assign y_1_fu_410_p3 = {{data_9_val}, {8'd0}};
+assign y_5_fu_220_p3 = {{data_3_val}, {8'd0}};
 
-assign y_2_fu_434_p3 = {{data_10_val}, {8'd0}};
+assign y_6_fu_244_p3 = {{data_4_val}, {8'd0}};
 
-assign y_3_fu_218_p3 = {{data_1_val}, {8'd0}};
+assign y_7_fu_268_p3 = {{data_5_val}, {8'd0}};
 
-assign y_4_fu_242_p3 = {{data_2_val}, {8'd0}};
+assign y_8_fu_292_p3 = {{data_6_val}, {8'd0}};
 
-assign y_5_fu_266_p3 = {{data_3_val}, {8'd0}};
+assign y_9_fu_316_p3 = {{data_7_val}, {8'd0}};
 
-assign y_6_fu_290_p3 = {{data_4_val}, {7'd0}};
+assign y_fu_148_p3 = {{data_0_val}, {8'd0}};
 
-assign y_7_fu_314_p3 = {{data_5_val}, {8'd0}};
+assign ap_return_0 = {{add_ln54_fu_156_p2[22:8]}};
 
-assign y_8_fu_338_p3 = {{data_6_val}, {8'd0}};
+assign ap_return_1 = {{add_ln54_37_fu_180_p2[22:8]}};
 
-assign y_9_fu_362_p3 = {{data_7_val}, {7'd0}};
+assign ap_return_10 = {{add_ln54_46_fu_396_p2[22:8]}};
 
-assign y_fu_194_p3 = {{data_0_val}, {8'd0}};
+assign ap_return_11 = {{add_ln54_47_fu_420_p2[22:8]}};
 
-assign ap_return_0 = {{add_ln54_fu_202_p2[22:8]}};
+assign ap_return_2 = {{add_ln54_38_fu_204_p2[22:8]}};
 
-assign ap_return_1 = {{add_ln54_49_fu_226_p2[22:8]}};
+assign ap_return_3 = {{add_ln54_39_fu_228_p2[22:8]}};
 
-assign ap_return_10 = {{add_ln54_58_fu_442_p2[22:8]}};
+assign ap_return_4 = {{add_ln54_40_fu_252_p2[22:8]}};
 
-assign ap_return_11 = {{add_ln54_59_fu_466_p2[22:8]}};
+assign ap_return_5 = {{add_ln54_41_fu_276_p2[22:8]}};
 
-assign ap_return_12 = {{add_ln54_60_fu_490_p2[22:8]}};
+assign ap_return_6 = {{add_ln54_42_fu_300_p2[22:8]}};
 
-assign ap_return_13 = {{add_ln54_61_fu_514_p2[22:8]}};
+assign ap_return_7 = {{add_ln54_43_fu_324_p2[22:8]}};
 
-assign ap_return_14 = {{add_ln54_62_fu_538_p2[22:8]}};
+assign ap_return_8 = {{add_ln54_44_fu_348_p2[22:8]}};
 
-assign ap_return_15 = {{add_ln54_63_fu_562_p2[22:8]}};
-
-assign ap_return_2 = {{add_ln54_50_fu_250_p2[22:8]}};
-
-assign ap_return_3 = {{add_ln54_51_fu_274_p2[22:8]}};
-
-assign ap_return_4 = {{add_ln54_52_fu_298_p2[22:8]}};
-
-assign ap_return_5 = {{add_ln54_53_fu_322_p2[22:8]}};
-
-assign ap_return_6 = {{add_ln54_54_fu_346_p2[22:8]}};
-
-assign ap_return_7 = {{add_ln54_55_fu_370_p2[22:8]}};
-
-assign ap_return_8 = {{add_ln54_56_fu_394_p2[22:8]}};
-
-assign ap_return_9 = {{add_ln54_57_fu_418_p2[22:8]}};
+assign ap_return_9 = {{add_ln54_45_fu_372_p2[22:8]}};
 
 endmodule //myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s

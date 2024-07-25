@@ -237,7 +237,7 @@ begin
         ce0 => invert_table_ce0,
         q0 => invert_table_q0);
 
-    mul_18s_17ns_26_1_1_U2129 : component myproject_mul_18s_17ns_26_1_1
+    mul_18s_17ns_26_1_1_U1256 : component myproject_mul_18s_17ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -249,7 +249,7 @@ begin
         din1 => mul_ln268_fu_481_p1,
         dout => mul_ln268_fu_481_p2);
 
-    mul_18s_17ns_26_1_1_U2130 : component myproject_mul_18s_17ns_26_1_1
+    mul_18s_17ns_26_1_1_U1257 : component myproject_mul_18s_17ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -261,7 +261,7 @@ begin
         din1 => mul_ln268_1_fu_500_p1,
         dout => mul_ln268_1_fu_500_p2);
 
-    mul_18s_17ns_26_1_1_U2131 : component myproject_mul_18s_17ns_26_1_1
+    mul_18s_17ns_26_1_1_U1258 : component myproject_mul_18s_17ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

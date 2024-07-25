@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s'
 ================================================================
-* Date:           Thu Jul 11 13:47:20 2024
+* Date:           Wed Jul 24 14:39:08 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -84,11 +84,11 @@ ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%data_2_val_read = read i15 @_ssdm_o
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_1_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_1_val" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 4 'read' 'data_1_val_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%data_0_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_0_val" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 5 'read' 'data_0_val_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln32 = sext i15 %data_0_val_read" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 6 'sext' 'sext_ln32' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln32_47 = sext i15 %data_1_val_read" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 7 'sext' 'sext_ln32_47' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln32_48 = sext i15 %data_2_val_read" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 8 'sext' 'sext_ln32_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sext_ln32_35 = sext i15 %data_1_val_read" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 7 'sext' 'sext_ln32_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln32_36 = sext i15 %data_2_val_read" [firmware/nnet_utils/nnet_activation.h:32]   --->   Operation 8 'sext' 'sext_ln32_36' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%mrv = insertvalue i48 <undef>, i16 %sext_ln32" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 9 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i48 %mrv, i16 %sext_ln32_47" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 10 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i48 %mrv_1, i16 %sext_ln32_48" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 11 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i48 %mrv, i16 %sext_ln32_35" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 10 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i48 %mrv_1, i16 %sext_ln32_36" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 11 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%ret_ln34 = ret i48 %mrv_2" [firmware/nnet_utils/nnet_activation.h:34]   --->   Operation 12 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
 
 

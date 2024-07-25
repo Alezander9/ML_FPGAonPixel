@@ -23,10 +23,6 @@ port (
     data_9_val : IN STD_LOGIC_VECTOR (14 downto 0);
     data_10_val : IN STD_LOGIC_VECTOR (14 downto 0);
     data_11_val : IN STD_LOGIC_VECTOR (14 downto 0);
-    data_12_val : IN STD_LOGIC_VECTOR (14 downto 0);
-    data_13_val : IN STD_LOGIC_VECTOR (14 downto 0);
-    data_14_val : IN STD_LOGIC_VECTOR (14 downto 0);
-    data_15_val : IN STD_LOGIC_VECTOR (14 downto 0);
     ap_return_0 : OUT STD_LOGIC_VECTOR (15 downto 0);
     ap_return_1 : OUT STD_LOGIC_VECTOR (15 downto 0);
     ap_return_2 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -38,11 +34,7 @@ port (
     ap_return_8 : OUT STD_LOGIC_VECTOR (15 downto 0);
     ap_return_9 : OUT STD_LOGIC_VECTOR (15 downto 0);
     ap_return_10 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    ap_return_11 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    ap_return_12 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    ap_return_13 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    ap_return_14 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    ap_return_15 : OUT STD_LOGIC_VECTOR (15 downto 0) );
+    ap_return_11 : OUT STD_LOGIC_VECTOR (15 downto 0) );
 end;
 
 
@@ -52,22 +44,18 @@ architecture behav of myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_l
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
 attribute shreg_extract : string;
-    signal sext_ln32_fu_140_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_1_fu_144_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_2_fu_148_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_3_fu_152_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_4_fu_156_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_5_fu_160_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_6_fu_164_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_7_fu_168_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_8_fu_172_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_9_fu_176_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_10_fu_180_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_11_fu_184_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_12_fu_188_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_13_fu_192_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_14_fu_196_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_15_fu_200_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_fu_108_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_1_fu_112_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_2_fu_116_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_3_fu_120_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_4_fu_124_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_5_fu_128_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_6_fu_132_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_7_fu_136_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_8_fu_140_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_9_fu_144_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_10_fu_148_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_11_fu_152_p1 : STD_LOGIC_VECTOR (15 downto 0);
 
 
 begin
@@ -75,52 +63,40 @@ begin
 
 
     ap_ready <= ap_const_logic_1;
-    ap_return_0 <= sext_ln32_fu_140_p1;
-    ap_return_1 <= sext_ln32_1_fu_144_p1;
-    ap_return_10 <= sext_ln32_10_fu_180_p1;
-    ap_return_11 <= sext_ln32_11_fu_184_p1;
-    ap_return_12 <= sext_ln32_12_fu_188_p1;
-    ap_return_13 <= sext_ln32_13_fu_192_p1;
-    ap_return_14 <= sext_ln32_14_fu_196_p1;
-    ap_return_15 <= sext_ln32_15_fu_200_p1;
-    ap_return_2 <= sext_ln32_2_fu_148_p1;
-    ap_return_3 <= sext_ln32_3_fu_152_p1;
-    ap_return_4 <= sext_ln32_4_fu_156_p1;
-    ap_return_5 <= sext_ln32_5_fu_160_p1;
-    ap_return_6 <= sext_ln32_6_fu_164_p1;
-    ap_return_7 <= sext_ln32_7_fu_168_p1;
-    ap_return_8 <= sext_ln32_8_fu_172_p1;
-    ap_return_9 <= sext_ln32_9_fu_176_p1;
-        sext_ln32_10_fu_180_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_10_val),16));
+    ap_return_0 <= sext_ln32_fu_108_p1;
+    ap_return_1 <= sext_ln32_1_fu_112_p1;
+    ap_return_10 <= sext_ln32_10_fu_148_p1;
+    ap_return_11 <= sext_ln32_11_fu_152_p1;
+    ap_return_2 <= sext_ln32_2_fu_116_p1;
+    ap_return_3 <= sext_ln32_3_fu_120_p1;
+    ap_return_4 <= sext_ln32_4_fu_124_p1;
+    ap_return_5 <= sext_ln32_5_fu_128_p1;
+    ap_return_6 <= sext_ln32_6_fu_132_p1;
+    ap_return_7 <= sext_ln32_7_fu_136_p1;
+    ap_return_8 <= sext_ln32_8_fu_140_p1;
+    ap_return_9 <= sext_ln32_9_fu_144_p1;
+        sext_ln32_10_fu_148_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_10_val),16));
 
-        sext_ln32_11_fu_184_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_11_val),16));
+        sext_ln32_11_fu_152_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_11_val),16));
 
-        sext_ln32_12_fu_188_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_12_val),16));
+        sext_ln32_1_fu_112_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_1_val),16));
 
-        sext_ln32_13_fu_192_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_13_val),16));
+        sext_ln32_2_fu_116_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_2_val),16));
 
-        sext_ln32_14_fu_196_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_14_val),16));
+        sext_ln32_3_fu_120_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_3_val),16));
 
-        sext_ln32_15_fu_200_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_15_val),16));
+        sext_ln32_4_fu_124_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_4_val),16));
 
-        sext_ln32_1_fu_144_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_1_val),16));
+        sext_ln32_5_fu_128_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_5_val),16));
 
-        sext_ln32_2_fu_148_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_2_val),16));
+        sext_ln32_6_fu_132_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_6_val),16));
 
-        sext_ln32_3_fu_152_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_3_val),16));
+        sext_ln32_7_fu_136_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_7_val),16));
 
-        sext_ln32_4_fu_156_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_4_val),16));
+        sext_ln32_8_fu_140_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_8_val),16));
 
-        sext_ln32_5_fu_160_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_5_val),16));
+        sext_ln32_9_fu_144_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_9_val),16));
 
-        sext_ln32_6_fu_164_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_6_val),16));
-
-        sext_ln32_7_fu_168_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_7_val),16));
-
-        sext_ln32_8_fu_172_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_8_val),16));
-
-        sext_ln32_9_fu_176_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_9_val),16));
-
-        sext_ln32_fu_140_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_0_val),16));
+        sext_ln32_fu_108_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_0_val),16));
 
 end behav;

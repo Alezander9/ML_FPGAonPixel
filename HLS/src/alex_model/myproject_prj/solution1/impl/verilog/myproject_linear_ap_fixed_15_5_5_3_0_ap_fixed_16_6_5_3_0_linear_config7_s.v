@@ -20,10 +20,6 @@ module myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s
         data_9_val,
         data_10_val,
         data_11_val,
-        data_12_val,
-        data_13_val,
-        data_14_val,
-        data_15_val,
         ap_return_0,
         ap_return_1,
         ap_return_2,
@@ -35,11 +31,7 @@ module myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s
         ap_return_8,
         ap_return_9,
         ap_return_10,
-        ap_return_11,
-        ap_return_12,
-        ap_return_13,
-        ap_return_14,
-        ap_return_15
+        ap_return_11
 );
 
 
@@ -56,10 +48,6 @@ input  [14:0] data_8_val;
 input  [14:0] data_9_val;
 input  [14:0] data_10_val;
 input  [14:0] data_11_val;
-input  [14:0] data_12_val;
-input  [14:0] data_13_val;
-input  [14:0] data_14_val;
-input  [14:0] data_15_val;
 output  [15:0] ap_return_0;
 output  [15:0] ap_return_1;
 output  [15:0] ap_return_2;
@@ -72,92 +60,68 @@ output  [15:0] ap_return_8;
 output  [15:0] ap_return_9;
 output  [15:0] ap_return_10;
 output  [15:0] ap_return_11;
-output  [15:0] ap_return_12;
-output  [15:0] ap_return_13;
-output  [15:0] ap_return_14;
-output  [15:0] ap_return_15;
 
-wire  signed [15:0] sext_ln32_fu_140_p1;
-wire  signed [15:0] sext_ln32_1_fu_144_p1;
-wire  signed [15:0] sext_ln32_2_fu_148_p1;
-wire  signed [15:0] sext_ln32_3_fu_152_p1;
-wire  signed [15:0] sext_ln32_4_fu_156_p1;
-wire  signed [15:0] sext_ln32_5_fu_160_p1;
-wire  signed [15:0] sext_ln32_6_fu_164_p1;
-wire  signed [15:0] sext_ln32_7_fu_168_p1;
-wire  signed [15:0] sext_ln32_8_fu_172_p1;
-wire  signed [15:0] sext_ln32_9_fu_176_p1;
-wire  signed [15:0] sext_ln32_10_fu_180_p1;
-wire  signed [15:0] sext_ln32_11_fu_184_p1;
-wire  signed [15:0] sext_ln32_12_fu_188_p1;
-wire  signed [15:0] sext_ln32_13_fu_192_p1;
-wire  signed [15:0] sext_ln32_14_fu_196_p1;
-wire  signed [15:0] sext_ln32_15_fu_200_p1;
+wire  signed [15:0] sext_ln32_fu_108_p1;
+wire  signed [15:0] sext_ln32_1_fu_112_p1;
+wire  signed [15:0] sext_ln32_2_fu_116_p1;
+wire  signed [15:0] sext_ln32_3_fu_120_p1;
+wire  signed [15:0] sext_ln32_4_fu_124_p1;
+wire  signed [15:0] sext_ln32_5_fu_128_p1;
+wire  signed [15:0] sext_ln32_6_fu_132_p1;
+wire  signed [15:0] sext_ln32_7_fu_136_p1;
+wire  signed [15:0] sext_ln32_8_fu_140_p1;
+wire  signed [15:0] sext_ln32_9_fu_144_p1;
+wire  signed [15:0] sext_ln32_10_fu_148_p1;
+wire  signed [15:0] sext_ln32_11_fu_152_p1;
 
 assign ap_ready = 1'b1;
 
-assign sext_ln32_10_fu_180_p1 = $signed(data_10_val);
+assign sext_ln32_10_fu_148_p1 = $signed(data_10_val);
 
-assign sext_ln32_11_fu_184_p1 = $signed(data_11_val);
+assign sext_ln32_11_fu_152_p1 = $signed(data_11_val);
 
-assign sext_ln32_12_fu_188_p1 = $signed(data_12_val);
+assign sext_ln32_1_fu_112_p1 = $signed(data_1_val);
 
-assign sext_ln32_13_fu_192_p1 = $signed(data_13_val);
+assign sext_ln32_2_fu_116_p1 = $signed(data_2_val);
 
-assign sext_ln32_14_fu_196_p1 = $signed(data_14_val);
+assign sext_ln32_3_fu_120_p1 = $signed(data_3_val);
 
-assign sext_ln32_15_fu_200_p1 = $signed(data_15_val);
+assign sext_ln32_4_fu_124_p1 = $signed(data_4_val);
 
-assign sext_ln32_1_fu_144_p1 = $signed(data_1_val);
+assign sext_ln32_5_fu_128_p1 = $signed(data_5_val);
 
-assign sext_ln32_2_fu_148_p1 = $signed(data_2_val);
+assign sext_ln32_6_fu_132_p1 = $signed(data_6_val);
 
-assign sext_ln32_3_fu_152_p1 = $signed(data_3_val);
+assign sext_ln32_7_fu_136_p1 = $signed(data_7_val);
 
-assign sext_ln32_4_fu_156_p1 = $signed(data_4_val);
+assign sext_ln32_8_fu_140_p1 = $signed(data_8_val);
 
-assign sext_ln32_5_fu_160_p1 = $signed(data_5_val);
+assign sext_ln32_9_fu_144_p1 = $signed(data_9_val);
 
-assign sext_ln32_6_fu_164_p1 = $signed(data_6_val);
+assign sext_ln32_fu_108_p1 = $signed(data_0_val);
 
-assign sext_ln32_7_fu_168_p1 = $signed(data_7_val);
+assign ap_return_0 = sext_ln32_fu_108_p1;
 
-assign sext_ln32_8_fu_172_p1 = $signed(data_8_val);
+assign ap_return_1 = sext_ln32_1_fu_112_p1;
 
-assign sext_ln32_9_fu_176_p1 = $signed(data_9_val);
+assign ap_return_10 = sext_ln32_10_fu_148_p1;
 
-assign sext_ln32_fu_140_p1 = $signed(data_0_val);
+assign ap_return_11 = sext_ln32_11_fu_152_p1;
 
-assign ap_return_0 = sext_ln32_fu_140_p1;
+assign ap_return_2 = sext_ln32_2_fu_116_p1;
 
-assign ap_return_1 = sext_ln32_1_fu_144_p1;
+assign ap_return_3 = sext_ln32_3_fu_120_p1;
 
-assign ap_return_10 = sext_ln32_10_fu_180_p1;
+assign ap_return_4 = sext_ln32_4_fu_124_p1;
 
-assign ap_return_11 = sext_ln32_11_fu_184_p1;
+assign ap_return_5 = sext_ln32_5_fu_128_p1;
 
-assign ap_return_12 = sext_ln32_12_fu_188_p1;
+assign ap_return_6 = sext_ln32_6_fu_132_p1;
 
-assign ap_return_13 = sext_ln32_13_fu_192_p1;
+assign ap_return_7 = sext_ln32_7_fu_136_p1;
 
-assign ap_return_14 = sext_ln32_14_fu_196_p1;
+assign ap_return_8 = sext_ln32_8_fu_140_p1;
 
-assign ap_return_15 = sext_ln32_15_fu_200_p1;
-
-assign ap_return_2 = sext_ln32_2_fu_148_p1;
-
-assign ap_return_3 = sext_ln32_3_fu_152_p1;
-
-assign ap_return_4 = sext_ln32_4_fu_156_p1;
-
-assign ap_return_5 = sext_ln32_5_fu_160_p1;
-
-assign ap_return_6 = sext_ln32_6_fu_164_p1;
-
-assign ap_return_7 = sext_ln32_7_fu_168_p1;
-
-assign ap_return_8 = sext_ln32_8_fu_172_p1;
-
-assign ap_return_9 = sext_ln32_9_fu_176_p1;
+assign ap_return_9 = sext_ln32_9_fu_144_p1;
 
 endmodule //myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s

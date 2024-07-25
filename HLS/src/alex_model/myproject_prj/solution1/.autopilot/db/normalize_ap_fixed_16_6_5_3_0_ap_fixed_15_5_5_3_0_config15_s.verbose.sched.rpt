@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s'
 ================================================================
-* Date:           Thu Jul 11 13:47:20 2024
+* Date:           Wed Jul 24 14:39:08 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -85,17 +85,17 @@ ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_2_val_read = read i15 @_ssdm_o
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%data_1_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_1_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 5 'read' 'data_1_val_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%data_0_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_0_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 6 'read' 'data_0_val_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%y = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_0_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 7 'bitconcatenate' 'y' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.82ns)   --->   "%add_ln54 = add i23 %y, i23 88064" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 8 'add' 'add_ln54' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.82ns)   --->   "%add_ln54 = add i23 %y, i23 132608" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 8 'add' 'add_ln54' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 9 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%y_1 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_1_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 10 'bitconcatenate' 'y_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.82ns)   --->   "%add_ln54_47 = add i23 %y_1, i23 8160256" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 11 'add' 'add_ln54_47' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_47, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 12 'partselect' 'trunc_ln54_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.82ns)   --->   "%add_ln54_35 = add i23 %y_1, i23 8126464" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 11 'add' 'add_ln54_35' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_35, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 12 'partselect' 'trunc_ln54_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%y_2 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_2_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 13 'bitconcatenate' 'y_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.82ns)   --->   "%add_ln54_48 = add i23 %y_2, i23 8179200" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 14 'add' 'add_ln54_48' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln54_42 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_48, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 15 'partselect' 'trunc_ln54_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.82ns)   --->   "%add_ln54_36 = add i23 %y_2, i23 8337408" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 14 'add' 'add_ln54_36' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln54_33 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_36, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 15 'partselect' 'trunc_ln54_33' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv = insertvalue i45 <undef>, i15 %trunc_ln" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 16 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i45 %mrv, i15 %trunc_ln54_s" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 17 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_42" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 18 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_33" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 18 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln63 = ret i45 %mrv_2" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 19 'ret' 'ret_ln63' <Predicate = true> <Delay = 0.00>
 
 

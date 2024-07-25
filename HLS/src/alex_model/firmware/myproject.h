@@ -10,7 +10,7 @@
 // Prototype of top level function for C-synthesis
 void myproject(
     input_t y_timed_input[N_INPUT_1_1],
-    result_t layer8_out[N_LAYER_6]
+    result_t layer10_out[N_LAYER_10]
 );
 
 #endif

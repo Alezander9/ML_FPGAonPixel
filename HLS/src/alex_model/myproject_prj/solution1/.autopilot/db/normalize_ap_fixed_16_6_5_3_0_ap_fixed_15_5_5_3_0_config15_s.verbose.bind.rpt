@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s'
 ================================================================
-* Date:           Thu Jul 11 13:47:20 2024
+* Date:           Wed Jul 24 14:39:08 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -85,17 +85,17 @@ ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%data_2_val_read = read i15 @_ssdm_o
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%data_1_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_1_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 5 'read' 'data_1_val_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%data_0_val_read = read i15 @_ssdm_op_Read.ap_auto.i15, i15 %data_0_val" [firmware/nnet_utils/nnet_mult.h:80->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 6 'read' 'data_0_val_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%y = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_0_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 7 'bitconcatenate' 'y' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.82ns)   --->   "%add_ln54 = add i23 %y, i23 88064" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 8 'add' 'add_ln54' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.82ns)   --->   "%add_ln54 = add i23 %y, i23 132608" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 8 'add' 'add_ln54' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 9 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%y_1 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_1_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 10 'bitconcatenate' 'y_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.82ns)   --->   "%add_ln54_47 = add i23 %y_1, i23 8160256" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 11 'add' 'add_ln54_47' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_47, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 12 'partselect' 'trunc_ln54_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.82ns)   --->   "%add_ln54_35 = add i23 %y_1, i23 8126464" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 11 'add' 'add_ln54_35' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_35, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 12 'partselect' 'trunc_ln54_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%y_2 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_2_val_read, i8 0" [firmware/nnet_utils/nnet_mult.h:85->firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 13 'bitconcatenate' 'y_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.82ns)   --->   "%add_ln54_48 = add i23 %y_2, i23 8179200" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 14 'add' 'add_ln54_48' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln54_42 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_48, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 15 'partselect' 'trunc_ln54_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.82ns)   --->   "%add_ln54_36 = add i23 %y_2, i23 8337408" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 14 'add' 'add_ln54_36' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%trunc_ln54_33 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_36, i32 8, i32 22" [firmware/nnet_utils/nnet_batchnorm.h:54]   --->   Operation 15 'partselect' 'trunc_ln54_33' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv = insertvalue i45 <undef>, i15 %trunc_ln" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 16 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i45 %mrv, i15 %trunc_ln54_s" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 17 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_42" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 18 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_33" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 18 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%ret_ln63 = ret i45 %mrv_2" [firmware/nnet_utils/nnet_batchnorm.h:63]   --->   Operation 19 'ret' 'ret_ln63' <Predicate = true> <Delay = 0.00>
 
 
@@ -128,11 +128,11 @@ y                      (bitconcatenate   ) [ 00]
 add_ln54               (add              ) [ 00]
 trunc_ln               (partselect       ) [ 00]
 y_1                    (bitconcatenate   ) [ 00]
-add_ln54_47            (add              ) [ 00]
+add_ln54_35            (add              ) [ 00]
 trunc_ln54_s           (partselect       ) [ 00]
 y_2                    (bitconcatenate   ) [ 00]
-add_ln54_48            (add              ) [ 00]
-trunc_ln54_42          (partselect       ) [ 00]
+add_ln54_36            (add              ) [ 00]
+trunc_ln54_33          (partselect       ) [ 00]
 mrv                    (insertvalue      ) [ 00]
 mrv_1                  (insertvalue      ) [ 00]
 mrv_2                  (insertvalue      ) [ 00]
@@ -374,7 +374,7 @@ ret_ln63               (ret              ) [ 00]
 <comp id="66" class="1004" name="add_ln54_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="23" slack="0"/>
-<pin id="68" dir="0" index="1" bw="18" slack="0"/>
+<pin id="68" dir="0" index="1" bw="19" slack="0"/>
 <pin id="69" dir="1" index="2" bw="23" slack="0"/>
 </pin_list>
 <bind>
@@ -410,7 +410,7 @@ ret_ln63               (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="90" class="1004" name="add_ln54_47_fu_90">
+<comp id="90" class="1004" name="add_ln54_35_fu_90">
 <pin_list>
 <pin id="91" dir="0" index="0" bw="23" slack="0"/>
 <pin id="92" dir="0" index="1" bw="19" slack="0"/>
@@ -418,7 +418,7 @@ ret_ln63               (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln54_47/1 "/>
+<opset="add_ln54_35/1 "/>
 </bind>
 </comp>
 
@@ -449,19 +449,19 @@ ret_ln63               (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="114" class="1004" name="add_ln54_48_fu_114">
+<comp id="114" class="1004" name="add_ln54_36_fu_114">
 <pin_list>
 <pin id="115" dir="0" index="0" bw="23" slack="0"/>
-<pin id="116" dir="0" index="1" bw="19" slack="0"/>
+<pin id="116" dir="0" index="1" bw="17" slack="0"/>
 <pin id="117" dir="1" index="2" bw="23" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln54_48/1 "/>
+<opset="add_ln54_36/1 "/>
 </bind>
 </comp>
 
-<comp id="120" class="1004" name="trunc_ln54_42_fu_120">
+<comp id="120" class="1004" name="trunc_ln54_33_fu_120">
 <pin_list>
 <pin id="121" dir="0" index="0" bw="15" slack="0"/>
 <pin id="122" dir="0" index="1" bw="23" slack="0"/>
@@ -471,7 +471,7 @@ ret_ln63               (ret              ) [ 00]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="trunc_ln54_42/1 "/>
+<opset="trunc_ln54_33/1 "/>
 </bind>
 </comp>
 
@@ -607,10 +607,10 @@ ret_ln63               (ret              ) [ 00]
 	State 1
 		add_ln54 : 1
 		trunc_ln : 2
-		add_ln54_47 : 1
+		add_ln54_35 : 1
 		trunc_ln54_s : 2
-		add_ln54_48 : 1
-		trunc_ln54_42 : 2
+		add_ln54_36 : 1
+		trunc_ln54_33 : 2
 		mrv : 3
 		mrv_1 : 4
 		mrv_2 : 5
@@ -626,8 +626,8 @@ ret_ln63               (ret              ) [ 00]
 | Operation|       Functional Unit      |    FF   |   LUT   |
 |----------|----------------------------|---------|---------|
 |          |       add_ln54_fu_66       |    0    |    30   |
-|    add   |      add_ln54_47_fu_90     |    0    |    30   |
-|          |     add_ln54_48_fu_114     |    0    |    30   |
+|    add   |      add_ln54_35_fu_90     |    0    |    30   |
+|          |     add_ln54_36_fu_114     |    0    |    30   |
 |----------|----------------------------|---------|---------|
 |          | data_2_val_read_read_fu_40 |    0    |    0    |
 |   read   | data_1_val_read_read_fu_46 |    0    |    0    |
@@ -639,7 +639,7 @@ ret_ln63               (ret              ) [ 00]
 |----------|----------------------------|---------|---------|
 |          |       trunc_ln_fu_72       |    0    |    0    |
 |partselect|     trunc_ln54_s_fu_96     |    0    |    0    |
-|          |    trunc_ln54_42_fu_120    |    0    |    0    |
+|          |    trunc_ln54_33_fu_120    |    0    |    0    |
 |----------|----------------------------|---------|---------|
 |          |         mrv_fu_130         |    0    |    0    |
 |insertvalue|        mrv_1_fu_136        |    0    |    0    |

@@ -160,7 +160,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3986132519</coreId>
+              <coreId>1717530721</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
@@ -217,7 +217,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2895277328</coreId>
+              <coreId>1717530721</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
@@ -274,7 +274,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2897442496</coreId>
+              <coreId>1717530721</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
@@ -331,7 +331,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2885575760</coreId>
+              <coreId>1166149376</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -355,7 +355,7 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>sext_ln32_47</name>
+              <name>sext_ln32_35</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>32</lineNumber>
@@ -380,14 +380,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln32_47_fu_40_p1</rtlName>
+              <rtlName>sext_ln32_35_fu_40_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3985155559</coreId>
+              <coreId>1186018384</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -411,7 +411,7 @@
             <Obj>
               <type>0</type>
               <id>10</id>
-              <name>sext_ln32_48</name>
+              <name>sext_ln32_36</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>32</lineNumber>
@@ -436,14 +436,14 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln32_48_fu_44_p1</rtlName>
+              <rtlName>sext_ln32_36_fu_44_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2885569904</coreId>
+              <coreId>1204661808</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -499,7 +499,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2895083632</coreId>
+              <coreId>1199196768</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>48</bitwidth>
@@ -556,7 +556,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2906102336</coreId>
+              <coreId>30867732</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>48</bitwidth>
@@ -613,7 +613,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3940844960</coreId>
+              <coreId>1206846064</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>48</bitwidth>
@@ -670,7 +670,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2895097856</coreId>
+              <coreId>1202898688</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -716,7 +716,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2919190768</coreId>
+              <coreId>1646290021</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>48</bitwidth>
@@ -750,7 +750,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>0</coreId>
+            <coreId>1159037264</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -1223,7 +1223,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln32_47_fu_40</first>
+        <first>sext_ln32_35_fu_40</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1231,7 +1231,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln32_48_fu_44</first>
+        <first>sext_ln32_36_fu_44</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -94,10 +94,10 @@ entry:4 %sext_ln32 = sext i15 %data_0_val_read
 
 <Node id="9" bw="16" op_0_bw="15">
 <![CDATA[
-entry:5 %sext_ln32_47 = sext i15 %data_1_val_read
+entry:5 %sext_ln32_35 = sext i15 %data_1_val_read
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln32_47"/></StgValue>
+<StgValue><ssdm name="sext_ln32_35"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -109,10 +109,10 @@ entry:5 %sext_ln32_47 = sext i15 %data_1_val_read
 
 <Node id="10" bw="16" op_0_bw="15">
 <![CDATA[
-entry:6 %sext_ln32_48 = sext i15 %data_2_val_read
+entry:6 %sext_ln32_36 = sext i15 %data_2_val_read
 
 ]]></Node>
-<StgValue><ssdm name="sext_ln32_48"/></StgValue>
+<StgValue><ssdm name="sext_ln32_36"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -139,7 +139,7 @@ entry:7 %mrv = insertvalue i48 <undef>, i16 %sext_ln32
 
 <Node id="12" bw="48" op_0_bw="48" op_1_bw="16">
 <![CDATA[
-entry:8 %mrv_1 = insertvalue i48 %mrv, i16 %sext_ln32_47
+entry:8 %mrv_1 = insertvalue i48 %mrv, i16 %sext_ln32_35
 
 ]]></Node>
 <StgValue><ssdm name="mrv_1"/></StgValue>
@@ -154,7 +154,7 @@ entry:8 %mrv_1 = insertvalue i48 %mrv, i16 %sext_ln32_47
 
 <Node id="13" bw="48" op_0_bw="48" op_1_bw="16">
 <![CDATA[
-entry:9 %mrv_2 = insertvalue i48 %mrv_1, i16 %sext_ln32_48
+entry:9 %mrv_2 = insertvalue i48 %mrv_1, i16 %sext_ln32_36
 
 ]]></Node>
 <StgValue><ssdm name="mrv_2"/></StgValue>
@@ -218,9 +218,9 @@ entry:10 %ret_ln34 = ret i48 %mrv_2
 </dataflow>
 <dataflow id="34" from="data_0_val_read" to="sext_ln32" fromId="5" toId="6">
 </dataflow>
-<dataflow id="35" from="data_1_val_read" to="sext_ln32_47" fromId="4" toId="7">
+<dataflow id="35" from="data_1_val_read" to="sext_ln32_35" fromId="4" toId="7">
 </dataflow>
-<dataflow id="36" from="data_2_val_read" to="sext_ln32_48" fromId="3" toId="8">
+<dataflow id="36" from="data_2_val_read" to="sext_ln32_36" fromId="3" toId="8">
 </dataflow>
 <dataflow id="38" from="StgValue_37" to="mrv" fromId="37" toId="9">
 </dataflow>
@@ -228,11 +228,11 @@ entry:10 %ret_ln34 = ret i48 %mrv_2
 </dataflow>
 <dataflow id="40" from="mrv" to="mrv_1" fromId="9" toId="10">
 </dataflow>
-<dataflow id="41" from="sext_ln32_47" to="mrv_1" fromId="7" toId="10">
+<dataflow id="41" from="sext_ln32_35" to="mrv_1" fromId="7" toId="10">
 </dataflow>
 <dataflow id="42" from="mrv_1" to="mrv_2" fromId="10" toId="11">
 </dataflow>
-<dataflow id="43" from="sext_ln32_48" to="mrv_2" fromId="8" toId="11">
+<dataflow id="43" from="sext_ln32_36" to="mrv_2" fromId="8" toId="11">
 </dataflow>
 <dataflow id="44" from="mrv_2" to="ret_ln34" fromId="11" toId="12">
 </dataflow>
