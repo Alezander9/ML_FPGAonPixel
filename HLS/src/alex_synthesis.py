@@ -47,22 +47,35 @@ objects['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
 model = tf.keras.models.load_model(skl_model_path, custom_objects=objects)
 model = strip_pruning(model)
 
+# MODEL LOADING CONFIG
+objects = {}
+_add_supported_quantized_objects(objects)
+objects['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
+
+# LOAD MODEL
+model = tf.keras.models.load_model(skl_model_path, custom_objects=objects)
+model = strip_pruning(model)
+
 # MODEL SYNTHESIS CONFIG
+hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
+
+hls_config['Model']['ReuseFactor'] = 1
+hls_config['Model']['ClockPeriod'] = 25 # clock speed in ns
+
+for Layer in hls_config['LayerName'].keys():
+    print(Layer)
+    hls_config['LayerName'][Layer]['Strategy'] = 'Latency'
+    hls_config['LayerName'][Layer]['Precision']['weight'] = f'ap_fixed<{WEIGHTS_BITS},{INTEGER_BITS}>'
+    hls_config['LayerName'][Layer]['Precision']['bias'] = f'ap_fixed<{BIAS_BITS},{INTEGER_BITS}>'
+    hls_config['LayerName'][Layer]['Precision']['result'] = f'ap_fixed<{ACTIVATION_BITS},{INTEGER_BITS}>'
+    hls_config['LayerName'][Layer]['Trace'] = True
+    
 cfg = hls4ml.converters.create_config(backend='Vitis')
-cfg['IOType'] = 'io_parallel'
-cfg['ClockPeriod'] = 25  # Set the clock period in ns
+cfg['IOType'] = 'io_parallel'  # io_parallel is much faster. Must use io_stream if using CNNs
+cfg['HLSConfig'] = hls_config
 cfg['KerasModel'] = model
 cfg['OutputDir'] = 'alex_model/'
 cfg['XilinxPart'] = 'xcku040-ffva1156-2-e'
-
-# Model-wide configurations
-cfg['Model']['ReuseFactor'] = 1
-cfg['Model']['Strategy'] = 'Latency'
-cfg['Model'] = {}
-cfg['Model']['Precision'] = {}
-cfg['Model']['Precision']['weight'] = f'ap_fixed<{WEIGHTS_BITS},{INTEGER_BITS}>'
-cfg['Model']['Precision']['bias'] = f'ap_fixed<{BIAS_BITS},{INTEGER_BITS}>'
-cfg['Model']['Precision']['result'] = f'ap_fixed<{ACTIVATION_BITS},{INTEGER_BITS}>'
 
 # SYNTHESIZE MODEL
 hls_model = hls4ml.converters.keras_to_hls(cfg)
