@@ -7,7 +7,6 @@ skl_model_path = f'../../software/ALEX/{tslices}_slice_L2_S24_{wbbits}_{abits}_b
 
 # IMPORTS
 import hls4ml
-import plotting
 from scipy.special import softmax, expit as sigmoid
 from keras.models import load_model
 import keras
@@ -22,6 +21,9 @@ from qkeras.utils import _add_supported_quantized_objects
 print(tf.__version__)
 print(keras.__version__)
 print(tfmot.__version__)
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # GET XILINX LICENSES FROM RDSRV PATH
 os.environ['PATH'] = os.environ['XILINX_VIVADO'] + '/bin:' + os.environ['PATH']
@@ -75,7 +77,7 @@ hls_model = hls4ml.converters.keras_to_hls(cfg)
 hls_model.compile()
 hls_model.build()
 
-print("HLS SYNTHESIS TO C++ SUCCESS")
+print("('###################### HLS SYNTHESIS TO C++ SUCCESS ('######################")
 # printWeights(hls_model)
 
 # PRINT RESULTS
@@ -152,13 +154,25 @@ def read_hls_reports(directory):
 # Use the function
 read_hls_reports('./alex_model/myproject_prj/solution1/syn/report')
 print('###################### TESTING MODEL  ######################')
+
+def read_data_from_file(file_path):
+    data = np.loadtxt(file_path)
+    if data.ndim == 1:
+        # If it's a 1D array, reshape it to a column vector
+        return data.reshape(-1, 1)
+    else:
+        # If it's a 2D array, return as is
+        return data
+    
 # TEST MODEL
 def testModel():
-    data_file_path = './tb_input_features_small.dat'
-    out_file_path = './tb_output_predictions_small.dat'
+    input_data_file_path = './4_slice_test_inputs.dat'
+    output_data_file_path = './single_test_outputs.dat'
 
-    data = np.loadtxt(data_file_path)
-    y_sum_test = np.loadtxt(out_file_path)
+    data = read_data_from_file(input_data_file_path)
+    y_sum_test = read_data_from_file(output_data_file_path)
+
+    print('###################### TEST DATASET HAS BEEN LOADED  ######################')
 
     X_sum_test = data[:, :104]  # All rows, first 104 columns
     y0_test = data[:, 104]  # All rows, last column
@@ -166,18 +180,14 @@ def testModel():
     y_sum_test = y_sum_test.reshape(-1, 1)
     print("y_sum = ",  np.sum(y_sum_test))
 
-    perfect_pred = model.predict([X_sum_test, y0_test])
+    # perfect_pred = model.predict([X_sum_test, y0_test])
     pred = hls_model.predict([np.ascontiguousarray(X_sum_test), np.ascontiguousarray(y0_test)])
     hls_model.compile()
-
-    from sklearn.metrics import confusion_matrix
 
     thresholds = np.linspace(0, 1, 1000)
     signal_efficiencies = []
     background_rejections = []
 
-    import matplotlib.pyplot as plt
-    import seaborn as sns
     for threshold in thresholds:
         predicted_class = (pred > threshold).astype(int)
 
