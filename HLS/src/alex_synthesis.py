@@ -84,19 +84,61 @@ hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
 print('###################### PLOTTING MODEL ######################')
 hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
 print('###################### PRINTING REPORT  ######################')
-def read_csynth_report(file_path):
-    tree = ET.parse(file_path)
+def read_hls_reports(directory):
+    # Read csynth.xml
+    csynth_path = f"{directory}/csynth.xml"
+    tree = ET.parse(csynth_path)
     root = tree.getroot()
     
-    # Extract some basic information
+    print("Synthesis Report Summary:")
+    print("-------------------------")
+
+    # Performance estimates
+    print("\nPerformance Estimates:")
     for profile in root.findall('./PerformanceEstimates/SummaryOfOverallLatency'):
-        print(f"Best-case latency: {profile.find('Best-caseLatency').text}")
-        print(f"Worst-case latency: {profile.find('Worst-caseLatency').text}")
-        print(f"Interval-min: {profile.find('Interval-min').text}")
-        print(f"Interval-max: {profile.find('Interval-max').text}")
+        print(f"  Best-case latency: {profile.find('Best-caseLatency').text}")
+        print(f"  Worst-case latency: {profile.find('Worst-caseLatency').text}")
+        print(f"  Interval-min: {profile.find('Interval-min').text}")
+        print(f"  Interval-max: {profile.find('Interval-max').text}")
+
+    # Area estimates
+    print("\nArea Estimates:")
+    for area in root.findall('./AreaEstimates/Resources'):
+        print(f"  BRAM_18K: {area.find('BRAM_18K').text}")
+        print(f"  DSP48E: {area.find('DSP48E').text}")
+        print(f"  FF: {area.find('FF').text}")
+        print(f"  LUT: {area.find('LUT').text}")
+        print(f"  URAM: {area.find('URAM').text}")
+
+    # Interface summary
+    print("\nInterface Summary:")
+    for interface in root.findall('./InterfaceSummary/RtlPorts'):
+        print(f"  {interface.find('name').text}: {interface.find('object').text}")
+
+    # Read myproject_csynth.rpt for more detailed information
+    rpt_path = f"{directory}/myproject_csynth.rpt"
+    try:
+        with open(rpt_path, 'r') as f:
+            rpt_content = f.read()
+            
+        print("\nDetailed Synthesis Report:")
+        print("---------------------------")
+        
+        # Extract timing information
+        timing_section = rpt_content.split("Timing (ns)")[1].split("\n\n")[0]
+        print("\nTiming (ns):")
+        print(timing_section)
+        
+        # Extract utilization estimates
+        utilization_section = rpt_content.split("Utilization Estimates")[1].split("\n\n")[0]
+        print("\nUtilization Estimates:")
+        print(utilization_section)
+        
+    except FileNotFoundError:
+        print(f"Could not find {rpt_path}")
 
 # Use the function
-read_csynth_report('./alex_model/myproject_prj/solution1/syn/report/csynth.xml')
+read_hls_reports('./alex_model/myproject_prj/solution1/syn/report')
 print('###################### TESTING MODEL  ######################')
 # TEST MODEL
 def testModel():
