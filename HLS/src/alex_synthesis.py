@@ -84,6 +84,10 @@ hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
 print('###################### PLOTTING MODEL ######################')
 hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
 print('###################### PRINTING REPORT  ######################')
+def safe_find(element, path):
+    found = element.find(path)
+    return found.text if found is not None else "N/A"
+
 def read_hls_reports(directory):
     # Read csynth.xml
     csynth_path = f"{directory}/csynth.xml"
@@ -96,24 +100,24 @@ def read_hls_reports(directory):
     # Performance estimates
     print("\nPerformance Estimates:")
     for profile in root.findall('./PerformanceEstimates/SummaryOfOverallLatency'):
-        print(f"  Best-case latency: {profile.find('Best-caseLatency').text}")
-        print(f"  Worst-case latency: {profile.find('Worst-caseLatency').text}")
-        print(f"  Interval-min: {profile.find('Interval-min').text}")
-        print(f"  Interval-max: {profile.find('Interval-max').text}")
+        print(f"  Best-case latency: {safe_find(profile, 'Best-caseLatency')}")
+        print(f"  Worst-case latency: {safe_find(profile, 'Worst-caseLatency')}")
+        print(f"  Interval-min: {safe_find(profile, 'Interval-min')}")
+        print(f"  Interval-max: {safe_find(profile, 'Interval-max')}")
 
     # Area estimates
     print("\nArea Estimates:")
     for area in root.findall('./AreaEstimates/Resources'):
-        print(f"  BRAM_18K: {area.find('BRAM_18K').text}")
-        print(f"  DSP48E: {area.find('DSP48E').text}")
-        print(f"  FF: {area.find('FF').text}")
-        print(f"  LUT: {area.find('LUT').text}")
-        print(f"  URAM: {area.find('URAM').text}")
+        print(f"  BRAM_18K: {safe_find(area, 'BRAM_18K')}")
+        print(f"  DSP: {safe_find(area, 'DSP')} (or DSP48E: {safe_find(area, 'DSP48E')})")
+        print(f"  FF: {safe_find(area, 'FF')}")
+        print(f"  LUT: {safe_find(area, 'LUT')}")
+        print(f"  URAM: {safe_find(area, 'URAM')}")
 
     # Interface summary
     print("\nInterface Summary:")
     for interface in root.findall('./InterfaceSummary/RtlPorts'):
-        print(f"  {interface.find('name').text}: {interface.find('object').text}")
+        print(f"  {safe_find(interface, 'name')}: {safe_find(interface, 'object')}")
 
     # Read myproject_csynth.rpt for more detailed information
     rpt_path = f"{directory}/myproject_csynth.rpt"
@@ -125,14 +129,22 @@ def read_hls_reports(directory):
         print("---------------------------")
         
         # Extract timing information
-        timing_section = rpt_content.split("Timing (ns)")[1].split("\n\n")[0]
-        print("\nTiming (ns):")
-        print(timing_section)
+        timing_section = rpt_content.split("Timing (ns)")
+        if len(timing_section) > 1:
+            timing_info = timing_section[1].split("\n\n")[0]
+            print("\nTiming (ns):")
+            print(timing_info)
+        else:
+            print("\nTiming information not found in the report.")
         
         # Extract utilization estimates
-        utilization_section = rpt_content.split("Utilization Estimates")[1].split("\n\n")[0]
-        print("\nUtilization Estimates:")
-        print(utilization_section)
+        utilization_section = rpt_content.split("Utilization Estimates")
+        if len(utilization_section) > 1:
+            utilization_info = utilization_section[1].split("\n\n")[0]
+            print("\nUtilization Estimates:")
+            print(utilization_info)
+        else:
+            print("\nUtilization estimates not found in the report.")
         
     except FileNotFoundError:
         print(f"Could not find {rpt_path}")
