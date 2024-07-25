@@ -43,49 +43,32 @@ objects = {}
 _add_supported_quantized_objects(objects)
 objects['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
 
-# DISPLAY FUNCTIONS
-def printWeights(model):
-    print("PRINTING WEIGHTS")
-    for layer in model.layers:
-        for i, w in enumerate(layer.weights):
-            try:
-                print("weight is", w.numpy(), "for layer number", i)  # TF 2.x
-            except Exception:
-                print("weight is", layer.get_weights()[i], "for layer number", i)  # TF 2.x
-
 # LOAD MODEL
 model = tf.keras.models.load_model(skl_model_path, custom_objects=objects)
-# printWeights(model)
 model = strip_pruning(model)
 
 # MODEL SYNTHESIS CONFIG
-hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
-
-hls_config['Model']['ReuseFactor'] = 1 # MOST RELAVANT PARAMETER
-
-for Layer in hls_config['LayerName'].keys():
-    print(Layer)
-    hls_config['LayerName'][Layer]['Strategy'] = 'Latency'
-    hls_config['LayerName'][Layer]['Precision']['weight'] = f'ap_fixed<{WEIGHTS_BITS},{INTEGER_BITS}>'
-    hls_config['LayerName'][Layer]['Precision']['bias'] = f'ap_fixed<{BIAS_BITS},{INTEGER_BITS}>'
-    hls_config['LayerName'][Layer]['Precision']['result'] = f'ap_fixed<{ACTIVATION_BITS},{INTEGER_BITS}>'
-    hls_config['LayerName'][Layer]['Trace'] = True
-
 cfg = hls4ml.converters.create_config(backend='Vitis')
-
-cfg['IOType'] = 'io_parallel'  # io_parallel is much faster. Must use io_stream if using CNNs
-cfg['HLSConfig'] = hls_config
+cfg['IOType'] = 'io_parallel'
+cfg['ClockPeriod'] = 25  # Set the clock period in ns
 cfg['KerasModel'] = model
 cfg['OutputDir'] = 'alex_model/'
 cfg['XilinxPart'] = 'xcku040-ffva1156-2-e'
+
+# Model-wide configurations
+cfg['Model']['ReuseFactor'] = 1
+cfg['Model']['Strategy'] = 'Latency'
+cfg['Model'] = {}
+cfg['Model']['Precision'] = {}
+cfg['Model']['Precision']['weight'] = f'ap_fixed<{WEIGHTS_BITS},{INTEGER_BITS}>'
+cfg['Model']['Precision']['bias'] = f'ap_fixed<{BIAS_BITS},{INTEGER_BITS}>'
+cfg['Model']['Precision']['result'] = f'ap_fixed<{ACTIVATION_BITS},{INTEGER_BITS}>'
 
 # SYNTHESIZE MODEL
 hls_model = hls4ml.converters.keras_to_hls(cfg)
 hls_model.compile()
 hls_model.build()
-
 print("('###################### HLS SYNTHESIS TO C++ SUCCESS ('######################")
-# printWeights(hls_model)
 
 # PRINT RESULTS
 print('###################### PROFILING MODEL ######################')
@@ -102,10 +85,8 @@ def read_hls_reports(directory):
     csynth_path = f"{directory}/csynth.xml"
     tree = ET.parse(csynth_path)
     root = tree.getroot()
-    
     print("Synthesis Report Summary:")
     print("-------------------------")
-
     # Performance estimates
     print("\nPerformance Estimates:")
     for profile in root.findall('./PerformanceEstimates/SummaryOfOverallLatency'):
@@ -113,7 +94,6 @@ def read_hls_reports(directory):
         print(f"  Worst-case latency: {safe_find(profile, 'Worst-caseLatency')}")
         print(f"  Interval-min: {safe_find(profile, 'Interval-min')}")
         print(f"  Interval-max: {safe_find(profile, 'Interval-max')}")
-
     # Area estimates
     print("\nArea Estimates:")
     for area in root.findall('./AreaEstimates/Resources'):
@@ -122,7 +102,6 @@ def read_hls_reports(directory):
         print(f"  FF: {safe_find(area, 'FF')}")
         print(f"  LUT: {safe_find(area, 'LUT')}")
         print(f"  URAM: {safe_find(area, 'URAM')}")
-
     # Interface summary
     print("\nInterface Summary:")
     for interface in root.findall('./InterfaceSummary/RtlPorts'):
@@ -133,10 +112,8 @@ def read_hls_reports(directory):
     try:
         with open(rpt_path, 'r') as f:
             rpt_content = f.read()
-            
         print("\nDetailed Synthesis Report:")
         print("---------------------------")
-        
         # Extract timing information
         timing_section = rpt_content.split("Timing (ns)")
         if len(timing_section) > 1:
@@ -144,8 +121,7 @@ def read_hls_reports(directory):
             print("\nTiming (ns):")
             print(timing_info)
         else:
-            print("\nTiming information not found in the report.")
-        
+            print("\nTiming information not found in the report.")     
         # Extract utilization estimates
         utilization_section = rpt_content.split("Utilization Estimates")
         if len(utilization_section) > 1:
@@ -154,14 +130,13 @@ def read_hls_reports(directory):
             print(utilization_info)
         else:
             print("\nUtilization estimates not found in the report.")
-        
     except FileNotFoundError:
         print(f"Could not find {rpt_path}")
 
-# Use the function
 read_hls_reports('./alex_model/myproject_prj/solution1/syn/report')
 print('###################### TESTING MODEL  ######################')
 
+# LOAD TEST DATASET
 def read_data_from_file(file_path):
     data = np.loadtxt(file_path)
     if data.ndim == 1:
@@ -170,9 +145,8 @@ def read_data_from_file(file_path):
     else:
         # If it's a 2D array, return as is
         return data
-    
-# TEST MODEL
 
+# TEST MODEL
 def test_model(data, model, hyperparams):
     OUTPUT = hyperparams["OUTPUT"]
     
