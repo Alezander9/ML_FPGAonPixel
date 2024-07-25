@@ -27,8 +27,8 @@ architecture behav of myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_l
 
 attribute shreg_extract : string;
     signal sext_ln32_fu_36_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_47_fu_40_p1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal sext_ln32_48_fu_44_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_35_fu_40_p1 : STD_LOGIC_VECTOR (15 downto 0);
+    signal sext_ln32_36_fu_44_p1 : STD_LOGIC_VECTOR (15 downto 0);
 
 
 begin
@@ -37,11 +37,11 @@ begin
 
     ap_ready <= ap_const_logic_1;
     ap_return_0 <= sext_ln32_fu_36_p1;
-    ap_return_1 <= sext_ln32_47_fu_40_p1;
-    ap_return_2 <= sext_ln32_48_fu_44_p1;
-        sext_ln32_47_fu_40_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_1_val),16));
+    ap_return_1 <= sext_ln32_35_fu_40_p1;
+    ap_return_2 <= sext_ln32_36_fu_44_p1;
+        sext_ln32_35_fu_40_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_1_val),16));
 
-        sext_ln32_48_fu_44_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_2_val),16));
+        sext_ln32_36_fu_44_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_2_val),16));
 
         sext_ln32_fu_36_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(data_0_val),16));
 

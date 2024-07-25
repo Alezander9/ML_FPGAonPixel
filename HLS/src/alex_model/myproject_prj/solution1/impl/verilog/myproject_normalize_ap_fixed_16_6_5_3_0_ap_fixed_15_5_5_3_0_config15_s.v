@@ -28,15 +28,15 @@ output  [14:0] ap_return_2;
 wire   [22:0] y_fu_58_p3;
 wire   [22:0] add_ln54_fu_66_p2;
 wire   [22:0] y_1_fu_82_p3;
-wire   [22:0] add_ln54_47_fu_90_p2;
+wire   [22:0] add_ln54_35_fu_90_p2;
 wire   [22:0] y_2_fu_106_p3;
-wire   [22:0] add_ln54_48_fu_114_p2;
+wire   [22:0] add_ln54_36_fu_114_p2;
 
-assign add_ln54_47_fu_90_p2 = ($signed(y_1_fu_82_p3) + $signed(23'd8160256));
+assign add_ln54_35_fu_90_p2 = ($signed(y_1_fu_82_p3) + $signed(23'd8126464));
 
-assign add_ln54_48_fu_114_p2 = ($signed(y_2_fu_106_p3) + $signed(23'd8179200));
+assign add_ln54_36_fu_114_p2 = ($signed(y_2_fu_106_p3) + $signed(23'd8337408));
 
-assign add_ln54_fu_66_p2 = (y_fu_58_p3 + 23'd88064);
+assign add_ln54_fu_66_p2 = (y_fu_58_p3 + 23'd132608);
 
 assign ap_ready = 1'b1;
 
@@ -48,8 +48,8 @@ assign y_fu_58_p3 = {{data_0_val}, {8'd0}};
 
 assign ap_return_0 = {{add_ln54_fu_66_p2[22:8]}};
 
-assign ap_return_1 = {{add_ln54_47_fu_90_p2[22:8]}};
+assign ap_return_1 = {{add_ln54_35_fu_90_p2[22:8]}};
 
-assign ap_return_2 = {{add_ln54_48_fu_114_p2[22:8]}};
+assign ap_return_2 = {{add_ln54_36_fu_114_p2[22:8]}};
 
 endmodule //myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s

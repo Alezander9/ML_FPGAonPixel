@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s'" level="0">
-<item name = "Date">Mon Jul 15 08:30:58 2024
+<item name = "Date">Wed Jul 24 14:39:17 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -100,9 +100,27 @@
 <column name="ap_return_0">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
 <column name="ap_return_1">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
 <column name="ap_return_2">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_3">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_4">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_5">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_6">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_7">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_8">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_9">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_10">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
+<column name="ap_return_11">out, 16, ap_ctrl_hs, linear&lt;ap_fixed&lt;15, 5, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, linear_config7&gt;, return value</column>
 <column name="data_0_val">in, 15, ap_none, data_0_val, scalar</column>
 <column name="data_1_val">in, 15, ap_none, data_1_val, scalar</column>
 <column name="data_2_val">in, 15, ap_none, data_2_val, scalar</column>
+<column name="data_3_val">in, 15, ap_none, data_3_val, scalar</column>
+<column name="data_4_val">in, 15, ap_none, data_4_val, scalar</column>
+<column name="data_5_val">in, 15, ap_none, data_5_val, scalar</column>
+<column name="data_6_val">in, 15, ap_none, data_6_val, scalar</column>
+<column name="data_7_val">in, 15, ap_none, data_7_val, scalar</column>
+<column name="data_8_val">in, 15, ap_none, data_8_val, scalar</column>
+<column name="data_9_val">in, 15, ap_none, data_9_val, scalar</column>
+<column name="data_10_val">in, 15, ap_none, data_10_val, scalar</column>
+<column name="data_11_val">in, 15, ap_none, data_11_val, scalar</column>
 </table>
 </item>
 </section>

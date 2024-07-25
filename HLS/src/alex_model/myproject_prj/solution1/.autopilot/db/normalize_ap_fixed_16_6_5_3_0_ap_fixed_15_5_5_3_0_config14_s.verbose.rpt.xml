@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s'" level="0">
-<item name = "Date">Thu Jul 11 13:47:38 2024
+<item name = "Date">Wed Jul 24 14:39:17 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -47,7 +47,7 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 480, -</column>
+<column name="Expression">-, -, 0, 360, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
@@ -79,22 +79,18 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln54_49_fu_226_p2">+, 0, 0, 30, 23, 17</column>
-<column name="add_ln54_50_fu_250_p2">+, 0, 0, 30, 23, 14</column>
-<column name="add_ln54_51_fu_274_p2">+, 0, 0, 30, 23, 13</column>
-<column name="add_ln54_52_fu_298_p2">+, 0, 0, 30, 23, 17</column>
-<column name="add_ln54_53_fu_322_p2">+, 0, 0, 30, 23, 17</column>
-<column name="add_ln54_54_fu_346_p2">+, 0, 0, 30, 23, 16</column>
-<column name="add_ln54_55_fu_370_p2">+, 0, 0, 30, 23, 15</column>
-<column name="add_ln54_56_fu_394_p2">+, 0, 0, 30, 23, 16</column>
-<column name="add_ln54_57_fu_418_p2">+, 0, 0, 30, 23, 16</column>
-<column name="add_ln54_58_fu_442_p2">+, 0, 0, 30, 23, 18</column>
-<column name="add_ln54_59_fu_466_p2">+, 0, 0, 30, 23, 18</column>
-<column name="add_ln54_60_fu_490_p2">+, 0, 0, 30, 23, 18</column>
-<column name="add_ln54_61_fu_514_p2">+, 0, 0, 30, 23, 18</column>
-<column name="add_ln54_62_fu_538_p2">+, 0, 0, 30, 23, 18</column>
-<column name="add_ln54_63_fu_562_p2">+, 0, 0, 30, 23, 17</column>
-<column name="add_ln54_fu_202_p2">+, 0, 0, 30, 23, 16</column>
+<column name="add_ln54_37_fu_180_p2">+, 0, 0, 30, 23, 14</column>
+<column name="add_ln54_38_fu_204_p2">+, 0, 0, 30, 23, 15</column>
+<column name="add_ln54_39_fu_228_p2">+, 0, 0, 30, 23, 13</column>
+<column name="add_ln54_40_fu_252_p2">+, 0, 0, 30, 23, 15</column>
+<column name="add_ln54_41_fu_276_p2">+, 0, 0, 30, 23, 12</column>
+<column name="add_ln54_42_fu_300_p2">+, 0, 0, 30, 23, 10</column>
+<column name="add_ln54_43_fu_324_p2">+, 0, 0, 30, 23, 13</column>
+<column name="add_ln54_44_fu_348_p2">+, 0, 0, 30, 23, 15</column>
+<column name="add_ln54_45_fu_372_p2">+, 0, 0, 30, 23, 13</column>
+<column name="add_ln54_46_fu_396_p2">+, 0, 0, 30, 23, 14</column>
+<column name="add_ln54_47_fu_420_p2">+, 0, 0, 30, 23, 15</column>
+<column name="add_ln54_fu_156_p2">+, 0, 0, 30, 23, 12</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -125,26 +121,18 @@
 <column name="ap_return_9">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
 <column name="ap_return_10">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
 <column name="ap_return_11">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
-<column name="ap_return_12">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
-<column name="ap_return_13">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
-<column name="ap_return_14">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
-<column name="ap_return_15">out, 15, ap_ctrl_hs, normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;15, 5, 5, 3, 0&gt;, config14&gt;, return value</column>
 <column name="data_0_val">in, 15, ap_none, data_0_val, scalar</column>
 <column name="data_1_val">in, 15, ap_none, data_1_val, scalar</column>
 <column name="data_2_val">in, 15, ap_none, data_2_val, scalar</column>
 <column name="data_3_val">in, 15, ap_none, data_3_val, scalar</column>
-<column name="data_4_val">in, 16, ap_none, data_4_val, scalar</column>
+<column name="data_4_val">in, 15, ap_none, data_4_val, scalar</column>
 <column name="data_5_val">in, 15, ap_none, data_5_val, scalar</column>
 <column name="data_6_val">in, 15, ap_none, data_6_val, scalar</column>
-<column name="data_7_val">in, 16, ap_none, data_7_val, scalar</column>
+<column name="data_7_val">in, 15, ap_none, data_7_val, scalar</column>
 <column name="data_8_val">in, 15, ap_none, data_8_val, scalar</column>
 <column name="data_9_val">in, 15, ap_none, data_9_val, scalar</column>
 <column name="data_10_val">in, 15, ap_none, data_10_val, scalar</column>
 <column name="data_11_val">in, 15, ap_none, data_11_val, scalar</column>
-<column name="data_12_val">in, 16, ap_none, data_12_val, scalar</column>
-<column name="data_13_val">in, 16, ap_none, data_13_val, scalar</column>
-<column name="data_14_val">in, 15, ap_none, data_14_val, scalar</column>
-<column name="data_15_val">in, 15, ap_none, data_15_val, scalar</column>
 </table>
 </item>
 </section>

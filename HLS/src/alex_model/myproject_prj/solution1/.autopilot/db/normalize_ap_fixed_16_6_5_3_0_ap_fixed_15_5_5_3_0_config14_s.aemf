@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1720655439718">
-  <ports id="1" name="data_0_val" type="PortType" originalName="a" coreId="62" bitwidth="15">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1721857157392">
+  <ports id="1" name="data_0_val" type="PortType" originalName="a" coreId="2147483647" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="2" name="data_1_val" type="PortType" originalName="a" coreId="1734960750" bitwidth="15">
@@ -12,711 +12,531 @@
   <ports id="4" name="data_3_val" type="PortType" originalName="a" coreId="1734960750" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="data_4_val" type="PortType" originalName="a" coreId="1734960750" bitwidth="16">
+  <ports id="5" name="data_4_val" type="PortType" originalName="a" coreId="1734960750" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="data_5_val" type="PortType" originalName="a" coreId="0" bitwidth="15">
+  <ports id="6" name="data_5_val" type="PortType" originalName="a" coreId="1" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="7" name="data_6_val" type="PortType" originalName="a" coreId="6775156" bitwidth="15">
+  <ports id="7" name="data_6_val" type="PortType" originalName="a" coreId="108" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="8" name="data_7_val" type="PortType" originalName="a" coreId="187817816" bitwidth="16">
+  <ports id="8" name="data_7_val" type="PortType" originalName="a" coreId="1869438833" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="9" name="data_8_val" type="PortType" originalName="a" coreId="200314784" bitwidth="15">
+  <ports id="9" name="data_8_val" type="PortType" originalName="a" coreId="1164929744" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="10" name="data_9_val" type="PortType" originalName="a" coreId="661872436" bitwidth="15">
+  <ports id="10" name="data_9_val" type="PortType" originalName="a" coreId="1701668980" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="11" name="data_10_val" type="PortType" originalName="a" coreId="0" bitwidth="15">
+  <ports id="11" name="data_10_val" type="PortType" originalName="a" coreId="539767584" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="12" name="data_11_val" type="PortType" originalName="a" coreId="0" bitwidth="15">
+  <ports id="12" name="data_11_val" type="PortType" originalName="a" coreId="4294967295" bitwidth="15">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="13" name="data_12_val" type="PortType" originalName="a" coreId="1701668980" bitwidth="16">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <ports id="14" name="data_13_val" type="PortType" originalName="a" coreId="2699322" bitwidth="16">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <ports id="15" name="data_14_val" type="PortType" originalName="a" coreId="334309552" bitwidth="15">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <ports id="16" name="data_15_val" type="PortType" originalName="a" coreId="144" bitwidth="15">
-    <dataOutputObjs>read</dataOutputObjs>
-  </ports>
-  <ports id="26" name="ap_return_0" direction="DirOut">
+  <ports id="22" name="ap_return_0" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="27" name="ap_return_1" direction="DirOut">
+  <ports id="23" name="ap_return_1" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="28" name="ap_return_10" direction="DirOut">
+  <ports id="24" name="ap_return_10" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="29" name="ap_return_11" direction="DirOut">
+  <ports id="25" name="ap_return_11" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="30" name="ap_return_12" direction="DirOut">
+  <ports id="26" name="ap_return_2" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="31" name="ap_return_13" direction="DirOut">
+  <ports id="27" name="ap_return_3" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="32" name="ap_return_14" direction="DirOut">
+  <ports id="28" name="ap_return_4" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="33" name="ap_return_15" direction="DirOut">
+  <ports id="29" name="ap_return_5" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="34" name="ap_return_2" direction="DirOut">
+  <ports id="30" name="ap_return_6" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="35" name="ap_return_3" direction="DirOut">
+  <ports id="31" name="ap_return_7" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="36" name="ap_return_4" direction="DirOut">
+  <ports id="32" name="ap_return_8" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="37" name="ap_return_5" direction="DirOut">
+  <ports id="33" name="ap_return_9" direction="DirOut">
     <dataInputObjs>ret</dataInputObjs>
   </ports>
-  <ports id="38" name="ap_return_6" direction="DirOut">
-    <dataInputObjs>ret</dataInputObjs>
-  </ports>
-  <ports id="39" name="ap_return_7" direction="DirOut">
-    <dataInputObjs>ret</dataInputObjs>
-  </ports>
-  <ports id="40" name="ap_return_8" direction="DirOut">
-    <dataInputObjs>ret</dataInputObjs>
-  </ports>
-  <ports id="41" name="ap_return_9" direction="DirOut">
-    <dataInputObjs>ret</dataInputObjs>
-  </ports>
-  <edges id="103" source_obj="//@ports.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="105" source_obj="//@ports.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="108" source_obj="//@ports.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
-  <edges id="110" source_obj="//@ports.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="112" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
-  <edges id="114" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
-  <edges id="116" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
-  <edges id="118" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
-  <edges id="120" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
-  <edges id="122" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
-  <edges id="124" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
-  <edges id="126" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
-  <edges id="128" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
-  <edges id="130" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="132" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
-  <edges id="134" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
-  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
-  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
-  <edges id="145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
-  <edges id="153" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
-  <edges id="157" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
-  <edges id="161" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
-  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
-  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
-  <edges id="171" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
-  <edges id="173" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
-  <edges id="177" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
-  <edges id="182" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
-  <edges id="185" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
-  <edges id="189" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
-  <edges id="193" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
-  <edges id="195" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
-  <edges id="199" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
-  <edges id="203" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
-  <edges id="205" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
-  <edges id="209" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
-  <edges id="213" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
-  <edges id="215" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
-  <edges id="219" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
-  <edges id="223" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
-  <edges id="225" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
-  <edges id="229" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
-  <edges id="233" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
-  <edges id="235" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
-  <edges id="239" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
-  <edges id="243" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
-  <edges id="245" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
-  <edges id="249" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
-  <edges id="253" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
-  <edges id="255" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
-  <edges id="259" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
-  <edges id="263" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
-  <edges id="265" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
-  <edges id="269" source_obj="//@regions.0/@basic_blocks.0/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
-  <edges id="273" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
-  <edges id="275" source_obj="//@regions.0/@basic_blocks.0/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
-  <edges id="279" source_obj="//@regions.0/@basic_blocks.0/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
-  <edges id="283" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
-  <edges id="285" source_obj="//@regions.0/@basic_blocks.0/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
-  <edges id="289" source_obj="//@regions.0/@basic_blocks.0/@node_objs.59" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
-  <edges id="293" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.61"/>
-  <edges id="295" source_obj="//@regions.0/@basic_blocks.0/@node_objs.61" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.62"/>
-  <edges id="299" source_obj="//@regions.0/@basic_blocks.0/@node_objs.62" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.63"/>
-  <edges id="304" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.64"/>
-  <edges id="305" source_obj="//@regions.0/@basic_blocks.0/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
-  <edges id="306" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.65"/>
-  <edges id="307" source_obj="//@regions.0/@basic_blocks.0/@node_objs.65" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
-  <edges id="308" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.66"/>
-  <edges id="309" source_obj="//@regions.0/@basic_blocks.0/@node_objs.66" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
-  <edges id="310" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.67"/>
-  <edges id="311" source_obj="//@regions.0/@basic_blocks.0/@node_objs.67" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.68"/>
-  <edges id="312" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.68"/>
-  <edges id="313" source_obj="//@regions.0/@basic_blocks.0/@node_objs.68" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.69"/>
-  <edges id="314" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.69"/>
-  <edges id="315" source_obj="//@regions.0/@basic_blocks.0/@node_objs.69" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
-  <edges id="316" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.70"/>
-  <edges id="317" source_obj="//@regions.0/@basic_blocks.0/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
-  <edges id="318" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.71"/>
-  <edges id="319" source_obj="//@regions.0/@basic_blocks.0/@node_objs.71" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
-  <edges id="320" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.72"/>
-  <edges id="321" source_obj="//@regions.0/@basic_blocks.0/@node_objs.72" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.73"/>
-  <edges id="322" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.73"/>
-  <edges id="323" source_obj="//@regions.0/@basic_blocks.0/@node_objs.73" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.74"/>
-  <edges id="324" source_obj="//@regions.0/@basic_blocks.0/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.74"/>
-  <edges id="325" source_obj="//@regions.0/@basic_blocks.0/@node_objs.74" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.75"/>
-  <edges id="326" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.75"/>
-  <edges id="327" source_obj="//@regions.0/@basic_blocks.0/@node_objs.75" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.76"/>
-  <edges id="328" source_obj="//@regions.0/@basic_blocks.0/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.76"/>
-  <edges id="329" source_obj="//@regions.0/@basic_blocks.0/@node_objs.76" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.77"/>
-  <edges id="330" source_obj="//@regions.0/@basic_blocks.0/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.77"/>
-  <edges id="331" source_obj="//@regions.0/@basic_blocks.0/@node_objs.77" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.78"/>
-  <edges id="332" source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.78"/>
-  <edges id="333" source_obj="//@regions.0/@basic_blocks.0/@node_objs.78" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.79"/>
-  <edges id="334" source_obj="//@regions.0/@basic_blocks.0/@node_objs.63" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.79"/>
-  <edges id="335" source_obj="//@regions.0/@basic_blocks.0/@node_objs.79" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.80"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.16"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.17"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.18"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.19"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.20"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.21"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.22"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.23"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.24"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.25"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.26"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.27"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.28"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.29"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.30"/>
-  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.80" sink_obj="//@ports.31"/>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="368" pipe_depth="1" RegionName="normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config14>">
-    <basic_blocks id="100" name="normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config14>" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="data_15_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1314013527" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>data_15_val</dataInputObjs>
-        <dataOutputObjs>bitconcatenate</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="data_14_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="0" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>data_14_val</dataInputObjs>
-        <dataOutputObjs>bitconcatenate</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="data_13_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="335096128" contextFuncName="product" bitwidth="16" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>data_13_val</dataInputObjs>
-        <dataOutputObjs>bitconcatenate</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="data_12_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="542329928" contextFuncName="product" bitwidth="16" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>data_12_val</dataInputObjs>
-        <dataOutputObjs>bitconcatenate</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="data_11_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="101418312" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+  <edges id="79" source_obj="//@ports.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="81" source_obj="//@ports.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="83" source_obj="//@ports.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="85" source_obj="//@ports.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="87" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="89" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="91" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="93" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="95" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="97" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="99" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="101" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.0/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.28"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.0/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.29"/>
+  <edges id="168" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.30"/>
+  <edges id="170" source_obj="//@regions.0/@basic_blocks.0/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.31"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.32"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.33"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.34"/>
+  <edges id="184" source_obj="//@regions.0/@basic_blocks.0/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.35"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.36"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.0/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.37"/>
+  <edges id="194" source_obj="//@regions.0/@basic_blocks.0/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.38"/>
+  <edges id="198" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.39"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.0/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.40"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.0/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.41"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.42"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.0/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.43"/>
+  <edges id="214" source_obj="//@regions.0/@basic_blocks.0/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.44"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.45"/>
+  <edges id="220" source_obj="//@regions.0/@basic_blocks.0/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.46"/>
+  <edges id="224" source_obj="//@regions.0/@basic_blocks.0/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.47"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.48"/>
+  <edges id="230" source_obj="//@regions.0/@basic_blocks.0/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.49"/>
+  <edges id="232" source_obj="//@regions.0/@basic_blocks.0/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="233" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.50"/>
+  <edges id="234" source_obj="//@regions.0/@basic_blocks.0/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.51"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.0/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.52"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.0/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="239" source_obj="//@regions.0/@basic_blocks.0/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.53"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.0/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.0/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.54"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.0/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="243" source_obj="//@regions.0/@basic_blocks.0/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.55"/>
+  <edges id="244" source_obj="//@regions.0/@basic_blocks.0/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.0/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.56"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.0/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.0/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.57"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.0/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.0/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.58"/>
+  <edges id="250" source_obj="//@regions.0/@basic_blocks.0/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="251" source_obj="//@regions.0/@basic_blocks.0/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.59"/>
+  <edges id="252" source_obj="//@regions.0/@basic_blocks.0/@node_objs.59" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.60"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.12"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.13"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.14"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.15"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.16"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.17"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.18"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.19"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.20"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.21"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.22"/>
+  <edges source_obj="//@regions.0/@basic_blocks.0/@node_objs.60" sink_obj="//@ports.23"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="279" pipe_depth="1" RegionName="normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config14>">
+    <basic_blocks id="76" name="normalize&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_fixed&lt;15, 5, 5, 3, 0>, config14>" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="data_11_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1717530721" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_11_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="data_10_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="522974185" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="data_10_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1717530721" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_10_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="data_9_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="320275984" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="data_9_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1717530721" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_9_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="data_8_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="176" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="data_8_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1702258035" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_8_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="data_7_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="0" contextFuncName="product" bitwidth="16" opcode="read" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="data_7_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1155320784" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_7_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="data_6_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="0" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="data_6_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="0" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_6_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="data_5_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="200314784" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="data_5_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="0" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_5_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="data_4_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="483658437" contextFuncName="product" bitwidth="16" opcode="read" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="data_4_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1155305184" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_4_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="data_3_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="200314784" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="data_3_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="176" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_3_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="data_2_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="7955819" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="data_2_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1174310384" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_2_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="data_1_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="200314784" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="data_1_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="21573255" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_1_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="data_0_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="0" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="data_0_val_read" lineNumber="80" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." coreId="1159063616" contextFuncName="product" bitwidth="15" opcode="read" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="80" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>data_0_val</dataInputObjs>
         <dataOutputObjs>bitconcatenate</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="y" lineNumber="85" originalName="y" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_fu_194_p3" coreId="200314784" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="y" lineNumber="85" originalName="y" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_fu_148_p3" coreId="0" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="add_ln54" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_fu_202_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="add_ln54" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_fu_156_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="trunc_ln" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_0" coreId="200314784" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="trunc_ln" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_0" coreId="176" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="y_3" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_3_fu_218_p3" coreId="77403520" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="y_3" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_3_fu_172_p3" coreId="1155298016" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln54_49" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_49_fu_226_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="add_ln54_37" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_37_fu_180_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="trunc_ln54_s" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_1" coreId="2214593008" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="trunc_ln54_s" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_1" coreId="543515759" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="y_4" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_4_fu_242_p3" coreId="320248800" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="y_4" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_4_fu_196_p3" coreId="1174246240" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="add_ln54_50" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_50_fu_250_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="add_ln54_38" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_38_fu_204_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="trunc_ln54_43" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_2" coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="trunc_ln54_34" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_2" coreId="1155305184" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="y_5" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_5_fu_266_p3" coreId="77384296" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="y_5" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_5_fu_220_p3" coreId="1171088800" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="add_ln54_51" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_51_fu_274_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="add_ln54_39" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_39_fu_228_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="trunc_ln54_44" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_3" coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="trunc_ln54_35" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_3" coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="y_6" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_6_fu_290_p3" coreId="334139512" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="y_6" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_6_fu_244_p3" coreId="0" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="add_ln54_52" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_52_fu_298_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="add_ln54_40" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_40_fu_252_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="trunc_ln54_45" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_4" coreId="128" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="trunc_ln54_36" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_4" coreId="26958976" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="y_7" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_7_fu_314_p3" coreId="0" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="y_7" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_7_fu_268_p3" coreId="39840056" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="add_ln54_53" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_53_fu_322_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="add_ln54_41" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_41_fu_276_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="trunc_ln54_46" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_5" coreId="90992552" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="trunc_ln54_37" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_5" coreId="1167834616" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="y_8" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_8_fu_338_p3" coreId="334139728" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="y_8" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_8_fu_292_p3" coreId="1601200479" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln54_54" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_54_fu_346_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="add_ln54_42" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_42_fu_300_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="trunc_ln54_47" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_6" coreId="334135904" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="trunc_ln54_38" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_6" coreId="1155282472" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="y_9" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_9_fu_362_p3" coreId="0" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="y_9" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_9_fu_316_p3" coreId="0" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="add_ln54_55" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_55_fu_370_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="add_ln54_43" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_43_fu_324_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="trunc_ln54_48" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_7" coreId="334142544" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="trunc_ln54_39" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_7" coreId="1174266304" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="y_16" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_16_fu_386_p3" coreId="200314784" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="y_12" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_12_fu_340_p3" coreId="1198026656" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="add_ln54_56" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_56_fu_394_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="add_ln54_44" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_44_fu_348_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="38" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="trunc_ln54_49" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_8" coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="trunc_ln54_40" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_8" coreId="176" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="y_1" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_1_fu_410_p3" coreId="320253712" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="y_1" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_1_fu_364_p3" coreId="1160726048" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="add_ln54_57" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_57_fu_418_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add_ln54_45" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_45_fu_372_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="trunc_ln54_50" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_9" coreId="1936942413" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="trunc_ln54_41" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_9" coreId="1210859208" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="y_2" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_2_fu_434_p3" coreId="1330007625" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="y_2" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_2_fu_388_p3" coreId="1013283433" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="add_ln54_58" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_58_fu_442_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="add_ln54_46" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_46_fu_396_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="44" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="trunc_ln54_51" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_10" coreId="132184688" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="trunc_ln54_42" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_10" coreId="1174330184" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="y_10" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_10_fu_458_p3" coreId="101785504" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="y_10" lineNumber="85" originalName="y" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_10_fu_412_p3" coreId="27370991" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>add</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="add_ln54_59" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_59_fu_466_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="add_ln54_47" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_47_fu_420_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>bitconcatenate</dataInputObjs>
         <dataOutputObjs>partselect</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="trunc_ln54_52" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_11" coreId="101785608" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="trunc_ln54_43" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_11" coreId="1155305184" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="y_11" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_11_fu_482_p3" coreId="0" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>read</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="add_ln54_60" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_60_fu_490_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="54" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>bitconcatenate</dataInputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="trunc_ln54_53" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_12" coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="y_12" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_12_fu_506_p3" coreId="107403520" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>read</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="add_ln54_61" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_61_fu_514_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="57" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>bitconcatenate</dataInputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln54_54" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_13" coreId="131632560" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="y_13" lineNumber="85" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_13_fu_530_p3" coreId="334294240" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>read</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="add_ln54_62" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_62_fu_538_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="60" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>bitconcatenate</dataInputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="trunc_ln54_55" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_14" coreId="131597680" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="y_14" lineNumber="85" originalName="y" fileName="firmware/nnet_utils/nnet_mult.h" fileDirectory="../." rtlName="y_14_fu_554_p3" coreId="131601872" contextFuncName="product" bitwidth="23" opcode="bitconcatenate" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_mult.h" linenumber="85" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="product"/>
-        <dataInputObjs>read</dataInputObjs>
-        <dataOutputObjs>add</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="add_ln54_63" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="add_ln54_63_fu_562_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="23" opcode="add" m_display="0" m_delay="0.82" m_topoIndex="63" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>bitconcatenate</dataInputObjs>
-        <dataOutputObjs>partselect</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="trunc_ln54_56" lineNumber="54" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." rtlName="ap_return_15" coreId="519537087" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="15" opcode="partselect" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="54" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>add</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="mrv" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="103002224" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="mrv" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="24719718" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="mrv_1" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="131599992" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="mrv_1" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1885420404" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="mrv_2" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="131547920" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="mrv_2" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="mrv_3" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="131552112" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="mrv_3" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1155305184" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="mrv_4" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="131553552" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="mrv_4" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1198056064" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="mrv_5" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="335095464" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="mrv_5" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="mrv_6" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="90987520" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="mrv_6" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="46854457" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="mrv_7" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1702258035" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="mrv_7" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="mrv_8" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="200314784" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="mrv_8" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="176" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="mrv_9" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="99901920" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="mrv_9" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1701519394" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="mrv_10" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="99903776" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="mrv_10" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1446736751" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>insertvalue</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="mrv_11" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="99905216" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>insertvalue</dataInputObjs>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="mrv_12" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="195584208" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>insertvalue</dataInputObjs>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="mrv_13" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="1766203904" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>insertvalue</dataInputObjs>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="mrv_14" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="0" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
-        <dataInputObjs>insertvalue</dataInputObjs>
-        <dataInputObjs>partselect</dataInputObjs>
-        <dataOutputObjs>insertvalue</dataOutputObjs>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="mrv_15" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="176" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="240" opcode="insertvalue" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="mrv_11" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="480" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" bitwidth="180" opcode="insertvalue" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataInputObjs>partselect</dataInputObjs>
         <dataOutputObjs>ret</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="_ln63" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="542329928" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" opcode="ret" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="_ln63" lineNumber="63" fileName="firmware/nnet_utils/nnet_batchnorm.h" fileDirectory="../." coreId="784" contextFuncName="normalize_ap_fixed_16_6_AP_TRN_AP_WRAP_0_ap_fixed_15_5_AP_TRN_AP_WRAP_0_config14_s" opcode="ret" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/nnet_utils/nnet_batchnorm.h" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="normalize&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, config14&amp;gt;"/>
         <dataInputObjs>insertvalue</dataInputObjs>
         <dataOutputObjs>ap_return_0</dataOutputObjs>
         <dataOutputObjs>ap_return_1</dataOutputObjs>
         <dataOutputObjs>ap_return_10</dataOutputObjs>
         <dataOutputObjs>ap_return_11</dataOutputObjs>
-        <dataOutputObjs>ap_return_12</dataOutputObjs>
-        <dataOutputObjs>ap_return_13</dataOutputObjs>
-        <dataOutputObjs>ap_return_14</dataOutputObjs>
-        <dataOutputObjs>ap_return_15</dataOutputObjs>
         <dataOutputObjs>ap_return_2</dataOutputObjs>
         <dataOutputObjs>ap_return_3</dataOutputObjs>
         <dataOutputObjs>ap_return_4</dataOutputObjs>
@@ -737,408 +557,312 @@
     </basic_blocks>
   </regions>
   <ScheduleInfo time="0"/>
-  <expressionNodes realName="add_ln54_54_fu_346">
-    <nodeIds>54</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_10_fu_638">
-    <nodeIds>93</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln_fu_208">
-    <nodeIds>37</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_9_fu_632">
-    <nodeIds>92</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_48_fu_376">
-    <nodeIds>58</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_5_fu_266">
-    <nodeIds>44</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_2_fu_590">
-    <nodeIds>85</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_10_fu_458">
-    <nodeIds>68</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_63_fu_562">
-    <nodeIds>81</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_3_fu_596">
-    <nodeIds>86</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_43_fu_256">
-    <nodeIds>43</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_56_fu_394">
-    <nodeIds>60</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_52_fu_472">
-    <nodeIds>70</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_16_fu_386">
-    <nodeIds>59</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_50_fu_250">
-    <nodeIds>42</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_51_fu_274">
-    <nodeIds>45</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_52_fu_298">
-    <nodeIds>48</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_49_fu_400">
-    <nodeIds>61</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_7_fu_314">
+  <expressionNodes realName="trunc_ln54_39_fu_330">
     <nodeIds>50</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="mrv_11_fu_644">
-    <nodeIds>94</nodeIds>
+  <expressionNodes realName="add_ln54_38_fu_204">
+    <nodeIds>34</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln54_54_fu_520">
-    <nodeIds>76</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_56_fu_568">
-    <nodeIds>82</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_55_fu_544">
-    <nodeIds>79</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_12_fu_506">
-    <nodeIds>74</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_fu_194">
-    <nodeIds>35</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_7_fu_620">
-    <nodeIds>90</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_8_fu_338">
-    <nodeIds>53</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_13_fu_530">
-    <nodeIds>77</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_14_fu_554">
-    <nodeIds>80</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_1_fu_584">
-    <nodeIds>84</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_6_fu_290">
-    <nodeIds>47</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_53_fu_322">
-    <nodeIds>51</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_47_fu_352">
-    <nodeIds>55</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_4_fu_242">
-    <nodeIds>41</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_49_fu_226">
-    <nodeIds>39</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_51_fu_448">
-    <nodeIds>67</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_12_fu_650">
-    <nodeIds>95</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_fu_578">
-    <nodeIds>83</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_11_fu_482">
-    <nodeIds>71</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_s_fu_232">
-    <nodeIds>40</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_14_fu_662">
-    <nodeIds>97</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_9_fu_362">
-    <nodeIds>56</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_4_fu_602">
-    <nodeIds>87</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_5_fu_608">
-    <nodeIds>88</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_15_fu_668">
-    <nodeIds>98</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_53_fu_496">
-    <nodeIds>73</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_55_fu_370">
-    <nodeIds>57</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_57_fu_418">
-    <nodeIds>63</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_44_fu_280">
-    <nodeIds>46</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_60_fu_490">
-    <nodeIds>72</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_62_fu_538">
-    <nodeIds>78</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_1_fu_410">
-    <nodeIds>62</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="mrv_8_fu_626">
-    <nodeIds>91</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_2_fu_434">
-    <nodeIds>65</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="y_3_fu_218">
-    <nodeIds>38</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_61_fu_514">
-    <nodeIds>75</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_fu_202">
-    <nodeIds>36</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="trunc_ln54_50_fu_424">
-    <nodeIds>64</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_58_fu_442">
-    <nodeIds>66</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="add_ln54_59_fu_466">
+  <expressionNodes realName="mrv_6_fu_472">
     <nodeIds>69</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="mrv_6_fu_614">
-    <nodeIds>89</nodeIds>
+  <expressionNodes realName="y_fu_148">
+    <nodeIds>27</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln54_46_fu_328">
-    <nodeIds>52</nodeIds>
+  <expressionNodes realName="add_ln54_39_fu_228">
+    <nodeIds>37</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="mrv_13_fu_656">
-    <nodeIds>96</nodeIds>
+  <expressionNodes realName="y_5_fu_220">
+    <nodeIds>36</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="trunc_ln54_45_fu_304">
+  <expressionNodes realName="add_ln54_43_fu_324">
     <nodeIds>49</nodeIds>
   </expressionNodes>
-  <ioNodes realName="data_11_val_read_read_fu_122">
-    <nodeIds>23</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_12_val_read_read_fu_116">
-    <nodeIds>22</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_7_val_read_read_fu_146">
-    <nodeIds>27</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_8_val_read_read_fu_140">
+  <expressionNodes realName="y_1_fu_364">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_7_fu_268">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_44_fu_348">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_2_fu_388">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_6_fu_244">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_fu_156">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_3_fu_454">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_7_fu_478">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_10_fu_496">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_fu_436">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_41_fu_378">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_2_fu_448">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_162">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_9_fu_490">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_34_fu_210">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_35_fu_234">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_36_fu_258">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_40_fu_354">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_40_fu_252">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_41_fu_276">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_45_fu_372">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_46_fu_396">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_12_fu_340">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_8_fu_484">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_4_fu_460">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_11_fu_502">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_37_fu_282">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_9_fu_316">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_5_fu_466">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mrv_1_fu_442">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_8_fu_292">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_37_fu_180">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_38_fu_306">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_42_fu_402">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_43_fu_426">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_10_fu_412">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_42_fu_300">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln54_47_fu_420">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_3_fu_172">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_4_fu_196">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_s_fu_186">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="data_0_val_read_read_fu_142">
     <nodeIds>26</nodeIds>
   </ioNodes>
-  <ioNodes realName="data_6_val_read_read_fu_152">
-    <nodeIds>28</nodeIds>
+  <ioNodes realName="data_3_val_read_read_fu_124">
+    <nodeIds>23</nodeIds>
   </ioNodes>
-  <ioNodes realName="data_1_val_read_read_fu_182">
-    <nodeIds>33</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_5_val_read_read_fu_158">
-    <nodeIds>29</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_14_val_read_read_fu_104">
+  <ioNodes realName="data_6_val_read_read_fu_106">
     <nodeIds>20</nodeIds>
   </ioNodes>
-  <ioNodes realName="data_0_val_read_read_fu_188">
-    <nodeIds>34</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_10_val_read_read_fu_128">
-    <nodeIds>24</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_13_val_read_read_fu_110">
+  <ioNodes realName="data_5_val_read_read_fu_112">
     <nodeIds>21</nodeIds>
   </ioNodes>
-  <ioNodes realName="data_4_val_read_read_fu_164">
-    <nodeIds>30</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_3_val_read_read_fu_170">
-    <nodeIds>31</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_2_val_read_read_fu_176">
-    <nodeIds>32</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_15_val_read_read_fu_98">
-    <nodeIds>19</nodeIds>
-  </ioNodes>
-  <ioNodes realName="data_9_val_read_read_fu_134">
+  <ioNodes realName="data_1_val_read_read_fu_136">
     <nodeIds>25</nodeIds>
   </ioNodes>
+  <ioNodes realName="data_2_val_read_read_fu_130">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_7_val_read_read_fu_100">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_8_val_read_read_fu_94">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_11_val_read_read_fu_76">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_10_val_read_read_fu_82">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_9_val_read_read_fu_88">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="data_4_val_read_read_fu_118">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
   <ioPorts name="data_0_val">
-    <contents name="read">
-      <nodeIds>34</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_10_val">
-    <contents name="read">
-      <nodeIds>24</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_11_val">
-    <contents name="read">
-      <nodeIds>23</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_12_val">
-    <contents name="read">
-      <nodeIds>22</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_13_val">
-    <contents name="read">
-      <nodeIds>21</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_14_val">
-    <contents name="read">
-      <nodeIds>20</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_15_val">
-    <contents name="read">
-      <nodeIds>19</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_1_val">
-    <contents name="read">
-      <nodeIds>33</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_2_val">
-    <contents name="read">
-      <nodeIds>32</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_3_val">
-    <contents name="read">
-      <nodeIds>31</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_4_val">
-    <contents name="read">
-      <nodeIds>30</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_5_val">
-    <contents name="read">
-      <nodeIds>29</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_6_val">
-    <contents name="read">
-      <nodeIds>28</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_7_val">
-    <contents name="read">
-      <nodeIds>27</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="data_8_val">
     <contents name="read">
       <nodeIds>26</nodeIds>
     </contents>
   </ioPorts>
-  <ioPorts name="data_9_val">
+  <ioPorts name="data_10_val">
+    <contents name="read">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_11_val">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_1_val">
     <contents name="read">
       <nodeIds>25</nodeIds>
     </contents>
   </ioPorts>
+  <ioPorts name="data_2_val">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_3_val">
+    <contents name="read">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_4_val">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_5_val">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_6_val">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_7_val">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_8_val">
+    <contents name="read">
+      <nodeIds>18</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_9_val">
+    <contents name="read">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
   <ioPorts name="ap_return_0">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_1">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_10">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_11">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="ap_return_12">
-    <contents name="ret">
-      <nodeIds>99</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="ap_return_13">
-    <contents name="ret">
-      <nodeIds>99</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="ap_return_14">
-    <contents name="ret">
-      <nodeIds>99</nodeIds>
-    </contents>
-  </ioPorts>
-  <ioPorts name="ap_return_15">
-    <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_2">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_3">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_4">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_5">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_6">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_7">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_8">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="ap_return_9">
     <contents name="ret">
-      <nodeIds>99</nodeIds>
+      <nodeIds>75</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
     <states id="1">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
       <operations id="17" stage="1" latency="1"/>
       <operations id="18" stage="1" latency="1"/>
       <operations id="19" stage="1" latency="1"/>
@@ -1198,35 +922,11 @@
       <operations id="73" stage="1" latency="1"/>
       <operations id="74" stage="1" latency="1"/>
       <operations id="75" stage="1" latency="1"/>
-      <operations id="76" stage="1" latency="1"/>
-      <operations id="77" stage="1" latency="1"/>
-      <operations id="78" stage="1" latency="1"/>
-      <operations id="79" stage="1" latency="1"/>
-      <operations id="80" stage="1" latency="1"/>
-      <operations id="81" stage="1" latency="1"/>
-      <operations id="82" stage="1" latency="1"/>
-      <operations id="83" stage="1" latency="1"/>
-      <operations id="84" stage="1" latency="1"/>
-      <operations id="85" stage="1" latency="1"/>
-      <operations id="86" stage="1" latency="1"/>
-      <operations id="87" stage="1" latency="1"/>
-      <operations id="88" stage="1" latency="1"/>
-      <operations id="89" stage="1" latency="1"/>
-      <operations id="90" stage="1" latency="1"/>
-      <operations id="91" stage="1" latency="1"/>
-      <operations id="92" stage="1" latency="1"/>
-      <operations id="93" stage="1" latency="1"/>
-      <operations id="94" stage="1" latency="1"/>
-      <operations id="95" stage="1" latency="1"/>
-      <operations id="96" stage="1" latency="1"/>
-      <operations id="97" stage="1" latency="1"/>
-      <operations id="98" stage="1" latency="1"/>
-      <operations id="99" stage="1" latency="1"/>
     </states>
   </fsm>
   <CFGRegionsRoot>
     <cfgRegions mId="1" mTag="normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>100</basicBlocks>
+      <basicBlocks>76</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

@@ -193,7 +193,7 @@ myproject_mul_18s_17ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 17 ),
     .dout_WIDTH( 26 ))
-mul_18s_17ns_26_1_1_U2129(
+mul_18s_17ns_26_1_1_U1256(
     .din0(mul_ln268_fu_481_p0),
     .din1(mul_ln268_fu_481_p1),
     .dout(mul_ln268_fu_481_p2)
@@ -205,7 +205,7 @@ myproject_mul_18s_17ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 17 ),
     .dout_WIDTH( 26 ))
-mul_18s_17ns_26_1_1_U2130(
+mul_18s_17ns_26_1_1_U1257(
     .din0(mul_ln268_1_fu_500_p0),
     .din1(mul_ln268_1_fu_500_p1),
     .dout(mul_ln268_1_fu_500_p2)
@@ -217,7 +217,7 @@ myproject_mul_18s_17ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 17 ),
     .dout_WIDTH( 26 ))
-mul_18s_17ns_26_1_1_U2131(
+mul_18s_17ns_26_1_1_U1258(
     .din0(mul_ln268_2_fu_519_p0),
     .din1(mul_ln268_2_fu_519_p1),
     .dout(mul_ln268_2_fu_519_p2)

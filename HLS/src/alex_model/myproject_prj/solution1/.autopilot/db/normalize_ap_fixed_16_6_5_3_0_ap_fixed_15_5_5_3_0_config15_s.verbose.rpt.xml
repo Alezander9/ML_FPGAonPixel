@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s'" level="0">
-<item name = "Date">Thu Jul 11 13:47:39 2024
+<item name = "Date">Wed Jul 24 14:39:17 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -79,9 +79,9 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln54_47_fu_90_p2">+, 0, 0, 30, 23, 19</column>
-<column name="add_ln54_48_fu_114_p2">+, 0, 0, 30, 23, 19</column>
-<column name="add_ln54_fu_66_p2">+, 0, 0, 30, 23, 17</column>
+<column name="add_ln54_35_fu_90_p2">+, 0, 0, 30, 23, 20</column>
+<column name="add_ln54_36_fu_114_p2">+, 0, 0, 30, 23, 17</column>
+<column name="add_ln54_fu_66_p2">+, 0, 0, 30, 23, 18</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">

@@ -26,21 +26,21 @@ output  [15:0] ap_return_1;
 output  [15:0] ap_return_2;
 
 wire  signed [15:0] sext_ln32_fu_36_p1;
-wire  signed [15:0] sext_ln32_47_fu_40_p1;
-wire  signed [15:0] sext_ln32_48_fu_44_p1;
+wire  signed [15:0] sext_ln32_35_fu_40_p1;
+wire  signed [15:0] sext_ln32_36_fu_44_p1;
 
 assign ap_ready = 1'b1;
 
-assign sext_ln32_47_fu_40_p1 = $signed(data_1_val);
+assign sext_ln32_35_fu_40_p1 = $signed(data_1_val);
 
-assign sext_ln32_48_fu_44_p1 = $signed(data_2_val);
+assign sext_ln32_36_fu_44_p1 = $signed(data_2_val);
 
 assign sext_ln32_fu_36_p1 = $signed(data_0_val);
 
 assign ap_return_0 = sext_ln32_fu_36_p1;
 
-assign ap_return_1 = sext_ln32_47_fu_40_p1;
+assign ap_return_1 = sext_ln32_35_fu_40_p1;
 
-assign ap_return_2 = sext_ln32_48_fu_44_p1;
+assign ap_return_2 = sext_ln32_36_fu_44_p1;
 
 endmodule //myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s

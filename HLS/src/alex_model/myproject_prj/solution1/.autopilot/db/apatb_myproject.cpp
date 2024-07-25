@@ -20,18 +20,12 @@ using namespace std;
 // wrapc file define:
 #define AUTOTB_TVIN_y_timed_input "../tv/cdatafile/c.myproject.autotvin_y_timed_input.dat"
 #define AUTOTB_TVOUT_y_timed_input "../tv/cdatafile/c.myproject.autotvout_y_timed_input.dat"
-#define AUTOTB_TVIN_layer8_out_0 "../tv/cdatafile/c.myproject.autotvin_layer8_out_0.dat"
-#define AUTOTB_TVOUT_layer8_out_0 "../tv/cdatafile/c.myproject.autotvout_layer8_out_0.dat"
-#define AUTOTB_TVIN_layer8_out_1 "../tv/cdatafile/c.myproject.autotvin_layer8_out_1.dat"
-#define AUTOTB_TVOUT_layer8_out_1 "../tv/cdatafile/c.myproject.autotvout_layer8_out_1.dat"
-#define AUTOTB_TVIN_layer8_out_2 "../tv/cdatafile/c.myproject.autotvin_layer8_out_2.dat"
-#define AUTOTB_TVOUT_layer8_out_2 "../tv/cdatafile/c.myproject.autotvout_layer8_out_2.dat"
+#define AUTOTB_TVIN_layer10_out "../tv/cdatafile/c.myproject.autotvin_layer10_out.dat"
+#define AUTOTB_TVOUT_layer10_out "../tv/cdatafile/c.myproject.autotvout_layer10_out.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_layer8_out_0 "../tv/rtldatafile/rtl.myproject.autotvout_layer8_out_0.dat"
-#define AUTOTB_TVOUT_PC_layer8_out_1 "../tv/rtldatafile/rtl.myproject.autotvout_layer8_out_1.dat"
-#define AUTOTB_TVOUT_PC_layer8_out_2 "../tv/rtldatafile/rtl.myproject.autotvout_layer8_out_2.dat"
+#define AUTOTB_TVOUT_PC_layer10_out "../tv/rtldatafile/rtl.myproject.autotvout_layer10_out.dat"
 
 
 namespace hls::sim
@@ -1140,14 +1134,14 @@ namespace hls::sim
 
 
 extern "C"
-void myproject_hw_stub_wrapper(void*, void*, void*, void*);
+void myproject_hw_stub_wrapper(void*, void*);
 
 extern "C"
-void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb_param_layer8_out_0, void* __xlx_apatb_param_layer8_out_1, void* __xlx_apatb_param_layer8_out_2)
+void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb_param_layer10_out)
 {
   static hls::sim::Register port0 {
     .name = "y_timed_input",
-    .width = 1680,
+    .width = 795,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
@@ -1157,64 +1151,32 @@ void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb
   port0.param = __xlx_apatb_param_y_timed_input;
 
   static hls::sim::Register port1 {
-    .name = "layer8_out_0",
-    .width = 16,
+    .name = "layer10_out",
+    .width = 15,
 #ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer8_out_0),
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer10_out),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_layer8_out_0),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_layer8_out_0),
+    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_layer10_out),
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_layer10_out),
 #endif
   };
-  port1.param = __xlx_apatb_param_layer8_out_0;
-
-  static hls::sim::Register port2 {
-    .name = "layer8_out_1",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer8_out_1),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_layer8_out_1),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_layer8_out_1),
-#endif
-  };
-  port2.param = __xlx_apatb_param_layer8_out_1;
-
-  static hls::sim::Register port3 {
-    .name = "layer8_out_2",
-    .width = 16,
-#ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer8_out_2),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_layer8_out_2),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_layer8_out_2),
-#endif
-  };
-  port3.param = __xlx_apatb_param_layer8_out_2;
+  port1.param = __xlx_apatb_param_layer10_out;
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
     check(port1);
-    check(port2);
-    check(port3);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     CodeState = DUMP_INPUTS;
     dump(port0, port0.iwriter, tcl.AESL_transaction);
     dump(port1, port1.iwriter, tcl.AESL_transaction);
-    dump(port2, port2.iwriter, tcl.AESL_transaction);
-    dump(port3, port3.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
-    port2.doTCL(tcl);
-    port3.doTCL(tcl);
     CodeState = CALL_C_DUT;
-    myproject_hw_stub_wrapper(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer8_out_0, __xlx_apatb_param_layer8_out_1, __xlx_apatb_param_layer8_out_2);
+    myproject_hw_stub_wrapper(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer10_out);
     CodeState = DUMP_OUTPUTS;
     dump(port1, port1.owriter, tcl.AESL_transaction);
-    dump(port2, port2.owriter, tcl.AESL_transaction);
-    dump(port3, port3.owriter, tcl.AESL_transaction);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

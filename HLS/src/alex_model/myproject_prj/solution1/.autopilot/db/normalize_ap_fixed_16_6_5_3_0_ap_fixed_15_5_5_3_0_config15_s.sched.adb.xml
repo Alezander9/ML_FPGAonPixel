@@ -109,7 +109,7 @@ entry:5 %y = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data_0
 
 <Node id="10" bw="23" op_0_bw="23" op_1_bw="23">
 <![CDATA[
-entry:6 %add_ln54 = add i23 %y, i23 88064
+entry:6 %add_ln54 = add i23 %y, i23 132608
 
 ]]></Node>
 <StgValue><ssdm name="add_ln54"/></StgValue>
@@ -154,10 +154,10 @@ entry:8 %y_1 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %data
 
 <Node id="13" bw="23" op_0_bw="23" op_1_bw="23">
 <![CDATA[
-entry:9 %add_ln54_47 = add i23 %y_1, i23 8160256
+entry:9 %add_ln54_35 = add i23 %y_1, i23 8126464
 
 ]]></Node>
-<StgValue><ssdm name="add_ln54_47"/></StgValue>
+<StgValue><ssdm name="add_ln54_35"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -169,7 +169,7 @@ entry:9 %add_ln54_47 = add i23 %y_1, i23 8160256
 
 <Node id="14" bw="15" op_0_bw="15" op_1_bw="23" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:10 %trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_47, i32 8, i32 22
+entry:10 %trunc_ln54_s = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_35, i32 8, i32 22
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln54_s"/></StgValue>
@@ -199,10 +199,10 @@ entry:11 %y_2 = bitconcatenate i23 @_ssdm_op_BitConcatenate.i23.i15.i8, i15 %dat
 
 <Node id="16" bw="23" op_0_bw="23" op_1_bw="23">
 <![CDATA[
-entry:12 %add_ln54_48 = add i23 %y_2, i23 8179200
+entry:12 %add_ln54_36 = add i23 %y_2, i23 8337408
 
 ]]></Node>
-<StgValue><ssdm name="add_ln54_48"/></StgValue>
+<StgValue><ssdm name="add_ln54_36"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -214,10 +214,10 @@ entry:12 %add_ln54_48 = add i23 %y_2, i23 8179200
 
 <Node id="17" bw="15" op_0_bw="15" op_1_bw="23" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry:13 %trunc_ln54_42 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_48, i32 8, i32 22
+entry:13 %trunc_ln54_33 = partselect i15 @_ssdm_op_PartSelect.i15.i23.i32.i32, i23 %add_ln54_36, i32 8, i32 22
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln54_42"/></StgValue>
+<StgValue><ssdm name="trunc_ln54_33"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -259,7 +259,7 @@ entry:15 %mrv_1 = insertvalue i45 %mrv, i15 %trunc_ln54_s
 
 <Node id="20" bw="45" op_0_bw="45" op_1_bw="15">
 <![CDATA[
-entry:16 %mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_42
+entry:16 %mrv_2 = insertvalue i45 %mrv_1, i15 %trunc_ln54_33
 
 ]]></Node>
 <StgValue><ssdm name="mrv_2"/></StgValue>

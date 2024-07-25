@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Mon Jul 15 08:30:12 2024
+<item name = "Date">Thu Jul 25 10:12:07 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.344 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.194 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7, 7, 35.000 ns, 35.000 ns, 1, 1, yes</column>
+<column name="">6, 6, 30.000 ns, 30.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_79">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
-<column name="call_ret2_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config9_s_fu_85">normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret3_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s_fu_161">linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret4_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config4_s_fu_237">relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret5_normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config5_s_fu_313">normalize_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s_fu_389">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
-<column name="call_ret7_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config10_s_fu_465">normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret8_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s_fu_472">linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="grp_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config8_s_fu_479">softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config8_s, 2, 2, 10.000 ns, 10.000 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_159">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_175">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
