@@ -60,7 +60,6 @@ model = strip_pruning(model)
 hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
 
 hls_config['Model']['ReuseFactor'] = 1
-hls_config['Model']['ClockPeriod'] = 25 # clock speed in ns
 
 for Layer in hls_config['LayerName'].keys():
     print(Layer)
@@ -72,6 +71,7 @@ for Layer in hls_config['LayerName'].keys():
     
 cfg = hls4ml.converters.create_config(backend='Vitis')
 cfg['IOType'] = 'io_parallel'  # io_parallel is much faster. Must use io_stream if using CNNs
+cfg['ClockPeriod'] = 25 # clock speed in ns
 cfg['HLSConfig'] = hls_config
 cfg['KerasModel'] = model
 cfg['OutputDir'] = 'alex_model/'
@@ -128,21 +128,23 @@ def read_hls_reports(directory):
         print("\nDetailed Synthesis Report:")
         print("---------------------------")
         # Extract timing information
-        timing_section = rpt_content.split("Timing (ns)")
+        timing_section = rpt_content.split("Performance Estimates")
         if len(timing_section) > 1:
-            timing_info = timing_section[1].split("\n\n")[0]
-            print("\nTiming (ns):")
+            clock_info = timing_section[1].split("\n\n")[0]
+            timing_info = timing_section[1].split("\n\n")[1]
+            print("\nTiming Estimates:")
+            print(clock_info)
             print(timing_info)
         else:
             print("\nTiming information not found in the report.")     
         # Extract utilization estimates
-        utilization_section = rpt_content.split("Utilization Estimates")
-        if len(utilization_section) > 1:
-            utilization_info = utilization_section[1].split("\n\n")[0]
-            print("\nUtilization Estimates:")
-            print(utilization_info)
-        else:
-            print("\nUtilization estimates not found in the report.")
+        # utilization_section = rpt_content.split("Utilization Estimates")
+        # if len(utilization_section) > 1:
+        #     utilization_info = utilization_section[1].split("\n\n")[0]
+        #     print("\nUtilization Estimates:")
+        #     print(utilization_info)
+        # else:
+        #     print("\nUtilization estimates not found in the report.")
     except FileNotFoundError:
         print(f"Could not find {rpt_path}")
 

@@ -1,5 +1,5 @@
 Backend: Vitis
-ClockPeriod: 5
+ClockPeriod: 25
 HLSConfig:
   LayerName:
     batch_normalization_18:
@@ -92,6 +92,6 @@ KerasModel: !keras_model 'alex_model//keras_model.h5'
 OutputDir: alex_model/
 Part: xcvu13p-flga2577-2-e
 ProjectName: myproject
-Stamp: FF47ce8b
+Stamp: 7982Daea
 Version: 1.0.0
 XilinxPart: xcku040-ffva1156-2-e

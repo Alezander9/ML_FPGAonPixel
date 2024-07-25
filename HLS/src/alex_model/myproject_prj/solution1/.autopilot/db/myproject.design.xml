@@ -5,7 +5,7 @@
 <ModuleName>myproject</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s_fu_53</InstName>
+<InstName>call_ret1_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s_fu_53</InstName>
 <ModuleName>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>53</ID>
@@ -23,7 +23,7 @@
 <ID>87</ID>
 </Instance>
 <Instance>
-<InstName>grp_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s_fu_115</InstName>
+<InstName>call_ret4_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s_fu_115</InstName>
 <ModuleName>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>115</ID>
@@ -55,20 +55,20 @@
 <Name>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>4.146</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.647</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1</Best-caseLatency>
-<Average-caseLatency>1</Average-caseLatency>
-<Worst-caseLatency>1</Worst-caseLatency>
-<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>0</Best-caseLatency>
+<Average-caseLatency>0</Average-caseLatency>
+<Worst-caseLatency>0</Worst-caseLatency>
+<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -77,10 +77,10 @@
 <DSP>252</DSP>
 <AVAIL_DSP>12288</AVAIL_DSP>
 <UTIL_DSP>2</UTIL_DSP>
-<FF>1753</FF>
+<FF>0</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>37245</LUT>
+<UTIL_FF>0</UTIL_FF>
+<LUT>36909</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -93,24 +93,13 @@
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
-<name>ap_clk</name>
+<name>ap_ready</name>
 <Object>dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config2&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -379,17 +368,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ap_ce</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config2&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>data_val</name>
 <Object>data_val</Object>
 <Type>scalar</Type>
@@ -406,8 +384,8 @@
 <Name>normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 <EstimatedClockPeriod>2.691</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
@@ -988,8 +966,8 @@
 <Name>relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 <EstimatedClockPeriod>1.046</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
@@ -1570,20 +1548,20 @@
 <Name>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>4.146</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.902</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1</Best-caseLatency>
-<Average-caseLatency>1</Average-caseLatency>
-<Worst-caseLatency>1</Worst-caseLatency>
-<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>0</Best-caseLatency>
+<Average-caseLatency>0</Average-caseLatency>
+<Worst-caseLatency>0</Worst-caseLatency>
+<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -1592,10 +1570,10 @@
 <DSP>54</DSP>
 <AVAIL_DSP>12288</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>433</FF>
+<FF>0</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>9404</LUT>
+<UTIL_FF>0</UTIL_FF>
+<LUT>9236</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1608,24 +1586,13 @@
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
-<name>ap_clk</name>
+<name>ap_ready</name>
 <Object>dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -1760,17 +1727,6 @@
 <Dir>out</Dir>
 <Bits>12</Bits>
 <Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ce</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>data_0_val</name>
@@ -2042,8 +1998,8 @@
 <Name>normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 <EstimatedClockPeriod>2.729</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
@@ -2360,8 +2316,8 @@
 <Name>relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 <EstimatedClockPeriod>1.046</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
@@ -2678,8 +2634,8 @@
 <Name>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 <EstimatedClockPeriod>4.134</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
@@ -2875,20 +2831,20 @@
 <Name>myproject</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>4.146</EstimatedClockPeriod>
+<EstimatedClockPeriod>14.286</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>6</Best-caseLatency>
-<Average-caseLatency>6</Average-caseLatency>
-<Worst-caseLatency>6</Worst-caseLatency>
-<Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>30.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>30.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>25.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>25.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>25.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>7</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
@@ -2897,10 +2853,10 @@
 <DSP>335</DSP>
 <AVAIL_DSP>12288</AVAIL_DSP>
 <UTIL_DSP>2</UTIL_DSP>
-<FF>3694</FF>
+<FF>783</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>49457</LUT>
+<LUT>48953</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>

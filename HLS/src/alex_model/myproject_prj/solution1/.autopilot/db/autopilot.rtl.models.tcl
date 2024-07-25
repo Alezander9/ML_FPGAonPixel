@@ -1,14 +1,14 @@
 set SynModuleInfo {
   {SRCNAME {dense_latency<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config2>} MODELNAME dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s RTLNAME myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s
     SUBMODULES {
-      {MODELNAME myproject_mul_12s_8ns_17_1_0 RTLNAME myproject_mul_12s_8ns_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_7s_17_1_0 RTLNAME myproject_mul_12s_7s_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_7ns_17_1_0 RTLNAME myproject_mul_12s_7ns_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_6ns_17_1_0 RTLNAME myproject_mul_12s_6ns_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_6s_17_1_0 RTLNAME myproject_mul_12s_6s_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_5ns_17_1_0 RTLNAME myproject_mul_12s_5ns_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_8s_17_1_0 RTLNAME myproject_mul_12s_8s_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_mul_12s_5s_17_1_0 RTLNAME myproject_mul_12s_5s_17_1_0 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_8ns_17_1_1 RTLNAME myproject_mul_12s_8ns_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_7s_17_1_1 RTLNAME myproject_mul_12s_7s_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_7ns_17_1_1 RTLNAME myproject_mul_12s_7ns_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_6ns_17_1_1 RTLNAME myproject_mul_12s_6ns_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_6s_17_1_1 RTLNAME myproject_mul_12s_6s_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_5ns_17_1_1 RTLNAME myproject_mul_12s_5ns_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_8s_17_1_1 RTLNAME myproject_mul_12s_8s_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_mul_12s_5s_17_1_1 RTLNAME myproject_mul_12s_5s_17_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME {normalize<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config4>} MODELNAME normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s RTLNAME myproject_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s

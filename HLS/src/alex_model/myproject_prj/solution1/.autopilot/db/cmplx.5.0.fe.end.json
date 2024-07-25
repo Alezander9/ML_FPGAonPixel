@@ -1,41 +1,14 @@
 {
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "6",
+        "instructions": "124",
+        "total_instructions": "6647",
+        "calls": "3 5 4 2 6 7 1",
+        "basicblocks": "1"
+    },
     "1": {
-        "name": "relu<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, relu_config5>",
-        "file": "myproject.cpp",
-        "fileloc": "0",
-        "instructions": "146",
-        "total_instructions": "146",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "2": {
-        "name": "relu<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, relu_config9>",
-        "file": "myproject.cpp",
-        "fileloc": "0",
-        "instructions": "74",
-        "total_instructions": "74",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "3": {
-        "name": "normalize<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config4>",
-        "file": "myproject.cpp",
-        "fileloc": "0",
-        "instructions": "203",
-        "total_instructions": "203",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "4": {
-        "name": "dense_latency<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config2>",
-        "file": "myproject.cpp",
-        "fileloc": "0",
-        "instructions": "4704",
-        "total_instructions": "4704",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "5": {
         "name": "dense_latency<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config10>",
         "file": "myproject.cpp",
         "fileloc": "0",
@@ -44,7 +17,7 @@
         "calls": "",
         "basicblocks": "1"
     },
-    "6": {
+    "2": {
         "name": "dense_latency<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config6>",
         "file": "myproject.cpp",
         "fileloc": "0",
@@ -53,7 +26,34 @@
         "calls": "",
         "basicblocks": "1"
     },
-    "7": {
+    "3": {
+        "name": "dense_latency<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config2>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "4704",
+        "total_instructions": "4704",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "relu<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, relu_config5>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "146",
+        "total_instructions": "146",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "normalize<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config4>",
+        "file": "myproject.cpp",
+        "fileloc": "0",
+        "instructions": "203",
+        "total_instructions": "203",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "6": {
         "name": "normalize<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, config8>",
         "file": "myproject.cpp",
         "fileloc": "0",
@@ -62,13 +62,13 @@
         "calls": "",
         "basicblocks": "1"
     },
-    "0": {
-        "name": "myproject",
+    "7": {
+        "name": "relu<ap_fixed<12, 2, 5, 3, 0>, ap_fixed<12, 2, 5, 3, 0>, relu_config9>",
         "file": "myproject.cpp",
-        "fileloc": "6",
-        "instructions": "124",
-        "total_instructions": "6647",
-        "calls": "4 3 1 6 7 2 5",
+        "fileloc": "0",
+        "instructions": "74",
+        "total_instructions": "74",
+        "calls": "",
         "basicblocks": "1"
     }
 }

@@ -1,6 +1,6 @@
 
 set TopModule "myproject"
-set ClockPeriod 5
+set ClockPeriod 25
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
