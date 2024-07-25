@@ -1,5 +1,9 @@
 # PATH OF MODEL TO SYNTHESIZE
-skl_model_path = '../../software/ALEX/4_slice_L2_S24_10_15_best.h5'
+tslices = 4
+wbbits = 10
+abits = 15
+ibits = 2
+skl_model_path = f'../../software/ALEX/{tslices}_slice_L2_S24_{wbbits}_{abits}_best.h5'
 
 # IMPORTS
 import hls4ml
@@ -8,6 +12,7 @@ from scipy.special import softmax, expit as sigmoid
 from keras.models import load_model
 import keras
 import os
+import xml.etree.ElementTree as ET
 import numpy as np
 import tensorflow_model_optimization as tfmot
 import tensorflow as tf
@@ -52,9 +57,9 @@ hls_config['Model']['ReuseFactor'] = 1 # MOST RELAVANT PARAMETER
 for Layer in hls_config['LayerName'].keys():
     print(Layer)
     hls_config['LayerName'][Layer]['Strategy'] = 'Latency'
-    hls_config['LayerName'][Layer]['Precision']['weight'] = 'ap_fixed<10,2>'
-    hls_config['LayerName'][Layer]['Precision']['bias'] = 'ap_fixed<10,2>'
-    hls_config['LayerName'][Layer]['Precision']['result'] = 'ap_fixed<15,2>'
+    hls_config['LayerName'][Layer]['Precision']['weight'] = f'ap_fixed<{wbbits},{ibits}>'
+    hls_config['LayerName'][Layer]['Precision']['bias'] = f'ap_fixed<{wbbits},{ibits}>'
+    hls_config['LayerName'][Layer]['Precision']['result'] = f'ap_fixed<{abits},{ibits}>'
     hls_config['LayerName'][Layer]['Trace'] = True
 
 cfg = hls4ml.converters.create_config(backend='Vitis')
@@ -79,10 +84,19 @@ hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
 print('###################### PLOTTING MODEL ######################')
 hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
 print('###################### PRINTING REPORT  ######################')
-print(hls4ml.__version__)
-print(os.listdir('./alex_model/myproject_prj/solution1/syn/report'))
-hls4ml.report.read_vivado_report('./alex_model/myproject_prj/solution1/syn/report')
+def read_csynth_report(file_path):
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    
+    # Extract some basic information
+    for profile in root.findall('./PerformanceEstimates/SummaryOfOverallLatency'):
+        print(f"Best-case latency: {profile.find('Best-caseLatency').text}")
+        print(f"Worst-case latency: {profile.find('Worst-caseLatency').text}")
+        print(f"Interval-min: {profile.find('Interval-min').text}")
+        print(f"Interval-max: {profile.find('Interval-max').text}")
 
+# Use the function
+read_csynth_report('./alex_model/myproject_prj/solution1/syn/report/csynth.xml')
 print('###################### TESTING MODEL  ######################')
 # TEST MODEL
 def testModel():
