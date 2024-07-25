@@ -11,7 +11,7 @@ set axilite_register_dict [dict create]
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 951 \
+    id 463 \
     name y_timed_input \
     type other \
     dir I \
@@ -19,14 +19,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_y_timed_input \
     op interface \
-    ports { y_timed_input_ap_vld { I 1 bit } y_timed_input { I 795 vector } } \
+    ports { y_timed_input_ap_vld { I 1 bit } y_timed_input { I 636 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 952 \
+    id 464 \
     name layer10_out \
     type other \
     dir O \
@@ -34,7 +34,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer10_out \
     op interface \
-    ports { layer10_out { O 15 vector } layer10_out_ap_vld { O 1 bit } } \
+    ports { layer10_out { O 12 vector } layer10_out_ap_vld { O 1 bit } } \
 } "
 }
 

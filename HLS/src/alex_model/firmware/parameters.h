@@ -35,8 +35,8 @@ struct config2 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 13;
-    static const unsigned n_nonzeros = 1259;
+    static const unsigned n_zeros = 48;
+    static const unsigned n_nonzeros = 1224;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef model_default_t accum_t;
@@ -47,7 +47,7 @@ struct config2 : nnet::dense_config {
     using product = nnet::product::mult<x_T, y_T>;
 };
 
-// batch_normalization_20
+// batch_normalization_18
 struct config4 : nnet::batchnorm_config {
     static const unsigned n_in = N_LAYER_2;
     static const unsigned n_filt = -1;
@@ -56,19 +56,19 @@ struct config4 : nnet::batchnorm_config {
     static const unsigned reuse_factor = 1;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in, reuse_factor);
     static const bool store_weights_in_bram = false;
-    typedef batch_normalization_20_bias_t bias_t;
-    typedef batch_normalization_20_scale_t scale_t;
+    typedef batch_normalization_18_bias_t bias_t;
+    typedef batch_normalization_18_scale_t scale_t;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
 
-// q_activation_20
+// q_activation_18
 struct relu_config5 : nnet::activ_config {
     static const unsigned n_in = 24;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    typedef q_activation_20_table_t table_t;
+    typedef q_activation_18_table_t table_t;
 };
 
 // dense2
@@ -78,8 +78,8 @@ struct config6 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 1;
-    static const unsigned n_nonzeros = 287;
+    static const unsigned n_zeros = 4;
+    static const unsigned n_nonzeros = 284;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef model_default_t accum_t;
@@ -90,7 +90,7 @@ struct config6 : nnet::dense_config {
     using product = nnet::product::mult<x_T, y_T>;
 };
 
-// batch_normalization_21
+// batch_normalization_19
 struct config8 : nnet::batchnorm_config {
     static const unsigned n_in = N_LAYER_6;
     static const unsigned n_filt = -1;
@@ -99,19 +99,19 @@ struct config8 : nnet::batchnorm_config {
     static const unsigned reuse_factor = 1;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in, reuse_factor);
     static const bool store_weights_in_bram = false;
-    typedef batch_normalization_21_bias_t bias_t;
-    typedef batch_normalization_21_scale_t scale_t;
+    typedef batch_normalization_19_bias_t bias_t;
+    typedef batch_normalization_19_scale_t scale_t;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
 
-// q_activation_21
+// q_activation_19
 struct relu_config9 : nnet::activ_config {
     static const unsigned n_in = 12;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    typedef q_activation_21_table_t table_t;
+    typedef q_activation_19_table_t table_t;
 };
 
 // dense_output

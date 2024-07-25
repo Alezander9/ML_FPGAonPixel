@@ -18,29 +18,29 @@
 #define N_LAYER_10 1
 
 // hls-fpga-machine-learning insert layer-precision
-typedef ap_fixed<15,2> input_t;
+typedef ap_fixed<12,2> input_t;
 typedef ap_fixed<16,6> model_default_t;
-typedef ap_fixed<15,2> layer2_t;
-typedef ap_fixed<10,3> weight2_t;
-typedef ap_fixed<10,3> bias2_t;
+typedef ap_fixed<12,2> layer2_t;
+typedef ap_fixed<8,3> weight2_t;
+typedef ap_fixed<8,3> bias2_t;
 typedef ap_uint<1> layer2_index;
-typedef ap_fixed<15,2> layer4_t;
-typedef ap_fixed<16,6> batch_normalization_20_scale_t;
-typedef ap_fixed<10,2> batch_normalization_20_bias_t;
-typedef ap_fixed<15,2> layer5_t;
-typedef ap_fixed<18,8> q_activation_20_table_t;
-typedef ap_fixed<15,2> layer6_t;
-typedef ap_fixed<10,3> weight6_t;
-typedef ap_fixed<10,3> bias6_t;
+typedef ap_fixed<12,2> layer4_t;
+typedef ap_fixed<16,6> batch_normalization_18_scale_t;
+typedef ap_fixed<8,2> batch_normalization_18_bias_t;
+typedef ap_fixed<12,2> layer5_t;
+typedef ap_fixed<18,8> q_activation_18_table_t;
+typedef ap_fixed<12,2> layer6_t;
+typedef ap_fixed<8,3> weight6_t;
+typedef ap_fixed<8,3> bias6_t;
 typedef ap_uint<1> layer6_index;
-typedef ap_fixed<15,2> layer8_t;
-typedef ap_fixed<16,6> batch_normalization_21_scale_t;
-typedef ap_fixed<10,2> batch_normalization_21_bias_t;
-typedef ap_fixed<15,2> layer9_t;
-typedef ap_fixed<18,8> q_activation_21_table_t;
-typedef ap_fixed<15,2> result_t;
-typedef ap_fixed<10,3> weight10_t;
-typedef ap_fixed<10,3> bias10_t;
+typedef ap_fixed<12,2> layer8_t;
+typedef ap_fixed<16,6> batch_normalization_19_scale_t;
+typedef ap_fixed<8,2> batch_normalization_19_bias_t;
+typedef ap_fixed<12,2> layer9_t;
+typedef ap_fixed<18,8> q_activation_19_table_t;
+typedef ap_fixed<12,2> result_t;
+typedef ap_fixed<8,3> weight10_t;
+typedef ap_fixed<8,3> bias10_t;
 typedef ap_uint<1> layer10_index;
 
 #endif

@@ -1,7 +1,7 @@
 # PATH OF MODEL TO SYNTHESIZE
 HYPERPARAMETERS = {
     "NUM_TIME_SLICES": 4,
-    "QUANTIZATION_BITS": [4, 6, 2], # weights&biases, activation, integer
+    "QUANTIZATION_BITS": [8, 12, 2], # weights&biases, activation, integer
     "OUTPUT": "SINGLE",
 }
 NUM_TIME_SLICES = HYPERPARAMETERS["NUM_TIME_SLICES"]
@@ -60,7 +60,6 @@ model = strip_pruning(model)
 
 # MODEL SYNTHESIS CONFIG
 hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
-# hls_config['Model']['Precision'] = 'ap_fixed<10,2>'
 
 hls_config['Model']['ReuseFactor'] = 1 # MOST RELAVANT PARAMETER
 
@@ -295,10 +294,10 @@ def getTargetMetrics(test_results):
     return metrics
 
 def displayPerformance(data, test_results, metrics, hyperparams):
-    ShowConfusionMatrix(data, test_results, hyperparams)
-    showMetricsByThreshold(test_results)
-    showEfficiencyVSRejection(test_results)
     print(metrics)
+    # ShowConfusionMatrix(data, test_results, hyperparams)
+    # showMetricsByThreshold(test_results)
+    showEfficiencyVSRejection(test_results)
 
 
 print('###################### LOADING TEST DATASET  ######################')

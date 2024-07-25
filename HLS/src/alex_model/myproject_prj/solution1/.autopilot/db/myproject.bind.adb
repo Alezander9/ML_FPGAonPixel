@@ -37,7 +37,7 @@
 						<coreId>2147483647</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>795</bitwidth>
+					<bitwidth>636</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -73,7 +73,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>0</if_type>
@@ -110,10 +110,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1024</coreId>
+						<coreId>741681509</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>795</bitwidth>
+					<bitwidth>636</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -139,8 +139,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -159,7 +159,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -174,10 +174,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098156416</coreId>
+						<coreId>3453815696</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>360</bitwidth>
+					<bitwidth>288</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -190,7 +190,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.19</m_delay>
+				<m_delay>4.14</m_delay>
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -203,8 +203,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -223,7 +223,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -238,10 +238,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098181832</coreId>
+						<coreId>3456729144</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -266,8 +266,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -286,7 +286,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -301,10 +301,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6</coreId>
+						<coreId>3448397216</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -329,8 +329,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -349,7 +349,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -364,10 +364,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1212371803</coreId>
+						<coreId>286698759</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -392,8 +392,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -412,7 +412,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -427,10 +427,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2249868224</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -455,8 +455,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -475,7 +475,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -490,10 +490,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6775156</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -518,8 +518,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -538,7 +538,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -553,10 +553,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -581,8 +581,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -601,7 +601,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -619,7 +619,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -644,8 +644,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -664,7 +664,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -679,10 +679,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>293508388</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -707,8 +707,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -727,7 +727,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -742,10 +742,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098159184</coreId>
+						<coreId>20</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -770,8 +770,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -790,7 +790,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -805,10 +805,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>3454155616</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -833,8 +833,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -853,7 +853,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -868,10 +868,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098181120</coreId>
+						<coreId>3448394680</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -896,8 +896,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -916,7 +916,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -931,10 +931,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>757935405</coreId>
+						<coreId>2020173413</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -959,8 +959,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -979,7 +979,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -994,10 +994,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>3454166456</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1022,8 +1022,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1042,7 +1042,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1057,10 +1057,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1085,8 +1085,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1105,7 +1105,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1120,10 +1120,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>1702258035</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1148,8 +1148,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1168,7 +1168,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1183,10 +1183,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1211,8 +1211,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1231,7 +1231,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1246,10 +1246,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953653108</coreId>
+						<coreId>3448389568</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1274,8 +1274,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1294,7 +1294,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1309,10 +1309,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1196312910</coreId>
+						<coreId>1699946542</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1337,8 +1337,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1357,7 +1357,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1372,10 +1372,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098172856</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1400,8 +1400,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1420,7 +1420,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1435,10 +1435,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098172464</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1463,8 +1463,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1483,7 +1483,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1498,10 +1498,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095214120</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1526,8 +1526,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1546,7 +1546,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1561,10 +1561,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095210784</coreId>
+						<coreId>103867540</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1589,8 +1589,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1609,7 +1609,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1624,10 +1624,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2177540458</coreId>
+						<coreId>33</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1652,8 +1652,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -1672,7 +1672,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -1687,10 +1687,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2177536394</coreId>
+						<coreId>3670273488</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1743,10 +1743,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>52</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>360</bitwidth>
+					<bitwidth>288</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>25</count>
@@ -1782,7 +1782,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.75</m_delay>
+				<m_delay>2.69</m_delay>
 				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1823,10 +1823,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086674312</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1879,10 +1879,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086675152</coreId>
+						<coreId>3455581848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1935,10 +1935,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086674704</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1991,10 +1991,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086674704</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2047,10 +2047,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3455584888</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2106,7 +2106,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2159,10 +2159,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086679648</coreId>
+						<coreId>3455587624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2215,10 +2215,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086680560</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2271,10 +2271,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086681472</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2327,10 +2327,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3455589144</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2386,7 +2386,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2442,7 +2442,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2495,10 +2495,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4086828432</coreId>
+						<coreId>3455592184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2551,10 +2551,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3451953024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2607,10 +2607,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3451953024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2663,10 +2663,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4284273600</coreId>
+						<coreId>3451968776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2719,10 +2719,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098436064</coreId>
+						<coreId>3449146536</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2775,10 +2775,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098436064</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2831,10 +2831,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2258033401</coreId>
+						<coreId>3449148080</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2887,10 +2887,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106851152</coreId>
+						<coreId>3449148992</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2943,10 +2943,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095062304</coreId>
+						<coreId>808333344</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2999,10 +2999,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095062304</coreId>
+						<coreId>285818205</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3055,10 +3055,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106853584</coreId>
+						<coreId>285804462</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3111,10 +3111,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2258035882</coreId>
+						<coreId>3449152240</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3167,10 +3167,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106856016</coreId>
+						<coreId>3449153408</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>360</bitwidth>
+					<bitwidth>288</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>25</count>
@@ -3206,7 +3206,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.11</m_delay>
+				<m_delay>1.04</m_delay>
 				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -3247,10 +3247,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106856016</coreId>
+						<coreId>3449154144</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3303,10 +3303,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2258042491</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3359,10 +3359,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106858448</coreId>
+						<coreId>1397508187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3415,10 +3415,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095062304</coreId>
+						<coreId>64</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3471,10 +3471,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095062304</coreId>
+						<coreId>3449158224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3527,10 +3527,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106860880</coreId>
+						<coreId>3449159008</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3583,10 +3583,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2258012204</coreId>
+						<coreId>3449159920</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3639,10 +3639,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>3449162576</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3695,10 +3695,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106865680</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3751,10 +3751,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106866720</coreId>
+						<coreId>959591725</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3807,10 +3807,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1818589184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3863,10 +3863,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106870088</coreId>
+						<coreId>784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3919,10 +3919,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106869840</coreId>
+						<coreId>3668642928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -3975,10 +3975,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2258021406</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4031,10 +4031,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106873160</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4087,10 +4087,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4106872544</coreId>
+						<coreId>3448405040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4143,10 +4143,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>544108393</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4199,10 +4199,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2253059563</coreId>
+						<coreId>572669287</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4255,10 +4255,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819113532</coreId>
+						<coreId>3668649008</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4311,10 +4311,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3668650224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4367,10 +4367,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1685024095</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4423,10 +4423,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095067728</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4479,10 +4479,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095069120</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4535,10 +4535,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1702258035</coreId>
+						<coreId>3668654640</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4563,8 +4563,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4583,7 +4583,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -4598,10 +4598,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3668655728</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>180</bitwidth>
+					<bitwidth>144</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>25</count>
@@ -4637,7 +4637,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.19</m_delay>
+				<m_delay>4.14</m_delay>
 				<m_topoIndex>77</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4650,8 +4650,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4670,7 +4670,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -4685,10 +4685,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601463662</coreId>
+						<coreId>3668661472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4713,8 +4713,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4733,7 +4733,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -4748,10 +4748,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2253041327</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4776,8 +4776,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4796,7 +4796,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -4811,10 +4811,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>542329928</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4839,8 +4839,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4859,7 +4859,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -4877,7 +4877,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4902,8 +4902,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4922,7 +4922,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -4937,10 +4937,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095083664</coreId>
+						<coreId>3448410624</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -4965,8 +4965,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -4985,7 +4985,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5000,10 +5000,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4095085664</coreId>
+						<coreId>842087284</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5028,8 +5028,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -5048,7 +5048,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5063,10 +5063,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1751607653</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5091,8 +5091,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -5111,7 +5111,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5126,10 +5126,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4067946032</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5154,8 +5154,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -5174,7 +5174,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5192,7 +5192,7 @@
 						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5217,8 +5217,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -5237,7 +5237,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5252,10 +5252,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070917104</coreId>
+						<coreId>3448419056</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5280,8 +5280,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -5300,7 +5300,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5315,10 +5315,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869182051</coreId>
+						<coreId>574451311</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5343,8 +5343,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -5363,7 +5363,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -5378,10 +5378,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070920496</coreId>
+						<coreId>3448423032</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5434,10 +5434,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070970224</coreId>
+						<coreId>3448425464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>180</bitwidth>
+					<bitwidth>144</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>13</count>
@@ -5461,7 +5461,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.76</m_delay>
+				<m_delay>2.72</m_delay>
 				<m_topoIndex>90</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5502,10 +5502,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070922928</coreId>
+						<coreId>3448425464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5558,10 +5558,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070923840</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5614,10 +5614,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070924496</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5670,10 +5670,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070926376</coreId>
+						<coreId>1684371561</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5726,10 +5726,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2163887590</coreId>
+						<coreId>3448428832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5782,10 +5782,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>224</coreId>
+						<coreId>3448429696</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5838,10 +5838,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3448432736</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5894,10 +5894,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070931736</coreId>
+						<coreId>3448433088</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -5950,10 +5950,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070932720</coreId>
+						<coreId>784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6006,10 +6006,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070933712</coreId>
+						<coreId>1769239916</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6062,10 +6062,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>256</coreId>
+						<coreId>572669294</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6118,10 +6118,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>432</coreId>
+						<coreId>1397508187</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6174,10 +6174,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3448438448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>180</bitwidth>
+					<bitwidth>144</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>13</count>
@@ -6201,7 +6201,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.11</m_delay>
+				<m_delay>1.04</m_delay>
 				<m_topoIndex>103</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6245,7 +6245,7 @@
 						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6298,10 +6298,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4070938496</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6354,10 +6354,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>1601463662</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6410,10 +6410,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098292296</coreId>
+						<coreId>3448442528</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6466,10 +6466,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098292952</coreId>
+						<coreId>286771249</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6522,10 +6522,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098293816</coreId>
+						<coreId>540160288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6578,10 +6578,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098294680</coreId>
+						<coreId>286769665</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6634,10 +6634,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098296408</coreId>
+						<coreId>3448446496</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6690,10 +6690,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098297048</coreId>
+						<coreId>3448369280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6746,10 +6746,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3668661904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6802,10 +6802,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098409513</coreId>
+						<coreId>286781682</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6858,10 +6858,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -6886,8 +6886,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config10_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config10_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -6906,7 +6906,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -6921,10 +6921,10 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>11</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>13</count>
@@ -6948,7 +6948,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.19</m_delay>
+				<m_delay>4.13</m_delay>
 				<m_topoIndex>116</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -6961,8 +6961,8 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model</fileDirectory>
 						<lineNumber>41</lineNumber>
-						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</contextFuncName>
-						<contextNormFuncName>dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config10_s</contextNormFuncName>
+						<contextFuncName>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</contextFuncName>
+						<contextNormFuncName>dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config10_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -6981,7 +6981,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</second>
+											<second>dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;</second>
 										</first>
 										<second>41</second>
 									</item>
@@ -6996,7 +6996,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3</coreId>
+						<coreId>539107901</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7054,7 +7054,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098413558</coreId>
+						<coreId>1702043749</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -7081,7 +7081,7 @@
 					<Obj>
 						<type>2</type>
 						<id>131</id>
-						<name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s</name>
+						<name>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7102,17 +7102,17 @@
 						<coreId>2147483647</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>360</bitwidth>
+					<bitwidth>288</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;&gt;</content>
+				<content>&lt;constant:dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config2&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_122">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>158</id>
-						<name>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s</name>
+						<name>normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7130,20 +7130,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>113</coreId>
+						<coreId>3449404120</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>360</bitwidth>
+					<bitwidth>288</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;&gt;</content>
+				<content>&lt;constant:normalize&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config4&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_123">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>208</id>
-						<name>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s</name>
+						<name>relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7161,20 +7161,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4098311296</coreId>
+						<coreId>3454252784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>360</bitwidth>
+					<bitwidth>288</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;&gt;</content>
+				<content>&lt;constant:relu&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, relu_config5&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_124">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>258</id>
-						<name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s</name>
+						<name>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7192,20 +7192,20 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967291</coreId>
+						<coreId>4294967292</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>180</bitwidth>
+					<bitwidth>144</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;&gt;</content>
+				<content>&lt;constant:dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config6&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_125">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>296</id>
-						<name>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s</name>
+						<name>normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7226,17 +7226,17 @@
 						<coreId>448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>180</bitwidth>
+					<bitwidth>144</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;&gt;</content>
+				<content>&lt;constant:normalize&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config8&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_126">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>322</id>
-						<name>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s</name>
+						<name>relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7257,17 +7257,17 @@
 						<coreId>448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>180</bitwidth>
+					<bitwidth>144</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;&gt;</content>
+				<content>&lt;constant:relu&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, relu_config9&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_127">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>348</id>
-						<name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s</name>
+						<name>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -7285,13 +7285,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>448</coreId>
+						<coreId>1684955500</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>15</bitwidth>
+					<bitwidth>12</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config10&gt;&gt;</content>
+				<content>&lt;constant:dense_latency&lt;ap_fixed&lt;12, 2, 5, 3, 0&gt;, ap_fixed&lt;12, 2, 5, 3, 0&gt;, config10&gt;&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -7319,7 +7319,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>332</coreId>
+					<coreId>336</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -12526,7 +12526,7 @@
 		<count>7</count>
 		<item_version>0</item_version>
 		<item>
-			<first>call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59</first>
+			<first>call_ret2_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s_fu_59</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12534,7 +12534,7 @@
 			</second>
 		</item>
 		<item>
-			<first>call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87</first>
+			<first>call_ret3_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s_fu_87</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12542,7 +12542,7 @@
 			</second>
 		</item>
 		<item>
-			<first>call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143</first>
+			<first>call_ret5_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s_fu_143</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12550,7 +12550,7 @@
 			</second>
 		</item>
 		<item>
-			<first>call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_175</first>
+			<first>call_ret6_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s_fu_175</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12558,7 +12558,7 @@
 			</second>
 		</item>
 		<item>
-			<first>call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_159</first>
+			<first>call_ret_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s_fu_159</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -12566,7 +12566,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53</first>
+			<first>grp_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s_fu_53</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -12575,7 +12575,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115</first>
+			<first>grp_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s_fu_115</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

@@ -1141,7 +1141,7 @@ void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb
 {
   static hls::sim::Register port0 {
     .name = "y_timed_input",
-    .width = 795,
+    .width = 636,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
@@ -1152,7 +1152,7 @@ void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb
 
   static hls::sim::Register port1 {
     .name = "layer10_out",
-    .width = 15,
+    .width = 12,
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer10_out),
 #else
