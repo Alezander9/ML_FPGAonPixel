@@ -350,11 +350,11 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-struct __cosim_s80__ { char data[128]; };
+struct __cosim_s98__ { char data[128]; };
 struct __cosim_s128__ { char data[128]; };
-extern "C" void myproject(volatile void *, volatile void *);
-extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_timed_input, volatile void * __xlx_apatb_param_layer10_out) {
+extern "C" void myproject(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
+extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_profile_input, volatile void * __xlx_apatb_param_layer7_out_0, volatile void * __xlx_apatb_param_layer7_out_1, volatile void * __xlx_apatb_param_layer7_out_2, volatile void * __xlx_apatb_param_layer7_out_3, volatile void * __xlx_apatb_param_layer7_out_4, volatile void * __xlx_apatb_param_layer7_out_5, volatile void * __xlx_apatb_param_layer7_out_6, volatile void * __xlx_apatb_param_layer7_out_7, volatile void * __xlx_apatb_param_layer7_out_8, volatile void * __xlx_apatb_param_layer7_out_9, volatile void * __xlx_apatb_param_layer7_out_10, volatile void * __xlx_apatb_param_layer7_out_11, volatile void * __xlx_apatb_param_layer7_out_12, volatile void * __xlx_apatb_param_layer7_out_13, volatile void * __xlx_apatb_param_layer7_out_14, volatile void * __xlx_apatb_param_layer7_out_15) {
 using hls::sim::createStream;
   // DUT call
-  myproject(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer10_out);
+  myproject(__xlx_apatb_param_y_profile_input, __xlx_apatb_param_layer7_out_0, __xlx_apatb_param_layer7_out_1, __xlx_apatb_param_layer7_out_2, __xlx_apatb_param_layer7_out_3, __xlx_apatb_param_layer7_out_4, __xlx_apatb_param_layer7_out_5, __xlx_apatb_param_layer7_out_6, __xlx_apatb_param_layer7_out_7, __xlx_apatb_param_layer7_out_8, __xlx_apatb_param_layer7_out_9, __xlx_apatb_param_layer7_out_10, __xlx_apatb_param_layer7_out_11, __xlx_apatb_param_layer7_out_12, __xlx_apatb_param_layer7_out_13, __xlx_apatb_param_layer7_out_14, __xlx_apatb_param_layer7_out_15);
 }

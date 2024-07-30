@@ -15,45 +15,255 @@
     "Triple": "fpga64-xilinx-none"
   },
   "Args": {
-    "y_timed_input": {
+    "y_profile_input": {
       "index": "0",
       "direction": "in",
-      "srcType": "ap_fixed<12, 2, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<15, 2, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
           "type": "port",
-          "interface": "y_timed_input_ap_vld",
-          "name": "y_timed_input_ap_vld",
-          "usage": "control",
+          "interface": "y_profile_input",
+          "name": "y_profile_input",
+          "usage": "data",
           "direction": "in"
         },
         {
           "type": "port",
-          "interface": "y_timed_input",
-          "name": "y_timed_input",
-          "usage": "data",
+          "interface": "y_profile_input_ap_vld",
+          "name": "y_profile_input_ap_vld",
+          "usage": "control",
           "direction": "in"
         }
       ]
     },
-    "layer10_out": {
+    "layer7_out": {
       "index": "1",
       "direction": "out",
-      "srcType": "ap_fixed<12, 2, AP_TRN, AP_WRAP, 0>*",
+      "srcType": "ap_fixed<15, 2, AP_TRN, AP_WRAP, 0>*",
       "srcSize": "16",
       "hwRefs": [
         {
           "type": "port",
-          "interface": "layer10_out",
-          "name": "layer10_out",
+          "interface": "layer7_out_0",
+          "name": "layer7_out_0",
           "usage": "data",
           "direction": "out"
         },
         {
           "type": "port",
-          "interface": "layer10_out_ap_vld",
-          "name": "layer10_out_ap_vld",
+          "interface": "layer7_out_0_ap_vld",
+          "name": "layer7_out_0_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_1",
+          "name": "layer7_out_1",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_1_ap_vld",
+          "name": "layer7_out_1_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_2",
+          "name": "layer7_out_2",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_2_ap_vld",
+          "name": "layer7_out_2_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_3",
+          "name": "layer7_out_3",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_3_ap_vld",
+          "name": "layer7_out_3_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_4",
+          "name": "layer7_out_4",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_4_ap_vld",
+          "name": "layer7_out_4_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_5",
+          "name": "layer7_out_5",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_5_ap_vld",
+          "name": "layer7_out_5_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_6",
+          "name": "layer7_out_6",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_6_ap_vld",
+          "name": "layer7_out_6_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_7",
+          "name": "layer7_out_7",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_7_ap_vld",
+          "name": "layer7_out_7_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_8",
+          "name": "layer7_out_8",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_8_ap_vld",
+          "name": "layer7_out_8_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_9",
+          "name": "layer7_out_9",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_9_ap_vld",
+          "name": "layer7_out_9_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_10",
+          "name": "layer7_out_10",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_10_ap_vld",
+          "name": "layer7_out_10_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_11",
+          "name": "layer7_out_11",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_11_ap_vld",
+          "name": "layer7_out_11_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_12",
+          "name": "layer7_out_12",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_12_ap_vld",
+          "name": "layer7_out_12_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_13",
+          "name": "layer7_out_13",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_13_ap_vld",
+          "name": "layer7_out_13_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_14",
+          "name": "layer7_out_14",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_14_ap_vld",
+          "name": "layer7_out_14_ap_vld",
+          "usage": "control",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_15",
+          "name": "layer7_out_15",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "layer7_out_15_ap_vld",
+          "name": "layer7_out_15_ap_vld",
           "usage": "control",
           "direction": "out"
         }
@@ -78,7 +288,7 @@
     "Uncertainty": "3.125",
     "IsCombinational": "0",
     "II": "1",
-    "Latency": "1"
+    "Latency": "0"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 25.000 [get_ports ap_clk]"]},
   "Ipx": {
@@ -87,7 +297,7 @@
     "Name": "myproject",
     "Version": "1.0",
     "DisplayName": "Myproject",
-    "Revision": "2113660935",
+    "Revision": "2113668114",
     "Description": "An IP generated by Vitis HLS",
     "Taxonomy": "\/VITIS_HLS_IP",
     "AutoFamilySupport": "",
@@ -99,57 +309,41 @@
       "..\/..\/firmware\/myproject.cpp"
     ],
     "Vhdl": [
-      "impl\/vhdl\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config2_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config6_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config10_s.vhd",
+      "impl\/vhdl\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config3_s.vhd",
+      "impl\/vhdl\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config7_s.vhd",
       "impl\/vhdl\/myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s.vhd",
       "impl\/vhdl\/myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s.vhd",
       "impl\/vhdl\/myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s.vhd",
+      "impl\/vhdl\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s.vhd",
+      "impl\/vhdl\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s.vhd",
       "impl\/vhdl\/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_9_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_9_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_12_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_12_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.vhd",
-      "impl\/vhdl\/myproject_dense_latency_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.vhd",
       "impl\/vhdl\/myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s.vhd",
       "impl\/vhdl\/myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s.vhd",
       "impl\/vhdl\/myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s.vhd",
-      "impl\/vhdl\/myproject_mul_6s_5ns_11_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_6s_6ns_12_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_6s_7ns_13_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_6s_9ns_15_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_6s_10ns_15_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_6s_10ns_16_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_9ns_5s_14_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_12ns_5ns_16_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_12ns_5s_17_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_12ns_6ns_17_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_12ns_6s_18_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_12s_5ns_17_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_5ns_11_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_5s_11_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_6ns_12_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_6s_12_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_7ns_13_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_7s_13_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_8ns_13_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_8s_13_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_9s_13_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_6s_11ns_16_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_6s_12ns_16_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_6s_16ns_16_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_6s_16s_16_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_5ns_17_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_5s_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_5s_17_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_6ns_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_6ns_17_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_6s_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_6s_17_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_7ns_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_7ns_17_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_7ns_18_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_7ns_19_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_7s_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_7s_17_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_8ns_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_8ns_17_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_8ns_19_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_8ns_20_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_12s_8s_17_1_0.vhd",
       "impl\/vhdl\/myproject_mul_12s_8s_17_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_9ns_20_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_9ns_21_1_1.vhd",
@@ -157,218 +351,79 @@
       "impl\/vhdl\/myproject_mul_12s_12ns_22_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_13ns_22_1_1.vhd",
       "impl\/vhdl\/myproject_mul_12s_14ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_5ns_19_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_5ns_19_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_5ns_19_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_5s_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_5s_20_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_5s_20_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_6ns_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_6ns_20_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_6ns_20_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_6s_21_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_6s_21_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_6s_21_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_7ns_21_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_7ns_21_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_7ns_21_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_7s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_7s_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_7s_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_8ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_8ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_8ns_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_8s_23_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_8s_23_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_8s_23_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_9ns_23_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_9ns_23_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_9ns_23_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_9s_24_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_9s_24_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_9s_24_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_10ns_24_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15ns_10s_25_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_5ns_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_5s_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_6ns_21_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_6s_21_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_7ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_7s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_8ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_8ns_23_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_8s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_9ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_9ns_23_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_9ns_24_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_9s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_10ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_15s_10ns_24_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_10ns_25_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_10s_22_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_15s_5ns_20_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_5s_20_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_6ns_21_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_6s_21_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_7ns_22_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_7s_22_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_8ns_22_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_8s_22_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_9s_22_1_1.vhd",
       "impl\/vhdl\/myproject_mul_15s_11ns_25_1_1.vhd",
       "impl\/vhdl\/myproject_mul_15s_12ns_25_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_13ns_25_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_15s_14ns_25_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5ns_18_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5ns_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5ns_21_1_0.vhd",
+      "impl\/vhdl\/myproject_mul_15s_16ns_25_1_1.vhd",
+      "impl\/vhdl\/myproject_mul_15s_16s_25_1_1.vhd",
       "impl\/vhdl\/myproject_mul_16s_5ns_21_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5ns_21_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5s_18_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5s_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5s_21_1_0.vhd",
       "impl\/vhdl\/myproject_mul_16s_5s_21_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_5s_21_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6ns_18_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6ns_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6ns_21_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6ns_22_1_0.vhd",
       "impl\/vhdl\/myproject_mul_16s_6ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6ns_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6s_18_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6s_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6s_22_1_0.vhd",
       "impl\/vhdl\/myproject_mul_16s_6s_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_6s_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7ns_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7ns_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7ns_23_1_0.vhd",
       "impl\/vhdl\/myproject_mul_16s_7ns_23_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7s_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7s_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7s_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_7s_23_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_23_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_23_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_24_1_0.vhd",
       "impl\/vhdl\/myproject_mul_16s_8ns_24_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8ns_24_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8s_20_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8s_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8s_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_8s_24_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9ns_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9ns_24_1_0.vhd",
       "impl\/vhdl\/myproject_mul_16s_9ns_24_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9ns_24_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9ns_25_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9s_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9s_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_9s_24_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10ns_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10ns_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10ns_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10ns_24_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10ns_25_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10ns_25_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10s_22_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10s_22_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10s_22_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_10s_24_1_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_11ns_26_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_11ns_26_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_12ns_26_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_12ns_26_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_13ns_26_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_13ns_26_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_14ns_26_1_1.vhd",
-      "impl\/vhdl\/myproject_mul_16s_14ns_26_2_0.vhd",
-      "impl\/vhdl\/myproject_mul_16s_15ns_26_1_1.vhd",
       "impl\/vhdl\/myproject_mul_18s_17ns_26_1_1.vhd",
-      "impl\/vhdl\/myproject_normalize_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config4_s.vhd",
-      "impl\/vhdl\/myproject_normalize_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config8_s.vhd",
+      "impl\/vhdl\/myproject_normalize_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config6_s.vhd",
       "impl\/vhdl\/myproject_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s.vhd",
       "impl\/vhdl\/myproject_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s.vhd",
-      "impl\/vhdl\/myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s.vhd",
-      "impl\/vhdl\/myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s.vhd",
+      "impl\/vhdl\/myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s.vhd",
       "impl\/vhdl\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config13_s.vhd",
       "impl\/vhdl\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s.vhd",
       "impl\/vhdl\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s.vhd",
-      "impl\/vhdl\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s.vhd",
-      "impl\/vhdl\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s.vhd",
       "impl\/vhdl\/myproject_relu_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_relu_config5_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_relu_config9_s.vhd",
       "impl\/vhdl\/myproject_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s.vhd",
       "impl\/vhdl\/myproject_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s.vhd",
       "impl\/vhdl\/myproject_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_6_0_4_0_0_relu_config5_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_6_0_4_0_0_relu_config9_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_9_0_4_0_0_relu_config5_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_9_0_4_0_0_relu_config9_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_12_0_4_0_0_relu_config5_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_12_0_4_0_0_relu_config9_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config5_s.vhd",
-      "impl\/vhdl\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config9_s.vhd",
       "impl\/vhdl\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s.vhd",
       "impl\/vhdl\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_exp_table_ROM_bkb.vhd",
       "impl\/vhdl\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_invert_table_Rcud.vhd",
       "impl\/vhdl\/myproject.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config2_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config6_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config10_s.v",
+      "impl\/verilog\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config3_s.v",
+      "impl\/verilog\/myproject_dense_latency_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config7_s.v",
       "impl\/verilog\/myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s.v",
       "impl\/verilog\/myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s.v",
       "impl\/verilog\/myproject_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s.v",
+      "impl\/verilog\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s.v",
+      "impl\/verilog\/myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s.v",
       "impl\/verilog\/myproject_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_9_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_9_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_12_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_12_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config6_s.v",
-      "impl\/verilog\/myproject_dense_latency_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s.v",
       "impl\/verilog\/myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config3_s.v",
       "impl\/verilog\/myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config7_s.v",
       "impl\/verilog\/myproject_linear_ap_fixed_15_5_5_3_0_ap_fixed_16_6_5_3_0_linear_config11_s.v",
-      "impl\/verilog\/myproject_mul_6s_5ns_11_1_1.v",
-      "impl\/verilog\/myproject_mul_6s_6ns_12_1_1.v",
-      "impl\/verilog\/myproject_mul_6s_7ns_13_1_1.v",
-      "impl\/verilog\/myproject_mul_6s_9ns_15_1_1.v",
-      "impl\/verilog\/myproject_mul_6s_10ns_15_1_1.v",
-      "impl\/verilog\/myproject_mul_6s_10ns_16_1_1.v",
-      "impl\/verilog\/myproject_mul_9ns_5s_14_1_0.v",
-      "impl\/verilog\/myproject_mul_12ns_5ns_16_1_0.v",
-      "impl\/verilog\/myproject_mul_12ns_5s_17_1_0.v",
-      "impl\/verilog\/myproject_mul_12ns_6ns_17_1_0.v",
-      "impl\/verilog\/myproject_mul_12ns_6s_18_1_0.v",
-      "impl\/verilog\/myproject_mul_12s_5ns_17_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_5ns_11_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_5s_11_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_6ns_12_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_6s_12_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_7ns_13_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_7s_13_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_8ns_13_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_8s_13_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_9s_13_1_0.v",
+      "impl\/verilog\/myproject_mul_6s_11ns_16_1_1.v",
+      "impl\/verilog\/myproject_mul_6s_12ns_16_1_1.v",
+      "impl\/verilog\/myproject_mul_6s_16ns_16_1_1.v",
+      "impl\/verilog\/myproject_mul_6s_16s_16_1_1.v",
       "impl\/verilog\/myproject_mul_12s_5ns_17_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_5s_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_5s_17_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_6ns_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_6ns_17_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_6s_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_6s_17_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_7ns_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_7ns_17_1_1.v",
       "impl\/verilog\/myproject_mul_12s_7ns_18_1_1.v",
       "impl\/verilog\/myproject_mul_12s_7ns_19_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_7s_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_7s_17_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_8ns_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_8ns_17_1_1.v",
       "impl\/verilog\/myproject_mul_12s_8ns_19_1_1.v",
       "impl\/verilog\/myproject_mul_12s_8ns_20_1_1.v",
-      "impl\/verilog\/myproject_mul_12s_8s_17_1_0.v",
       "impl\/verilog\/myproject_mul_12s_8s_17_1_1.v",
       "impl\/verilog\/myproject_mul_12s_9ns_20_1_1.v",
       "impl\/verilog\/myproject_mul_12s_9ns_21_1_1.v",
@@ -376,165 +431,40 @@
       "impl\/verilog\/myproject_mul_12s_12ns_22_1_1.v",
       "impl\/verilog\/myproject_mul_12s_13ns_22_1_1.v",
       "impl\/verilog\/myproject_mul_12s_14ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_5ns_19_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_5ns_19_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_5ns_19_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_5s_20_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_5s_20_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_5s_20_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_6ns_20_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_6ns_20_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_6ns_20_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_6s_21_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_6s_21_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_6s_21_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_7ns_21_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_7ns_21_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_7ns_21_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_7s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_7s_22_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_7s_22_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_8ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_8ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_8ns_22_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_8s_23_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_8s_23_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_8s_23_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_9ns_23_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_9ns_23_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_9ns_23_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_9s_24_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_9s_24_1_1.v",
-      "impl\/verilog\/myproject_mul_15ns_9s_24_2_0.v",
-      "impl\/verilog\/myproject_mul_15ns_10ns_24_1_0.v",
-      "impl\/verilog\/myproject_mul_15ns_10s_25_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_5ns_20_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_5s_20_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_6ns_21_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_6s_21_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_7ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_7s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_8ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_8ns_23_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_8s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_9ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_9ns_23_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_9ns_24_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_9s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_10ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_15s_10ns_24_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_10ns_25_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_10s_22_1_0.v",
+      "impl\/verilog\/myproject_mul_15s_5ns_20_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_5s_20_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_6ns_21_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_6s_21_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_7ns_22_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_7s_22_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_8ns_22_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_8s_22_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_9s_22_1_1.v",
       "impl\/verilog\/myproject_mul_15s_11ns_25_1_1.v",
       "impl\/verilog\/myproject_mul_15s_12ns_25_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_13ns_25_1_1.v",
-      "impl\/verilog\/myproject_mul_15s_14ns_25_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_5ns_18_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_5ns_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_5ns_21_1_0.v",
+      "impl\/verilog\/myproject_mul_15s_16ns_25_1_1.v",
+      "impl\/verilog\/myproject_mul_15s_16s_25_1_1.v",
       "impl\/verilog\/myproject_mul_16s_5ns_21_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_5ns_21_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_5s_18_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_5s_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_5s_21_1_0.v",
       "impl\/verilog\/myproject_mul_16s_5s_21_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_5s_21_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_6ns_18_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_6ns_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_6ns_21_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_6ns_22_1_0.v",
       "impl\/verilog\/myproject_mul_16s_6ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_6ns_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_6s_18_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_6s_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_6s_22_1_0.v",
       "impl\/verilog\/myproject_mul_16s_6s_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_6s_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_7ns_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_7ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_7ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_7ns_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_7ns_23_1_0.v",
       "impl\/verilog\/myproject_mul_16s_7ns_23_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_7s_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_7s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_7s_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_7s_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_7s_23_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_23_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_23_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_24_1_0.v",
       "impl\/verilog\/myproject_mul_16s_8ns_24_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_8ns_24_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_8s_20_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_8s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_8s_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_8s_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_8s_24_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_9ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_9ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_9ns_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_9ns_24_1_0.v",
       "impl\/verilog\/myproject_mul_16s_9ns_24_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_9ns_24_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_9ns_25_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_9s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_9s_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_9s_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_9s_24_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_10ns_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_10ns_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_10ns_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_10ns_24_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_10ns_25_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_10ns_25_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_10s_22_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_10s_22_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_10s_22_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_10s_24_1_0.v",
-      "impl\/verilog\/myproject_mul_16s_11ns_26_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_11ns_26_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_12ns_26_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_12ns_26_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_13ns_26_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_13ns_26_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_14ns_26_1_1.v",
-      "impl\/verilog\/myproject_mul_16s_14ns_26_2_0.v",
-      "impl\/verilog\/myproject_mul_16s_15ns_26_1_1.v",
       "impl\/verilog\/myproject_mul_18s_17ns_26_1_1.v",
-      "impl\/verilog\/myproject_normalize_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config4_s.v",
-      "impl\/verilog\/myproject_normalize_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config8_s.v",
+      "impl\/verilog\/myproject_normalize_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_config6_s.v",
       "impl\/verilog\/myproject_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s.v",
       "impl\/verilog\/myproject_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s.v",
-      "impl\/verilog\/myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s.v",
-      "impl\/verilog\/myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s.v",
+      "impl\/verilog\/myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s.v",
       "impl\/verilog\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config13_s.v",
       "impl\/verilog\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config14_s.v",
       "impl\/verilog\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_15_5_5_3_0_config15_s.v",
-      "impl\/verilog\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s.v",
-      "impl\/verilog\/myproject_normalize_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config8_s.v",
       "impl\/verilog\/myproject_relu_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_relu_config5_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_6_2_5_3_0_ap_fixed_6_2_5_3_0_relu_config9_s.v",
       "impl\/verilog\/myproject_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s.v",
       "impl\/verilog\/myproject_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s.v",
       "impl\/verilog\/myproject_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_6_0_4_0_0_relu_config5_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_6_0_4_0_0_relu_config9_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_9_0_4_0_0_relu_config5_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_9_0_4_0_0_relu_config9_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_12_0_4_0_0_relu_config5_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_12_0_4_0_0_relu_config9_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config5_s.v",
-      "impl\/verilog\/myproject_relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config9_s.v",
       "impl\/verilog\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s.v",
-      "impl\/verilog\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_exp_table_ROM_bkb.dat",
       "impl\/verilog\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_exp_table_ROM_bkb.v",
-      "impl\/verilog\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_invert_table_Rcud.dat",
       "impl\/verilog\/myproject_softmax_stable_ap_fixed_ap_fixed_16_6_5_3_0_softmax_config12_s_invert_table_Rcud.v",
       "impl\/verilog\/myproject.v"
     ],
@@ -585,34 +515,259 @@
         "ap_start"
       ]
     },
-    "y_timed_input": {
+    "y_profile_input": {
       "type": "data",
       "busTypeName": "data",
       "protocol": "ap_vld",
       "mode": "slave",
-      "dataWidth": "636",
-      "portMap": {"y_timed_input": "DATA"},
-      "ports": ["y_timed_input"],
+      "dataWidth": "780",
+      "portMap": {"y_profile_input": "DATA"},
+      "ports": ["y_profile_input"],
       "constraints": [{
           "constraint_type": "pragma interface",
           "mode": "ap_vld",
           "register_option": "0",
-          "argName": "y_timed_input"
+          "argName": "y_profile_input"
         }]
     },
-    "layer10_out": {
+    "layer7_out_0": {
       "type": "data",
       "busTypeName": "data",
       "protocol": "ap_vld",
       "mode": "master",
-      "dataWidth": "12",
-      "portMap": {"layer10_out": "DATA"},
-      "ports": ["layer10_out"],
+      "dataWidth": "15",
+      "portMap": {"layer7_out_0": "DATA"},
+      "ports": ["layer7_out_0"],
       "constraints": [{
           "constraint_type": "pragma interface",
           "mode": "ap_vld",
           "register_option": "0",
-          "argName": "layer10_out"
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_1": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_1": "DATA"},
+      "ports": ["layer7_out_1"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_2": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_2": "DATA"},
+      "ports": ["layer7_out_2"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_3": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_3": "DATA"},
+      "ports": ["layer7_out_3"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_4": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_4": "DATA"},
+      "ports": ["layer7_out_4"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_5": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_5": "DATA"},
+      "ports": ["layer7_out_5"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_6": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_6": "DATA"},
+      "ports": ["layer7_out_6"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_7": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_7": "DATA"},
+      "ports": ["layer7_out_7"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_8": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_8": "DATA"},
+      "ports": ["layer7_out_8"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_9": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_9": "DATA"},
+      "ports": ["layer7_out_9"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_10": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_10": "DATA"},
+      "ports": ["layer7_out_10"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_11": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_11": "DATA"},
+      "ports": ["layer7_out_11"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_12": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_12": "DATA"},
+      "ports": ["layer7_out_12"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_13": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_13": "DATA"},
+      "ports": ["layer7_out_13"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_14": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_14": "DATA"},
+      "ports": ["layer7_out_14"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
+        }]
+    },
+    "layer7_out_15": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_vld",
+      "mode": "master",
+      "dataWidth": "15",
+      "portMap": {"layer7_out_15": "DATA"},
+      "ports": ["layer7_out_15"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_vld",
+          "register_option": "0",
+          "argName": "layer7_out"
         }]
     }
   },
@@ -641,19 +796,139 @@
       "dir": "out",
       "width": "1"
     },
-    "y_timed_input_ap_vld": {
+    "y_profile_input": {
+      "dir": "in",
+      "width": "780"
+    },
+    "y_profile_input_ap_vld": {
       "dir": "in",
       "width": "1"
     },
-    "y_timed_input": {
-      "dir": "in",
-      "width": "636"
-    },
-    "layer10_out": {
+    "layer7_out_0": {
       "dir": "out",
-      "width": "12"
+      "width": "15"
     },
-    "layer10_out_ap_vld": {
+    "layer7_out_0_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_1": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_1_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_2": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_2_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_3": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_3_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_4": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_4_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_5": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_5_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_6": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_6_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_7": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_7_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_8": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_8_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_9": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_9_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_10": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_10_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_11": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_11_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_12": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_12_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_13": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_13_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_14": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_14_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
+    "layer7_out_15": {
+      "dir": "out",
+      "width": "15"
+    },
+    "layer7_out_15_ap_vld": {
       "dir": "out",
       "width": "1"
     }
@@ -663,79 +938,46 @@
       "ModuleName": "myproject",
       "Instances": [
         {
-          "ModuleName": "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s",
-          "InstanceName": "call_ret1_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s_fu_53"
+          "ModuleName": "dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s",
+          "InstanceName": "call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s_fu_182"
         },
         {
-          "ModuleName": "normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s",
-          "InstanceName": "call_ret2_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s_fu_59"
+          "ModuleName": "relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s",
+          "InstanceName": "call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_188"
         },
         {
-          "ModuleName": "relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s",
-          "InstanceName": "call_ret3_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s_fu_87"
+          "ModuleName": "normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s",
+          "InstanceName": "call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_224"
         },
         {
-          "ModuleName": "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s",
-          "InstanceName": "call_ret4_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s_fu_115"
-        },
-        {
-          "ModuleName": "normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s",
-          "InstanceName": "call_ret5_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s_fu_143"
-        },
-        {
-          "ModuleName": "relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s",
-          "InstanceName": "call_ret_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s_fu_159"
-        },
-        {
-          "ModuleName": "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s",
-          "InstanceName": "call_ret6_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s_fu_175"
+          "ModuleName": "dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s",
+          "InstanceName": "call_ret3_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s_fu_260"
         }
       ]
     },
     "Info": {
-      "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s": {
+      "dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "1",
         "isOneStateSeq": "0"
       },
-      "normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s": {
+      "relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "1",
         "isOneStateSeq": "0"
       },
-      "relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s": {
+      "normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "1",
         "isOneStateSeq": "0"
       },
-      "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "0",
-        "isPipelined": "0",
-        "isCombinational": "1",
-        "isOneStateSeq": "0"
-      },
-      "normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "0",
-        "isPipelined": "0",
-        "isCombinational": "1",
-        "isOneStateSeq": "0"
-      },
-      "relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "0",
-        "isPipelined": "0",
-        "isCombinational": "1",
-        "isOneStateSeq": "0"
-      },
-      "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s": {
+      "dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
@@ -745,13 +987,13 @@
       "myproject": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
-        "isOneStateSeq": "0"
+        "isOneStateSeq": "1"
       }
     },
     "Metrics": {
-      "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s": {
+      "dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s": {
         "Latency": {
           "LatencyBest": "0",
           "LatencyAvg": "0",
@@ -763,16 +1005,16 @@
         "Timing": {
           "Target": "25.00",
           "Uncertainty": "3.12",
-          "Estimate": "5.647"
+          "Estimate": "5.695"
         },
         "Area": {
-          "DSP": "252",
+          "DSP": "390",
           "AVAIL_DSP": "12288",
-          "UTIL_DSP": "2",
+          "UTIL_DSP": "3",
           "FF": "0",
           "AVAIL_FF": "3456000",
           "UTIL_FF": "0",
-          "LUT": "36909",
+          "LUT": "41012",
           "AVAIL_LUT": "1728000",
           "UTIL_LUT": "2",
           "BRAM_18K": "0",
@@ -783,7 +1025,7 @@
           "UTIL_URAM": "0"
         }
       },
-      "normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s": {
+      "relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s": {
         "Latency": {
           "LatencyBest": "0",
           "LatencyAvg": "0",
@@ -795,45 +1037,13 @@
         "Timing": {
           "Target": "25.00",
           "Uncertainty": "3.12",
-          "Estimate": "2.691"
-        },
-        "Area": {
-          "DSP": "15",
-          "AVAIL_DSP": "12288",
-          "UTIL_DSP": "~0",
-          "FF": "0",
-          "AVAIL_FF": "3456000",
-          "UTIL_FF": "0",
-          "LUT": "862",
-          "AVAIL_LUT": "1728000",
-          "UTIL_LUT": "~0",
-          "BRAM_18K": "0",
-          "AVAIL_BRAM": "5376",
-          "UTIL_BRAM": "0",
-          "URAM": "0",
-          "AVAIL_URAM": "1280",
-          "UTIL_URAM": "0"
-        }
-      },
-      "relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s": {
-        "Latency": {
-          "LatencyBest": "0",
-          "LatencyAvg": "0",
-          "LatencyWorst": "0",
-          "PipelineII": "1",
-          "PipelineDepth": "1",
-          "PipelineType": "yes"
-        },
-        "Timing": {
-          "Target": "25.00",
-          "Uncertainty": "3.12",
-          "Estimate": "1.046"
+          "Estimate": "1.117"
         },
         "Area": {
           "FF": "0",
           "AVAIL_FF": "3456000",
           "UTIL_FF": "0",
-          "LUT": "720",
+          "LUT": "1152",
           "AVAIL_LUT": "1728000",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
@@ -847,7 +1057,7 @@
           "UTIL_URAM": "0"
         }
       },
-      "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s": {
+      "normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s": {
         "Latency": {
           "LatencyBest": "0",
           "LatencyAvg": "0",
@@ -859,16 +1069,16 @@
         "Timing": {
           "Target": "25.00",
           "Uncertainty": "3.12",
-          "Estimate": "4.902"
+          "Estimate": "2.778"
         },
         "Area": {
-          "DSP": "54",
+          "DSP": "31",
           "AVAIL_DSP": "12288",
           "UTIL_DSP": "~0",
           "FF": "0",
           "AVAIL_FF": "3456000",
           "UTIL_FF": "0",
-          "LUT": "9236",
+          "LUT": "1033",
           "AVAIL_LUT": "1728000",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
@@ -879,7 +1089,7 @@
           "UTIL_URAM": "0"
         }
       },
-      "normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s": {
+      "dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s": {
         "Latency": {
           "LatencyBest": "0",
           "LatencyAvg": "0",
@@ -891,80 +1101,16 @@
         "Timing": {
           "Target": "25.00",
           "Uncertainty": "3.12",
-          "Estimate": "2.729"
+          "Estimate": "4.950"
         },
         "Area": {
-          "DSP": "12",
+          "DSP": "177",
           "AVAIL_DSP": "12288",
-          "UTIL_DSP": "~0",
+          "UTIL_DSP": "1",
           "FF": "0",
           "AVAIL_FF": "3456000",
           "UTIL_FF": "0",
-          "LUT": "401",
-          "AVAIL_LUT": "1728000",
-          "UTIL_LUT": "~0",
-          "BRAM_18K": "0",
-          "AVAIL_BRAM": "5376",
-          "UTIL_BRAM": "0",
-          "URAM": "0",
-          "AVAIL_URAM": "1280",
-          "UTIL_URAM": "0"
-        }
-      },
-      "relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s": {
-        "Latency": {
-          "LatencyBest": "0",
-          "LatencyAvg": "0",
-          "LatencyWorst": "0",
-          "PipelineII": "1",
-          "PipelineDepth": "1",
-          "PipelineType": "yes"
-        },
-        "Timing": {
-          "Target": "25.00",
-          "Uncertainty": "3.12",
-          "Estimate": "1.046"
-        },
-        "Area": {
-          "FF": "0",
-          "AVAIL_FF": "3456000",
-          "UTIL_FF": "0",
-          "LUT": "360",
-          "AVAIL_LUT": "1728000",
-          "UTIL_LUT": "~0",
-          "BRAM_18K": "0",
-          "AVAIL_BRAM": "5376",
-          "UTIL_BRAM": "0",
-          "DSP": "0",
-          "AVAIL_DSP": "12288",
-          "UTIL_DSP": "0",
-          "URAM": "0",
-          "AVAIL_URAM": "1280",
-          "UTIL_URAM": "0"
-        }
-      },
-      "dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s": {
-        "Latency": {
-          "LatencyBest": "0",
-          "LatencyAvg": "0",
-          "LatencyWorst": "0",
-          "PipelineII": "1",
-          "PipelineDepth": "1",
-          "PipelineType": "yes"
-        },
-        "Timing": {
-          "Target": "25.00",
-          "Uncertainty": "3.12",
-          "Estimate": "4.134"
-        },
-        "Area": {
-          "DSP": "2",
-          "AVAIL_DSP": "12288",
-          "UTIL_DSP": "~0",
-          "FF": "0",
-          "AVAIL_FF": "3456000",
-          "UTIL_FF": "0",
-          "LUT": "425",
+          "LUT": "15439",
           "AVAIL_LUT": "1728000",
           "UTIL_LUT": "~0",
           "BRAM_18K": "0",
@@ -977,28 +1123,28 @@
       },
       "myproject": {
         "Latency": {
-          "LatencyBest": "1",
-          "LatencyAvg": "1",
-          "LatencyWorst": "1",
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
           "PipelineII": "1",
-          "PipelineDepth": "2",
+          "PipelineDepth": "1",
           "PipelineType": "yes"
         },
         "Timing": {
           "Target": "25.00",
           "Uncertainty": "3.12",
-          "Estimate": "14.286"
+          "Estimate": "14.540"
         },
         "Area": {
-          "DSP": "335",
+          "DSP": "598",
           "AVAIL_DSP": "12288",
-          "UTIL_DSP": "2",
-          "FF": "783",
+          "UTIL_DSP": "4",
+          "FF": "782",
           "AVAIL_FF": "3456000",
           "UTIL_FF": "~0",
-          "LUT": "48953",
+          "LUT": "58674",
           "AVAIL_LUT": "1728000",
-          "UTIL_LUT": "2",
+          "UTIL_LUT": "3",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "5376",
           "UTIL_BRAM": "0",
@@ -1012,7 +1158,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-07-25 13:15:53 PDT",
+    "Time": "2024-07-30 12:54:21 PDT",
     "ToolName": "vitis_hls",
     "ToolVersion": "2023.1"
   }

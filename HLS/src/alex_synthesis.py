@@ -1,7 +1,7 @@
 # PATH OF MODEL TO SYNTHESIZE
 HYPERPARAMETERS = {
     "NUM_TIME_SLICES": 4,
-    "QUANTIZATION_BITS": [8, 12, 2], # weights&biases, activation, integer
+    "QUANTIZATION_BITS": [10, 15, 2], # weights&biases, activation, integer
     "OUTPUT": "SINGLE",
 }
 NUM_TIME_SLICES = HYPERPARAMETERS["NUM_TIME_SLICES"]
@@ -10,8 +10,8 @@ BIAS_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][0]
 ACTIVATION_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][1]
 INTEGER_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][2]
 
-skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
-
+# skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
+skl_model_path = f'../../software/ALEX/52_32_16_encoder_{WEIGHTS_BITS}_{ACTIVATION_BITS}_{INTEGER_BITS}.h5'
 
 # IMPORTS
 import hls4ml
