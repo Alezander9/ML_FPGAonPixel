@@ -208,5 +208,19 @@
         "metrics": "(0.8731, 0.3978), (0.9002, 0.3592), (0.9300, 0.3067), (0.9599, 0.2401), (0.9798, 0.1727), (0.9899, 0.1251), (0.9949, 0.0923), (0.9989, 0.0392)",
         "val_loss": 0.8184316158294678,
         "pruned_val_loss": 0.4943046271800995
+    },
+    "{\"BATCH_SIZE\": 1024, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [32, 16, 8], \"ENCODER_LAYERS\": [32, 16], \"ENCODER_TIME_SLICES\": 3, \"ENCODING_NODES\": \"Recreated\", \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.45, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 15, 2], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"Y0_SCALING\": \"Linear\"}": {
+        "max_sum_se": 0.7896868841690388,
+        "max_sum_br": 0.4936773441201122,
+        "metrics": "(0.8729, 0.3995), (0.8998, 0.3601), (0.9300, 0.3101), (0.9598, 0.2431), (0.9801, 0.1814), (0.9899, 0.1339), (0.9949, 0.1024), (0.9991, 0.0337)",
+        "val_loss": 0.8105902671813965,
+        "pruned_val_loss": 0.4918764531612396
+    },
+    "{\"BATCH_SIZE\": 1024, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [32, 16, 8], \"ENCODER_LAYERS\": [32, 16], \"ENCODER_TIME_SLICES\": 3, \"ENCODING_NODES\": \"Recreated\", \"EPOCHS\": 100, \"FINAL_SPARSITY\": 0.6, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"DNN\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 15, 2], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"Y0_SCALING\": \"Linear\"}": {
+        "max_sum_se": 0.7795781329829939,
+        "max_sum_br": 0.4907255566488102,
+        "metrics": "(0.8730, 0.3857), (0.9000, 0.3471), (0.9301, 0.2988), (0.9601, 0.2338), (0.9799, 0.1687), (0.9899, 0.1200), (0.9948, 0.0870), (0.9988, 0.0310)",
+        "val_loss": 0.8126694560050964,
+        "pruned_val_loss": 0.49946582317352295
     }
 }
