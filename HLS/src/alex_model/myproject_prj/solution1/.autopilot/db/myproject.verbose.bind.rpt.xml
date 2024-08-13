@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Tue Jul 30 12:54:01 2024
+<item name = "Date">Tue Aug 13 11:37:22 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00 ns, 14.540 ns, 3.12 ns</column>
+<column name="ap_clk">25.00 ns, 14.530 ns, 3.12 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="">1, 1, 25.000 ns, 25.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s_fu_182">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_188">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_224">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret3_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s_fu_260">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

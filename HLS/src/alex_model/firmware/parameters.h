@@ -16,45 +16,40 @@
 #include "nnet_utils/nnet_dense_stream.h"
 
 // hls-fpga-machine-learning insert weights
-#include "weights/w3.h"
-#include "weights/b3.h"
-#include "weights/s6.h"
+#include "weights/w2.h"
+#include "weights/b2.h"
+#include "weights/s4.h"
+#include "weights/b4.h"
+#include "weights/w6.h"
 #include "weights/b6.h"
-#include "weights/w7.h"
-#include "weights/b7.h"
+#include "weights/s8.h"
+#include "weights/b8.h"
+#include "weights/w10.h"
+#include "weights/b10.h"
 
 // hls-fpga-machine-learning insert layer-config
 // dense1
-struct config3 : nnet::dense_config {
-    static const unsigned n_in = 52;
-    static const unsigned n_out = 32;
+struct config2 : nnet::dense_config {
+    static const unsigned n_in = 53;
+    static const unsigned n_out = 24;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 264;
-    static const unsigned n_nonzeros = 1400;
+    static const unsigned n_zeros = 385;
+    static const unsigned n_nonzeros = 887;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef model_default_t accum_t;
-    typedef bias3_t bias_t;
-    typedef weight3_t weight_t;
-    typedef layer3_index index_t;
+    typedef bias2_t bias_t;
+    typedef weight2_t weight_t;
+    typedef layer2_index index_t;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
 
-// q_activation
-struct relu_config5 : nnet::activ_config {
-    static const unsigned n_in = 32;
-    static const unsigned table_size = 1024;
-    static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
-    typedef q_activation_table_t table_t;
-};
-
 // batch_normalization
-struct config6 : nnet::batchnorm_config {
-    static const unsigned n_in = N_LAYER_3;
+struct config4 : nnet::batchnorm_config {
+    static const unsigned n_in = N_LAYER_2;
     static const unsigned n_filt = -1;
     static const unsigned n_scale_bias = (n_filt == -1) ? n_in : n_filt;
     static const unsigned io_type = nnet::io_parallel;
@@ -67,21 +62,73 @@ struct config6 : nnet::batchnorm_config {
     using product = nnet::product::mult<x_T, y_T>;
 };
 
-// latent_space
-struct config7 : nnet::dense_config {
-    static const unsigned n_in = 32;
-    static const unsigned n_out = 16;
+// q_activation
+struct relu_config5 : nnet::activ_config {
+    static const unsigned n_in = 24;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef q_activation_table_t table_t;
+};
+
+// dense2
+struct config6 : nnet::dense_config {
+    static const unsigned n_in = 24;
+    static const unsigned n_out = 12;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 21;
-    static const unsigned n_nonzeros = 491;
+    static const unsigned n_zeros = 87;
+    static const unsigned n_nonzeros = 201;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef model_default_t accum_t;
-    typedef bias7_t bias_t;
-    typedef weight7_t weight_t;
-    typedef layer7_index index_t;
+    typedef bias6_t bias_t;
+    typedef weight6_t weight_t;
+    typedef layer6_index index_t;
+    template<class x_T, class y_T>
+    using product = nnet::product::mult<x_T, y_T>;
+};
+
+// batch_normalization_1
+struct config8 : nnet::batchnorm_config {
+    static const unsigned n_in = N_LAYER_6;
+    static const unsigned n_filt = -1;
+    static const unsigned n_scale_bias = (n_filt == -1) ? n_in : n_filt;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    static const unsigned multiplier_limit = DIV_ROUNDUP(n_in, reuse_factor);
+    static const bool store_weights_in_bram = false;
+    typedef batch_normalization_1_bias_t bias_t;
+    typedef batch_normalization_1_scale_t scale_t;
+    template<class x_T, class y_T>
+    using product = nnet::product::mult<x_T, y_T>;
+};
+
+// q_activation_1
+struct relu_config9 : nnet::activ_config {
+    static const unsigned n_in = 12;
+    static const unsigned table_size = 1024;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned reuse_factor = 1;
+    typedef q_activation_1_table_t table_t;
+};
+
+// dense_output
+struct config10 : nnet::dense_config {
+    static const unsigned n_in = 12;
+    static const unsigned n_out = 1;
+    static const unsigned io_type = nnet::io_parallel;
+    static const unsigned strategy = nnet::latency;
+    static const unsigned reuse_factor = 1;
+    static const unsigned n_zeros = 4;
+    static const unsigned n_nonzeros = 8;
+    static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
+    static const bool store_weights_in_bram = false;
+    typedef model_default_t accum_t;
+    typedef bias10_t bias_t;
+    typedef weight10_t weight_t;
+    typedef layer10_index index_t;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };

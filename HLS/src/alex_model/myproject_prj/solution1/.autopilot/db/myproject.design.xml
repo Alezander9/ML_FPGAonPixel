@@ -5,28 +5,46 @@
 <ModuleName>myproject</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s_fu_182</InstName>
-<ModuleName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s</ModuleName>
+<InstName>call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53</InstName>
+<ModuleName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>182</ID>
+<ID>53</ID>
 </Instance>
 <Instance>
-<InstName>call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_188</InstName>
+<InstName>call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59</InstName>
+<ModuleName>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>59</ID>
+</Instance>
+<Instance>
+<InstName>call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87</InstName>
 <ModuleName>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>188</ID>
+<ID>87</ID>
 </Instance>
 <Instance>
-<InstName>call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_224</InstName>
-<ModuleName>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s</ModuleName>
+<InstName>call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115</InstName>
+<ModuleName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>224</ID>
+<ID>115</ID>
 </Instance>
 <Instance>
-<InstName>call_ret3_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s_fu_260</InstName>
-<ModuleName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s</ModuleName>
+<InstName>call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143</InstName>
+<ModuleName>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>260</ID>
+<ID>143</ID>
+</Instance>
+<Instance>
+<InstName>call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155</InstName>
+<ModuleName>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>155</ID>
+</Instance>
+<Instance>
+<InstName>call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167</InstName>
+<ModuleName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>167</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -34,13 +52,13 @@
 
 <ModuleInformation>
 <Module>
-<Name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s</Name>
+<Name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>25.00</TargetClockPeriod>
 <ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>5.695</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.707</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>0</Best-caseLatency>
@@ -56,15 +74,15 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>390</DSP>
+<DSP>479</DSP>
 <AVAIL_DSP>12288</AVAIL_DSP>
 <UTIL_DSP>3</UTIL_DSP>
 <FF>0</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
 <UTIL_FF>0</UTIL_FF>
-<LUT>41012</LUT>
+<LUT>25842</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
-<UTIL_LUT>2</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>5376</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -76,7 +94,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -87,7 +105,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -98,7 +116,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -109,7 +127,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -120,7 +138,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -131,7 +149,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -142,7 +160,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -153,7 +171,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -164,7 +182,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -175,7 +193,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -186,7 +204,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -197,7 +215,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_10</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -208,7 +226,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_11</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -219,7 +237,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_12</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -230,7 +248,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_13</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -241,7 +259,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_14</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -252,7 +270,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_15</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -263,7 +281,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_16</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -274,7 +292,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_17</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -285,7 +303,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_18</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -296,7 +314,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_19</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -307,7 +325,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_20</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -318,7 +336,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_21</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -329,7 +347,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_22</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -340,95 +358,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_23</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_24</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_25</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_26</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_27</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_28</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_29</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_30</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_31</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -445,7 +375,589 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>780</Bits>
+<Bits>795</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
+<TargetInitiationInterval>1</TargetInitiationInterval>
+<EstimatedClockPeriod>2.756</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>0</Best-caseLatency>
+<Average-caseLatency>0</Average-caseLatency>
+<Worst-caseLatency>0</Worst-caseLatency>
+<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineDepth>1</PipelineDepth>
+<PipelineType>yes</PipelineType>
+</SummaryOfOverallLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP>20</DSP>
+<AVAIL_DSP>12288</AVAIL_DSP>
+<UTIL_DSP>~0</UTIL_DSP>
+<FF>0</FF>
+<AVAIL_FF>3456000</AVAIL_FF>
+<UTIL_FF>0</UTIL_FF>
+<LUT>845</LUT>
+<AVAIL_LUT>1728000</AVAIL_LUT>
+<UTIL_LUT>~0</UTIL_LUT>
+<BRAM_18K>0</BRAM_18K>
+<AVAIL_BRAM>5376</AVAIL_BRAM>
+<UTIL_BRAM>0</UTIL_BRAM>
+<URAM>0</URAM>
+<AVAIL_URAM>1280</AVAIL_URAM>
+<UTIL_URAM>0</UTIL_URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_0</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_1</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_2</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_3</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_4</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_5</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_6</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_7</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_8</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_9</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_10</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_11</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_12</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_13</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_14</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_15</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_16</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_17</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_18</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_19</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_20</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_21</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_22</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_23</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_0_val</name>
+<Object>data_0_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_1_val</name>
+<Object>data_1_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_2_val</name>
+<Object>data_2_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_3_val</name>
+<Object>data_3_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_4_val</name>
+<Object>data_4_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_5_val</name>
+<Object>data_5_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_6_val</name>
+<Object>data_6_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_7_val</name>
+<Object>data_7_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_8_val</name>
+<Object>data_8_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_9_val</name>
+<Object>data_9_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_10_val</name>
+<Object>data_10_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_11_val</name>
+<Object>data_11_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_12_val</name>
+<Object>data_12_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_13_val</name>
+<Object>data_13_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_14_val</name>
+<Object>data_14_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_15_val</name>
+<Object>data_15_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_16_val</name>
+<Object>data_16_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_17_val</name>
+<Object>data_17_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_18_val</name>
+<Object>data_18_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_19_val</name>
+<Object>data_19_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_20_val</name>
+<Object>data_20_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_21_val</name>
+<Object>data_21_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_22_val</name>
+<Object>data_22_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_23_val</name>
+<Object>data_23_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>
@@ -476,7 +988,7 @@
 <FF>0</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
 <UTIL_FF>0</UTIL_FF>
-<LUT>1152</LUT>
+<LUT>864</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -767,94 +1279,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ap_return_24</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_25</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_26</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_27</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_28</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_29</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_30</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_31</name>
-<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config5&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>data_0_val</name>
 <Object>data_0_val</Object>
 <Type>scalar</Type>
@@ -1118,856 +1542,10 @@
 <Bits>15</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>data_24_val</name>
-<Object>data_24_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_25_val</name>
-<Object>data_25_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_26_val</name>
-<Object>data_26_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_27_val</name>
-<Object>data_27_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_29_val</name>
-<Object>data_29_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>25.00</TargetClockPeriod>
-<ClockUncertainty>3.12</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>2.778</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>0</Best-caseLatency>
-<Average-caseLatency>0</Average-caseLatency>
-<Worst-caseLatency>0</Worst-caseLatency>
-<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
-<PipelineType>yes</PipelineType>
-</SummaryOfOverallLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<DSP>31</DSP>
-<AVAIL_DSP>12288</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>0</FF>
-<AVAIL_FF>3456000</AVAIL_FF>
-<UTIL_FF>0</UTIL_FF>
-<LUT>1033</LUT>
-<AVAIL_LUT>1728000</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>5376</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<URAM>0</URAM>
-<AVAIL_URAM>1280</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_0</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_1</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_2</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_3</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_4</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_5</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_6</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_7</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_8</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_9</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_10</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_11</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_12</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_13</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_14</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_15</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_16</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_17</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_18</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_19</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_20</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_21</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_22</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_23</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_24</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_25</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_26</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_27</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_28</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_29</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_30</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_31</name>
-<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_0_val</name>
-<Object>data_0_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_3_val</name>
-<Object>data_3_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_4_val</name>
-<Object>data_4_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_8_val</name>
-<Object>data_8_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_9_val</name>
-<Object>data_9_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_10_val</name>
-<Object>data_10_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_11_val</name>
-<Object>data_11_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_13_val</name>
-<Object>data_13_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_16_val</name>
-<Object>data_16_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_17_val</name>
-<Object>data_17_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_18_val</name>
-<Object>data_18_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_19_val</name>
-<Object>data_19_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_20_val</name>
-<Object>data_20_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_22_val</name>
-<Object>data_22_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_23_val</name>
-<Object>data_23_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_24_val</name>
-<Object>data_24_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_25_val</name>
-<Object>data_25_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_26_val</name>
-<Object>data_26_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_27_val</name>
-<Object>data_27_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_29_val</name>
-<Object>data_29_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s</Name>
+<Name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>25.00</TargetClockPeriod>
@@ -1989,13 +1567,13 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>177</DSP>
+<DSP>87</DSP>
 <AVAIL_DSP>12288</AVAIL_DSP>
-<UTIL_DSP>1</UTIL_DSP>
+<UTIL_DSP>~0</UTIL_DSP>
 <FF>0</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
 <UTIL_FF>0</UTIL_FF>
-<LUT>15439</LUT>
+<LUT>3785</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -2009,7 +1587,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2020,7 +1598,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2031,7 +1609,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2042,7 +1620,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2053,7 +1631,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2064,7 +1642,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2075,7 +1653,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2086,7 +1664,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2097,95 +1675,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_8</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_9</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_10</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_11</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_12</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_13</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_14</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_15</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config7&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2458,9 +1948,151 @@
 <Bits>15</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
+<TargetInitiationInterval>1</TargetInitiationInterval>
+<EstimatedClockPeriod>2.762</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>0</Best-caseLatency>
+<Average-caseLatency>0</Average-caseLatency>
+<Worst-caseLatency>0</Worst-caseLatency>
+<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineDepth>1</PipelineDepth>
+<PipelineType>yes</PipelineType>
+</SummaryOfOverallLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP>8</DSP>
+<AVAIL_DSP>12288</AVAIL_DSP>
+<UTIL_DSP>~0</UTIL_DSP>
+<FF>0</FF>
+<AVAIL_FF>3456000</AVAIL_FF>
+<UTIL_FF>0</UTIL_FF>
+<LUT>272</LUT>
+<AVAIL_LUT>1728000</AVAIL_LUT>
+<UTIL_LUT>~0</UTIL_LUT>
+<BRAM_18K>0</BRAM_18K>
+<AVAIL_BRAM>5376</AVAIL_BRAM>
+<UTIL_BRAM>0</UTIL_BRAM>
+<URAM>0</URAM>
+<AVAIL_URAM>1280</AVAIL_URAM>
+<UTIL_URAM>0</UTIL_URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
 <RtlPorts>
-<name>data_24_val</name>
-<Object>data_24_val</Object>
+<name>ap_ready</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_0</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_1</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_2</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_3</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_4</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_5</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_6</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_7</name>
+<Object>normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config8&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_0_val</name>
+<Object>data_0_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2470,8 +2102,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_25_val</name>
-<Object>data_25_val</Object>
+<name>data_1_val</name>
+<Object>data_1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2481,8 +2113,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_26_val</name>
-<Object>data_26_val</Object>
+<name>data_2_val</name>
+<Object>data_2_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2492,8 +2124,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_27_val</name>
-<Object>data_27_val</Object>
+<name>data_3_val</name>
+<Object>data_3_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2503,8 +2135,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
+<name>data_4_val</name>
+<Object>data_4_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2514,8 +2146,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_29_val</name>
-<Object>data_29_val</Object>
+<name>data_5_val</name>
+<Object>data_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2525,8 +2157,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
+<name>data_6_val</name>
+<Object>data_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2536,8 +2168,391 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
+<name>data_8_val</name>
+<Object>data_8_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
+<TargetInitiationInterval>4294967295</TargetInitiationInterval>
+<EstimatedClockPeriod>1.117</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>0</Best-caseLatency>
+<Average-caseLatency>0</Average-caseLatency>
+<Worst-caseLatency>0</Worst-caseLatency>
+<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineDepth>1</PipelineDepth>
+<PipelineType>yes</PipelineType>
+</SummaryOfOverallLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<FF>0</FF>
+<AVAIL_FF>3456000</AVAIL_FF>
+<UTIL_FF>0</UTIL_FF>
+<LUT>288</LUT>
+<AVAIL_LUT>1728000</AVAIL_LUT>
+<UTIL_LUT>~0</UTIL_LUT>
+<BRAM_18K>0</BRAM_18K>
+<AVAIL_BRAM>5376</AVAIL_BRAM>
+<UTIL_BRAM>0</UTIL_BRAM>
+<DSP>0</DSP>
+<AVAIL_DSP>12288</AVAIL_DSP>
+<UTIL_DSP>0</UTIL_DSP>
+<URAM>0</URAM>
+<AVAIL_URAM>1280</AVAIL_URAM>
+<UTIL_URAM>0</UTIL_URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_0</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_1</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_2</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_3</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_4</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_5</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_6</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return_7</name>
+<Object>relu&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, relu_config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_0_val</name>
+<Object>data_0_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_1_val</name>
+<Object>data_1_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_2_val</name>
+<Object>data_2_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_3_val</name>
+<Object>data_3_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_4_val</name>
+<Object>data_4_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_5_val</name>
+<Object>data_5_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_6_val</name>
+<Object>data_6_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_8_val</name>
+<Object>data_8_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>25.00</TargetClockPeriod>
+<ClockUncertainty>3.12</ClockUncertainty>
+<TargetInitiationInterval>1</TargetInitiationInterval>
+<EstimatedClockPeriod>4.182</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>0</Best-caseLatency>
+<Average-caseLatency>0</Average-caseLatency>
+<Worst-caseLatency>0</Worst-caseLatency>
+<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineDepth>1</PipelineDepth>
+<PipelineType>yes</PipelineType>
+</SummaryOfOverallLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP>5</DSP>
+<AVAIL_DSP>12288</AVAIL_DSP>
+<UTIL_DSP>~0</UTIL_DSP>
+<FF>0</FF>
+<AVAIL_FF>3456000</AVAIL_FF>
+<UTIL_FF>0</UTIL_FF>
+<LUT>210</LUT>
+<AVAIL_LUT>1728000</AVAIL_LUT>
+<UTIL_LUT>~0</UTIL_LUT>
+<BRAM_18K>0</BRAM_18K>
+<AVAIL_BRAM>5376</AVAIL_BRAM>
+<UTIL_BRAM>0</UTIL_BRAM>
+<URAM>0</URAM>
+<AVAIL_URAM>1280</AVAIL_URAM>
+<UTIL_URAM>0</UTIL_URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config10&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_return</name>
+<Object>dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0&gt;, ap_fixed&lt;15, 2, 5, 3, 0&gt;, config10&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_0_val</name>
+<Object>data_0_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_1_val</name>
+<Object>data_1_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_2_val</name>
+<Object>data_2_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_3_val</name>
+<Object>data_3_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_4_val</name>
+<Object>data_4_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_5_val</name>
+<Object>data_5_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_6_val</name>
+<Object>data_6_val</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>15</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>data_8_val</name>
+<Object>data_8_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2555,31 +2570,31 @@
 <TargetClockPeriod>25.00</TargetClockPeriod>
 <ClockUncertainty>3.12</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>14.540</EstimatedClockPeriod>
+<EstimatedClockPeriod>14.530</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>0</Best-caseLatency>
-<Average-caseLatency>0</Average-caseLatency>
-<Worst-caseLatency>0</Worst-caseLatency>
-<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>25.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>25.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>25.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
+<PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>598</DSP>
+<DSP>599</DSP>
 <AVAIL_DSP>12288</AVAIL_DSP>
 <UTIL_DSP>4</UTIL_DSP>
-<FF>782</FF>
+<FF>918</FF>
 <AVAIL_FF>3456000</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>58674</LUT>
+<LUT>32146</LUT>
 <AVAIL_LUT>1728000</AVAIL_LUT>
-<UTIL_LUT>3</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>5376</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2656,20 +2671,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>y_profile_input</name>
-<Object>y_profile_input</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>780</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>y_profile_input_ap_vld</name>
-<Object>y_profile_input</Object>
+<name>y_timed_input_ap_vld</name>
+<Object>y_timed_input</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -2680,8 +2683,20 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>layer7_out_0</name>
-<Object>layer7_out_0</Object>
+<name>y_timed_input</name>
+<Object>y_timed_input</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_vld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>795</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>layer10_out</name>
+<Object>layer10_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>
@@ -2692,368 +2707,8 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
-<name>layer7_out_0_ap_vld</name>
-<Object>layer7_out_0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_1</name>
-<Object>layer7_out_1</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_1_ap_vld</name>
-<Object>layer7_out_1</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_2</name>
-<Object>layer7_out_2</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_2_ap_vld</name>
-<Object>layer7_out_2</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_3</name>
-<Object>layer7_out_3</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_3_ap_vld</name>
-<Object>layer7_out_3</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_4</name>
-<Object>layer7_out_4</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_4_ap_vld</name>
-<Object>layer7_out_4</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_5</name>
-<Object>layer7_out_5</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_5_ap_vld</name>
-<Object>layer7_out_5</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_6</name>
-<Object>layer7_out_6</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_6_ap_vld</name>
-<Object>layer7_out_6</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_7</name>
-<Object>layer7_out_7</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_7_ap_vld</name>
-<Object>layer7_out_7</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_8</name>
-<Object>layer7_out_8</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_8_ap_vld</name>
-<Object>layer7_out_8</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_9</name>
-<Object>layer7_out_9</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_9_ap_vld</name>
-<Object>layer7_out_9</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_10</name>
-<Object>layer7_out_10</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_10_ap_vld</name>
-<Object>layer7_out_10</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_11</name>
-<Object>layer7_out_11</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_11_ap_vld</name>
-<Object>layer7_out_11</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_12</name>
-<Object>layer7_out_12</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_12_ap_vld</name>
-<Object>layer7_out_12</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_13</name>
-<Object>layer7_out_13</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_13_ap_vld</name>
-<Object>layer7_out_13</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_14</name>
-<Object>layer7_out_14</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_14_ap_vld</name>
-<Object>layer7_out_14</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_15</name>
-<Object>layer7_out_15</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>15</Bits>
-<Attribute>data</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
-<name>layer7_out_15_ap_vld</name>
-<Object>layer7_out_15</Object>
+<name>layer10_out_ap_vld</name>
+<Object>layer10_out</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_vld</IOProtocol>

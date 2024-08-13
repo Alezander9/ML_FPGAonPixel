@@ -1,17 +1,22 @@
 # PATH OF MODEL TO SYNTHESIZE
 HYPERPARAMETERS = {
     "NUM_TIME_SLICES": 4,
-    "QUANTIZATION_BITS": [10, 15, 2], # weights&biases, activation, integer
+    "QUANTIZATION_BITS": [10, 15, 2],
+    # weights&biases, activation, integer
     "OUTPUT": "SINGLE",
 }
+input_data_file_path = './4_slice_test_inputs.dat'
+output_data_file_path = './single_test_outputs.dat'
+
 NUM_TIME_SLICES = HYPERPARAMETERS["NUM_TIME_SLICES"]
 WEIGHTS_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][0]
 BIAS_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][0]
 ACTIVATION_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][1]
 INTEGER_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][2]
 
-# skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
-skl_model_path = f'../../software/ALEX/52_32_16_encoder_{WEIGHTS_BITS}_{ACTIVATION_BITS}_{INTEGER_BITS}.h5'
+# skl_model_path = f'../../software/ALEX/best_on_chip_classifier.h5'
+skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
+# skl_model_path = f'../../software/ALEX/40_24_8_log_scaling_encoder_best_performance_{WEIGHTS_BITS}_{ACTIVATION_BITS}_{INTEGER_BITS}.h5'
 
 # IMPORTS
 import hls4ml
@@ -37,15 +42,6 @@ import seaborn as sns
 os.environ['PATH'] = os.environ['XILINX_VIVADO'] + '/bin:' + os.environ['PATH']
 os.environ['PATH'] = os.environ['XILINX_VITIS'] + '/bin:' + os.environ['PATH']
 os.environ['PATH'] = os.environ['XILINX_AP_INCLUDE'] + '/bin:' + os.environ['PATH']
-
-# MODEL LOADING CONFIG
-objects = {}
-_add_supported_quantized_objects(objects)
-objects['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
-
-# LOAD MODEL
-model = tf.keras.models.load_model(skl_model_path, custom_objects=objects)
-model = strip_pruning(model)
 
 # MODEL LOADING CONFIG
 objects = {}
@@ -290,8 +286,6 @@ def displayPerformance(data, test_results, metrics, hyperparams):
 
 
 print('###################### LOADING TEST DATASET  ######################')
-input_data_file_path = './4_slice_test_inputs.dat'
-output_data_file_path = './single_test_outputs.dat'
 data = {
     "input_test_data_combined": read_data_from_file(input_data_file_path),
     "target_test_data_coded": read_data_from_file(output_data_file_path)

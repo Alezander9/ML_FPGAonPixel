@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1721937877707">
-  <ports id="1" name="y_timed_input" type="PortType" originalName="y_timed_input" coreId="2147483647" bitwidth="636">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1723227276685">
+  <ports id="1" name="y_timed_input" type="PortType" originalName="y_timed_input" coreId="2147483647" bitwidth="795">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="layer10_out" type="PortType" originalName="layer10_out" coreId="3621216858" bitwidth="12" direction="DirOut">
+  <ports id="2" name="layer10_out" type="PortType" originalName="layer10_out" coreId="318" bitwidth="15" direction="DirOut">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="130" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
@@ -226,15 +226,15 @@
   <edges id="361" source_obj="//@regions.0/@basic_blocks.0/@node_objs.114" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.115"/>
   <edges id="364" source_obj="//@regions.0/@basic_blocks.0/@node_objs.116" sink_obj="//@ports.1"/>
   <edges id="365" source_obj="//@regions.0/@basic_blocks.0/@node_objs.115" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.116"/>
-  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="484" pipe_depth="1" RegionName="myproject">
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="486" pipe_depth="2" RegionName="myproject">
     <basic_blocks id="127" name="myproject" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="y_timed_input_read" coreId="4294967295" bitwidth="636" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="y_timed_input_read" coreId="4294967295" bitwidth="795" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
         <dataInputObjs>y_timed_input</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="call_ret1" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." rtlName="call_ret1_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s_fu_53" coreId="757211800" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="288" opcode="call" m_display="0" m_delay="5.64" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="call_ret1" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." rtlName="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53" coreId="2959326205" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="360" opcode="call" m_display="0" m_delay="6.45" m_topoIndex="2" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
@@ -260,153 +260,153 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
-        <constName>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s</constName>
+        <constName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="layer2_out" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757211776" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="layer2_out" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3306427755" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="layer2_out_1" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757235792" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="layer2_out_1" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="2959296317" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="layer2_out_2" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757213384" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="layer2_out_2" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063461264" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="layer2_out_3" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757319376" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="layer2_out_3" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="layer2_out_4" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1819113532" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="layer2_out_4" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3071273984" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="layer2_out_5" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757237008" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="layer2_out_5" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3109407280" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="layer2_out_6" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1836214630" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="layer2_out_6" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063461376" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="layer2_out_7" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="800184016" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="layer2_out_7" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063537104" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="layer2_out_8" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="layer2_out_8" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063461264" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="layer2_out_9" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="layer2_out_9" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3048613184" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="layer2_out_10" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1229070909" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="layer2_out_10" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3046842968" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="layer2_out_11" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="759454568" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="layer2_out_11" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3009438275" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="layer2_out_12" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1885415424" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="layer2_out_12" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3046832608" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="layer2_out_13" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="layer2_out_13" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="289" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="layer2_out_14" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757319376" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="layer2_out_14" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1031369833" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="layer2_out_15" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="layer2_out_15" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063461264" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="layer2_out_16" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="757568856" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="layer2_out_16" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3020427664" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="layer2_out_17" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="759465208" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="layer2_out_17" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="539765307" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="layer2_out_18" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="layer2_out_18" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="644113784" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="layer2_out_19" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="layer2_out_19" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3046852064" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="layer2_out_20" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="176" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="layer2_out_20" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063525616" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="layer2_out_21" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="759443824" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="layer2_out_21" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063537712" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="layer2_out_22" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="759445168" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="layer2_out_22" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3046927280" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="layer2_out_23" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="759449984" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="layer2_out_23" lineNumber="41" originalName="layer2_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="2985025536" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config2_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="43" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config2&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="call_ret2" lineNumber="47" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret2_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s_fu_59" coreId="0" contextFuncName="myproject" bitwidth="288" opcode="call" m_display="0" m_delay="2.69" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="call_ret2" lineNumber="47" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59" coreId="3071318208" contextFuncName="myproject" bitwidth="360" opcode="call" m_display="0" m_delay="2.75" m_topoIndex="27" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
@@ -456,129 +456,129 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
-        <constName>normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s</constName>
+        <constName>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="layer4_out" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1330007625" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="layer4_out" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="layer4_out_1" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759455984" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="layer4_out_1" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="979906158" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="layer4_out_2" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759443624" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="layer4_out_2" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1869833586" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="layer4_out_3" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759447576" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="layer4_out_3" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="layer4_out_4" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="layer4_out_4" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3048608400" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="layer4_out_5" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="layer4_out_5" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3190627624" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="layer4_out_6" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757240240" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="layer4_out_6" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="layer4_out_7" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757241328" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="layer4_out_7" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3071333600" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="layer4_out_8" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="800746537" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="layer4_out_8" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3101071776" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="layer4_out_9" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="750916728" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="layer4_out_9" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3101073280" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="layer4_out_10" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="756281056" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="layer4_out_10" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3071230304" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="layer4_out_11" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="750918224" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="layer4_out_11" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3071237536" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="layer4_out_12" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="750902512" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="layer4_out_12" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3071236480" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="layer4_out_13" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="775115338" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="layer4_out_13" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3071239160" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="layer4_out_14" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="750887912" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="layer4_out_14" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="2985563542" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="layer4_out_15" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="750888824" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="layer4_out_15" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046892272" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="layer4_out_16" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="750889736" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="layer4_out_16" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046893104" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="layer4_out_17" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="layer4_out_17" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="145" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="layer4_out_18" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="layer4_out_18" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="layer4_out_19" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="layer4_out_19" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046895944" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="layer4_out_20" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="480" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="layer4_out_20" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1953394531" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="layer4_out_21" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="layer4_out_21" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3048610720" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="layer4_out_22" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="layer4_out_22" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1702129263" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="layer4_out_23" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759461256" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="layer4_out_23" lineNumber="47" originalName="layer4_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="47" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="call_ret3" lineNumber="51" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret3_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s_fu_87" coreId="0" contextFuncName="myproject" bitwidth="288" opcode="call" m_display="0" m_delay="1.04" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="call_ret3" lineNumber="51" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87" coreId="0" contextFuncName="myproject" bitwidth="360" opcode="call" m_display="0" m_delay="1.11" m_topoIndex="52" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
@@ -628,131 +628,131 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
-        <constName>relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s</constName>
+        <constName>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="layer5_out" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="layer5_out" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1702258035" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="layer5_out_1" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759464296" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="layer5_out_1" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="layer5_out_2" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757241040" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="layer5_out_2" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1936942413" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="layer5_out_3" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757218896" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="layer5_out_3" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="56" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="layer5_out_4" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757218896" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="layer5_out_4" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="layer5_out_5" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757246352" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="layer5_out_5" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="layer5_out_6" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="802186971" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="layer5_out_6" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="layer5_out_7" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757218896" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="layer5_out_7" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="284" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="60" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="layer5_out_8" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="749174224" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="layer5_out_8" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="554" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="61" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="layer5_out_9" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="128" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="layer5_out_9" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="480" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="layer5_out_10" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759476640" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="layer5_out_10" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3048643712" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="layer5_out_11" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759479368" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="layer5_out_11" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046823992" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="layer5_out_12" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="layer5_out_12" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046824752" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="layer5_out_13" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757602000" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="layer5_out_13" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="539768113" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="layer5_out_14" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="128" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="layer5_out_14" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1819113532" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="layer5_out_15" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="759481760" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="layer5_out_15" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="layer5_out_16" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="997484326" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="layer5_out_16" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="540291616" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="layer5_out_17" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="layer5_out_17" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1330007625" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="layer5_out_18" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="layer5_out_18" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="176" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="layer5_out_19" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="layer5_out_19" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1937055829" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="72" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="layer5_out_20" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="layer5_out_20" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3215867194" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="layer5_out_21" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="748948752" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="layer5_out_21" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="539767593" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="74" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="layer5_out_22" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="748952432" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="layer5_out_22" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3059929024" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="layer5_out_23" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="layer5_out_23" lineNumber="51" originalName="layer5_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="51" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="call_ret4" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." rtlName="call_ret4_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s_fu_115" coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="144" opcode="call" m_display="0" m_delay="4.9" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="call_ret4" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." rtlName="call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115" coreId="3179889920" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="180" opcode="call" m_display="0" m_delay="5.69" m_topoIndex="77" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
@@ -789,81 +789,81 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
-        <constName>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s</constName>
+        <constName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="layer6_out" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="23" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="layer6_out" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3071205160" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="layer6_out_1" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="748960960" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="layer6_out_1" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1819113532" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="layer6_out_2" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1819113532" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="layer6_out_2" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="layer6_out_3" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="layer6_out_3" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="1702258035" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="layer6_out_4" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="748986176" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="layer6_out_4" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="304" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="layer6_out_5" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="748987920" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="layer6_out_5" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063526080" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="layer6_out_6" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="layer6_out_6" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063530368" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="layer6_out_7" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="176" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="layer6_out_7" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063532128" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="layer6_out_8" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="layer6_out_8" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="layer6_out_9" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="777417964" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="layer6_out_9" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063535520" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="layer6_out_10" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="749001984" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="layer6_out_10" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="176" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="layer6_out_11" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="777388460" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="layer6_out_11" lineNumber="41" originalName="layer6_out" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="3063538864" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config6_s" bitwidth="15" opcode="extractvalue" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="55" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config6&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="call_ret5" lineNumber="59" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret5_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s_fu_143" coreId="748999912" contextFuncName="myproject" bitwidth="144" opcode="call" m_display="0" m_delay="2.72" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="call_ret5" lineNumber="59" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143" coreId="0" contextFuncName="myproject" bitwidth="180" opcode="call" nodeLabel="1.0" m_display="0" m_delay="2.76" m_topoIndex="90" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
@@ -889,69 +889,69 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
-        <constName>normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s</constName>
+        <constName>normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="layer8_out" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1953394531" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="layer8_out" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="640837481" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="91" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="layer8_out_1" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="64" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="layer8_out_1" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1848599922" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="layer8_out_2" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="909326897" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="layer8_out_2" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046837824" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="layer8_out_3" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1919950882" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="layer8_out_3" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3046838688" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="94" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="layer8_out_4" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1767055360" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="layer8_out_4" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3179881808" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="95" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="layer8_out_5" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1936683105" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="layer8_out_5" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="480" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="layer8_out_6" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1684371561" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="layer8_out_6" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="784" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="layer8_out_7" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="802195701" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="layer8_out_7" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1953852527" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="layer8_out_8" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757227360" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="layer8_out_8" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1952804462" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="layer8_out_9" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757226800" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="layer8_out_9" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1397508187" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="layer8_out_10" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757229680" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="101" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="layer8_out_10" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1919950882" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="101" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="layer8_out_11" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757319376" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="layer8_out_11" lineNumber="59" originalName="layer8_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3071276512" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="59" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="call_ret" lineNumber="63" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s_fu_159" coreId="0" contextFuncName="myproject" bitwidth="144" opcode="call" m_display="0" m_delay="1.04" m_topoIndex="103" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="call_ret" lineNumber="63" fileName="firmware/myproject.cpp" fileDirectory="../." rtlName="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_159" coreId="3063508960" contextFuncName="myproject" bitwidth="180" opcode="call" nodeLabel="1.0" m_display="0" m_delay="1.11" m_topoIndex="103" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
@@ -977,71 +977,71 @@
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
         <dataOutputObjs>extractvalue</dataOutputObjs>
-        <constName>relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s</constName>
+        <constName>relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="layer9_out" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="layer9_out" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063509952" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="layer9_out_1" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757233632" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="layer9_out_1" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063510848" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="layer9_out_2" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="757319376" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="layer9_out_2" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1330007625" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="layer9_out_3" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="749296800" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="layer9_out_3" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="layer9_out_4" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="749300048" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="layer9_out_4" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="2959272664" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="108" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="layer9_out_5" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="749300960" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="layer9_out_5" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063514784" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="109" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="layer9_out_6" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="480" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="layer9_out_6" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063513616" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="layer9_out_7" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="777764023" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="layer9_out_7" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1702258035" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="111" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="layer9_out_8" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="749281696" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="layer9_out_8" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="112" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="layer9_out_9" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="748873072" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="layer9_out_9" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063516208" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="layer9_out_10" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="777734792" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="114" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="layer9_out_10" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063519776" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="114" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="layer9_out_11" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="1330007625" contextFuncName="myproject" bitwidth="12" opcode="extractvalue" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="layer9_out_11" lineNumber="63" originalName="layer9_out" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="0" contextFuncName="myproject" bitwidth="15" opcode="extractvalue" nodeLabel="1.0" m_display="0" m_topoIndex="115" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="63" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>call</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="call_ret6" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." rtlName="call_ret6_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s_fu_175" coreId="749316176" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config10_s" bitwidth="12" opcode="call" m_display="0" m_delay="4.13" m_topoIndex="116" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="call_ret6" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." rtlName="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_175" coreId="0" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config10_s" bitwidth="15" opcode="call" nodeLabel="1.0" m_display="0" m_delay="4.19" m_topoIndex="116" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;"/>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
@@ -1055,15 +1055,15 @@
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataInputObjs>extractvalue</dataInputObjs>
         <dataOutputObjs>write</dataOutputObjs>
-        <constName>dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s</constName>
+        <constName>dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="layer10_out_write_ln41" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_12_2_AP_TRN_AP_WRAP_0_ap_fixed_12_2_AP_TRN_AP_WRAP_0_config10_s" opcode="write" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="layer10_out_write_ln41" lineNumber="41" fileName="firmware/nnet_utils/nnet_dense.h" fileDirectory="../." coreId="0" contextFuncName="dense_ap_fixed_15_2_AP_TRN_AP_WRAP_0_ap_fixed_15_2_AP_TRN_AP_WRAP_0_config10_s" opcode="write" nodeLabel="1.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="65" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
-        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;12, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;"/>
+        <inlineStackInfo fileName="firmware/nnet_utils/nnet_dense.h" linenumber="41" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="dense&amp;lt;ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;15, 2, AP_TRN, AP_WRAP, 0&amp;gt;, config10&amp;gt;"/>
         <dataInputObjs>call</dataInputObjs>
         <dataOutputObjs>layer10_out</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="_ln67" lineNumber="67" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="748931376" contextFuncName="myproject" opcode="ret" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="_ln67" lineNumber="67" fileName="firmware/myproject.cpp" fileDirectory="../." coreId="3063461264" contextFuncName="myproject" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="118" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="67" fileDirectory="/home/alexyue/ML_FPGAonPixel/HLS/src/alex_model" functionName="myproject"/>
       </node_objs>
       <fileValidLineNumbers fileName="firmware/nnet_utils/nnet_dense.h">
@@ -1082,6 +1082,43 @@
     </basic_blocks>
   </regions>
   <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="layer6_out_2_reg_730">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_6_reg_750">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_3_reg_735">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_5_reg_745">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_9_reg_765">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_11_reg_775">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_10_reg_770">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_4_reg_740">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_1_reg_725">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_reg_720">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_8_reg_760">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="layer6_out_7_reg_755">
+    <nodeIds>93</nodeIds>
+  </regnodes>
   <expressionNodes realName="layer4_out_22_fu_422">
     <nodeIds>58</nodeIds>
   </expressionNodes>
@@ -1097,9 +1134,6 @@
   <expressionNodes realName="layer4_out_6_fu_342">
     <nodeIds>42</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_1_fu_617">
-    <nodeIds>100</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer4_out_18_fu_402">
     <nodeIds>54</nodeIds>
   </expressionNodes>
@@ -1109,8 +1143,11 @@
   <expressionNodes realName="layer4_out_7_fu_347">
     <nodeIds>43</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_2_fu_622">
-    <nodeIds>101</nodeIds>
+  <expressionNodes realName="layer8_out_4_fu_620">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_5_fu_625">
+    <nodeIds>104</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_9_fu_477">
     <nodeIds>70</nodeIds>
@@ -1120,9 +1157,6 @@
   </expressionNodes>
   <expressionNodes realName="layer4_out_13_fu_377">
     <nodeIds>49</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer8_out_3_fu_627">
-    <nodeIds>102</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_fu_432">
     <nodeIds>61</nodeIds>
@@ -1136,14 +1170,23 @@
   <expressionNodes realName="layer4_out_9_fu_357">
     <nodeIds>45</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer8_out_7_fu_635">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer2_out_22_fu_302">
     <nodeIds>33</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_5_fu_637">
-    <nodeIds>104</nodeIds>
+  <expressionNodes realName="layer6_out_1_fu_556">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_2_fu_610">
+    <nodeIds>101</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer4_out_fu_312">
     <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_10_fu_650">
+    <nodeIds>109</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_16_fu_512">
     <nodeIds>77</nodeIds>
@@ -1154,9 +1197,6 @@
   <expressionNodes realName="layer4_out_1_fu_317">
     <nodeIds>37</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer6_out_1_fu_557">
-    <nodeIds>87</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer2_out_10_fu_242">
     <nodeIds>21</nodeIds>
   </expressionNodes>
@@ -1166,29 +1206,20 @@
   <expressionNodes realName="layer2_out_11_fu_247">
     <nodeIds>22</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_7_fu_647">
-    <nodeIds>106</nodeIds>
+  <expressionNodes realName="layer6_out_4_fu_568">
+    <nodeIds>90</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_6_fu_702">
-    <nodeIds>118</nodeIds>
+  <expressionNodes realName="layer9_out_9_fu_705">
+    <nodeIds>121</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer6_out_10_fu_602">
-    <nodeIds>96</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer8_out_6_fu_642">
-    <nodeIds>105</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer8_out_11_fu_667">
-    <nodeIds>110</nodeIds>
+  <expressionNodes realName="layer9_out_1_fu_665">
+    <nodeIds>113</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_8_fu_472">
     <nodeIds>69</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_10_fu_662">
-    <nodeIds>109</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer6_out_11_fu_607">
-    <nodeIds>97</nodeIds>
+  <expressionNodes realName="layer8_out_1_fu_605">
+    <nodeIds>100</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_15_fu_507">
     <nodeIds>76</nodeIds>
@@ -1202,29 +1233,44 @@
   <expressionNodes realName="layer4_out_17_fu_397">
     <nodeIds>53</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer6_out_5_fu_577">
+  <expressionNodes realName="layer9_out_2_fu_670">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer6_out_5_fu_572">
     <nodeIds>91</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_23_fu_307">
     <nodeIds>34</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer9_out_7_fu_695">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer4_out_12_fu_372">
     <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_6_fu_630">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer6_out_7_fu_580">
+    <nodeIds>93</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_12_fu_492">
     <nodeIds>73</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer6_out_8_fu_584">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer5_out_13_fu_497">
     <nodeIds>74</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_10_fu_722">
-    <nodeIds>122</nodeIds>
+  <expressionNodes realName="layer9_out_fu_660">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer6_out_9_fu_588">
+    <nodeIds>95</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_7_fu_227">
     <nodeIds>18</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer6_out_7_fu_587">
-    <nodeIds>93</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_16_fu_272">
     <nodeIds>27</nodeIds>
@@ -1241,11 +1287,11 @@
   <expressionNodes realName="layer5_out_3_fu_447">
     <nodeIds>64</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer9_out_5_fu_685">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer2_out_14_fu_262">
     <nodeIds>25</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer9_out_2_fu_682">
-    <nodeIds>114</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_5_fu_217">
     <nodeIds>16</nodeIds>
@@ -1253,11 +1299,11 @@
   <expressionNodes realName="layer5_out_2_fu_442">
     <nodeIds>63</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer6_out_6_fu_582">
-    <nodeIds>92</nodeIds>
+  <expressionNodes realName="layer9_out_4_fu_680">
+    <nodeIds>116</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_3_fu_687">
-    <nodeIds>115</nodeIds>
+  <expressionNodes realName="layer9_out_11_fu_715">
+    <nodeIds>123</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_9_fu_237">
     <nodeIds>20</nodeIds>
@@ -1265,11 +1311,14 @@
   <expressionNodes realName="layer5_out_19_fu_527">
     <nodeIds>80</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer9_out_10_fu_710">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer2_out_18_fu_282">
     <nodeIds>29</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer6_out_9_fu_597">
-    <nodeIds>95</nodeIds>
+  <expressionNodes realName="layer9_out_6_fu_690">
+    <nodeIds>118</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_4_fu_212">
     <nodeIds>15</nodeIds>
@@ -1286,9 +1335,6 @@
   <expressionNodes realName="layer2_out_15_fu_267">
     <nodeIds>26</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_9_fu_717">
-    <nodeIds>121</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer4_out_16_fu_392">
     <nodeIds>52</nodeIds>
   </expressionNodes>
@@ -1298,17 +1344,11 @@
   <expressionNodes realName="layer2_out_2_fu_202">
     <nodeIds>13</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_4_fu_692">
-    <nodeIds>116</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer5_out_4_fu_452">
     <nodeIds>65</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_11_fu_727">
-    <nodeIds>123</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer6_out_4_fu_572">
-    <nodeIds>90</nodeIds>
+  <expressionNodes realName="layer6_out_6_fu_576">
+    <nodeIds>92</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_11_fu_487">
     <nodeIds>72</nodeIds>
@@ -1316,11 +1356,14 @@
   <expressionNodes realName="layer6_out_fu_552">
     <nodeIds>86</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_1_fu_677">
-    <nodeIds>113</nodeIds>
+  <expressionNodes realName="layer8_out_11_fu_655">
+    <nodeIds>110</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_8_fu_652">
-    <nodeIds>107</nodeIds>
+  <expressionNodes realName="layer9_out_3_fu_675">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer6_out_11_fu_596">
+    <nodeIds>97</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_6_fu_462">
     <nodeIds>67</nodeIds>
@@ -1328,38 +1371,35 @@
   <expressionNodes realName="layer4_out_15_fu_387">
     <nodeIds>51</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_fu_612">
-    <nodeIds>99</nodeIds>
-  </expressionNodes>
   <expressionNodes realName="layer5_out_17_fu_517">
     <nodeIds>78</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_21_fu_537">
     <nodeIds>82</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer6_out_3_fu_564">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer4_out_2_fu_322">
     <nodeIds>38</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer6_out_2_fu_562">
-    <nodeIds>88</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer6_out_3_fu_567">
-    <nodeIds>89</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer9_out_7_fu_707">
-    <nodeIds>119</nodeIds>
+  <expressionNodes realName="layer8_out_9_fu_645">
+    <nodeIds>108</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer4_out_14_fu_382">
     <nodeIds>50</nodeIds>
   </expressionNodes>
+  <expressionNodes realName="layer9_out_8_fu_700">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer6_out_2_fu_560">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="layer8_out_8_fu_640">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
   <expressionNodes realName="layer4_out_8_fu_352">
     <nodeIds>44</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer6_out_8_fu_592">
-    <nodeIds>94</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer9_out_fu_672">
-    <nodeIds>112</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_22_fu_542">
     <nodeIds>83</nodeIds>
@@ -1388,44 +1428,41 @@
   <expressionNodes realName="layer2_out_3_fu_207">
     <nodeIds>14</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_4_fu_632">
-    <nodeIds>103</nodeIds>
+  <expressionNodes realName="layer8_out_fu_600">
+    <nodeIds>99</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer9_out_5_fu_697">
-    <nodeIds>117</nodeIds>
+  <expressionNodes realName="layer8_out_3_fu_615">
+    <nodeIds>102</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer2_out_fu_192">
     <nodeIds>11</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="layer8_out_9_fu_657">
-    <nodeIds>108</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="layer9_out_8_fu_712">
-    <nodeIds>120</nodeIds>
+  <expressionNodes realName="layer6_out_10_fu_592">
+    <nodeIds>96</nodeIds>
   </expressionNodes>
   <expressionNodes realName="layer5_out_10_fu_482">
     <nodeIds>71</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="call_ret4_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config6_s_fu_115">
-    <nodeIds>85</nodeIds>
+  <moduleNodes realName="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_175">
+    <nodeIds>124</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="call_ret5_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config8_s_fu_143">
-    <nodeIds>98</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="call_ret3_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config5_s_fu_87">
-    <nodeIds>60</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="call_ret_relu_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_relu_config9_s_fu_159">
+  <moduleNodes realName="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_159">
     <nodeIds>111</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="call_ret1_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config2_s_fu_53">
-    <nodeIds>10</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="call_ret2_normalize_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config4_s_fu_59">
+  <moduleNodes realName="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59">
     <nodeIds>35</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="call_ret6_dense_latency_ap_fixed_12_2_5_3_0_ap_fixed_12_2_5_3_0_config10_s_fu_175">
-    <nodeIds>124</nodeIds>
+  <moduleNodes realName="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53">
+    <nodeIds>10</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87">
+    <nodeIds>60</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115">
+    <nodeIds>85</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143">
+    <nodeIds>98</nodeIds>
   </moduleNodes>
   <ioNodes realName="y_timed_input_read_read_fu_40">
     <nodeIds>9</nodeIds>
@@ -1445,12 +1482,6 @@
   </ioPorts>
   <fsm>
     <states id="1">
-      <operations id="3" stage="1" latency="1"/>
-      <operations id="4" stage="1" latency="1"/>
-      <operations id="5" stage="1" latency="1"/>
-      <operations id="6" stage="1" latency="1"/>
-      <operations id="7" stage="1" latency="1"/>
-      <operations id="8" stage="1" latency="1"/>
       <operations id="9" stage="1" latency="1"/>
       <operations id="10" stage="1" latency="1"/>
       <operations id="11" stage="1" latency="1"/>
@@ -1540,6 +1571,14 @@
       <operations id="95" stage="1" latency="1"/>
       <operations id="96" stage="1" latency="1"/>
       <operations id="97" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
       <operations id="98" stage="1" latency="1"/>
       <operations id="99" stage="1" latency="1"/>
       <operations id="100" stage="1" latency="1"/>
@@ -1570,9 +1609,12 @@
       <operations id="125" stage="1" latency="1"/>
       <operations id="126" stage="1" latency="1"/>
     </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="myproject" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+    <cfgRegions mId="1" mTag="myproject" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
       <basicBlocks>127</basicBlocks>
       <mDfPipe/>
     </cfgRegions>

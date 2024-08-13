@@ -3,14 +3,31 @@
   <errorLogs>
     <logs>
       <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dense_latency&lt;ap_ufixed&lt;15, 0, 4, 0, 0>, ap_fixed&lt;16, 6, 5, 3, 0>, config10>' to 'dense_latency_ap_ufixed_15_0_4_0_0_ap_fixed_16_6_5_3_0_config10_s'." projectName="myproject_prj" solutionName="solution1" date="2024-07-24T14:10:30.881-0700" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'relu&lt;ap_fixed&lt;16, 6, 5, 3, 0>, ap_ufixed&lt;15, 0, 4, 0, 0>, relu_config9>' to 'relu_ap_fixed_16_6_5_3_0_ap_ufixed_15_0_4_0_0_relu_config9_s'." projectName="myproject_prj" solutionName="solution1" date="2024-07-24T14:10:30.861-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0>, ap_fixed&lt;15, 2, 5, 3, 0>, config7>' to 'dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config7_s'." projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:04:01.344-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'normalize&lt;ap_fixed&lt;15, 2, 5, 3, 0>, ap_fixed&lt;15, 2, 5, 3, 0>, config6>' to 'normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s'." projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:04:01.336-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'relu&lt;ap_fixed&lt;15, 2, 5, 3, 0>, ap_fixed&lt;15, 2, 5, 3, 0>, relu_config5>' to 'relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s'." projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:04:01.336-0700" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dense_latency&lt;ap_fixed&lt;15, 2, 5, 3, 0>, ap_fixed&lt;15, 2, 5, 3, 0>, config3>' to 'dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config3_s'." projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:04:01.333-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:23:32)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.783-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:22:24)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.779-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:21:24)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.778-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'partition' (firmware/nnet_utils/nnet_code_gen.h:13:44)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.777-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'buffer' (firmware/nnet_utils/nnet_code_gen.h:12:36)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.776-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'data' (firmware/nnet_utils/nnet_code_gen.h:11:36)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.775-0700" type="Warning"/>
+        <logs message="WARNING: [HLS 207-5292] unused parameter 'keep' (firmware/nnet_utils/nnet_helpers.h:285:99)" projectName="myproject_prj" solutionName="solution1" date="2024-08-08T12:03:48.773-0700" type="Warning"/>
       </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>
