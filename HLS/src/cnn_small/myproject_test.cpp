@@ -60,10 +60,10 @@ int main(int argc, char **argv) {
             // hls-fpga-machine-learning insert data
       hls::stream<input_t> y_timed_input("y_timed_input");
       nnet::copy_data<float, input_t, 0, N_INPUT_1_1>(in, y_timed_input);
-      hls::stream<result_t> layer12_out("layer12_out");
+      hls::stream<result_t> layer10_out("layer10_out");
 
             // hls-fpga-machine-learning insert top-level-function
-            myproject(y_timed_input,layer12_out);
+            myproject(y_timed_input,layer10_out);
 
             if (e % CHECKPOINT == 0) {
                 std::cout << "Predictions" << std::endl;
@@ -74,12 +74,12 @@ int main(int argc, char **argv) {
                 std::cout << std::endl;
                 std::cout << "Quantized predictions" << std::endl;
                 // hls-fpga-machine-learning insert quantized
-                nnet::print_result<result_t, N_LAYER_10>(layer12_out, std::cout, true);
+                nnet::print_result<result_t, N_LAYER_10>(layer10_out, std::cout, true);
             }
             e++;
 
             // hls-fpga-machine-learning insert tb-output
-            nnet::print_result<result_t, N_LAYER_10>(layer12_out, fout);
+            nnet::print_result<result_t, N_LAYER_10>(layer10_out, fout);
         }
         fin.close();
         fpr.close();
@@ -89,16 +89,16 @@ int main(int argc, char **argv) {
         // hls-fpga-machine-learning insert zero
     hls::stream<input_t> y_timed_input("y_timed_input");
     nnet::fill_zero<input_t, N_INPUT_1_1>(y_timed_input);
-    hls::stream<result_t> layer12_out("layer12_out");
+    hls::stream<result_t> layer10_out("layer10_out");
 
         // hls-fpga-machine-learning insert top-level-function
-        myproject(y_timed_input,layer12_out);
+        myproject(y_timed_input,layer10_out);
 
         // hls-fpga-machine-learning insert output
-        nnet::print_result<result_t, N_LAYER_10>(layer12_out, std::cout, true);
+        nnet::print_result<result_t, N_LAYER_10>(layer10_out, std::cout, true);
 
         // hls-fpga-machine-learning insert tb-output
-        nnet::print_result<result_t, N_LAYER_10>(layer12_out, fout);
+        nnet::print_result<result_t, N_LAYER_10>(layer10_out, fout);
     }
 
     fout.close();

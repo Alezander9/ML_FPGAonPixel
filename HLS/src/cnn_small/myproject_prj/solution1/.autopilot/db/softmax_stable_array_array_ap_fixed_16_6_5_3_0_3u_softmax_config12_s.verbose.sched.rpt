@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_s'
 ================================================================
-* Date:           Thu Jul 11 13:34:27 2024
+* Date:           Wed Aug 14 11:30:50 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -206,6 +206,8 @@ The critical path consists of the following:
 	'xor' operation ('xor_ln65_1', firmware/nnet_utils/nnet_common.h:65->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_activation_stream.h:209) [15]  (0.000 ns)
 	'select' operation ('x_max', firmware/nnet_utils/nnet_common.h:65->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_activation_stream.h:209) [16]  (0.243 ns)
 	'sub' operation ('sub_ln215', firmware/nnet_utils/nnet_activation_stream.h:215) [19]  (0.785 ns)
+	'and' operation ('and_ln215', firmware/nnet_utils/nnet_activation_stream.h:215) [23]  (0.000 ns)
+	'select' operation ('select_ln215', firmware/nnet_utils/nnet_activation_stream.h:215) [39]  (0.000 ns)
 	'select' operation ('select_ln215_1', firmware/nnet_utils/nnet_activation_stream.h:215) [41]  (0.303 ns)
 	'getelementptr' operation ('exp_table_addr', firmware/nnet_utils/nnet_activation_stream.h:225) [43]  (0.000 ns)
 	'load' operation ('exp_table_load', firmware/nnet_utils/nnet_activation_stream.h:225) on array 'exp_table' [44]  (1.200 ns)

@@ -1,15 +1,15 @@
-//Numpy array shape [3]
-//Min -0.871093750000
-//Max 0.335937500000
+//Numpy array shape [1]
+//Min 0.015625000000
+//Max 0.015625000000
 //Number of zeros 0
 
 #ifndef B10_H_
 #define B10_H_
 
 #ifndef __SYNTHESIS__
-bias10_t b10[3];
+bias10_t b10[1];
 #else
-bias10_t b10[3] = {0.000000000, 0.000000000, 0.000000000};
+bias10_t b10[1] = {0.015625000};
 #endif
 
 #endif

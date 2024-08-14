@@ -5,7 +5,7 @@ HLSConfig:
     batch_normalization:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         scale: fixed<16,6>
         weight: ap_fixed<10,2>
       Strategy: Latency
@@ -13,7 +13,7 @@ HLSConfig:
     batch_normalization_1:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         scale: fixed<16,6>
         weight: ap_fixed<10,2>
       Strategy: Latency
@@ -21,63 +21,63 @@ HLSConfig:
     dense1:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     dense1_linear:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     dense2:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     dense2_linear:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     dense_output:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     dense_output_linear:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     q_activation:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     q_activation_1:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
     y_timed_input:
       Precision:
         bias: ap_fixed<10,2>
-        result: ap_fixed<15,2>
+        result: ap_fixed<10,2>
         weight: ap_fixed<10,2>
       Strategy: Latency
       Trace: true
@@ -92,6 +92,6 @@ KerasModel: !keras_model 'alex_model//keras_model.h5'
 OutputDir: alex_model/
 Part: xcvu13p-flga2577-2-e
 ProjectName: myproject
-Stamp: 41eEc061
+Stamp: eC215dE9
 Version: 1.0.0
 XilinxPart: xcku040-ffva1156-2-e

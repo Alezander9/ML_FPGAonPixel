@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_s'
 ================================================================
-* Date:           Thu Jul 11 13:34:27 2024
+* Date:           Wed Aug 14 11:30:50 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -219,8 +219,8 @@ Target clock period: 5.000ns, clock uncertainty: 0.625ns.
  <State 1>: 3.933ns
 The critical path consists of the following:
 	fifo read operation ('layer7_out_read', firmware/nnet_utils/nnet_activation_stream.h:44) on port 'layer7_out' (firmware/nnet_utils/nnet_activation_stream.h:44) [5]  (1.428 ns)
-	'icmp' operation ('icmp_ln51_33', firmware/nnet_utils/nnet_activation_stream.h:51) [36]  (0.785 ns)
-	'select' operation ('select_ln51_33', firmware/nnet_utils/nnet_activation_stream.h:51) [42]  (0.292 ns)
+	'icmp' operation ('icmp_ln51_36', firmware/nnet_utils/nnet_activation_stream.h:51) [57]  (0.785 ns)
+	'select' operation ('select_ln51_36', firmware/nnet_utils/nnet_activation_stream.h:51) [63]  (0.292 ns)
 	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_activation_stream.h:57) on port 'layer8_out' (firmware/nnet_utils/nnet_activation_stream.h:57) [135]  (1.428 ns)
 
 

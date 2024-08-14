@@ -350,7 +350,7 @@ class AESL_RUNTIME_BC {
     string mName;
 };
 using hls::sim::Byte;
-struct __cosim_s100__ { char data[128]; };
+struct __cosim_s67__ { char data[128]; };
 struct __cosim_s128__ { char data[128]; };
 extern "C" void myproject(volatile void *, volatile void *);
 extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_timed_input, volatile void * __xlx_apatb_param_layer10_out) {

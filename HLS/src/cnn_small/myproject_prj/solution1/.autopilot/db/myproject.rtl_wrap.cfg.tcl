@@ -16,7 +16,7 @@ set Interface "[list AP_STREAM 0]"
 set DataType "int"
 set Port [list $PortName $Interface $DataType $Pointer $Dims $Const    $Volatile $ArrayOpt]
 lappend PortList $Port
-set PortName "layer12_out"
+set PortName "layer10_out"
 set BitWidth "32"
 set ArrayOpt ""
 set Const "0"

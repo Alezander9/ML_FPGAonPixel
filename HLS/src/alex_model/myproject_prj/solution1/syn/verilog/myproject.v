@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="myproject_myproject,hls_ip_2023_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu13p-flga2577-2-e,HLS_INPUT_CLOCK=25.000000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=14.530000,HLS_SYN_LAT=1,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=918,HLS_SYN_LUT=32146,HLS_VERSION=2023_1}" *)
+(* CORE_GENERATION_INFO="myproject_myproject,hls_ip_2023_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xcvu13p-flga2577-2-e,HLS_INPUT_CLOCK=25.000000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=14.666750,HLS_SYN_LAT=1,HLS_SYN_TPT=1,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=613,HLS_SYN_LUT=75311,HLS_VERSION=2023_1}" *)
 
 module myproject (
         ap_clk,
@@ -30,8 +30,8 @@ output   ap_done;
 output   ap_idle;
 output   ap_ready;
 input   y_timed_input_ap_vld;
-input  [794:0] y_timed_input;
-output  [14:0] layer10_out;
+input  [529:0] y_timed_input;
+output  [9:0] layer10_out;
 output   layer10_out_ap_vld;
 
 reg ap_done;
@@ -48,124 +48,124 @@ reg    y_timed_input_ap_vld_in_sig;
 reg    ap_block_state1_pp0_stage0_iter0;
 wire    ap_block_state2_pp0_stage0_iter1;
 reg    ap_block_pp0_stage0_subdone;
-reg   [794:0] y_timed_input_preg;
-reg   [794:0] y_timed_input_in_sig;
+reg   [529:0] y_timed_input_preg;
+reg   [529:0] y_timed_input_in_sig;
 reg    y_timed_input_ap_vld_preg;
 reg    y_timed_input_blk_n;
 wire    ap_block_pp0_stage0;
-reg   [14:0] layer6_out_reg_652;
+reg   [9:0] layer6_out_reg_652;
 reg    ap_block_pp0_stage0_11001;
-reg   [14:0] layer6_out_1_reg_657;
-reg   [14:0] layer6_out_2_reg_662;
-reg   [14:0] layer6_out_3_reg_667;
-reg   [14:0] layer6_out_4_reg_672;
-reg   [14:0] layer6_out_5_reg_677;
-reg   [14:0] layer6_out_6_reg_682;
-reg   [14:0] layer6_out_7_reg_687;
-wire    call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_ready;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_0;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_1;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_2;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_3;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_4;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_5;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_6;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_7;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_8;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_9;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_10;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_11;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_12;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_13;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_14;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_15;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_16;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_17;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_18;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_19;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_20;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_21;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_22;
-wire   [14:0] call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_23;
-wire    call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_ready;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_0;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_1;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_2;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_3;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_4;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_5;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_6;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_7;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_8;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_9;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_10;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_11;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_12;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_13;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_14;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_15;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_16;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_17;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_18;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_19;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_20;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_21;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_22;
-wire   [14:0] call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_23;
-wire    call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_ready;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_0;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_1;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_2;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_3;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_4;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_5;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_6;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_7;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_8;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_9;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_10;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_11;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_12;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_13;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_14;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_15;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_16;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_17;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_18;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_19;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_20;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_21;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_22;
-wire   [14:0] call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_23;
-wire    call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_ready;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_0;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_1;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_2;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_3;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_4;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_5;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_6;
-wire   [14:0] call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_7;
-wire    call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_ready;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_0;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_1;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_2;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_3;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_4;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_5;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_6;
-wire   [14:0] call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_7;
-wire    call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_ready;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_0;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_1;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_2;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_3;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_4;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_5;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_6;
-wire   [14:0] call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_7;
-wire    call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167_ap_ready;
-wire   [14:0] call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167_ap_return;
+reg   [9:0] layer6_out_1_reg_657;
+reg   [9:0] layer6_out_2_reg_662;
+reg   [9:0] layer6_out_3_reg_667;
+reg   [9:0] layer6_out_4_reg_672;
+reg   [9:0] layer6_out_5_reg_677;
+reg   [9:0] layer6_out_6_reg_682;
+reg   [9:0] layer6_out_7_reg_687;
+wire    call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_ready;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_0;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_1;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_2;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_3;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_4;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_5;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_6;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_7;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_8;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_9;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_10;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_11;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_12;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_13;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_14;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_15;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_16;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_17;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_18;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_19;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_20;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_21;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_22;
+wire   [9:0] call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_23;
+wire    call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_ready;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_0;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_1;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_2;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_3;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_4;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_5;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_6;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_7;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_8;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_9;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_10;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_11;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_12;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_13;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_14;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_15;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_16;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_17;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_18;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_19;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_20;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_21;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_22;
+wire   [9:0] call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_23;
+wire    call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_ready;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_0;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_1;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_2;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_3;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_4;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_5;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_6;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_7;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_8;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_9;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_10;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_11;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_12;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_13;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_14;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_15;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_16;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_17;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_18;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_19;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_20;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_21;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_22;
+wire   [9:0] call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_23;
+wire    call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_ready;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_0;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_1;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_2;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_3;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_4;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_5;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_6;
+wire   [9:0] call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_7;
+wire    call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_ready;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_0;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_1;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_2;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_3;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_4;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_5;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_6;
+wire   [9:0] call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_7;
+wire    call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_ready;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_0;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_1;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_2;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_3;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_4;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_5;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_6;
+wire   [9:0] call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_7;
+wire    call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167_ap_ready;
+wire   [9:0] call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167_ap_return;
 reg    ap_block_pp0_stage0_01001;
 reg   [0:0] ap_NS_fsm;
 reg    ap_idle_pp0_0to0;
@@ -177,230 +177,230 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 y_timed_input_preg = 795'd0;
+#0 y_timed_input_preg = 530'd0;
 #0 y_timed_input_ap_vld_preg = 1'b0;
 end
 
-myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53(
-    .ap_ready(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_ready),
+myproject_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53(
+    .ap_ready(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_ready),
     .data_val(y_timed_input_in_sig),
-    .ap_return_0(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_0),
-    .ap_return_1(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_1),
-    .ap_return_2(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_2),
-    .ap_return_3(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_3),
-    .ap_return_4(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_4),
-    .ap_return_5(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_5),
-    .ap_return_6(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_6),
-    .ap_return_7(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_7),
-    .ap_return_8(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_8),
-    .ap_return_9(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_9),
-    .ap_return_10(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_10),
-    .ap_return_11(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_11),
-    .ap_return_12(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_12),
-    .ap_return_13(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_13),
-    .ap_return_14(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_14),
-    .ap_return_15(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_15),
-    .ap_return_16(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_16),
-    .ap_return_17(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_17),
-    .ap_return_18(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_18),
-    .ap_return_19(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_19),
-    .ap_return_20(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_20),
-    .ap_return_21(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_21),
-    .ap_return_22(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_22),
-    .ap_return_23(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_23)
+    .ap_return_0(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_0),
+    .ap_return_1(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_1),
+    .ap_return_2(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_2),
+    .ap_return_3(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_3),
+    .ap_return_4(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_4),
+    .ap_return_5(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_5),
+    .ap_return_6(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_6),
+    .ap_return_7(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_7),
+    .ap_return_8(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_8),
+    .ap_return_9(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_9),
+    .ap_return_10(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_10),
+    .ap_return_11(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_11),
+    .ap_return_12(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_12),
+    .ap_return_13(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_13),
+    .ap_return_14(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_14),
+    .ap_return_15(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_15),
+    .ap_return_16(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_16),
+    .ap_return_17(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_17),
+    .ap_return_18(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_18),
+    .ap_return_19(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_19),
+    .ap_return_20(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_20),
+    .ap_return_21(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_21),
+    .ap_return_22(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_22),
+    .ap_return_23(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_23)
 );
 
-myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59(
-    .ap_ready(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_ready),
-    .data_0_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_0),
-    .data_1_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_1),
-    .data_2_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_2),
-    .data_3_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_3),
-    .data_4_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_4),
-    .data_5_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_5),
-    .data_6_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_6),
-    .data_7_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_7),
-    .data_8_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_8),
-    .data_9_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_9),
-    .data_10_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_10),
-    .data_11_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_11),
-    .data_12_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_12),
-    .data_13_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_13),
-    .data_14_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_14),
-    .data_15_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_15),
-    .data_16_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_16),
-    .data_17_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_17),
-    .data_18_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_18),
-    .data_19_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_19),
-    .data_20_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_20),
-    .data_21_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_21),
-    .data_22_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_22),
-    .data_23_val(call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53_ap_return_23),
-    .ap_return_0(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_0),
-    .ap_return_1(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_1),
-    .ap_return_2(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_2),
-    .ap_return_3(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_3),
-    .ap_return_4(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_4),
-    .ap_return_5(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_5),
-    .ap_return_6(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_6),
-    .ap_return_7(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_7),
-    .ap_return_8(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_8),
-    .ap_return_9(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_9),
-    .ap_return_10(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_10),
-    .ap_return_11(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_11),
-    .ap_return_12(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_12),
-    .ap_return_13(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_13),
-    .ap_return_14(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_14),
-    .ap_return_15(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_15),
-    .ap_return_16(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_16),
-    .ap_return_17(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_17),
-    .ap_return_18(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_18),
-    .ap_return_19(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_19),
-    .ap_return_20(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_20),
-    .ap_return_21(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_21),
-    .ap_return_22(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_22),
-    .ap_return_23(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_23)
+myproject_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59(
+    .ap_ready(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_ready),
+    .data_0_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_0),
+    .data_1_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_1),
+    .data_2_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_2),
+    .data_3_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_3),
+    .data_4_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_4),
+    .data_5_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_5),
+    .data_6_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_6),
+    .data_7_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_7),
+    .data_8_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_8),
+    .data_9_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_9),
+    .data_10_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_10),
+    .data_11_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_11),
+    .data_12_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_12),
+    .data_13_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_13),
+    .data_14_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_14),
+    .data_15_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_15),
+    .data_16_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_16),
+    .data_17_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_17),
+    .data_18_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_18),
+    .data_19_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_19),
+    .data_20_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_20),
+    .data_21_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_21),
+    .data_22_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_22),
+    .data_23_val(call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53_ap_return_23),
+    .ap_return_0(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_0),
+    .ap_return_1(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_1),
+    .ap_return_2(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_2),
+    .ap_return_3(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_3),
+    .ap_return_4(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_4),
+    .ap_return_5(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_5),
+    .ap_return_6(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_6),
+    .ap_return_7(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_7),
+    .ap_return_8(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_8),
+    .ap_return_9(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_9),
+    .ap_return_10(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_10),
+    .ap_return_11(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_11),
+    .ap_return_12(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_12),
+    .ap_return_13(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_13),
+    .ap_return_14(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_14),
+    .ap_return_15(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_15),
+    .ap_return_16(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_16),
+    .ap_return_17(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_17),
+    .ap_return_18(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_18),
+    .ap_return_19(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_19),
+    .ap_return_20(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_20),
+    .ap_return_21(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_21),
+    .ap_return_22(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_22),
+    .ap_return_23(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_23)
 );
 
-myproject_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87(
-    .ap_ready(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_ready),
-    .data_0_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_0),
-    .data_1_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_1),
-    .data_2_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_2),
-    .data_3_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_3),
-    .data_4_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_4),
-    .data_5_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_5),
-    .data_6_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_6),
-    .data_7_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_7),
-    .data_8_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_8),
-    .data_9_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_9),
-    .data_10_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_10),
-    .data_11_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_11),
-    .data_12_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_12),
-    .data_13_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_13),
-    .data_14_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_14),
-    .data_15_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_15),
-    .data_16_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_16),
-    .data_17_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_17),
-    .data_18_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_18),
-    .data_19_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_19),
-    .data_20_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_20),
-    .data_21_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_21),
-    .data_22_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_22),
-    .data_23_val(call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59_ap_return_23),
-    .ap_return_0(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_0),
-    .ap_return_1(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_1),
-    .ap_return_2(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_2),
-    .ap_return_3(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_3),
-    .ap_return_4(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_4),
-    .ap_return_5(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_5),
-    .ap_return_6(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_6),
-    .ap_return_7(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_7),
-    .ap_return_8(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_8),
-    .ap_return_9(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_9),
-    .ap_return_10(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_10),
-    .ap_return_11(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_11),
-    .ap_return_12(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_12),
-    .ap_return_13(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_13),
-    .ap_return_14(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_14),
-    .ap_return_15(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_15),
-    .ap_return_16(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_16),
-    .ap_return_17(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_17),
-    .ap_return_18(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_18),
-    .ap_return_19(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_19),
-    .ap_return_20(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_20),
-    .ap_return_21(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_21),
-    .ap_return_22(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_22),
-    .ap_return_23(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_23)
+myproject_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87(
+    .ap_ready(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_ready),
+    .data_0_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_0),
+    .data_1_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_1),
+    .data_2_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_2),
+    .data_3_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_3),
+    .data_4_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_4),
+    .data_5_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_5),
+    .data_6_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_6),
+    .data_7_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_7),
+    .data_8_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_8),
+    .data_9_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_9),
+    .data_10_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_10),
+    .data_11_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_11),
+    .data_12_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_12),
+    .data_13_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_13),
+    .data_14_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_14),
+    .data_15_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_15),
+    .data_16_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_16),
+    .data_17_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_17),
+    .data_18_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_18),
+    .data_19_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_19),
+    .data_20_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_20),
+    .data_21_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_21),
+    .data_22_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_22),
+    .data_23_val(call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59_ap_return_23),
+    .ap_return_0(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_0),
+    .ap_return_1(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_1),
+    .ap_return_2(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_2),
+    .ap_return_3(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_3),
+    .ap_return_4(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_4),
+    .ap_return_5(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_5),
+    .ap_return_6(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_6),
+    .ap_return_7(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_7),
+    .ap_return_8(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_8),
+    .ap_return_9(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_9),
+    .ap_return_10(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_10),
+    .ap_return_11(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_11),
+    .ap_return_12(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_12),
+    .ap_return_13(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_13),
+    .ap_return_14(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_14),
+    .ap_return_15(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_15),
+    .ap_return_16(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_16),
+    .ap_return_17(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_17),
+    .ap_return_18(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_18),
+    .ap_return_19(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_19),
+    .ap_return_20(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_20),
+    .ap_return_21(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_21),
+    .ap_return_22(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_22),
+    .ap_return_23(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_23)
 );
 
-myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115(
-    .ap_ready(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_ready),
-    .data_0_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_0),
-    .data_1_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_1),
-    .data_2_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_2),
-    .data_3_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_3),
-    .data_4_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_4),
-    .data_5_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_5),
-    .data_6_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_6),
-    .data_7_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_7),
-    .data_8_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_8),
-    .data_9_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_9),
-    .data_10_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_10),
-    .data_11_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_11),
-    .data_12_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_12),
-    .data_13_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_13),
-    .data_14_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_14),
-    .data_15_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_15),
-    .data_16_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_16),
-    .data_17_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_17),
-    .data_18_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_18),
-    .data_19_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_19),
-    .data_20_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_20),
-    .data_21_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_21),
-    .data_22_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_22),
-    .data_23_val(call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87_ap_return_23),
-    .ap_return_0(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_0),
-    .ap_return_1(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_1),
-    .ap_return_2(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_2),
-    .ap_return_3(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_3),
-    .ap_return_4(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_4),
-    .ap_return_5(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_5),
-    .ap_return_6(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_6),
-    .ap_return_7(call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_7)
+myproject_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115(
+    .ap_ready(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_ready),
+    .data_0_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_0),
+    .data_1_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_1),
+    .data_2_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_2),
+    .data_3_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_3),
+    .data_4_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_4),
+    .data_5_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_5),
+    .data_6_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_6),
+    .data_7_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_7),
+    .data_8_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_8),
+    .data_9_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_9),
+    .data_10_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_10),
+    .data_11_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_11),
+    .data_12_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_12),
+    .data_13_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_13),
+    .data_14_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_14),
+    .data_15_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_15),
+    .data_16_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_16),
+    .data_17_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_17),
+    .data_18_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_18),
+    .data_19_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_19),
+    .data_20_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_20),
+    .data_21_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_21),
+    .data_22_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_22),
+    .data_23_val(call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87_ap_return_23),
+    .ap_return_0(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_0),
+    .ap_return_1(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_1),
+    .ap_return_2(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_2),
+    .ap_return_3(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_3),
+    .ap_return_4(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_4),
+    .ap_return_5(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_5),
+    .ap_return_6(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_6),
+    .ap_return_7(call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_7)
 );
 
-myproject_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143(
-    .ap_ready(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_ready),
+myproject_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143(
+    .ap_ready(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_ready),
     .data_0_val(layer6_out_reg_652),
     .data_1_val(layer6_out_1_reg_657),
-    .data_2_val(layer6_out_2_reg_662),
-    .data_3_val(layer6_out_3_reg_667),
-    .data_4_val(layer6_out_4_reg_672),
-    .data_5_val(layer6_out_5_reg_677),
-    .data_6_val(layer6_out_6_reg_682),
-    .data_8_val(layer6_out_7_reg_687),
-    .ap_return_0(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_0),
-    .ap_return_1(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_1),
-    .ap_return_2(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_2),
-    .ap_return_3(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_3),
-    .ap_return_4(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_4),
-    .ap_return_5(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_5),
-    .ap_return_6(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_6),
-    .ap_return_7(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_7)
+    .data_4_val(layer6_out_2_reg_662),
+    .data_5_val(layer6_out_3_reg_667),
+    .data_6_val(layer6_out_4_reg_672),
+    .data_7_val(layer6_out_5_reg_677),
+    .data_8_val(layer6_out_6_reg_682),
+    .data_11_val(layer6_out_7_reg_687),
+    .ap_return_0(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_0),
+    .ap_return_1(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_1),
+    .ap_return_2(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_2),
+    .ap_return_3(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_3),
+    .ap_return_4(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_4),
+    .ap_return_5(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_5),
+    .ap_return_6(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_6),
+    .ap_return_7(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_7)
 );
 
-myproject_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155(
-    .ap_ready(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_ready),
-    .data_0_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_0),
-    .data_1_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_1),
-    .data_2_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_2),
-    .data_3_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_3),
-    .data_4_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_4),
-    .data_5_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_5),
-    .data_6_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_6),
-    .data_8_val(call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143_ap_return_7),
-    .ap_return_0(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_0),
-    .ap_return_1(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_1),
-    .ap_return_2(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_2),
-    .ap_return_3(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_3),
-    .ap_return_4(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_4),
-    .ap_return_5(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_5),
-    .ap_return_6(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_6),
-    .ap_return_7(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_7)
+myproject_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155(
+    .ap_ready(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_ready),
+    .data_0_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_0),
+    .data_1_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_1),
+    .data_4_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_2),
+    .data_5_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_3),
+    .data_6_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_4),
+    .data_7_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_5),
+    .data_8_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_6),
+    .data_11_val(call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143_ap_return_7),
+    .ap_return_0(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_0),
+    .ap_return_1(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_1),
+    .ap_return_2(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_2),
+    .ap_return_3(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_3),
+    .ap_return_4(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_4),
+    .ap_return_5(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_5),
+    .ap_return_6(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_6),
+    .ap_return_7(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_7)
 );
 
-myproject_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167(
-    .ap_ready(call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167_ap_ready),
-    .data_0_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_0),
-    .data_1_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_1),
-    .data_2_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_2),
-    .data_3_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_3),
-    .data_4_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_4),
-    .data_5_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_5),
-    .data_6_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_6),
-    .data_8_val(call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155_ap_return_7),
-    .ap_return(call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167_ap_return)
+myproject_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167(
+    .ap_ready(call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167_ap_ready),
+    .data_0_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_0),
+    .data_1_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_1),
+    .data_4_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_2),
+    .data_5_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_3),
+    .data_6_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_4),
+    .data_7_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_5),
+    .data_8_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_6),
+    .data_11_val(call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155_ap_return_7),
+    .ap_return(call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167_ap_return)
 );
 
 always @ (posedge ap_clk) begin
@@ -435,7 +435,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        y_timed_input_preg <= 795'd0;
+        y_timed_input_preg <= 530'd0;
     end else begin
         if ((~((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_pp0_stage0)) & (y_timed_input_ap_vld == 1'b1))) begin
             y_timed_input_preg <= y_timed_input;
@@ -445,14 +445,14 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        layer6_out_1_reg_657 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_1;
-        layer6_out_2_reg_662 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_2;
-        layer6_out_3_reg_667 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_3;
-        layer6_out_4_reg_672 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_4;
-        layer6_out_5_reg_677 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_5;
-        layer6_out_6_reg_682 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_6;
-        layer6_out_7_reg_687 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_7;
-        layer6_out_reg_652 <= call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115_ap_return_0;
+        layer6_out_1_reg_657 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_1;
+        layer6_out_2_reg_662 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_2;
+        layer6_out_3_reg_667 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_3;
+        layer6_out_4_reg_672 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_4;
+        layer6_out_5_reg_677 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_5;
+        layer6_out_6_reg_682 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_6;
+        layer6_out_7_reg_687 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_7;
+        layer6_out_reg_652 <= call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115_ap_return_0;
     end
 end
 
@@ -573,6 +573,6 @@ assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
 assign ap_enable_reg_pp0_iter0 = ap_start;
 
-assign layer10_out = call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167_ap_return;
+assign layer10_out = call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167_ap_return;
 
 endmodule //myproject

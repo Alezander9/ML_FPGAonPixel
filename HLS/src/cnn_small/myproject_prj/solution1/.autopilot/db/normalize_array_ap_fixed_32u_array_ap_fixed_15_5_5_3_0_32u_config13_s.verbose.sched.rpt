@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_s'
 ================================================================
-* Date:           Thu Jul 11 13:34:25 2024
+* Date:           Wed Aug 14 11:30:48 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -220,7 +220,7 @@ Target clock period: 5.000ns, clock uncertainty: 0.625ns.
  <State 1>: 3.656ns
 The critical path consists of the following:
 	fifo read operation ('layer2_out_read', firmware/nnet_utils/nnet_batchnorm_stream.h:28) on port 'layer2_out' (firmware/nnet_utils/nnet_batchnorm_stream.h:28) [6]  (1.412 ns)
-	'add' operation ('add_ln42_76', firmware/nnet_utils/nnet_batchnorm_stream.h:42) [121]  (0.833 ns)
+	'add' operation ('add_ln42_49', firmware/nnet_utils/nnet_batchnorm_stream.h:42) [13]  (0.833 ns)
 	fifo write operation ('write_ln46', firmware/nnet_utils/nnet_batchnorm_stream.h:46) on port 'layer13_out' (firmware/nnet_utils/nnet_batchnorm_stream.h:46) [136]  (1.412 ns)
 
 

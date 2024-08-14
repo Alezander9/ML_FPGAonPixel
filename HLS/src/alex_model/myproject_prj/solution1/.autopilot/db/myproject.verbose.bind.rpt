@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Tue Aug 13 11:37:22 2024
+* Date:           Wed Aug 14 12:00:52 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+----------+-----------+------------+
     |  Clock |  Target  | Estimated | Uncertainty|
     +--------+----------+-----------+------------+
-    |ap_clk  |  25.00 ns|  14.530 ns|     3.12 ns|
+    |ap_clk  |  25.00 ns|  14.667 ns|     3.12 ns|
     +--------+----------+-----------+------------+
 
 + Latency: 
@@ -38,13 +38,13 @@
         |                                                                                   |                                                                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |                                      Instance                                     |                              Module                              |   min   |   max   |    min   |    max   | min | max |   Type  |
         +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53    |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59        |normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87        |relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115   |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143       |normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155        |relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167  |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53    |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59        |normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87        |relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115   |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143       |normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155        |relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167  |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
         +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -90,120 +90,120 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 14.5>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%y_timed_input_read = read i795 @_ssdm_op_Read.ap_vld.i795P0A, i795 %y_timed_input"   --->   Operation 3 'read' 'y_timed_input_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (5.70ns)   --->   "%call_ret1 = call i360 @dense_latency<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config2>, i795 %y_timed_input_read" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 4 'call' 'call_ret1' <Predicate = true> <Delay = 5.70> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%layer2_out = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 5 'extractvalue' 'layer2_out' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%layer2_out_1 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 6 'extractvalue' 'layer2_out_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%layer2_out_2 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 7 'extractvalue' 'layer2_out_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%layer2_out_3 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 8 'extractvalue' 'layer2_out_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out_4 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 9 'extractvalue' 'layer2_out_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer2_out_5 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 10 'extractvalue' 'layer2_out_5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer2_out_6 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 11 'extractvalue' 'layer2_out_6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%layer2_out_7 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 12 'extractvalue' 'layer2_out_7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%layer2_out_8 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 13 'extractvalue' 'layer2_out_8' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%layer2_out_9 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 14 'extractvalue' 'layer2_out_9' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%layer2_out_10 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 15 'extractvalue' 'layer2_out_10' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%layer2_out_11 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 16 'extractvalue' 'layer2_out_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%layer2_out_12 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 17 'extractvalue' 'layer2_out_12' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%layer2_out_13 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 18 'extractvalue' 'layer2_out_13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%layer2_out_14 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 19 'extractvalue' 'layer2_out_14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%layer2_out_15 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 20 'extractvalue' 'layer2_out_15' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%layer2_out_16 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 21 'extractvalue' 'layer2_out_16' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%layer2_out_17 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 22 'extractvalue' 'layer2_out_17' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%layer2_out_18 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 23 'extractvalue' 'layer2_out_18' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%layer2_out_19 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 24 'extractvalue' 'layer2_out_19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%layer2_out_20 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 25 'extractvalue' 'layer2_out_20' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%layer2_out_21 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 26 'extractvalue' 'layer2_out_21' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%layer2_out_22 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 27 'extractvalue' 'layer2_out_22' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%layer2_out_23 = extractvalue i360 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 28 'extractvalue' 'layer2_out_23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 29 [1/1] (2.75ns)   --->   "%call_ret2 = call i360 @normalize<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config4>, i15 %layer2_out, i15 %layer2_out_1, i15 %layer2_out_2, i15 %layer2_out_3, i15 %layer2_out_4, i15 %layer2_out_5, i15 %layer2_out_6, i15 %layer2_out_7, i15 %layer2_out_8, i15 %layer2_out_9, i15 %layer2_out_10, i15 %layer2_out_11, i15 %layer2_out_12, i15 %layer2_out_13, i15 %layer2_out_14, i15 %layer2_out_15, i15 %layer2_out_16, i15 %layer2_out_17, i15 %layer2_out_18, i15 %layer2_out_19, i15 %layer2_out_20, i15 %layer2_out_21, i15 %layer2_out_22, i15 %layer2_out_23" [firmware/myproject.cpp:47]   --->   Operation 29 'call' 'call_ret2' <Predicate = true> <Delay = 2.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%layer4_out = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 30 'extractvalue' 'layer4_out' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%layer4_out_1 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 31 'extractvalue' 'layer4_out_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%layer4_out_2 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 32 'extractvalue' 'layer4_out_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer4_out_3 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 33 'extractvalue' 'layer4_out_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%layer4_out_4 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 34 'extractvalue' 'layer4_out_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%layer4_out_5 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 35 'extractvalue' 'layer4_out_5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%layer4_out_6 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 36 'extractvalue' 'layer4_out_6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%layer4_out_7 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 37 'extractvalue' 'layer4_out_7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%layer4_out_8 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 38 'extractvalue' 'layer4_out_8' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%layer4_out_9 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 39 'extractvalue' 'layer4_out_9' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%layer4_out_10 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 40 'extractvalue' 'layer4_out_10' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%layer4_out_11 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 41 'extractvalue' 'layer4_out_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%layer4_out_12 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 42 'extractvalue' 'layer4_out_12' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%layer4_out_13 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 43 'extractvalue' 'layer4_out_13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%layer4_out_14 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 44 'extractvalue' 'layer4_out_14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%layer4_out_15 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 45 'extractvalue' 'layer4_out_15' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%layer4_out_16 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 46 'extractvalue' 'layer4_out_16' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%layer4_out_17 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 47 'extractvalue' 'layer4_out_17' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%layer4_out_18 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 48 'extractvalue' 'layer4_out_18' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%layer4_out_19 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 49 'extractvalue' 'layer4_out_19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%layer4_out_20 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 50 'extractvalue' 'layer4_out_20' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%layer4_out_21 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 51 'extractvalue' 'layer4_out_21' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%layer4_out_22 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 52 'extractvalue' 'layer4_out_22' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%layer4_out_23 = extractvalue i360 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 53 'extractvalue' 'layer4_out_23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 54 [1/1] (1.11ns)   --->   "%call_ret3 = call i360 @relu<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, relu_config5>, i15 %layer4_out, i15 %layer4_out_1, i15 %layer4_out_2, i15 %layer4_out_3, i15 %layer4_out_4, i15 %layer4_out_5, i15 %layer4_out_6, i15 %layer4_out_7, i15 %layer4_out_8, i15 %layer4_out_9, i15 %layer4_out_10, i15 %layer4_out_11, i15 %layer4_out_12, i15 %layer4_out_13, i15 %layer4_out_14, i15 %layer4_out_15, i15 %layer4_out_16, i15 %layer4_out_17, i15 %layer4_out_18, i15 %layer4_out_19, i15 %layer4_out_20, i15 %layer4_out_21, i15 %layer4_out_22, i15 %layer4_out_23" [firmware/myproject.cpp:51]   --->   Operation 54 'call' 'call_ret3' <Predicate = true> <Delay = 1.11> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%layer5_out = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 55 'extractvalue' 'layer5_out' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%layer5_out_1 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 56 'extractvalue' 'layer5_out_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%layer5_out_2 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 57 'extractvalue' 'layer5_out_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%layer5_out_3 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 58 'extractvalue' 'layer5_out_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%layer5_out_4 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 59 'extractvalue' 'layer5_out_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%layer5_out_5 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 60 'extractvalue' 'layer5_out_5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%layer5_out_6 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 61 'extractvalue' 'layer5_out_6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%layer5_out_7 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 62 'extractvalue' 'layer5_out_7' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%layer5_out_8 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 63 'extractvalue' 'layer5_out_8' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%layer5_out_9 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 64 'extractvalue' 'layer5_out_9' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%layer5_out_10 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 65 'extractvalue' 'layer5_out_10' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%layer5_out_11 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 66 'extractvalue' 'layer5_out_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%layer5_out_12 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 67 'extractvalue' 'layer5_out_12' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%layer5_out_13 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 68 'extractvalue' 'layer5_out_13' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%layer5_out_14 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 69 'extractvalue' 'layer5_out_14' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%layer5_out_15 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 70 'extractvalue' 'layer5_out_15' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%layer5_out_16 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 71 'extractvalue' 'layer5_out_16' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%layer5_out_17 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 72 'extractvalue' 'layer5_out_17' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%layer5_out_18 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 73 'extractvalue' 'layer5_out_18' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%layer5_out_19 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 74 'extractvalue' 'layer5_out_19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%layer5_out_20 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 75 'extractvalue' 'layer5_out_20' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%layer5_out_21 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 76 'extractvalue' 'layer5_out_21' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%layer5_out_22 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 77 'extractvalue' 'layer5_out_22' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%layer5_out_23 = extractvalue i360 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 78 'extractvalue' 'layer5_out_23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 79 [1/1] (4.95ns)   --->   "%call_ret4 = call i120 @dense_latency<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config6>, i15 %layer5_out, i15 %layer5_out_1, i15 %layer5_out_2, i15 %layer5_out_3, i15 %layer5_out_4, i15 %layer5_out_5, i15 %layer5_out_6, i15 %layer5_out_7, i15 %layer5_out_8, i15 %layer5_out_9, i15 %layer5_out_10, i15 %layer5_out_11, i15 %layer5_out_12, i15 %layer5_out_13, i15 %layer5_out_14, i15 %layer5_out_15, i15 %layer5_out_16, i15 %layer5_out_17, i15 %layer5_out_18, i15 %layer5_out_19, i15 %layer5_out_20, i15 %layer5_out_21, i15 %layer5_out_22, i15 %layer5_out_23" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 79 'call' 'call_ret4' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%layer6_out = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 80 'extractvalue' 'layer6_out' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%layer6_out_1 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 81 'extractvalue' 'layer6_out_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%layer6_out_2 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 82 'extractvalue' 'layer6_out_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%layer6_out_3 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 83 'extractvalue' 'layer6_out_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%layer6_out_4 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 84 'extractvalue' 'layer6_out_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%layer6_out_5 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 85 'extractvalue' 'layer6_out_5' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%layer6_out_6 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 86 'extractvalue' 'layer6_out_6' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%layer6_out_7 = extractvalue i120 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 87 'extractvalue' 'layer6_out_7' <Predicate = true> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 14.6>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%y_timed_input_read = read i530 @_ssdm_op_Read.ap_vld.i530P0A, i530 %y_timed_input"   --->   Operation 3 'read' 'y_timed_input_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (6.19ns)   --->   "%call_ret1 = call i240 @dense_latency<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config2>, i530 %y_timed_input_read" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 4 'call' 'call_ret1' <Predicate = true> <Delay = 6.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%layer2_out = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 5 'extractvalue' 'layer2_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%layer2_out_1 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 6 'extractvalue' 'layer2_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%layer2_out_2 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 7 'extractvalue' 'layer2_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%layer2_out_3 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 8 'extractvalue' 'layer2_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out_4 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 9 'extractvalue' 'layer2_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer2_out_5 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 10 'extractvalue' 'layer2_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer2_out_6 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 11 'extractvalue' 'layer2_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%layer2_out_7 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 12 'extractvalue' 'layer2_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%layer2_out_8 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 13 'extractvalue' 'layer2_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%layer2_out_9 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 14 'extractvalue' 'layer2_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%layer2_out_10 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 15 'extractvalue' 'layer2_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%layer2_out_11 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 16 'extractvalue' 'layer2_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%layer2_out_12 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 17 'extractvalue' 'layer2_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%layer2_out_13 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 18 'extractvalue' 'layer2_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%layer2_out_14 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 19 'extractvalue' 'layer2_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%layer2_out_15 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 20 'extractvalue' 'layer2_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%layer2_out_16 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 21 'extractvalue' 'layer2_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%layer2_out_17 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 22 'extractvalue' 'layer2_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%layer2_out_18 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 23 'extractvalue' 'layer2_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%layer2_out_19 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 24 'extractvalue' 'layer2_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%layer2_out_20 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 25 'extractvalue' 'layer2_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%layer2_out_21 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 26 'extractvalue' 'layer2_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%layer2_out_22 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 27 'extractvalue' 'layer2_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%layer2_out_23 = extractvalue i240 %call_ret1" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:43]   --->   Operation 28 'extractvalue' 'layer2_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (2.71ns)   --->   "%call_ret2 = call i240 @normalize<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config4>, i10 %layer2_out, i10 %layer2_out_1, i10 %layer2_out_2, i10 %layer2_out_3, i10 %layer2_out_4, i10 %layer2_out_5, i10 %layer2_out_6, i10 %layer2_out_7, i10 %layer2_out_8, i10 %layer2_out_9, i10 %layer2_out_10, i10 %layer2_out_11, i10 %layer2_out_12, i10 %layer2_out_13, i10 %layer2_out_14, i10 %layer2_out_15, i10 %layer2_out_16, i10 %layer2_out_17, i10 %layer2_out_18, i10 %layer2_out_19, i10 %layer2_out_20, i10 %layer2_out_21, i10 %layer2_out_22, i10 %layer2_out_23" [firmware/myproject.cpp:47]   --->   Operation 29 'call' 'call_ret2' <Predicate = true> <Delay = 2.71> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%layer4_out = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 30 'extractvalue' 'layer4_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%layer4_out_1 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 31 'extractvalue' 'layer4_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%layer4_out_2 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 32 'extractvalue' 'layer4_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer4_out_3 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 33 'extractvalue' 'layer4_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%layer4_out_4 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 34 'extractvalue' 'layer4_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%layer4_out_5 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 35 'extractvalue' 'layer4_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%layer4_out_6 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 36 'extractvalue' 'layer4_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%layer4_out_7 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 37 'extractvalue' 'layer4_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%layer4_out_8 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 38 'extractvalue' 'layer4_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%layer4_out_9 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 39 'extractvalue' 'layer4_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%layer4_out_10 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 40 'extractvalue' 'layer4_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%layer4_out_11 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 41 'extractvalue' 'layer4_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%layer4_out_12 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 42 'extractvalue' 'layer4_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%layer4_out_13 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 43 'extractvalue' 'layer4_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%layer4_out_14 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 44 'extractvalue' 'layer4_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%layer4_out_15 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 45 'extractvalue' 'layer4_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%layer4_out_16 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 46 'extractvalue' 'layer4_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%layer4_out_17 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 47 'extractvalue' 'layer4_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%layer4_out_18 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 48 'extractvalue' 'layer4_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%layer4_out_19 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 49 'extractvalue' 'layer4_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%layer4_out_20 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 50 'extractvalue' 'layer4_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%layer4_out_21 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 51 'extractvalue' 'layer4_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%layer4_out_22 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 52 'extractvalue' 'layer4_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%layer4_out_23 = extractvalue i240 %call_ret2" [firmware/myproject.cpp:47]   --->   Operation 53 'extractvalue' 'layer4_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (1.02ns)   --->   "%call_ret3 = call i240 @relu<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, relu_config5>, i10 %layer4_out, i10 %layer4_out_1, i10 %layer4_out_2, i10 %layer4_out_3, i10 %layer4_out_4, i10 %layer4_out_5, i10 %layer4_out_6, i10 %layer4_out_7, i10 %layer4_out_8, i10 %layer4_out_9, i10 %layer4_out_10, i10 %layer4_out_11, i10 %layer4_out_12, i10 %layer4_out_13, i10 %layer4_out_14, i10 %layer4_out_15, i10 %layer4_out_16, i10 %layer4_out_17, i10 %layer4_out_18, i10 %layer4_out_19, i10 %layer4_out_20, i10 %layer4_out_21, i10 %layer4_out_22, i10 %layer4_out_23" [firmware/myproject.cpp:51]   --->   Operation 54 'call' 'call_ret3' <Predicate = true> <Delay = 1.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%layer5_out = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 55 'extractvalue' 'layer5_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%layer5_out_1 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 56 'extractvalue' 'layer5_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%layer5_out_2 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 57 'extractvalue' 'layer5_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%layer5_out_3 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 58 'extractvalue' 'layer5_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%layer5_out_4 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 59 'extractvalue' 'layer5_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%layer5_out_5 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 60 'extractvalue' 'layer5_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%layer5_out_6 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 61 'extractvalue' 'layer5_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%layer5_out_7 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 62 'extractvalue' 'layer5_out_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%layer5_out_8 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 63 'extractvalue' 'layer5_out_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%layer5_out_9 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 64 'extractvalue' 'layer5_out_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%layer5_out_10 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 65 'extractvalue' 'layer5_out_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%layer5_out_11 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 66 'extractvalue' 'layer5_out_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%layer5_out_12 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 67 'extractvalue' 'layer5_out_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%layer5_out_13 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 68 'extractvalue' 'layer5_out_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%layer5_out_14 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 69 'extractvalue' 'layer5_out_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%layer5_out_15 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 70 'extractvalue' 'layer5_out_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%layer5_out_16 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 71 'extractvalue' 'layer5_out_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%layer5_out_17 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 72 'extractvalue' 'layer5_out_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%layer5_out_18 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 73 'extractvalue' 'layer5_out_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%layer5_out_19 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 74 'extractvalue' 'layer5_out_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%layer5_out_20 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 75 'extractvalue' 'layer5_out_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%layer5_out_21 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 76 'extractvalue' 'layer5_out_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%layer5_out_22 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 77 'extractvalue' 'layer5_out_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%layer5_out_23 = extractvalue i240 %call_ret3" [firmware/myproject.cpp:51]   --->   Operation 78 'extractvalue' 'layer5_out_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (4.72ns)   --->   "%call_ret4 = call i80 @dense_latency<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config6>, i10 %layer5_out, i10 %layer5_out_1, i10 %layer5_out_2, i10 %layer5_out_3, i10 %layer5_out_4, i10 %layer5_out_5, i10 %layer5_out_6, i10 %layer5_out_7, i10 %layer5_out_8, i10 %layer5_out_9, i10 %layer5_out_10, i10 %layer5_out_11, i10 %layer5_out_12, i10 %layer5_out_13, i10 %layer5_out_14, i10 %layer5_out_15, i10 %layer5_out_16, i10 %layer5_out_17, i10 %layer5_out_18, i10 %layer5_out_19, i10 %layer5_out_20, i10 %layer5_out_21, i10 %layer5_out_22, i10 %layer5_out_23" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 79 'call' 'call_ret4' <Predicate = true> <Delay = 4.72> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%layer6_out = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 80 'extractvalue' 'layer6_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%layer6_out_1 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 81 'extractvalue' 'layer6_out_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%layer6_out_2 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 82 'extractvalue' 'layer6_out_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%layer6_out_3 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 83 'extractvalue' 'layer6_out_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%layer6_out_4 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 84 'extractvalue' 'layer6_out_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%layer6_out_5 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 85 'extractvalue' 'layer6_out_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%layer6_out_6 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 86 'extractvalue' 'layer6_out_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%layer6_out_7 = extractvalue i80 %call_ret4" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:55]   --->   Operation 87 'extractvalue' 'layer6_out_7' <Predicate = true> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 8.06>
+State 2 <SV = 1> <Delay = 7.69>
 ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_0"   --->   Operation 88 'specpipeline' 'specpipeline_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2"   --->   Operation 89 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i795 %y_timed_input"   --->   Operation 90 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i795 %y_timed_input, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i15 %layer10_out"   --->   Operation 92 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i15 %layer10_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 93 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 94 [1/1] (2.76ns)   --->   "%call_ret5 = call i120 @normalize<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config8>, i15 %layer6_out, i15 %layer6_out_1, i15 %layer6_out_2, i15 %layer6_out_3, i15 %layer6_out_4, i15 %layer6_out_5, i15 %layer6_out_6, i15 %layer6_out_7" [firmware/myproject.cpp:59]   --->   Operation 94 'call' 'call_ret5' <Predicate = true> <Delay = 2.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%layer8_out = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 95 'extractvalue' 'layer8_out' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%layer8_out_1 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 96 'extractvalue' 'layer8_out_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%layer8_out_2 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 97 'extractvalue' 'layer8_out_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%layer8_out_3 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 98 'extractvalue' 'layer8_out_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%layer8_out_4 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 99 'extractvalue' 'layer8_out_4' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 100 [1/1] (0.00ns)   --->   "%layer8_out_5 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 100 'extractvalue' 'layer8_out_5' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%layer8_out_6 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 101 'extractvalue' 'layer8_out_6' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%layer8_out_7 = extractvalue i120 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 102 'extractvalue' 'layer8_out_7' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 103 [1/1] (1.11ns)   --->   "%call_ret = call i120 @relu<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, relu_config9>, i15 %layer8_out, i15 %layer8_out_1, i15 %layer8_out_2, i15 %layer8_out_3, i15 %layer8_out_4, i15 %layer8_out_5, i15 %layer8_out_6, i15 %layer8_out_7" [firmware/myproject.cpp:63]   --->   Operation 103 'call' 'call_ret' <Predicate = true> <Delay = 1.11> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 104 [1/1] (0.00ns)   --->   "%layer9_out = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 104 'extractvalue' 'layer9_out' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 105 [1/1] (0.00ns)   --->   "%layer9_out_1 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 105 'extractvalue' 'layer9_out_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 106 [1/1] (0.00ns)   --->   "%layer9_out_2 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 106 'extractvalue' 'layer9_out_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 107 [1/1] (0.00ns)   --->   "%layer9_out_3 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 107 'extractvalue' 'layer9_out_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 108 [1/1] (0.00ns)   --->   "%layer9_out_4 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 108 'extractvalue' 'layer9_out_4' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%layer9_out_5 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 109 'extractvalue' 'layer9_out_5' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 110 [1/1] (0.00ns)   --->   "%layer9_out_6 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 110 'extractvalue' 'layer9_out_6' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 111 [1/1] (0.00ns)   --->   "%layer9_out_7 = extractvalue i120 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 111 'extractvalue' 'layer9_out_7' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 112 [1/1] (4.18ns)   --->   "%call_ret6 = call i15 @dense_latency<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config10>, i15 %layer9_out, i15 %layer9_out_1, i15 %layer9_out_2, i15 %layer9_out_3, i15 %layer9_out_4, i15 %layer9_out_5, i15 %layer9_out_6, i15 %layer9_out_7" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:65]   --->   Operation 112 'call' 'call_ret6' <Predicate = true> <Delay = 4.18> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 113 [1/1] (0.00ns)   --->   "%write_ln41 = write void @_ssdm_op_Write.ap_vld.i15P0A, i15 %layer10_out, i15 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:65]   --->   Operation 113 'write' 'write_ln41' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i530 %y_timed_input"   --->   Operation 90 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i530 %y_timed_input, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i10 %layer10_out"   --->   Operation 92 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i10 %layer10_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 93 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 94 [1/1] (2.70ns)   --->   "%call_ret5 = call i80 @normalize<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config8>, i10 %layer6_out, i10 %layer6_out_1, i10 %layer6_out_2, i10 %layer6_out_3, i10 %layer6_out_4, i10 %layer6_out_5, i10 %layer6_out_6, i10 %layer6_out_7" [firmware/myproject.cpp:59]   --->   Operation 94 'call' 'call_ret5' <Predicate = true> <Delay = 2.70> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%layer8_out = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 95 'extractvalue' 'layer8_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 96 [1/1] (0.00ns)   --->   "%layer8_out_1 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 96 'extractvalue' 'layer8_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 97 [1/1] (0.00ns)   --->   "%layer8_out_2 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 97 'extractvalue' 'layer8_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 98 [1/1] (0.00ns)   --->   "%layer8_out_3 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 98 'extractvalue' 'layer8_out_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 99 [1/1] (0.00ns)   --->   "%layer8_out_4 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 99 'extractvalue' 'layer8_out_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 100 [1/1] (0.00ns)   --->   "%layer8_out_5 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 100 'extractvalue' 'layer8_out_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "%layer8_out_6 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 101 'extractvalue' 'layer8_out_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%layer8_out_7 = extractvalue i80 %call_ret5" [firmware/myproject.cpp:59]   --->   Operation 102 'extractvalue' 'layer8_out_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 103 [1/1] (1.02ns)   --->   "%call_ret = call i80 @relu<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, relu_config9>, i10 %layer8_out, i10 %layer8_out_1, i10 %layer8_out_2, i10 %layer8_out_3, i10 %layer8_out_4, i10 %layer8_out_5, i10 %layer8_out_6, i10 %layer8_out_7" [firmware/myproject.cpp:63]   --->   Operation 103 'call' 'call_ret' <Predicate = true> <Delay = 1.02> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 104 [1/1] (0.00ns)   --->   "%layer9_out = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 104 'extractvalue' 'layer9_out' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 105 [1/1] (0.00ns)   --->   "%layer9_out_1 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 105 'extractvalue' 'layer9_out_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 106 [1/1] (0.00ns)   --->   "%layer9_out_2 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 106 'extractvalue' 'layer9_out_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 107 [1/1] (0.00ns)   --->   "%layer9_out_3 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 107 'extractvalue' 'layer9_out_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 108 [1/1] (0.00ns)   --->   "%layer9_out_4 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 108 'extractvalue' 'layer9_out_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%layer9_out_5 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 109 'extractvalue' 'layer9_out_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 110 [1/1] (0.00ns)   --->   "%layer9_out_6 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 110 'extractvalue' 'layer9_out_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 111 [1/1] (0.00ns)   --->   "%layer9_out_7 = extractvalue i80 %call_ret" [firmware/myproject.cpp:63]   --->   Operation 111 'extractvalue' 'layer9_out_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 112 [1/1] (3.96ns)   --->   "%call_ret6 = call i10 @dense_latency<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config10>, i10 %layer9_out, i10 %layer9_out_1, i10 %layer9_out_2, i10 %layer9_out_3, i10 %layer9_out_4, i10 %layer9_out_5, i10 %layer9_out_6, i10 %layer9_out_7" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:65]   --->   Operation 112 'call' 'call_ret6' <Predicate = true> <Delay = 3.96> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 113 [1/1] (0.00ns)   --->   "%write_ln41 = write void @_ssdm_op_Write.ap_vld.i10P0A, i10 %layer10_out, i10 %call_ret6" [firmware/nnet_utils/nnet_dense.h:41->firmware/myproject.cpp:65]   --->   Operation 113 'write' 'write_ln41' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 114 [1/1] (0.00ns)   --->   "%ret_ln67 = ret" [firmware/myproject.cpp:67]   --->   Operation 114 'ret' 'ret_ln67' <Predicate = true> <Delay = 0.00>
 
 
@@ -366,7 +366,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Read.ap_vld.i795P0A"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Read.ap_vld.i530P0A"/></StgValue>
 </bind>
 </comp>
 
@@ -375,7 +375,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense_latency<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config2>"/></StgValue>
+<StgValue><ssdm name="dense_latency<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config2>"/></StgValue>
 </bind>
 </comp>
 
@@ -384,7 +384,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="normalize<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config4>"/></StgValue>
+<StgValue><ssdm name="normalize<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config4>"/></StgValue>
 </bind>
 </comp>
 
@@ -393,7 +393,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="relu<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, relu_config5>"/></StgValue>
+<StgValue><ssdm name="relu<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, relu_config5>"/></StgValue>
 </bind>
 </comp>
 
@@ -402,7 +402,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense_latency<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config6>"/></StgValue>
+<StgValue><ssdm name="dense_latency<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config6>"/></StgValue>
 </bind>
 </comp>
 
@@ -492,7 +492,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="33" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="normalize<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config8>"/></StgValue>
+<StgValue><ssdm name="normalize<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config8>"/></StgValue>
 </bind>
 </comp>
 
@@ -501,7 +501,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="relu<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, relu_config9>"/></StgValue>
+<StgValue><ssdm name="relu<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, relu_config9>"/></StgValue>
 </bind>
 </comp>
 
@@ -510,7 +510,7 @@ ret_ln67           (ret          ) [ 000]
 <pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dense_latency<ap_fixed<15, 2, 5, 3, 0>, ap_fixed<15, 2, 5, 3, 0>, config10>"/></StgValue>
+<StgValue><ssdm name="dense_latency<ap_fixed<10, 2, 5, 3, 0>, ap_fixed<10, 2, 5, 3, 0>, config10>"/></StgValue>
 </bind>
 </comp>
 
@@ -519,15 +519,15 @@ ret_ln67           (ret          ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.ap_vld.i15P0A"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.ap_vld.i10P0A"/></StgValue>
 </bind>
 </comp>
 
 <comp id="40" class="1004" name="y_timed_input_read_read_fu_40">
 <pin_list>
-<pin id="41" dir="0" index="0" bw="795" slack="0"/>
-<pin id="42" dir="0" index="1" bw="795" slack="0"/>
-<pin id="43" dir="1" index="2" bw="795" slack="0"/>
+<pin id="41" dir="0" index="0" bw="530" slack="0"/>
+<pin id="42" dir="0" index="1" bw="530" slack="0"/>
+<pin id="43" dir="1" index="2" bw="530" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -538,8 +538,8 @@ ret_ln67           (ret          ) [ 000]
 <comp id="46" class="1004" name="write_ln41_write_fu_46">
 <pin_list>
 <pin id="47" dir="0" index="0" bw="0" slack="0"/>
-<pin id="48" dir="0" index="1" bw="15" slack="0"/>
-<pin id="49" dir="0" index="2" bw="15" slack="0"/>
+<pin id="48" dir="0" index="1" bw="10" slack="0"/>
+<pin id="49" dir="0" index="2" bw="10" slack="0"/>
 <pin id="50" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -548,11 +548,11 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="53" class="1004" name="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53">
+<comp id="53" class="1004" name="call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53">
 <pin_list>
-<pin id="54" dir="0" index="0" bw="360" slack="0"/>
-<pin id="55" dir="0" index="1" bw="795" slack="0"/>
-<pin id="56" dir="1" index="2" bw="360" slack="0"/>
+<pin id="54" dir="0" index="0" bw="240" slack="0"/>
+<pin id="55" dir="0" index="1" bw="530" slack="0"/>
+<pin id="56" dir="1" index="2" bw="240" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -560,34 +560,34 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="59" class="1004" name="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59">
+<comp id="59" class="1004" name="call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59">
 <pin_list>
-<pin id="60" dir="0" index="0" bw="360" slack="0"/>
-<pin id="61" dir="0" index="1" bw="15" slack="0"/>
-<pin id="62" dir="0" index="2" bw="15" slack="0"/>
-<pin id="63" dir="0" index="3" bw="15" slack="0"/>
-<pin id="64" dir="0" index="4" bw="15" slack="0"/>
-<pin id="65" dir="0" index="5" bw="15" slack="0"/>
-<pin id="66" dir="0" index="6" bw="15" slack="0"/>
-<pin id="67" dir="0" index="7" bw="15" slack="0"/>
-<pin id="68" dir="0" index="8" bw="15" slack="0"/>
-<pin id="69" dir="0" index="9" bw="15" slack="0"/>
-<pin id="70" dir="0" index="10" bw="15" slack="0"/>
-<pin id="71" dir="0" index="11" bw="15" slack="0"/>
-<pin id="72" dir="0" index="12" bw="15" slack="0"/>
-<pin id="73" dir="0" index="13" bw="15" slack="0"/>
-<pin id="74" dir="0" index="14" bw="15" slack="0"/>
-<pin id="75" dir="0" index="15" bw="15" slack="0"/>
-<pin id="76" dir="0" index="16" bw="15" slack="0"/>
-<pin id="77" dir="0" index="17" bw="15" slack="0"/>
-<pin id="78" dir="0" index="18" bw="15" slack="0"/>
-<pin id="79" dir="0" index="19" bw="15" slack="0"/>
-<pin id="80" dir="0" index="20" bw="15" slack="0"/>
-<pin id="81" dir="0" index="21" bw="15" slack="0"/>
-<pin id="82" dir="0" index="22" bw="15" slack="0"/>
-<pin id="83" dir="0" index="23" bw="15" slack="0"/>
-<pin id="84" dir="0" index="24" bw="15" slack="0"/>
-<pin id="85" dir="1" index="25" bw="360" slack="0"/>
+<pin id="60" dir="0" index="0" bw="240" slack="0"/>
+<pin id="61" dir="0" index="1" bw="10" slack="0"/>
+<pin id="62" dir="0" index="2" bw="10" slack="0"/>
+<pin id="63" dir="0" index="3" bw="10" slack="0"/>
+<pin id="64" dir="0" index="4" bw="10" slack="0"/>
+<pin id="65" dir="0" index="5" bw="10" slack="0"/>
+<pin id="66" dir="0" index="6" bw="10" slack="0"/>
+<pin id="67" dir="0" index="7" bw="10" slack="0"/>
+<pin id="68" dir="0" index="8" bw="10" slack="0"/>
+<pin id="69" dir="0" index="9" bw="10" slack="0"/>
+<pin id="70" dir="0" index="10" bw="10" slack="0"/>
+<pin id="71" dir="0" index="11" bw="10" slack="0"/>
+<pin id="72" dir="0" index="12" bw="10" slack="0"/>
+<pin id="73" dir="0" index="13" bw="10" slack="0"/>
+<pin id="74" dir="0" index="14" bw="10" slack="0"/>
+<pin id="75" dir="0" index="15" bw="10" slack="0"/>
+<pin id="76" dir="0" index="16" bw="10" slack="0"/>
+<pin id="77" dir="0" index="17" bw="10" slack="0"/>
+<pin id="78" dir="0" index="18" bw="10" slack="0"/>
+<pin id="79" dir="0" index="19" bw="10" slack="0"/>
+<pin id="80" dir="0" index="20" bw="10" slack="0"/>
+<pin id="81" dir="0" index="21" bw="10" slack="0"/>
+<pin id="82" dir="0" index="22" bw="10" slack="0"/>
+<pin id="83" dir="0" index="23" bw="10" slack="0"/>
+<pin id="84" dir="0" index="24" bw="10" slack="0"/>
+<pin id="85" dir="1" index="25" bw="240" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -595,34 +595,34 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="87" class="1004" name="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87">
+<comp id="87" class="1004" name="call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87">
 <pin_list>
-<pin id="88" dir="0" index="0" bw="360" slack="0"/>
-<pin id="89" dir="0" index="1" bw="15" slack="0"/>
-<pin id="90" dir="0" index="2" bw="15" slack="0"/>
-<pin id="91" dir="0" index="3" bw="15" slack="0"/>
-<pin id="92" dir="0" index="4" bw="15" slack="0"/>
-<pin id="93" dir="0" index="5" bw="15" slack="0"/>
-<pin id="94" dir="0" index="6" bw="15" slack="0"/>
-<pin id="95" dir="0" index="7" bw="15" slack="0"/>
-<pin id="96" dir="0" index="8" bw="15" slack="0"/>
-<pin id="97" dir="0" index="9" bw="15" slack="0"/>
-<pin id="98" dir="0" index="10" bw="15" slack="0"/>
-<pin id="99" dir="0" index="11" bw="15" slack="0"/>
-<pin id="100" dir="0" index="12" bw="15" slack="0"/>
-<pin id="101" dir="0" index="13" bw="15" slack="0"/>
-<pin id="102" dir="0" index="14" bw="15" slack="0"/>
-<pin id="103" dir="0" index="15" bw="15" slack="0"/>
-<pin id="104" dir="0" index="16" bw="15" slack="0"/>
-<pin id="105" dir="0" index="17" bw="15" slack="0"/>
-<pin id="106" dir="0" index="18" bw="15" slack="0"/>
-<pin id="107" dir="0" index="19" bw="15" slack="0"/>
-<pin id="108" dir="0" index="20" bw="15" slack="0"/>
-<pin id="109" dir="0" index="21" bw="15" slack="0"/>
-<pin id="110" dir="0" index="22" bw="15" slack="0"/>
-<pin id="111" dir="0" index="23" bw="15" slack="0"/>
-<pin id="112" dir="0" index="24" bw="15" slack="0"/>
-<pin id="113" dir="1" index="25" bw="360" slack="0"/>
+<pin id="88" dir="0" index="0" bw="240" slack="0"/>
+<pin id="89" dir="0" index="1" bw="10" slack="0"/>
+<pin id="90" dir="0" index="2" bw="10" slack="0"/>
+<pin id="91" dir="0" index="3" bw="10" slack="0"/>
+<pin id="92" dir="0" index="4" bw="10" slack="0"/>
+<pin id="93" dir="0" index="5" bw="10" slack="0"/>
+<pin id="94" dir="0" index="6" bw="10" slack="0"/>
+<pin id="95" dir="0" index="7" bw="10" slack="0"/>
+<pin id="96" dir="0" index="8" bw="10" slack="0"/>
+<pin id="97" dir="0" index="9" bw="10" slack="0"/>
+<pin id="98" dir="0" index="10" bw="10" slack="0"/>
+<pin id="99" dir="0" index="11" bw="10" slack="0"/>
+<pin id="100" dir="0" index="12" bw="10" slack="0"/>
+<pin id="101" dir="0" index="13" bw="10" slack="0"/>
+<pin id="102" dir="0" index="14" bw="10" slack="0"/>
+<pin id="103" dir="0" index="15" bw="10" slack="0"/>
+<pin id="104" dir="0" index="16" bw="10" slack="0"/>
+<pin id="105" dir="0" index="17" bw="10" slack="0"/>
+<pin id="106" dir="0" index="18" bw="10" slack="0"/>
+<pin id="107" dir="0" index="19" bw="10" slack="0"/>
+<pin id="108" dir="0" index="20" bw="10" slack="0"/>
+<pin id="109" dir="0" index="21" bw="10" slack="0"/>
+<pin id="110" dir="0" index="22" bw="10" slack="0"/>
+<pin id="111" dir="0" index="23" bw="10" slack="0"/>
+<pin id="112" dir="0" index="24" bw="10" slack="0"/>
+<pin id="113" dir="1" index="25" bw="240" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -630,34 +630,34 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="115" class="1004" name="call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115">
+<comp id="115" class="1004" name="call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115">
 <pin_list>
-<pin id="116" dir="0" index="0" bw="120" slack="0"/>
-<pin id="117" dir="0" index="1" bw="15" slack="0"/>
-<pin id="118" dir="0" index="2" bw="15" slack="0"/>
-<pin id="119" dir="0" index="3" bw="15" slack="0"/>
-<pin id="120" dir="0" index="4" bw="15" slack="0"/>
-<pin id="121" dir="0" index="5" bw="15" slack="0"/>
-<pin id="122" dir="0" index="6" bw="15" slack="0"/>
-<pin id="123" dir="0" index="7" bw="15" slack="0"/>
-<pin id="124" dir="0" index="8" bw="15" slack="0"/>
-<pin id="125" dir="0" index="9" bw="15" slack="0"/>
-<pin id="126" dir="0" index="10" bw="15" slack="0"/>
-<pin id="127" dir="0" index="11" bw="15" slack="0"/>
-<pin id="128" dir="0" index="12" bw="15" slack="0"/>
-<pin id="129" dir="0" index="13" bw="15" slack="0"/>
-<pin id="130" dir="0" index="14" bw="15" slack="0"/>
-<pin id="131" dir="0" index="15" bw="15" slack="0"/>
-<pin id="132" dir="0" index="16" bw="15" slack="0"/>
-<pin id="133" dir="0" index="17" bw="15" slack="0"/>
-<pin id="134" dir="0" index="18" bw="15" slack="0"/>
-<pin id="135" dir="0" index="19" bw="15" slack="0"/>
-<pin id="136" dir="0" index="20" bw="15" slack="0"/>
-<pin id="137" dir="0" index="21" bw="15" slack="0"/>
-<pin id="138" dir="0" index="22" bw="15" slack="0"/>
-<pin id="139" dir="0" index="23" bw="15" slack="0"/>
-<pin id="140" dir="0" index="24" bw="15" slack="0"/>
-<pin id="141" dir="1" index="25" bw="120" slack="0"/>
+<pin id="116" dir="0" index="0" bw="80" slack="0"/>
+<pin id="117" dir="0" index="1" bw="10" slack="0"/>
+<pin id="118" dir="0" index="2" bw="10" slack="0"/>
+<pin id="119" dir="0" index="3" bw="10" slack="0"/>
+<pin id="120" dir="0" index="4" bw="10" slack="0"/>
+<pin id="121" dir="0" index="5" bw="10" slack="0"/>
+<pin id="122" dir="0" index="6" bw="10" slack="0"/>
+<pin id="123" dir="0" index="7" bw="10" slack="0"/>
+<pin id="124" dir="0" index="8" bw="10" slack="0"/>
+<pin id="125" dir="0" index="9" bw="10" slack="0"/>
+<pin id="126" dir="0" index="10" bw="10" slack="0"/>
+<pin id="127" dir="0" index="11" bw="10" slack="0"/>
+<pin id="128" dir="0" index="12" bw="10" slack="0"/>
+<pin id="129" dir="0" index="13" bw="10" slack="0"/>
+<pin id="130" dir="0" index="14" bw="10" slack="0"/>
+<pin id="131" dir="0" index="15" bw="10" slack="0"/>
+<pin id="132" dir="0" index="16" bw="10" slack="0"/>
+<pin id="133" dir="0" index="17" bw="10" slack="0"/>
+<pin id="134" dir="0" index="18" bw="10" slack="0"/>
+<pin id="135" dir="0" index="19" bw="10" slack="0"/>
+<pin id="136" dir="0" index="20" bw="10" slack="0"/>
+<pin id="137" dir="0" index="21" bw="10" slack="0"/>
+<pin id="138" dir="0" index="22" bw="10" slack="0"/>
+<pin id="139" dir="0" index="23" bw="10" slack="0"/>
+<pin id="140" dir="0" index="24" bw="10" slack="0"/>
+<pin id="141" dir="1" index="25" bw="80" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -665,18 +665,18 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="143" class="1004" name="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143">
+<comp id="143" class="1004" name="call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143">
 <pin_list>
-<pin id="144" dir="0" index="0" bw="120" slack="0"/>
-<pin id="145" dir="0" index="1" bw="15" slack="1"/>
-<pin id="146" dir="0" index="2" bw="15" slack="1"/>
-<pin id="147" dir="0" index="3" bw="15" slack="1"/>
-<pin id="148" dir="0" index="4" bw="15" slack="1"/>
-<pin id="149" dir="0" index="5" bw="15" slack="1"/>
-<pin id="150" dir="0" index="6" bw="15" slack="1"/>
-<pin id="151" dir="0" index="7" bw="15" slack="1"/>
-<pin id="152" dir="0" index="8" bw="15" slack="1"/>
-<pin id="153" dir="1" index="9" bw="120" slack="0"/>
+<pin id="144" dir="0" index="0" bw="80" slack="0"/>
+<pin id="145" dir="0" index="1" bw="10" slack="1"/>
+<pin id="146" dir="0" index="2" bw="10" slack="1"/>
+<pin id="147" dir="0" index="3" bw="10" slack="1"/>
+<pin id="148" dir="0" index="4" bw="10" slack="1"/>
+<pin id="149" dir="0" index="5" bw="10" slack="1"/>
+<pin id="150" dir="0" index="6" bw="10" slack="1"/>
+<pin id="151" dir="0" index="7" bw="10" slack="1"/>
+<pin id="152" dir="0" index="8" bw="10" slack="1"/>
+<pin id="153" dir="1" index="9" bw="80" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -684,18 +684,18 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="155" class="1004" name="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155">
+<comp id="155" class="1004" name="call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155">
 <pin_list>
-<pin id="156" dir="0" index="0" bw="120" slack="0"/>
-<pin id="157" dir="0" index="1" bw="15" slack="0"/>
-<pin id="158" dir="0" index="2" bw="15" slack="0"/>
-<pin id="159" dir="0" index="3" bw="15" slack="0"/>
-<pin id="160" dir="0" index="4" bw="15" slack="0"/>
-<pin id="161" dir="0" index="5" bw="15" slack="0"/>
-<pin id="162" dir="0" index="6" bw="15" slack="0"/>
-<pin id="163" dir="0" index="7" bw="15" slack="0"/>
-<pin id="164" dir="0" index="8" bw="15" slack="0"/>
-<pin id="165" dir="1" index="9" bw="120" slack="0"/>
+<pin id="156" dir="0" index="0" bw="80" slack="0"/>
+<pin id="157" dir="0" index="1" bw="10" slack="0"/>
+<pin id="158" dir="0" index="2" bw="10" slack="0"/>
+<pin id="159" dir="0" index="3" bw="10" slack="0"/>
+<pin id="160" dir="0" index="4" bw="10" slack="0"/>
+<pin id="161" dir="0" index="5" bw="10" slack="0"/>
+<pin id="162" dir="0" index="6" bw="10" slack="0"/>
+<pin id="163" dir="0" index="7" bw="10" slack="0"/>
+<pin id="164" dir="0" index="8" bw="10" slack="0"/>
+<pin id="165" dir="1" index="9" bw="80" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -703,18 +703,18 @@ ret_ln67           (ret          ) [ 000]
 </bind>
 </comp>
 
-<comp id="167" class="1004" name="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167">
+<comp id="167" class="1004" name="call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167">
 <pin_list>
-<pin id="168" dir="0" index="0" bw="15" slack="0"/>
-<pin id="169" dir="0" index="1" bw="15" slack="0"/>
-<pin id="170" dir="0" index="2" bw="15" slack="0"/>
-<pin id="171" dir="0" index="3" bw="15" slack="0"/>
-<pin id="172" dir="0" index="4" bw="15" slack="0"/>
-<pin id="173" dir="0" index="5" bw="15" slack="0"/>
-<pin id="174" dir="0" index="6" bw="15" slack="0"/>
-<pin id="175" dir="0" index="7" bw="15" slack="0"/>
-<pin id="176" dir="0" index="8" bw="15" slack="0"/>
-<pin id="177" dir="1" index="9" bw="15" slack="0"/>
+<pin id="168" dir="0" index="0" bw="10" slack="0"/>
+<pin id="169" dir="0" index="1" bw="10" slack="0"/>
+<pin id="170" dir="0" index="2" bw="10" slack="0"/>
+<pin id="171" dir="0" index="3" bw="10" slack="0"/>
+<pin id="172" dir="0" index="4" bw="10" slack="0"/>
+<pin id="173" dir="0" index="5" bw="10" slack="0"/>
+<pin id="174" dir="0" index="6" bw="10" slack="0"/>
+<pin id="175" dir="0" index="7" bw="10" slack="0"/>
+<pin id="176" dir="0" index="8" bw="10" slack="0"/>
+<pin id="177" dir="1" index="9" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -724,8 +724,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="180" class="1004" name="layer2_out_fu_180">
 <pin_list>
-<pin id="181" dir="0" index="0" bw="360" slack="0"/>
-<pin id="182" dir="1" index="1" bw="15" slack="0"/>
+<pin id="181" dir="0" index="0" bw="240" slack="0"/>
+<pin id="182" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -735,8 +735,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="185" class="1004" name="layer2_out_1_fu_185">
 <pin_list>
-<pin id="186" dir="0" index="0" bw="360" slack="0"/>
-<pin id="187" dir="1" index="1" bw="15" slack="0"/>
+<pin id="186" dir="0" index="0" bw="240" slack="0"/>
+<pin id="187" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -746,8 +746,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="190" class="1004" name="layer2_out_2_fu_190">
 <pin_list>
-<pin id="191" dir="0" index="0" bw="360" slack="0"/>
-<pin id="192" dir="1" index="1" bw="15" slack="0"/>
+<pin id="191" dir="0" index="0" bw="240" slack="0"/>
+<pin id="192" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -757,8 +757,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="195" class="1004" name="layer2_out_3_fu_195">
 <pin_list>
-<pin id="196" dir="0" index="0" bw="360" slack="0"/>
-<pin id="197" dir="1" index="1" bw="15" slack="0"/>
+<pin id="196" dir="0" index="0" bw="240" slack="0"/>
+<pin id="197" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -768,8 +768,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="200" class="1004" name="layer2_out_4_fu_200">
 <pin_list>
-<pin id="201" dir="0" index="0" bw="360" slack="0"/>
-<pin id="202" dir="1" index="1" bw="15" slack="0"/>
+<pin id="201" dir="0" index="0" bw="240" slack="0"/>
+<pin id="202" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -779,8 +779,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="205" class="1004" name="layer2_out_5_fu_205">
 <pin_list>
-<pin id="206" dir="0" index="0" bw="360" slack="0"/>
-<pin id="207" dir="1" index="1" bw="15" slack="0"/>
+<pin id="206" dir="0" index="0" bw="240" slack="0"/>
+<pin id="207" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -790,8 +790,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="210" class="1004" name="layer2_out_6_fu_210">
 <pin_list>
-<pin id="211" dir="0" index="0" bw="360" slack="0"/>
-<pin id="212" dir="1" index="1" bw="15" slack="0"/>
+<pin id="211" dir="0" index="0" bw="240" slack="0"/>
+<pin id="212" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -801,8 +801,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="215" class="1004" name="layer2_out_7_fu_215">
 <pin_list>
-<pin id="216" dir="0" index="0" bw="360" slack="0"/>
-<pin id="217" dir="1" index="1" bw="15" slack="0"/>
+<pin id="216" dir="0" index="0" bw="240" slack="0"/>
+<pin id="217" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -812,8 +812,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="220" class="1004" name="layer2_out_8_fu_220">
 <pin_list>
-<pin id="221" dir="0" index="0" bw="360" slack="0"/>
-<pin id="222" dir="1" index="1" bw="15" slack="0"/>
+<pin id="221" dir="0" index="0" bw="240" slack="0"/>
+<pin id="222" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -823,8 +823,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="225" class="1004" name="layer2_out_9_fu_225">
 <pin_list>
-<pin id="226" dir="0" index="0" bw="360" slack="0"/>
-<pin id="227" dir="1" index="1" bw="15" slack="0"/>
+<pin id="226" dir="0" index="0" bw="240" slack="0"/>
+<pin id="227" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -834,8 +834,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="230" class="1004" name="layer2_out_10_fu_230">
 <pin_list>
-<pin id="231" dir="0" index="0" bw="360" slack="0"/>
-<pin id="232" dir="1" index="1" bw="15" slack="0"/>
+<pin id="231" dir="0" index="0" bw="240" slack="0"/>
+<pin id="232" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -845,8 +845,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="235" class="1004" name="layer2_out_11_fu_235">
 <pin_list>
-<pin id="236" dir="0" index="0" bw="360" slack="0"/>
-<pin id="237" dir="1" index="1" bw="15" slack="0"/>
+<pin id="236" dir="0" index="0" bw="240" slack="0"/>
+<pin id="237" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -856,8 +856,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="240" class="1004" name="layer2_out_12_fu_240">
 <pin_list>
-<pin id="241" dir="0" index="0" bw="360" slack="0"/>
-<pin id="242" dir="1" index="1" bw="15" slack="0"/>
+<pin id="241" dir="0" index="0" bw="240" slack="0"/>
+<pin id="242" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -867,8 +867,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="245" class="1004" name="layer2_out_13_fu_245">
 <pin_list>
-<pin id="246" dir="0" index="0" bw="360" slack="0"/>
-<pin id="247" dir="1" index="1" bw="15" slack="0"/>
+<pin id="246" dir="0" index="0" bw="240" slack="0"/>
+<pin id="247" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -878,8 +878,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="250" class="1004" name="layer2_out_14_fu_250">
 <pin_list>
-<pin id="251" dir="0" index="0" bw="360" slack="0"/>
-<pin id="252" dir="1" index="1" bw="15" slack="0"/>
+<pin id="251" dir="0" index="0" bw="240" slack="0"/>
+<pin id="252" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -889,8 +889,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="255" class="1004" name="layer2_out_15_fu_255">
 <pin_list>
-<pin id="256" dir="0" index="0" bw="360" slack="0"/>
-<pin id="257" dir="1" index="1" bw="15" slack="0"/>
+<pin id="256" dir="0" index="0" bw="240" slack="0"/>
+<pin id="257" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -900,8 +900,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="260" class="1004" name="layer2_out_16_fu_260">
 <pin_list>
-<pin id="261" dir="0" index="0" bw="360" slack="0"/>
-<pin id="262" dir="1" index="1" bw="15" slack="0"/>
+<pin id="261" dir="0" index="0" bw="240" slack="0"/>
+<pin id="262" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -911,8 +911,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="265" class="1004" name="layer2_out_17_fu_265">
 <pin_list>
-<pin id="266" dir="0" index="0" bw="360" slack="0"/>
-<pin id="267" dir="1" index="1" bw="15" slack="0"/>
+<pin id="266" dir="0" index="0" bw="240" slack="0"/>
+<pin id="267" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -922,8 +922,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="270" class="1004" name="layer2_out_18_fu_270">
 <pin_list>
-<pin id="271" dir="0" index="0" bw="360" slack="0"/>
-<pin id="272" dir="1" index="1" bw="15" slack="0"/>
+<pin id="271" dir="0" index="0" bw="240" slack="0"/>
+<pin id="272" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -933,8 +933,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="275" class="1004" name="layer2_out_19_fu_275">
 <pin_list>
-<pin id="276" dir="0" index="0" bw="360" slack="0"/>
-<pin id="277" dir="1" index="1" bw="15" slack="0"/>
+<pin id="276" dir="0" index="0" bw="240" slack="0"/>
+<pin id="277" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -944,8 +944,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="280" class="1004" name="layer2_out_20_fu_280">
 <pin_list>
-<pin id="281" dir="0" index="0" bw="360" slack="0"/>
-<pin id="282" dir="1" index="1" bw="15" slack="0"/>
+<pin id="281" dir="0" index="0" bw="240" slack="0"/>
+<pin id="282" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -955,8 +955,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="285" class="1004" name="layer2_out_21_fu_285">
 <pin_list>
-<pin id="286" dir="0" index="0" bw="360" slack="0"/>
-<pin id="287" dir="1" index="1" bw="15" slack="0"/>
+<pin id="286" dir="0" index="0" bw="240" slack="0"/>
+<pin id="287" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -966,8 +966,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="290" class="1004" name="layer2_out_22_fu_290">
 <pin_list>
-<pin id="291" dir="0" index="0" bw="360" slack="0"/>
-<pin id="292" dir="1" index="1" bw="15" slack="0"/>
+<pin id="291" dir="0" index="0" bw="240" slack="0"/>
+<pin id="292" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -977,8 +977,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="295" class="1004" name="layer2_out_23_fu_295">
 <pin_list>
-<pin id="296" dir="0" index="0" bw="360" slack="0"/>
-<pin id="297" dir="1" index="1" bw="15" slack="0"/>
+<pin id="296" dir="0" index="0" bw="240" slack="0"/>
+<pin id="297" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -988,8 +988,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="300" class="1004" name="layer4_out_fu_300">
 <pin_list>
-<pin id="301" dir="0" index="0" bw="360" slack="0"/>
-<pin id="302" dir="1" index="1" bw="15" slack="0"/>
+<pin id="301" dir="0" index="0" bw="240" slack="0"/>
+<pin id="302" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -999,8 +999,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="305" class="1004" name="layer4_out_1_fu_305">
 <pin_list>
-<pin id="306" dir="0" index="0" bw="360" slack="0"/>
-<pin id="307" dir="1" index="1" bw="15" slack="0"/>
+<pin id="306" dir="0" index="0" bw="240" slack="0"/>
+<pin id="307" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1010,8 +1010,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="310" class="1004" name="layer4_out_2_fu_310">
 <pin_list>
-<pin id="311" dir="0" index="0" bw="360" slack="0"/>
-<pin id="312" dir="1" index="1" bw="15" slack="0"/>
+<pin id="311" dir="0" index="0" bw="240" slack="0"/>
+<pin id="312" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1021,8 +1021,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="315" class="1004" name="layer4_out_3_fu_315">
 <pin_list>
-<pin id="316" dir="0" index="0" bw="360" slack="0"/>
-<pin id="317" dir="1" index="1" bw="15" slack="0"/>
+<pin id="316" dir="0" index="0" bw="240" slack="0"/>
+<pin id="317" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1032,8 +1032,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="320" class="1004" name="layer4_out_4_fu_320">
 <pin_list>
-<pin id="321" dir="0" index="0" bw="360" slack="0"/>
-<pin id="322" dir="1" index="1" bw="15" slack="0"/>
+<pin id="321" dir="0" index="0" bw="240" slack="0"/>
+<pin id="322" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1043,8 +1043,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="325" class="1004" name="layer4_out_5_fu_325">
 <pin_list>
-<pin id="326" dir="0" index="0" bw="360" slack="0"/>
-<pin id="327" dir="1" index="1" bw="15" slack="0"/>
+<pin id="326" dir="0" index="0" bw="240" slack="0"/>
+<pin id="327" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1054,8 +1054,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="330" class="1004" name="layer4_out_6_fu_330">
 <pin_list>
-<pin id="331" dir="0" index="0" bw="360" slack="0"/>
-<pin id="332" dir="1" index="1" bw="15" slack="0"/>
+<pin id="331" dir="0" index="0" bw="240" slack="0"/>
+<pin id="332" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1065,8 +1065,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="335" class="1004" name="layer4_out_7_fu_335">
 <pin_list>
-<pin id="336" dir="0" index="0" bw="360" slack="0"/>
-<pin id="337" dir="1" index="1" bw="15" slack="0"/>
+<pin id="336" dir="0" index="0" bw="240" slack="0"/>
+<pin id="337" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1076,8 +1076,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="340" class="1004" name="layer4_out_8_fu_340">
 <pin_list>
-<pin id="341" dir="0" index="0" bw="360" slack="0"/>
-<pin id="342" dir="1" index="1" bw="15" slack="0"/>
+<pin id="341" dir="0" index="0" bw="240" slack="0"/>
+<pin id="342" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1087,8 +1087,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="345" class="1004" name="layer4_out_9_fu_345">
 <pin_list>
-<pin id="346" dir="0" index="0" bw="360" slack="0"/>
-<pin id="347" dir="1" index="1" bw="15" slack="0"/>
+<pin id="346" dir="0" index="0" bw="240" slack="0"/>
+<pin id="347" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1098,8 +1098,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="350" class="1004" name="layer4_out_10_fu_350">
 <pin_list>
-<pin id="351" dir="0" index="0" bw="360" slack="0"/>
-<pin id="352" dir="1" index="1" bw="15" slack="0"/>
+<pin id="351" dir="0" index="0" bw="240" slack="0"/>
+<pin id="352" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1109,8 +1109,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="355" class="1004" name="layer4_out_11_fu_355">
 <pin_list>
-<pin id="356" dir="0" index="0" bw="360" slack="0"/>
-<pin id="357" dir="1" index="1" bw="15" slack="0"/>
+<pin id="356" dir="0" index="0" bw="240" slack="0"/>
+<pin id="357" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1120,8 +1120,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="360" class="1004" name="layer4_out_12_fu_360">
 <pin_list>
-<pin id="361" dir="0" index="0" bw="360" slack="0"/>
-<pin id="362" dir="1" index="1" bw="15" slack="0"/>
+<pin id="361" dir="0" index="0" bw="240" slack="0"/>
+<pin id="362" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1131,8 +1131,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="365" class="1004" name="layer4_out_13_fu_365">
 <pin_list>
-<pin id="366" dir="0" index="0" bw="360" slack="0"/>
-<pin id="367" dir="1" index="1" bw="15" slack="0"/>
+<pin id="366" dir="0" index="0" bw="240" slack="0"/>
+<pin id="367" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1142,8 +1142,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="370" class="1004" name="layer4_out_14_fu_370">
 <pin_list>
-<pin id="371" dir="0" index="0" bw="360" slack="0"/>
-<pin id="372" dir="1" index="1" bw="15" slack="0"/>
+<pin id="371" dir="0" index="0" bw="240" slack="0"/>
+<pin id="372" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1153,8 +1153,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="375" class="1004" name="layer4_out_15_fu_375">
 <pin_list>
-<pin id="376" dir="0" index="0" bw="360" slack="0"/>
-<pin id="377" dir="1" index="1" bw="15" slack="0"/>
+<pin id="376" dir="0" index="0" bw="240" slack="0"/>
+<pin id="377" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1164,8 +1164,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="380" class="1004" name="layer4_out_16_fu_380">
 <pin_list>
-<pin id="381" dir="0" index="0" bw="360" slack="0"/>
-<pin id="382" dir="1" index="1" bw="15" slack="0"/>
+<pin id="381" dir="0" index="0" bw="240" slack="0"/>
+<pin id="382" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1175,8 +1175,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="385" class="1004" name="layer4_out_17_fu_385">
 <pin_list>
-<pin id="386" dir="0" index="0" bw="360" slack="0"/>
-<pin id="387" dir="1" index="1" bw="15" slack="0"/>
+<pin id="386" dir="0" index="0" bw="240" slack="0"/>
+<pin id="387" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1186,8 +1186,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="390" class="1004" name="layer4_out_18_fu_390">
 <pin_list>
-<pin id="391" dir="0" index="0" bw="360" slack="0"/>
-<pin id="392" dir="1" index="1" bw="15" slack="0"/>
+<pin id="391" dir="0" index="0" bw="240" slack="0"/>
+<pin id="392" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1197,8 +1197,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="395" class="1004" name="layer4_out_19_fu_395">
 <pin_list>
-<pin id="396" dir="0" index="0" bw="360" slack="0"/>
-<pin id="397" dir="1" index="1" bw="15" slack="0"/>
+<pin id="396" dir="0" index="0" bw="240" slack="0"/>
+<pin id="397" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1208,8 +1208,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="400" class="1004" name="layer4_out_20_fu_400">
 <pin_list>
-<pin id="401" dir="0" index="0" bw="360" slack="0"/>
-<pin id="402" dir="1" index="1" bw="15" slack="0"/>
+<pin id="401" dir="0" index="0" bw="240" slack="0"/>
+<pin id="402" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1219,8 +1219,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="405" class="1004" name="layer4_out_21_fu_405">
 <pin_list>
-<pin id="406" dir="0" index="0" bw="360" slack="0"/>
-<pin id="407" dir="1" index="1" bw="15" slack="0"/>
+<pin id="406" dir="0" index="0" bw="240" slack="0"/>
+<pin id="407" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1230,8 +1230,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="410" class="1004" name="layer4_out_22_fu_410">
 <pin_list>
-<pin id="411" dir="0" index="0" bw="360" slack="0"/>
-<pin id="412" dir="1" index="1" bw="15" slack="0"/>
+<pin id="411" dir="0" index="0" bw="240" slack="0"/>
+<pin id="412" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1241,8 +1241,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="415" class="1004" name="layer4_out_23_fu_415">
 <pin_list>
-<pin id="416" dir="0" index="0" bw="360" slack="0"/>
-<pin id="417" dir="1" index="1" bw="15" slack="0"/>
+<pin id="416" dir="0" index="0" bw="240" slack="0"/>
+<pin id="417" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1252,8 +1252,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="420" class="1004" name="layer5_out_fu_420">
 <pin_list>
-<pin id="421" dir="0" index="0" bw="360" slack="0"/>
-<pin id="422" dir="1" index="1" bw="15" slack="0"/>
+<pin id="421" dir="0" index="0" bw="240" slack="0"/>
+<pin id="422" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1263,8 +1263,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="425" class="1004" name="layer5_out_1_fu_425">
 <pin_list>
-<pin id="426" dir="0" index="0" bw="360" slack="0"/>
-<pin id="427" dir="1" index="1" bw="15" slack="0"/>
+<pin id="426" dir="0" index="0" bw="240" slack="0"/>
+<pin id="427" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1274,8 +1274,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="430" class="1004" name="layer5_out_2_fu_430">
 <pin_list>
-<pin id="431" dir="0" index="0" bw="360" slack="0"/>
-<pin id="432" dir="1" index="1" bw="15" slack="0"/>
+<pin id="431" dir="0" index="0" bw="240" slack="0"/>
+<pin id="432" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1285,8 +1285,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="435" class="1004" name="layer5_out_3_fu_435">
 <pin_list>
-<pin id="436" dir="0" index="0" bw="360" slack="0"/>
-<pin id="437" dir="1" index="1" bw="15" slack="0"/>
+<pin id="436" dir="0" index="0" bw="240" slack="0"/>
+<pin id="437" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1296,8 +1296,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="440" class="1004" name="layer5_out_4_fu_440">
 <pin_list>
-<pin id="441" dir="0" index="0" bw="360" slack="0"/>
-<pin id="442" dir="1" index="1" bw="15" slack="0"/>
+<pin id="441" dir="0" index="0" bw="240" slack="0"/>
+<pin id="442" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1307,8 +1307,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="445" class="1004" name="layer5_out_5_fu_445">
 <pin_list>
-<pin id="446" dir="0" index="0" bw="360" slack="0"/>
-<pin id="447" dir="1" index="1" bw="15" slack="0"/>
+<pin id="446" dir="0" index="0" bw="240" slack="0"/>
+<pin id="447" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1318,8 +1318,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="450" class="1004" name="layer5_out_6_fu_450">
 <pin_list>
-<pin id="451" dir="0" index="0" bw="360" slack="0"/>
-<pin id="452" dir="1" index="1" bw="15" slack="0"/>
+<pin id="451" dir="0" index="0" bw="240" slack="0"/>
+<pin id="452" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1329,8 +1329,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="455" class="1004" name="layer5_out_7_fu_455">
 <pin_list>
-<pin id="456" dir="0" index="0" bw="360" slack="0"/>
-<pin id="457" dir="1" index="1" bw="15" slack="0"/>
+<pin id="456" dir="0" index="0" bw="240" slack="0"/>
+<pin id="457" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1340,8 +1340,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="460" class="1004" name="layer5_out_8_fu_460">
 <pin_list>
-<pin id="461" dir="0" index="0" bw="360" slack="0"/>
-<pin id="462" dir="1" index="1" bw="15" slack="0"/>
+<pin id="461" dir="0" index="0" bw="240" slack="0"/>
+<pin id="462" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1351,8 +1351,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="465" class="1004" name="layer5_out_9_fu_465">
 <pin_list>
-<pin id="466" dir="0" index="0" bw="360" slack="0"/>
-<pin id="467" dir="1" index="1" bw="15" slack="0"/>
+<pin id="466" dir="0" index="0" bw="240" slack="0"/>
+<pin id="467" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1362,8 +1362,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="470" class="1004" name="layer5_out_10_fu_470">
 <pin_list>
-<pin id="471" dir="0" index="0" bw="360" slack="0"/>
-<pin id="472" dir="1" index="1" bw="15" slack="0"/>
+<pin id="471" dir="0" index="0" bw="240" slack="0"/>
+<pin id="472" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1373,8 +1373,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="475" class="1004" name="layer5_out_11_fu_475">
 <pin_list>
-<pin id="476" dir="0" index="0" bw="360" slack="0"/>
-<pin id="477" dir="1" index="1" bw="15" slack="0"/>
+<pin id="476" dir="0" index="0" bw="240" slack="0"/>
+<pin id="477" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1384,8 +1384,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="480" class="1004" name="layer5_out_12_fu_480">
 <pin_list>
-<pin id="481" dir="0" index="0" bw="360" slack="0"/>
-<pin id="482" dir="1" index="1" bw="15" slack="0"/>
+<pin id="481" dir="0" index="0" bw="240" slack="0"/>
+<pin id="482" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1395,8 +1395,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="485" class="1004" name="layer5_out_13_fu_485">
 <pin_list>
-<pin id="486" dir="0" index="0" bw="360" slack="0"/>
-<pin id="487" dir="1" index="1" bw="15" slack="0"/>
+<pin id="486" dir="0" index="0" bw="240" slack="0"/>
+<pin id="487" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1406,8 +1406,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="490" class="1004" name="layer5_out_14_fu_490">
 <pin_list>
-<pin id="491" dir="0" index="0" bw="360" slack="0"/>
-<pin id="492" dir="1" index="1" bw="15" slack="0"/>
+<pin id="491" dir="0" index="0" bw="240" slack="0"/>
+<pin id="492" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1417,8 +1417,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="495" class="1004" name="layer5_out_15_fu_495">
 <pin_list>
-<pin id="496" dir="0" index="0" bw="360" slack="0"/>
-<pin id="497" dir="1" index="1" bw="15" slack="0"/>
+<pin id="496" dir="0" index="0" bw="240" slack="0"/>
+<pin id="497" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1428,8 +1428,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="500" class="1004" name="layer5_out_16_fu_500">
 <pin_list>
-<pin id="501" dir="0" index="0" bw="360" slack="0"/>
-<pin id="502" dir="1" index="1" bw="15" slack="0"/>
+<pin id="501" dir="0" index="0" bw="240" slack="0"/>
+<pin id="502" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1439,8 +1439,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="505" class="1004" name="layer5_out_17_fu_505">
 <pin_list>
-<pin id="506" dir="0" index="0" bw="360" slack="0"/>
-<pin id="507" dir="1" index="1" bw="15" slack="0"/>
+<pin id="506" dir="0" index="0" bw="240" slack="0"/>
+<pin id="507" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1450,8 +1450,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="510" class="1004" name="layer5_out_18_fu_510">
 <pin_list>
-<pin id="511" dir="0" index="0" bw="360" slack="0"/>
-<pin id="512" dir="1" index="1" bw="15" slack="0"/>
+<pin id="511" dir="0" index="0" bw="240" slack="0"/>
+<pin id="512" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1461,8 +1461,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="515" class="1004" name="layer5_out_19_fu_515">
 <pin_list>
-<pin id="516" dir="0" index="0" bw="360" slack="0"/>
-<pin id="517" dir="1" index="1" bw="15" slack="0"/>
+<pin id="516" dir="0" index="0" bw="240" slack="0"/>
+<pin id="517" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1472,8 +1472,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="520" class="1004" name="layer5_out_20_fu_520">
 <pin_list>
-<pin id="521" dir="0" index="0" bw="360" slack="0"/>
-<pin id="522" dir="1" index="1" bw="15" slack="0"/>
+<pin id="521" dir="0" index="0" bw="240" slack="0"/>
+<pin id="522" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1483,8 +1483,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="525" class="1004" name="layer5_out_21_fu_525">
 <pin_list>
-<pin id="526" dir="0" index="0" bw="360" slack="0"/>
-<pin id="527" dir="1" index="1" bw="15" slack="0"/>
+<pin id="526" dir="0" index="0" bw="240" slack="0"/>
+<pin id="527" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1494,8 +1494,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="530" class="1004" name="layer5_out_22_fu_530">
 <pin_list>
-<pin id="531" dir="0" index="0" bw="360" slack="0"/>
-<pin id="532" dir="1" index="1" bw="15" slack="0"/>
+<pin id="531" dir="0" index="0" bw="240" slack="0"/>
+<pin id="532" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1505,8 +1505,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="535" class="1004" name="layer5_out_23_fu_535">
 <pin_list>
-<pin id="536" dir="0" index="0" bw="360" slack="0"/>
-<pin id="537" dir="1" index="1" bw="15" slack="0"/>
+<pin id="536" dir="0" index="0" bw="240" slack="0"/>
+<pin id="537" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1516,8 +1516,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="540" class="1004" name="layer6_out_fu_540">
 <pin_list>
-<pin id="541" dir="0" index="0" bw="120" slack="0"/>
-<pin id="542" dir="1" index="1" bw="15" slack="1"/>
+<pin id="541" dir="0" index="0" bw="80" slack="0"/>
+<pin id="542" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1527,8 +1527,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="544" class="1004" name="layer6_out_1_fu_544">
 <pin_list>
-<pin id="545" dir="0" index="0" bw="120" slack="0"/>
-<pin id="546" dir="1" index="1" bw="15" slack="1"/>
+<pin id="545" dir="0" index="0" bw="80" slack="0"/>
+<pin id="546" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1538,8 +1538,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="548" class="1004" name="layer6_out_2_fu_548">
 <pin_list>
-<pin id="549" dir="0" index="0" bw="120" slack="0"/>
-<pin id="550" dir="1" index="1" bw="15" slack="1"/>
+<pin id="549" dir="0" index="0" bw="80" slack="0"/>
+<pin id="550" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1549,8 +1549,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="552" class="1004" name="layer6_out_3_fu_552">
 <pin_list>
-<pin id="553" dir="0" index="0" bw="120" slack="0"/>
-<pin id="554" dir="1" index="1" bw="15" slack="1"/>
+<pin id="553" dir="0" index="0" bw="80" slack="0"/>
+<pin id="554" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1560,8 +1560,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="556" class="1004" name="layer6_out_4_fu_556">
 <pin_list>
-<pin id="557" dir="0" index="0" bw="120" slack="0"/>
-<pin id="558" dir="1" index="1" bw="15" slack="1"/>
+<pin id="557" dir="0" index="0" bw="80" slack="0"/>
+<pin id="558" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1571,8 +1571,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="560" class="1004" name="layer6_out_5_fu_560">
 <pin_list>
-<pin id="561" dir="0" index="0" bw="120" slack="0"/>
-<pin id="562" dir="1" index="1" bw="15" slack="1"/>
+<pin id="561" dir="0" index="0" bw="80" slack="0"/>
+<pin id="562" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1582,8 +1582,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="564" class="1004" name="layer6_out_6_fu_564">
 <pin_list>
-<pin id="565" dir="0" index="0" bw="120" slack="0"/>
-<pin id="566" dir="1" index="1" bw="15" slack="1"/>
+<pin id="565" dir="0" index="0" bw="80" slack="0"/>
+<pin id="566" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1593,8 +1593,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="568" class="1004" name="layer6_out_7_fu_568">
 <pin_list>
-<pin id="569" dir="0" index="0" bw="120" slack="0"/>
-<pin id="570" dir="1" index="1" bw="15" slack="1"/>
+<pin id="569" dir="0" index="0" bw="80" slack="0"/>
+<pin id="570" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1604,8 +1604,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="572" class="1004" name="layer8_out_fu_572">
 <pin_list>
-<pin id="573" dir="0" index="0" bw="120" slack="0"/>
-<pin id="574" dir="1" index="1" bw="15" slack="0"/>
+<pin id="573" dir="0" index="0" bw="80" slack="0"/>
+<pin id="574" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1615,8 +1615,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="577" class="1004" name="layer8_out_1_fu_577">
 <pin_list>
-<pin id="578" dir="0" index="0" bw="120" slack="0"/>
-<pin id="579" dir="1" index="1" bw="15" slack="0"/>
+<pin id="578" dir="0" index="0" bw="80" slack="0"/>
+<pin id="579" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1626,8 +1626,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="582" class="1004" name="layer8_out_2_fu_582">
 <pin_list>
-<pin id="583" dir="0" index="0" bw="120" slack="0"/>
-<pin id="584" dir="1" index="1" bw="15" slack="0"/>
+<pin id="583" dir="0" index="0" bw="80" slack="0"/>
+<pin id="584" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1637,8 +1637,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="587" class="1004" name="layer8_out_3_fu_587">
 <pin_list>
-<pin id="588" dir="0" index="0" bw="120" slack="0"/>
-<pin id="589" dir="1" index="1" bw="15" slack="0"/>
+<pin id="588" dir="0" index="0" bw="80" slack="0"/>
+<pin id="589" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1648,8 +1648,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="592" class="1004" name="layer8_out_4_fu_592">
 <pin_list>
-<pin id="593" dir="0" index="0" bw="120" slack="0"/>
-<pin id="594" dir="1" index="1" bw="15" slack="0"/>
+<pin id="593" dir="0" index="0" bw="80" slack="0"/>
+<pin id="594" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1659,8 +1659,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="597" class="1004" name="layer8_out_5_fu_597">
 <pin_list>
-<pin id="598" dir="0" index="0" bw="120" slack="0"/>
-<pin id="599" dir="1" index="1" bw="15" slack="0"/>
+<pin id="598" dir="0" index="0" bw="80" slack="0"/>
+<pin id="599" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1670,8 +1670,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="602" class="1004" name="layer8_out_6_fu_602">
 <pin_list>
-<pin id="603" dir="0" index="0" bw="120" slack="0"/>
-<pin id="604" dir="1" index="1" bw="15" slack="0"/>
+<pin id="603" dir="0" index="0" bw="80" slack="0"/>
+<pin id="604" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1681,8 +1681,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="607" class="1004" name="layer8_out_7_fu_607">
 <pin_list>
-<pin id="608" dir="0" index="0" bw="120" slack="0"/>
-<pin id="609" dir="1" index="1" bw="15" slack="0"/>
+<pin id="608" dir="0" index="0" bw="80" slack="0"/>
+<pin id="609" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1692,8 +1692,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="612" class="1004" name="layer9_out_fu_612">
 <pin_list>
-<pin id="613" dir="0" index="0" bw="120" slack="0"/>
-<pin id="614" dir="1" index="1" bw="15" slack="0"/>
+<pin id="613" dir="0" index="0" bw="80" slack="0"/>
+<pin id="614" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1703,8 +1703,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="617" class="1004" name="layer9_out_1_fu_617">
 <pin_list>
-<pin id="618" dir="0" index="0" bw="120" slack="0"/>
-<pin id="619" dir="1" index="1" bw="15" slack="0"/>
+<pin id="618" dir="0" index="0" bw="80" slack="0"/>
+<pin id="619" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1714,8 +1714,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="622" class="1004" name="layer9_out_2_fu_622">
 <pin_list>
-<pin id="623" dir="0" index="0" bw="120" slack="0"/>
-<pin id="624" dir="1" index="1" bw="15" slack="0"/>
+<pin id="623" dir="0" index="0" bw="80" slack="0"/>
+<pin id="624" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1725,8 +1725,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="627" class="1004" name="layer9_out_3_fu_627">
 <pin_list>
-<pin id="628" dir="0" index="0" bw="120" slack="0"/>
-<pin id="629" dir="1" index="1" bw="15" slack="0"/>
+<pin id="628" dir="0" index="0" bw="80" slack="0"/>
+<pin id="629" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1736,8 +1736,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="632" class="1004" name="layer9_out_4_fu_632">
 <pin_list>
-<pin id="633" dir="0" index="0" bw="120" slack="0"/>
-<pin id="634" dir="1" index="1" bw="15" slack="0"/>
+<pin id="633" dir="0" index="0" bw="80" slack="0"/>
+<pin id="634" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1747,8 +1747,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="637" class="1004" name="layer9_out_5_fu_637">
 <pin_list>
-<pin id="638" dir="0" index="0" bw="120" slack="0"/>
-<pin id="639" dir="1" index="1" bw="15" slack="0"/>
+<pin id="638" dir="0" index="0" bw="80" slack="0"/>
+<pin id="639" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1758,8 +1758,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="642" class="1004" name="layer9_out_6_fu_642">
 <pin_list>
-<pin id="643" dir="0" index="0" bw="120" slack="0"/>
-<pin id="644" dir="1" index="1" bw="15" slack="0"/>
+<pin id="643" dir="0" index="0" bw="80" slack="0"/>
+<pin id="644" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1769,8 +1769,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="647" class="1004" name="layer9_out_7_fu_647">
 <pin_list>
-<pin id="648" dir="0" index="0" bw="120" slack="0"/>
-<pin id="649" dir="1" index="1" bw="15" slack="0"/>
+<pin id="648" dir="0" index="0" bw="80" slack="0"/>
+<pin id="649" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1780,8 +1780,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="652" class="1005" name="layer6_out_reg_652">
 <pin_list>
-<pin id="653" dir="0" index="0" bw="15" slack="1"/>
-<pin id="654" dir="1" index="1" bw="15" slack="1"/>
+<pin id="653" dir="0" index="0" bw="10" slack="1"/>
+<pin id="654" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out "/>
@@ -1790,8 +1790,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="657" class="1005" name="layer6_out_1_reg_657">
 <pin_list>
-<pin id="658" dir="0" index="0" bw="15" slack="1"/>
-<pin id="659" dir="1" index="1" bw="15" slack="1"/>
+<pin id="658" dir="0" index="0" bw="10" slack="1"/>
+<pin id="659" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_1 "/>
@@ -1800,8 +1800,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="662" class="1005" name="layer6_out_2_reg_662">
 <pin_list>
-<pin id="663" dir="0" index="0" bw="15" slack="1"/>
-<pin id="664" dir="1" index="1" bw="15" slack="1"/>
+<pin id="663" dir="0" index="0" bw="10" slack="1"/>
+<pin id="664" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_2 "/>
@@ -1810,8 +1810,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="667" class="1005" name="layer6_out_3_reg_667">
 <pin_list>
-<pin id="668" dir="0" index="0" bw="15" slack="1"/>
-<pin id="669" dir="1" index="1" bw="15" slack="1"/>
+<pin id="668" dir="0" index="0" bw="10" slack="1"/>
+<pin id="669" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_3 "/>
@@ -1820,8 +1820,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="672" class="1005" name="layer6_out_4_reg_672">
 <pin_list>
-<pin id="673" dir="0" index="0" bw="15" slack="1"/>
-<pin id="674" dir="1" index="1" bw="15" slack="1"/>
+<pin id="673" dir="0" index="0" bw="10" slack="1"/>
+<pin id="674" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_4 "/>
@@ -1830,8 +1830,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="677" class="1005" name="layer6_out_5_reg_677">
 <pin_list>
-<pin id="678" dir="0" index="0" bw="15" slack="1"/>
-<pin id="679" dir="1" index="1" bw="15" slack="1"/>
+<pin id="678" dir="0" index="0" bw="10" slack="1"/>
+<pin id="679" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_5 "/>
@@ -1840,8 +1840,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="682" class="1005" name="layer6_out_6_reg_682">
 <pin_list>
-<pin id="683" dir="0" index="0" bw="15" slack="1"/>
-<pin id="684" dir="1" index="1" bw="15" slack="1"/>
+<pin id="683" dir="0" index="0" bw="10" slack="1"/>
+<pin id="684" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_6 "/>
@@ -1850,8 +1850,8 @@ ret_ln67           (ret          ) [ 000]
 
 <comp id="687" class="1005" name="layer6_out_7_reg_687">
 <pin_list>
-<pin id="688" dir="0" index="0" bw="15" slack="1"/>
-<pin id="689" dir="1" index="1" bw="15" slack="1"/>
+<pin id="688" dir="0" index="0" bw="10" slack="1"/>
+<pin id="689" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opset="layer6_out_7 "/>
@@ -2412,13 +2412,13 @@ ret_ln67           (ret          ) [ 000]
 |----------|-----------------------------------------------------------------------------------|---------|---------|---------|
 | Operation|                                  Functional Unit                                  |   DSP   |    FF   |   LUT   |
 |----------|-----------------------------------------------------------------------------------|---------|---------|---------|
-|          |  call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53  |   479   |    0    |  25470  |
-|          |    call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59    |    20   |    0    |   839   |
-|          |    call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87    |    0    |    0    |   864   |
-|   call   |  call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115 |    87   |    0    |   3739  |
-|          |    call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143   |    8    |    0    |   272   |
-|          |    call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155    |    0    |    0    |   288   |
-|          | call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167 |    5    |    0    |   207   |
+|          |  call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53  |    0    |    0    |  62519  |
+|          |    call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59    |    23   |    0    |   756   |
+|          |    call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87    |    0    |    0    |   624   |
+|   call   |  call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115 |    0    |    0    |  10081  |
+|          |    call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143   |    8    |    0    |   251   |
+|          |    call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155    |    0    |    0    |   208   |
+|          | call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167 |    0    |    0    |   599   |
 |----------|-----------------------------------------------------------------------------------|---------|---------|---------|
 |   read   |                           y_timed_input_read_read_fu_40                           |    0    |    0    |    0    |
 |----------|-----------------------------------------------------------------------------------|---------|---------|---------|
@@ -2521,7 +2521,7 @@ ret_ln67           (ret          ) [ 000]
 |          |                                layer9_out_6_fu_642                                |    0    |    0    |    0    |
 |          |                                layer9_out_7_fu_647                                |    0    |    0    |    0    |
 |----------|-----------------------------------------------------------------------------------|---------|---------|---------|
-|   Total  |                                                                                   |   599   |    0    |  31679  |
+|   Total  |                                                                                   |    31   |    0    |  75038  |
 |----------|-----------------------------------------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -2531,16 +2531,16 @@ N/A
 +--------------------+--------+
 |                    |   FF   |
 +--------------------+--------+
-|layer6_out_1_reg_657|   15   |
-|layer6_out_2_reg_662|   15   |
-|layer6_out_3_reg_667|   15   |
-|layer6_out_4_reg_672|   15   |
-|layer6_out_5_reg_677|   15   |
-|layer6_out_6_reg_682|   15   |
-|layer6_out_7_reg_687|   15   |
-| layer6_out_reg_652 |   15   |
+|layer6_out_1_reg_657|   10   |
+|layer6_out_2_reg_662|   10   |
+|layer6_out_3_reg_667|   10   |
+|layer6_out_4_reg_672|   10   |
+|layer6_out_5_reg_677|   10   |
+|layer6_out_6_reg_682|   10   |
+|layer6_out_7_reg_687|   10   |
+| layer6_out_reg_652 |   10   |
 +--------------------+--------+
-|        Total       |   120  |
+|        Total       |   80   |
 +--------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -2556,10 +2556,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |   DSP  |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |   599  |    0   |  31679 |
+|  Function |   31   |    0   |  75038 |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |
-|  Register |    -   |   120  |    -   |
+|  Register |    -   |   80   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |   599  |   120  |  31679 |
+|   Total   |   31   |   80   |  75038 |
 +-----------+--------+--------+--------+

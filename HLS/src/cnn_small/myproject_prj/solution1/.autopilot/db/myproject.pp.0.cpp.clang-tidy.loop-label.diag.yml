@@ -70,7 +70,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2413007
+        Offset:          2411946
         Length:          0
         ReplacementText: 'VITIS_LOOP_265_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -79,7 +79,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2413394
+        Offset:          2412333
         Length:          0
         ReplacementText: 'VITIS_LOOP_275_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -88,7 +88,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2413729
+        Offset:          2412668
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -97,7 +97,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2413952
+        Offset:          2412891
         Length:          0
         ReplacementText: 'VITIS_LOOP_293_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -106,7 +106,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414047
+        Offset:          2412986
         Length:          0
         ReplacementText: 'VITIS_LOOP_295_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -115,7 +115,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414411
+        Offset:          2413350
         Length:          0
         ReplacementText: 'VITIS_LOOP_307_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -124,7 +124,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414493
+        Offset:          2413432
         Length:          0
         ReplacementText: 'VITIS_LOOP_309_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -133,7 +133,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2414836
+        Offset:          2413775
         Length:          0
         ReplacementText: 'VITIS_LOOP_324_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -142,7 +142,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2415289
+        Offset:          2414228
         Length:          0
         ReplacementText: 'VITIS_LOOP_344_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -151,7 +151,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2415334
+        Offset:          2414273
         Length:          0
         ReplacementText: 'VITIS_LOOP_345_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -160,7 +160,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2415743
+        Offset:          2414682
         Length:          0
         ReplacementText: 'VITIS_LOOP_360_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -169,7 +169,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_helpers.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2415956
+        Offset:          2414895
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -178,7 +178,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2419150
+        Offset:          2418089
         Length:          0
         ReplacementText: 'VITIS_LOOP_31_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -187,7 +187,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2419403
+        Offset:          2418342
         Length:          0
         ReplacementText: 'VITIS_LOOP_43_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -196,7 +196,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2419764
+        Offset:          2418703
         Length:          0
         ReplacementText: 'VITIS_LOOP_57_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -205,7 +205,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2420580
+        Offset:          2419519
         Length:          0
         ReplacementText: 'VITIS_LOOP_84_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -214,7 +214,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2421241
+        Offset:          2420180
         Length:          0
         ReplacementText: 'VITIS_LOOP_114_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -223,7 +223,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2422375
+        Offset:          2421314
         Length:          0
         ReplacementText: 'VITIS_LOOP_151_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -232,7 +232,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2422737
+        Offset:          2421676
         Length:          0
         ReplacementText: 'VITIS_LOOP_162_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -241,7 +241,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2423640
+        Offset:          2422579
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -250,7 +250,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424159
+        Offset:          2423098
         Length:          0
         ReplacementText: 'VITIS_LOOP_209_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -259,7 +259,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2424999
+        Offset:          2423938
         Length:          0
         ReplacementText: 'VITIS_LOOP_243_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -268,7 +268,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2425269
+        Offset:          2424208
         Length:          0
         ReplacementText: 'VITIS_LOOP_252_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -277,7 +277,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2425793
+        Offset:          2424732
         Length:          0
         ReplacementText: 'VITIS_LOOP_266_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -286,7 +286,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2426027
+        Offset:          2424966
         Length:          0
         ReplacementText: 'VITIS_LOOP_273_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -295,7 +295,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2426387
+        Offset:          2425326
         Length:          0
         ReplacementText: 'VITIS_LOOP_286_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -304,7 +304,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2427316
+        Offset:          2426255
         Length:          0
         ReplacementText: 'VITIS_LOOP_323_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -313,7 +313,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2427433
+        Offset:          2426372
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -322,7 +322,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2427487
+        Offset:          2426426
         Length:          0
         ReplacementText: 'VITIS_LOOP_329_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -331,7 +331,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2428068
+        Offset:          2427007
         Length:          0
         ReplacementText: 'VITIS_LOOP_346_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -340,7 +340,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2428555
+        Offset:          2427494
         Length:          0
         ReplacementText: 'VITIS_LOOP_359_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -349,7 +349,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2428696
+        Offset:          2427635
         Length:          0
         ReplacementText: 'VITIS_LOOP_367_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -358,7 +358,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2429661
+        Offset:          2428600
         Length:          0
         ReplacementText: 'VITIS_LOOP_402_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -367,7 +367,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2430298
+        Offset:          2429237
         Length:          0
         ReplacementText: 'VITIS_LOOP_432_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -376,7 +376,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2430811
+        Offset:          2429750
         Length:          0
         ReplacementText: 'VITIS_LOOP_451_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -385,7 +385,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2431269
+        Offset:          2430208
         Length:          0
         ReplacementText: 'VITIS_LOOP_467_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -394,7 +394,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2431723
+        Offset:          2430662
         Length:          0
         ReplacementText: 'VITIS_LOOP_485_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -403,7 +403,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2432110
+        Offset:          2431049
         Length:          0
         ReplacementText: 'VITIS_LOOP_502_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -412,7 +412,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2432505
+        Offset:          2431444
         Length:          0
         ReplacementText: 'VITIS_LOOP_519_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -421,7 +421,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2433171
+        Offset:          2432110
         Length:          0
         ReplacementText: 'VITIS_LOOP_549_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -430,7 +430,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2433745
+        Offset:          2432684
         Length:          0
         ReplacementText: 'VITIS_LOOP_568_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -439,7 +439,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2434411
+        Offset:          2433350
         Length:          0
         ReplacementText: 'VITIS_LOOP_598_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -448,7 +448,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2434965
+        Offset:          2433904
         Length:          0
         ReplacementText: 'VITIS_LOOP_617_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -457,7 +457,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2435597
+        Offset:          2434536
         Length:          0
         ReplacementText: 'VITIS_LOOP_647_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -466,7 +466,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2436423
+        Offset:          2435362
         Length:          0
         ReplacementText: 'VITIS_LOOP_674_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -475,7 +475,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2437041
+        Offset:          2435980
         Length:          0
         ReplacementText: 'VITIS_LOOP_703_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -484,7 +484,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2437652
+        Offset:          2436591
         Length:          0
         ReplacementText: 'VITIS_LOOP_724_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -493,7 +493,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2438041
+        Offset:          2436980
         Length:          0
         ReplacementText: 'VITIS_LOOP_742_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -502,7 +502,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2438437
+        Offset:          2437376
         Length:          0
         ReplacementText: 'VITIS_LOOP_762_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -511,7 +511,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2440513
+        Offset:          2439452
         Length:          0
         ReplacementText: 'VITIS_LOOP_73_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -520,7 +520,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2440653
+        Offset:          2439592
         Length:          0
         ReplacementText: 'VITIS_LOOP_80_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -529,7 +529,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2440918
+        Offset:          2439857
         Length:          0
         ReplacementText: 'VITIS_LOOP_89_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -538,7 +538,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2441112
+        Offset:          2440051
         Length:          0
         ReplacementText: 'VITIS_LOOP_98_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -547,7 +547,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2441205
+        Offset:          2440144
         Length:          0
         ReplacementText: 'VITIS_LOOP_102_5: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -556,7 +556,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2441531
+        Offset:          2440470
         Length:          0
         ReplacementText: 'VITIS_LOOP_113_6: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -565,7 +565,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2441641
+        Offset:          2440580
         Length:          0
         ReplacementText: 'VITIS_LOOP_117_7: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -574,7 +574,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2442607
+        Offset:          2441546
         Length:          0
         ReplacementText: 'VITIS_LOOP_141_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -583,7 +583,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2442693
+        Offset:          2441632
         Length:          0
         ReplacementText: 'VITIS_LOOP_145_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -592,7 +592,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2443369
+        Offset:          2442308
         Length:          0
         ReplacementText: 'VITIS_LOOP_164_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -601,7 +601,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2444301
+        Offset:          2443240
         Length:          0
         ReplacementText: 'VITIS_LOOP_187_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -610,7 +610,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2444439
+        Offset:          2443378
         Length:          0
         ReplacementText: 'VITIS_LOOP_190_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -619,7 +619,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2444589
+        Offset:          2443528
         Length:          0
         ReplacementText: 'VITIS_LOOP_195_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -628,7 +628,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2444713
+        Offset:          2443652
         Length:          0
         ReplacementText: 'VITIS_LOOP_199_4: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -637,7 +637,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2450632
+        Offset:          2449571
         Length:          0
         ReplacementText: 'VITIS_LOOP_213_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -646,7 +646,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2450916
+        Offset:          2449855
         Length:          0
         ReplacementText: 'VITIS_LOOP_222_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -655,7 +655,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2454129
+        Offset:          2453068
         Length:          0
         ReplacementText: 'VITIS_LOOP_328_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -664,7 +664,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2454271
+        Offset:          2453210
         Length:          0
         ReplacementText: 'VITIS_LOOP_333_2: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -673,7 +673,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_activation_stream.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2454475
+        Offset:          2453414
         Length:          0
         ReplacementText: 'VITIS_LOOP_341_3: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -682,7 +682,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_batchnorm.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2482592
+        Offset:          2481531
         Length:          0
         ReplacementText: 'VITIS_LOOP_88_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -691,7 +691,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_batchnorm.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2483249
+        Offset:          2482188
         Length:          0
         ReplacementText: 'VITIS_LOOP_108_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -700,7 +700,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_dense_compressed.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2487666
+        Offset:          2486605
         Length:          0
         ReplacementText: 'VITIS_LOOP_14_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -709,7 +709,7 @@ Diagnostics:
     FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/firmware/nnet_utils/nnet_dense_compressed.h
     Replacements:    
       - FilePath:        /home/alexyue/ML_FPGAonPixel/HLS/src/cnn_small/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
-        Offset:          2489537
+        Offset:          2488476
         Length:          0
         ReplacementText: 'VITIS_LOOP_74_1: '
 ...

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Tue Aug 13 11:37:29 2024
+<item name = "Date">Wed Aug 14 12:00:58 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">25.00 ns, 14.530 ns, 3.12 ns</column>
+<column name="ap_clk">25.00 ns, 14.667 ns, 3.12 ns</column>
 </table>
 </item>
 </section>
@@ -31,13 +31,13 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53">dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59">normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87">relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115">dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143">normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155">relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167">dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -56,27 +56,27 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 4, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 599, 0, 32106, -</column>
+<column name="Instance">-, 31, 0, 75271, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 36, -</column>
-<column name="Register">-, -, 918, -, -</column>
+<column name="Register">-, -, 613, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">0, 19, ~0, 7, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 1, ~0, 17, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
-<specialColumn name="Utilization (%)">0, 4, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, 4, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s, 0, 5, 0, 210, 0</column>
-<column name="call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s, 0, 479, 0, 25842, 0</column>
-<column name="call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115">dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s, 0, 87, 0, 3785, 0</column>
-<column name="call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s, 0, 20, 0, 845, 0</column>
-<column name="call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143">normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s, 0, 8, 0, 272, 0</column>
-<column name="call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s, 0, 0, 0, 864, 0</column>
-<column name="call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155">relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s, 0, 0, 0, 288, 0</column>
+<column name="call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167">dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s, 0, 0, 0, 600, 0</column>
+<column name="call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53">dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s, 0, 0, 0, 62735, 0</column>
+<column name="call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115">dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s, 0, 0, 0, 10097, 0</column>
+<column name="call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59">normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s, 0, 23, 0, 756, 0</column>
+<column name="call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143">normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s, 0, 8, 0, 251, 0</column>
+<column name="call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87">relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s, 0, 0, 0, 624, 0</column>
+<column name="call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155">relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s, 0, 0, 0, 208, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -102,23 +102,23 @@
 <column name="y_timed_input_ap_vld_in_sig">9, 2, 1, 2</column>
 <column name="y_timed_input_ap_vld_preg">9, 2, 1, 2</column>
 <column name="y_timed_input_blk_n">9, 2, 1, 2</column>
-<column name="y_timed_input_in_sig">9, 2, 795, 1590</column>
+<column name="y_timed_input_in_sig">9, 2, 530, 1060</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="layer6_out_1_reg_657">15, 0, 15, 0</column>
-<column name="layer6_out_2_reg_662">15, 0, 15, 0</column>
-<column name="layer6_out_3_reg_667">15, 0, 15, 0</column>
-<column name="layer6_out_4_reg_672">15, 0, 15, 0</column>
-<column name="layer6_out_5_reg_677">15, 0, 15, 0</column>
-<column name="layer6_out_6_reg_682">15, 0, 15, 0</column>
-<column name="layer6_out_7_reg_687">15, 0, 15, 0</column>
-<column name="layer6_out_reg_652">15, 0, 15, 0</column>
+<column name="layer6_out_1_reg_657">10, 0, 10, 0</column>
+<column name="layer6_out_2_reg_662">10, 0, 10, 0</column>
+<column name="layer6_out_3_reg_667">10, 0, 10, 0</column>
+<column name="layer6_out_4_reg_672">10, 0, 10, 0</column>
+<column name="layer6_out_5_reg_677">10, 0, 10, 0</column>
+<column name="layer6_out_6_reg_682">10, 0, 10, 0</column>
+<column name="layer6_out_7_reg_687">10, 0, 10, 0</column>
+<column name="layer6_out_reg_652">10, 0, 10, 0</column>
 <column name="y_timed_input_ap_vld_preg">1, 0, 1, 0</column>
-<column name="y_timed_input_preg">795, 0, 795, 0</column>
+<column name="y_timed_input_preg">530, 0, 530, 0</column>
 </table>
 </item>
 </section>
@@ -135,8 +135,8 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, myproject, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, myproject, return value</column>
 <column name="y_timed_input_ap_vld">in, 1, ap_vld, y_timed_input, pointer</column>
-<column name="y_timed_input">in, 795, ap_vld, y_timed_input, pointer</column>
-<column name="layer10_out">out, 15, ap_vld, layer10_out, pointer</column>
+<column name="y_timed_input">in, 530, ap_vld, y_timed_input, pointer</column>
+<column name="layer10_out">out, 10, ap_vld, layer10_out, pointer</column>
 <column name="layer10_out_ap_vld">out, 1, ap_vld, layer10_out, pointer</column>
 </table>
 </item>

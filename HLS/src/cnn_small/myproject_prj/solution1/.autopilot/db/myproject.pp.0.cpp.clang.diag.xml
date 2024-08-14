@@ -3037,7 +3037,7 @@
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=axis port=y_timed_input,layer12_out_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=axis port=y_timed_input,layer10_out_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -3065,7 +3065,7 @@
       <key>filename</key>
       <string>firmware/myproject.cpp</string>
       <key>line</key>
-      <integer>46</integer>
+      <integer>40</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3081,39 +3081,7 @@
       <key>filename</key>
       <string>firmware/myproject.cpp</string>
       <key>line</key>
-      <integer>50</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer13_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>54</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer3_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>58</integer>
+      <integer>44</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3129,7 +3097,7 @@
       <key>filename</key>
       <string>firmware/myproject.cpp</string>
       <key>line</key>
-      <integer>62</integer>
+      <integer>48</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3145,7 +3113,7 @@
       <key>filename</key>
       <string>firmware/myproject.cpp</string>
       <key>line</key>
-      <integer>66</integer>
+      <integer>52</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3161,39 +3129,7 @@
       <key>filename</key>
       <string>firmware/myproject.cpp</string>
       <key>line</key>
-      <integer>70</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer14_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>74</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer7_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>78</integer>
+      <integer>56</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -3209,59 +3145,11 @@
       <key>filename</key>
       <string>firmware/myproject.cpp</string>
       <key>line</key>
-      <integer>82</integer>
+      <integer>60</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer9_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>86</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer10_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>90</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer15_out depth=1_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>5471</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>firmware/myproject.cpp</string>
-      <key>line</key>
-      <integer>94</integer>
-      <key>column</key>
-      <integer>9</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=myproject_XLX_SEP_ PragmaOptions=variable=layer11_out depth=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

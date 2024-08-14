@@ -21,13 +21,13 @@ using namespace std;
 #define AUTOTB_TVIN_y_timed_input "../tv/cdatafile/c.myproject.autotvin_y_timed_input.dat"
 #define WRAPC_STREAM_SIZE_IN_y_timed_input "../tv/stream_size/stream_size_in_y_timed_input.dat"
 #define WRAPC_STREAM_INGRESS_STATUS_y_timed_input "../tv/stream_size/stream_ingress_status_y_timed_input.dat"
-#define AUTOTB_TVOUT_layer12_out "../tv/cdatafile/c.myproject.autotvout_layer12_out.dat"
-#define WRAPC_STREAM_SIZE_OUT_layer12_out "../tv/stream_size/stream_size_out_layer12_out.dat"
-#define WRAPC_STREAM_EGRESS_STATUS_layer12_out "../tv/stream_size/stream_egress_status_layer12_out.dat"
+#define AUTOTB_TVOUT_layer10_out "../tv/cdatafile/c.myproject.autotvout_layer10_out.dat"
+#define WRAPC_STREAM_SIZE_OUT_layer10_out "../tv/stream_size/stream_size_out_layer10_out.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_layer10_out "../tv/stream_size/stream_egress_status_layer10_out.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_layer12_out "../tv/rtldatafile/rtl.myproject.autotvout_layer12_out.dat"
+#define AUTOTB_TVOUT_PC_layer10_out "../tv/rtldatafile/rtl.myproject.autotvout_layer10_out.dat"
 
 
 namespace hls::sim
@@ -1139,10 +1139,10 @@ extern "C"
 void myproject_hw_stub_wrapper(void*, void*);
 
 extern "C"
-void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb_param_layer12_out)
+void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb_param_layer10_out)
 {
-  static hls::sim::Stream<hls::sim::Byte<210>> port0 {
-    .width = 1680,
+  static hls::sim::Stream<hls::sim::Byte<106>> port0 {
+    .width = 848,
     .name = "y_timed_input",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(WRAPC_STREAM_SIZE_IN_y_timed_input),
@@ -1152,21 +1152,21 @@ void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_y_timed_input),
 #endif
   };
-  port0.param = (hls::stream<hls::sim::Byte<210>>*)__xlx_apatb_param_y_timed_input;
+  port0.param = (hls::stream<hls::sim::Byte<106>>*)__xlx_apatb_param_y_timed_input;
   port0.hasWrite = false;
 
-  static hls::sim::Stream<hls::sim::Byte<6>> port1 {
-    .width = 48,
-    .name = "layer12_out",
+  static hls::sim::Stream<hls::sim::Byte<2>> port1 {
+    .width = 16,
+    .name = "layer10_out",
 #ifdef POST_CHECK
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer12_out),
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_layer10_out),
 #else
-    .writer = new hls::sim::Writer(AUTOTB_TVOUT_layer12_out),
-    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_layer12_out),
-    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_layer12_out),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_layer10_out),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_layer10_out),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_layer10_out),
 #endif
   };
-  port1.param = (hls::stream<hls::sim::Byte<6>>*)__xlx_apatb_param_layer12_out;
+  port1.param = (hls::stream<hls::sim::Byte<2>>*)__xlx_apatb_param_layer10_out;
   port1.hasWrite = true;
 
   try {
@@ -1181,7 +1181,7 @@ void apatb_myproject_hw(void* __xlx_apatb_param_y_timed_input, void* __xlx_apatb
     port0.buffer();
     port1.markSize();
     CodeState = CALL_C_DUT;
-    myproject_hw_stub_wrapper(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer12_out);
+    myproject_hw_stub_wrapper(__xlx_apatb_param_y_timed_input, __xlx_apatb_param_layer10_out);
     port1.buffer();
     dump(port0, tcl.AESL_transaction);
     port0.doTCL(tcl);

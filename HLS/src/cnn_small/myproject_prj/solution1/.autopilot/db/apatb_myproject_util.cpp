@@ -3,29 +3,29 @@
 
 using namespace std;
 
-struct __cosim_T_6__ {char data[6];};
-extern "C" void fpga_fifo_push_6(__cosim_T_6__* val, hls::stream<__cosim_T_6__>* fifo) {
+struct __cosim_T_2__ {char data[2];};
+extern "C" void fpga_fifo_push_2(__cosim_T_2__* val, hls::stream<__cosim_T_2__>* fifo) {
   fifo->write(*val);
 }
-extern "C" void fpga_fifo_pop_6(__cosim_T_6__* val, hls::stream<__cosim_T_6__>* fifo) {
+extern "C" void fpga_fifo_pop_2(__cosim_T_2__* val, hls::stream<__cosim_T_2__>* fifo) {
   *val = fifo->read();
 }
-extern "C" bool fpga_fifo_not_empty_6(hls::stream<__cosim_T_6__>* fifo) {
+extern "C" bool fpga_fifo_not_empty_2(hls::stream<__cosim_T_2__>* fifo) {
   return !fifo->empty();
 }
-extern "C" bool fpga_fifo_exist_6(hls::stream<__cosim_T_6__>* fifo) {
+extern "C" bool fpga_fifo_exist_2(hls::stream<__cosim_T_2__>* fifo) {
   return fifo->exist();
 }
-struct __cosim_T_210__ {char data[210];};
-extern "C" void fpga_fifo_push_210(__cosim_T_210__* val, hls::stream<__cosim_T_210__>* fifo) {
+struct __cosim_T_106__ {char data[106];};
+extern "C" void fpga_fifo_push_106(__cosim_T_106__* val, hls::stream<__cosim_T_106__>* fifo) {
   fifo->write(*val);
 }
-extern "C" void fpga_fifo_pop_210(__cosim_T_210__* val, hls::stream<__cosim_T_210__>* fifo) {
+extern "C" void fpga_fifo_pop_106(__cosim_T_106__* val, hls::stream<__cosim_T_106__>* fifo) {
   *val = fifo->read();
 }
-extern "C" bool fpga_fifo_not_empty_210(hls::stream<__cosim_T_210__>* fifo) {
+extern "C" bool fpga_fifo_not_empty_106(hls::stream<__cosim_T_106__>* fifo) {
   return !fifo->empty();
 }
-extern "C" bool fpga_fifo_exist_210(hls::stream<__cosim_T_210__>* fifo) {
+extern "C" bool fpga_fifo_exist_106(hls::stream<__cosim_T_106__>* fifo) {
   return fifo->exist();
 }

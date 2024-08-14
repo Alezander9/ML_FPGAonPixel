@@ -1,12 +1,12 @@
 # PATH OF MODEL TO SYNTHESIZE
 HYPERPARAMETERS = {
     "NUM_TIME_SLICES": 4,
-    "QUANTIZATION_BITS": [10, 15, 2],
+    "QUANTIZATION_BITS": [10, 10, 2],
     # weights&biases, activation, integer
     "OUTPUT": "SINGLE",
 }
-input_data_file_path = './4_slice_test_inputs.dat'
-output_data_file_path = './single_test_outputs.dat'
+input_data_file_path = './log_4_slice_test_inputs.dat'
+output_data_file_path = './log_single_test_outputs.dat'
 
 NUM_TIME_SLICES = HYPERPARAMETERS["NUM_TIME_SLICES"]
 WEIGHTS_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][0]
@@ -14,8 +14,8 @@ BIAS_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][0]
 ACTIVATION_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][1]
 INTEGER_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][2]
 
-# skl_model_path = f'../../software/ALEX/best_on_chip_classifier.h5'
-skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
+skl_model_path = f'../../software/ALEX/hls_testing.h5'
+# skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
 # skl_model_path = f'../../software/ALEX/40_24_8_log_scaling_encoder_best_performance_{WEIGHTS_BITS}_{ACTIVATION_BITS}_{INTEGER_BITS}.h5'
 
 # IMPORTS
@@ -158,7 +158,7 @@ def read_data_from_file(file_path):
         return data
 
 # TEST MODEL
-def test_model(data, model, hyperparams):
+def test_model(data, model, hls_model, hyperparams):
     OUTPUT = hyperparams["OUTPUT"]
     
     input_test_data_combined = data["input_test_data_combined"]
@@ -168,6 +168,11 @@ def test_model(data, model, hyperparams):
     # Test the model at threshold 0.5
     predictions = model.predict(input_test_data_combined)
     print(predictions[:10, :])
+    hls_predictions = hls_model.predict(input_test_data_combined)
+    print(hls_predictions[:10, :])
+    
+    predictions = hls_predictions
+
     predictions_prob = predictions[:,0]
     predictions_labels = (predictions_prob >= 0.5).astype(int).flatten()
 
@@ -291,7 +296,31 @@ data = {
     "target_test_data_coded": read_data_from_file(output_data_file_path)
 }
 
+print('###################### PROFILING MODEL ######################')
+print('###################### HLS MODEL INFO ######################')
+print(f"HLS Model Type: {type(hls_model)}")
+print(f"HLS Model Attributes and Methods: {dir(hls_model)}")
+
+# Try to access layers if available
+if hasattr(hls_model, 'layers'):
+    print("Layers in HLS model:")
+    for layer in hls_model.layers:
+        print(f"  {layer.name}: {type(layer)}")
+elif hasattr(hls_model, 'get_layers'):
+    print("Layers in HLS model:")
+    for layer in hls_model.get_layers():
+        print(f"  {layer.name}: {type(layer)}")
+else:
+    print("Unable to directly access layers of the HLS model")
+
+# Print the model configuration if available
+if hasattr(hls_model, 'get_config'):
+    print("HLS Model Configuration:")
+    print(hls_model.get_config())
+print(data["input_test_data_combined"].shape)
+# hls4ml.model.profiling.numerical(model=model, hls_model=hls_model, X=[data["input_test_data_combined"]])
+
 print('###################### DISPLAYING PERFORMANCE  ######################')
-test_results = test_model(data, model, HYPERPARAMETERS)
+test_results = test_model(data, model, hls_model, HYPERPARAMETERS)
 metrics = getTargetMetrics(test_results)
 displayPerformance(data, test_results, metrics, HYPERPARAMETERS)

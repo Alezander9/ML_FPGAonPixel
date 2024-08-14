@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Tue Aug 13 11:37:29 2024
+* Date:           Wed Aug 14 12:00:58 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+----------+-----------+------------+
     |  Clock |  Target  | Estimated | Uncertainty|
     +--------+----------+-----------+------------+
-    |ap_clk  |  25.00 ns|  14.530 ns|     3.12 ns|
+    |ap_clk  |  25.00 ns|  14.667 ns|     3.12 ns|
     +--------+----------+-----------+------------+
 
 + Latency: 
@@ -38,13 +38,13 @@
         |                                                                                   |                                                                  |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |                                      Instance                                     |                              Module                              |   min   |   max   |    min   |    max   | min | max |   Type  |
         +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53    |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59        |normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87        |relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115   |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143       |normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155        |relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
-        |call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167  |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53    |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59        |normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87        |relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115   |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s   |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143       |normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155        |relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s       |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167  |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
         +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -62,37 +62,37 @@
 |DSP                  |        -|      -|        -|        -|     -|
 |Expression           |        -|      -|        0|        4|     -|
 |FIFO                 |        -|      -|        -|        -|     -|
-|Instance             |        -|    599|        0|    32106|     -|
+|Instance             |        -|     31|        0|    75271|     -|
 |Memory               |        -|      -|        -|        -|     -|
 |Multiplexer          |        -|      -|        -|       36|     -|
-|Register             |        -|      -|      918|        -|     -|
+|Register             |        -|      -|      613|        -|     -|
 +---------------------+---------+-------+---------+---------+------+
-|Total                |        0|    599|      918|    32146|     0|
+|Total                |        0|     31|      613|    75311|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available SLR        |     1344|   3072|   864000|   432000|   320|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization SLR (%)  |        0|     19|       ~0|        7|     0|
+|Utilization SLR (%)  |        0|      1|       ~0|       17|     0|
 +---------------------+---------+-------+---------+---------+------+
 |Available            |     5376|  12288|  3456000|  1728000|  1280|
 +---------------------+---------+-------+---------+---------+------+
-|Utilization (%)      |        0|      4|       ~0|        1|     0|
+|Utilization (%)      |        0|     ~0|       ~0|        4|     0|
 +---------------------+---------+-------+---------+---------+------+
 
 + Detail: 
     * Instance: 
-    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+-----+---+-------+-----+
-    |                                      Instance                                     |                              Module                              | BRAM_18K| DSP | FF|  LUT  | URAM|
-    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+-----+---+-------+-----+
-    |call_ret6_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s_fu_167  |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config10_s  |        0|    5|  0|    210|    0|
-    |call_ret1_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s_fu_53    |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config2_s   |        0|  479|  0|  25842|    0|
-    |call_ret4_dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s_fu_115   |dense_latency_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config6_s   |        0|   87|  0|   3785|    0|
-    |call_ret2_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s_fu_59        |normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config4_s       |        0|   20|  0|    845|    0|
-    |call_ret5_normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s_fu_143       |normalize_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_config8_s       |        0|    8|  0|    272|    0|
-    |call_ret3_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s_fu_87        |relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config5_s       |        0|    0|  0|    864|    0|
-    |call_ret_relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s_fu_155        |relu_ap_fixed_15_2_5_3_0_ap_fixed_15_2_5_3_0_relu_config9_s       |        0|    0|  0|    288|    0|
-    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+-----+---+-------+-----+
-    |Total                                                                              |                                                                  |        0|  599|  0|  32106|    0|
-    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+-----+---+-------+-----+
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+---+-------+-----+
+    |                                      Instance                                     |                              Module                              | BRAM_18K| DSP| FF|  LUT  | URAM|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+---+-------+-----+
+    |call_ret6_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s_fu_167  |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config10_s  |        0|   0|  0|    600|    0|
+    |call_ret1_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s_fu_53    |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config2_s   |        0|   0|  0|  62735|    0|
+    |call_ret4_dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s_fu_115   |dense_latency_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config6_s   |        0|   0|  0|  10097|    0|
+    |call_ret2_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s_fu_59        |normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config4_s       |        0|  23|  0|    756|    0|
+    |call_ret5_normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s_fu_143       |normalize_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_config8_s       |        0|   8|  0|    251|    0|
+    |call_ret3_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s_fu_87        |relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config5_s       |        0|   0|  0|    624|    0|
+    |call_ret_relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s_fu_155        |relu_ap_fixed_10_2_5_3_0_ap_fixed_10_2_5_3_0_relu_config9_s       |        0|   0|  0|    208|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+---+-------+-----+
+    |Total                                                                              |                                                                  |        0|  31|  0|  75271|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------+---------+----+---+-------+-----+
 
     * DSP: 
     N/A
@@ -120,9 +120,9 @@
     |y_timed_input_ap_vld_in_sig  |   9|          2|    1|          2|
     |y_timed_input_ap_vld_preg    |   9|          2|    1|          2|
     |y_timed_input_blk_n          |   9|          2|    1|          2|
-    |y_timed_input_in_sig         |   9|          2|  795|       1590|
+    |y_timed_input_in_sig         |   9|          2|  530|       1060|
     +-----------------------------+----+-----------+-----+-----------+
-    |Total                        |  36|          8|  798|       1596|
+    |Total                        |  36|          8|  533|       1066|
     +-----------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -131,18 +131,18 @@
     +---------------------------+-----+----+-----+-----------+
     |ap_CS_fsm                  |    1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1    |    1|   0|    1|          0|
-    |layer6_out_1_reg_657       |   15|   0|   15|          0|
-    |layer6_out_2_reg_662       |   15|   0|   15|          0|
-    |layer6_out_3_reg_667       |   15|   0|   15|          0|
-    |layer6_out_4_reg_672       |   15|   0|   15|          0|
-    |layer6_out_5_reg_677       |   15|   0|   15|          0|
-    |layer6_out_6_reg_682       |   15|   0|   15|          0|
-    |layer6_out_7_reg_687       |   15|   0|   15|          0|
-    |layer6_out_reg_652         |   15|   0|   15|          0|
+    |layer6_out_1_reg_657       |   10|   0|   10|          0|
+    |layer6_out_2_reg_662       |   10|   0|   10|          0|
+    |layer6_out_3_reg_667       |   10|   0|   10|          0|
+    |layer6_out_4_reg_672       |   10|   0|   10|          0|
+    |layer6_out_5_reg_677       |   10|   0|   10|          0|
+    |layer6_out_6_reg_682       |   10|   0|   10|          0|
+    |layer6_out_7_reg_687       |   10|   0|   10|          0|
+    |layer6_out_reg_652         |   10|   0|   10|          0|
     |y_timed_input_ap_vld_preg  |    1|   0|    1|          0|
-    |y_timed_input_preg         |  795|   0|  795|          0|
+    |y_timed_input_preg         |  530|   0|  530|          0|
     +---------------------------+-----+----+-----+-----------+
-    |Total                      |  918|   0|  918|          0|
+    |Total                      |  613|   0|  613|          0|
     +---------------------------+-----+----+-----+-----------+
 
 
@@ -161,8 +161,8 @@
 |ap_idle               |  out|    1|  ap_ctrl_hs|      myproject|  return value|
 |ap_ready              |  out|    1|  ap_ctrl_hs|      myproject|  return value|
 |y_timed_input_ap_vld  |   in|    1|      ap_vld|  y_timed_input|       pointer|
-|y_timed_input         |   in|  795|      ap_vld|  y_timed_input|       pointer|
-|layer10_out           |  out|   15|      ap_vld|    layer10_out|       pointer|
+|y_timed_input         |   in|  530|      ap_vld|  y_timed_input|       pointer|
+|layer10_out           |  out|   10|      ap_vld|    layer10_out|       pointer|
 |layer10_out_ap_vld    |  out|    1|      ap_vld|    layer10_out|       pointer|
 +----------------------+-----+-----+------------+---------------+--------------+
 

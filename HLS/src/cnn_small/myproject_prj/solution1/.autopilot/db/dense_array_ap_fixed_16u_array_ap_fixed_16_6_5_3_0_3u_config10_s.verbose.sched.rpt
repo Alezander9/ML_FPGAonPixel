@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_s'
 ================================================================
-* Date:           Thu Jul 11 13:34:27 2024
+* Date:           Wed Aug 14 11:30:50 2024
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        myproject_prj
@@ -219,8 +219,8 @@ The critical path consists of the following:
  <State 3>: 4.248ns
 The critical path consists of the following:
 	fifo read operation ('layer9_out_read', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) on port 'layer9_out' (firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [34]  (1.428 ns)
-	multiplexor before 'phi' operation ('data') with incoming values : ('data', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [63]  (0.387 ns)
-	'phi' operation ('data') with incoming values : ('data', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [63]  (0.000 ns)
+	multiplexor before 'phi' operation ('data') with incoming values : ('data', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [53]  (0.387 ns)
+	'phi' operation ('data') with incoming values : ('data', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [53]  (0.000 ns)
 	'mux' operation ('a', firmware/nnet_utils/nnet_dense_stream.h:43->firmware/nnet_utils/nnet_dense_stream.h:93) [76]  (0.493 ns)
 	'mul' operation ('mul_ln133', firmware/nnet_utils/nnet_dense_resource.h:133->firmware/nnet_utils/nnet_dense_resource.h:242->firmware/nnet_utils/nnet_dense_stream.h:24->firmware/nnet_utils/nnet_dense_stream.h:97) [81]  (1.940 ns)
 

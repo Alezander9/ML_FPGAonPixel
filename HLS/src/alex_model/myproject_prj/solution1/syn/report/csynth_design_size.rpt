@@ -6,31 +6,31 @@
 +--------------------------------------+-------------------------+--------------+--------------------+----------------------+---------------+
 | Function                             | Location                | Compile/Link | Unroll/Inline      | Performance/Pipeline | Optimizations |
 +--------------------------------------+-------------------------+--------------+--------------------+----------------------+---------------+
-| + myproject                          | myproject.cpp:6         | 3,621        | 100,625 *          | 14,040               | 13,799        |
-|  + dense<ap_fixed<15, 2, AP_TRN...   | nnet_dense.h:36         |   721        |                    |                      |               |
-|   + dense_latency<ap_fixed<15, 2...  | nnet_dense_latency.h:13 |   719        |                    |                      |               |
+| + myproject                          | myproject.cpp:6         | 3,644        | 100,757 *          | 14,528               | 14,287        |
+|  + dense<ap_fixed<10, 2, AP_TRN...   | nnet_dense.h:36         |   724        |                    |                      |               |
+|   + dense_latency<ap_fixed<10, 2...  | nnet_dense_latency.h:13 |   722        |                    |                      |               |
 |      product                         | nnet_mult.h:70          |   155        |                    |                      |               |
-|      cast<ap_fixed<15, 2, AP_TRN,... | nnet_mult.h:110         |    56        |                    |                      |               |
-|  + normalize<ap_fixed<15, 2, AP...   | nnet_batchnorm.h:31     |   452        |     869            |    218               |    219        |
+|      cast<ap_fixed<10, 2, AP_TRN,... | nnet_mult.h:110         |    59        |                    |                      |               |
+|  + normalize<ap_fixed<10, 2, AP...   | nnet_batchnorm.h:31     |   459        |     941            |    290               |    291        |
 |     product                          | nnet_mult.h:70          |   155        |                    |                      |               |
-|    relu<ap_fixed<15, 2, AP_TRN,...   | nnet_activation.h:39    |   199        |     385            |    145               |    146        |
-|  + dense<ap_fixed<15, 2, AP_TRN...   | nnet_dense.h:36         |   721        |                    |                      |               |
-|   + dense_latency<ap_fixed<15, 2...  | nnet_dense_latency.h:13 |   719        |                    |                      |               |
+|    relu<ap_fixed<10, 2, AP_TRN,...   | nnet_activation.h:39    |   199        |     385            |    145               |    146        |
+|  + dense<ap_fixed<10, 2, AP_TRN...   | nnet_dense.h:36         |   724        |                    |                      |               |
+|   + dense_latency<ap_fixed<10, 2...  | nnet_dense_latency.h:13 |   722        |                    |                      |               |
 |      product                         | nnet_mult.h:70          |   155        |                    |                      |               |
-|      cast<ap_fixed<15, 2, AP_TRN,... | nnet_mult.h:110         |    56        |                    |                      |               |
-|  + normalize<ap_fixed<15, 2, AP...   | nnet_batchnorm.h:31     |   452        |     437            |    110               |    111        |
+|      cast<ap_fixed<10, 2, AP_TRN,... | nnet_mult.h:110         |    59        |                    |                      |               |
+|  + normalize<ap_fixed<10, 2, AP...   | nnet_batchnorm.h:31     |   459        |     473            |    146               |    147        |
 |     product                          | nnet_mult.h:70          |   155        |                    |                      |               |
-|    relu<ap_fixed<15, 2, AP_TRN,...   | nnet_activation.h:39    |   199        |     193            |     73               |     74        |
-|  + dense<ap_fixed<15, 2, AP_TRN...   | nnet_dense.h:36         |   721        |                    |                      |               |
-|   + dense_latency<ap_fixed<15, 2...  | nnet_dense_latency.h:13 |   719        |                    |                      |               |
+|    relu<ap_fixed<10, 2, AP_TRN,...   | nnet_activation.h:39    |   199        |     193            |     73               |     74        |
+|  + dense<ap_fixed<10, 2, AP_TRN...   | nnet_dense.h:36         |   724        |                    |                      |               |
+|   + dense_latency<ap_fixed<10, 2...  | nnet_dense_latency.h:13 |   722        |                    |                      |               |
 |      product                         | nnet_mult.h:70          |   155        |                    |                      |               |
-|      cast<ap_fixed<15, 2, AP_TRN,... | nnet_mult.h:110         |    56        |                    |                      |               |
-|  + dense_latency<ap_fixed<15, 2...   | nnet_dense_latency.h:13 |              |  79,482            | 10,464               | 10,465        |
-|     cast<ap_fixed<15, 2, AP_TRN,...  | nnet_mult.h:110         |              |     456 (24 calls) |                      |               |
-|  + dense_latency<ap_fixed<15, 2...   | nnet_dense_latency.h:13 |              |  18,318            |  2,439               |  2,440        |
-|     cast<ap_fixed<15, 2, AP_TRN,...  | nnet_mult.h:110         |              |     228 (12 calls) |                      |               |
-|  + dense_latency<ap_fixed<15, 2...   | nnet_dense_latency.h:13 |              |     868            |    116               |    117        |
-|     cast<ap_fixed<15, 2, AP_TRN,...  | nnet_mult.h:110         |              |      19            |                      |               |
+|      cast<ap_fixed<10, 2, AP_TRN,... | nnet_mult.h:110         |    59        |                    |                      |               |
+|  + dense_latency<ap_fixed<10, 2...   | nnet_dense_latency.h:13 |              |  79,498            | 10,785               | 10,786        |
+|     cast<ap_fixed<10, 2, AP_TRN,...  | nnet_mult.h:110         |              |     456 (24 calls) |                      |               |
+|  + dense_latency<ap_fixed<10, 2...   | nnet_dense_latency.h:13 |              |  18,326            |  2,498               |  2,499        |
+|     cast<ap_fixed<10, 2, AP_TRN,...  | nnet_mult.h:110         |              |     228 (12 calls) |                      |               |
+|  + dense_latency<ap_fixed<10, 2...   | nnet_dense_latency.h:13 |              |     868            |    116               |    117        |
+|     cast<ap_fixed<10, 2, AP_TRN,...  | nnet_mult.h:110         |              |      19            |                      |               |
 +--------------------------------------+-------------------------+--------------+--------------------+----------------------+---------------+
     * - Exceeded design size warning message threshold
 

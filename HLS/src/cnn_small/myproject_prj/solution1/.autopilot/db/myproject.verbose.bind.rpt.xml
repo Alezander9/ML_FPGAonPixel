@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Thu Jul 11 13:34:28 2024
+<item name = "Date">Wed Aug 14 11:42:37 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.344 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.212 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,27 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3362, 3363, 16.810 us, 16.815 us, 3360, 3360, dataflow</column>
+<column name="">1274, 1275, 6.370 us, 6.375 us, 1272, 1272, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_array_ap_fixed_105u_array_ap_fixed_16_6_5_3_0_32u_config2_s_fu_156">dense_array_ap_fixed_105u_array_ap_fixed_16_6_5_3_0_32u_config2_s, 3362, 3363, 16.810 us, 16.815 us, 3360, 3360, loop rewind stp(delay=0 clock cycles(s))</column>
-<column name="call_ln51_normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_s_fu_167">normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="call_ln55_linear_array_array_ap_fixed_16_6_5_3_0_32u_linear_config3_s_fu_173">linear_array_array_ap_fixed_16_6_5_3_0_32u_linear_config3_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="call_ln59_relu_array_ap_fixed_32u_array_ap_ufixed_15_0_4_0_0_32u_relu_config4_s_fu_179">relu_array_ap_fixed_32u_array_ap_ufixed_15_0_4_0_0_32u_relu_config4_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_normalize_array_ap_ufixed_32u_array_ap_fixed_16_6_5_3_0_32u_config5_s_fu_185">normalize_array_ap_ufixed_32u_array_ap_fixed_16_6_5_3_0_32u_config5_s, 30, 30, 0.150 us, 0.150 us, 30, 30, no</column>
-<column name="grp_dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_16u_config6_s_fu_191">dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_16u_config6_s, 514, 515, 2.570 us, 2.575 us, 512, 512, loop rewind stp(delay=0 clock cycles(s))</column>
-<column name="call_ln71_normalize_array_ap_fixed_16u_array_ap_fixed_15_5_5_3_0_16u_config14_s_fu_201">normalize_array_ap_fixed_16u_array_ap_fixed_15_5_5_3_0_16u_config14_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="call_ln75_linear_array_array_ap_fixed_16_6_5_3_0_16u_linear_config7_s_fu_207">linear_array_array_ap_fixed_16_6_5_3_0_16u_linear_config7_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="call_ln79_relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_s_fu_213">relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_normalize_array_ap_ufixed_16u_array_ap_fixed_16_6_5_3_0_16u_config9_s_fu_219">normalize_array_ap_ufixed_16u_array_ap_fixed_16_6_5_3_0_16u_config9_s, 15, 15, 75.000 ns, 75.000 ns, 15, 15, no</column>
-<column name="grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_s_fu_225">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_s, 49, 50, 0.245 us, 0.250 us, 48, 48, loop rewind stp(delay=0 clock cycles(s))</column>
-<column name="call_ln91_normalize_array_ap_fixed_3u_array_ap_fixed_15_5_5_3_0_3u_config15_s_fu_235">normalize_array_ap_fixed_3u_array_ap_fixed_15_5_5_3_0_3u_config15_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="call_ln95_linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_s_fu_241">linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_softmax_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_s_fu_247">softmax_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_s, 8, 8, 40.000 ns, 40.000 ns, 8, 8, no</column>
+<column name="grp_dense_array_ap_fixed_53u_array_ap_fixed_16_6_5_3_0_24u_config2_s_fu_94">dense_array_ap_fixed_53u_array_ap_fixed_16_6_5_3_0_24u_config2_s, 1274, 1275, 6.370 us, 6.375 us, 1272, 1272, loop rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_normalize_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_24u_config4_s_fu_105">normalize_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_24u_config4_s, 23, 23, 0.115 us, 0.115 us, 23, 23, no</column>
+<column name="call_ln49_relu_array_ap_fixed_24u_array_ap_ufixed_15_0_4_0_0_24u_relu_config5_s_fu_111">relu_array_ap_fixed_24u_array_ap_ufixed_15_0_4_0_0_24u_relu_config5_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_dense_array_ap_ufixed_24u_array_ap_fixed_16_6_5_3_0_12u_config6_s_fu_117">dense_array_ap_ufixed_24u_array_ap_fixed_16_6_5_3_0_12u_config6_s, 290, 291, 1.450 us, 1.455 us, 288, 288, loop rewind stp(delay=0 clock cycles(s))</column>
+<column name="grp_normalize_array_ap_fixed_12u_array_ap_fixed_16_6_5_3_0_12u_config8_s_fu_127">normalize_array_ap_fixed_12u_array_ap_fixed_16_6_5_3_0_12u_config8_s, 11, 11, 55.000 ns, 55.000 ns, 11, 11, no</column>
+<column name="call_ln61_relu_array_ap_fixed_12u_array_ap_ufixed_15_0_4_0_0_12u_relu_config9_s_fu_133">relu_array_ap_fixed_12u_array_ap_ufixed_15_0_4_0_0_12u_relu_config9_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_dense_array_ap_ufixed_12u_array_ap_fixed_16_6_5_3_0_1u_config10_s_fu_139">dense_array_ap_ufixed_12u_array_ap_fixed_16_6_5_3_0_1u_config10_s, 14, 15, 70.000 ns, 75.000 ns, 12, 12, loop rewind stp(delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

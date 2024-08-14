@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Thu Jul 11 13:34:30 2024
+<item name = "Date">Wed Aug 14 11:42:38 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.344 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.212 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,27 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3362, 3363, 16.810 us, 16.815 us, 3360, 3360, dataflow</column>
+<column name="">1274, 1275, 6.370 us, 6.375 us, 1272, 1272, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="dense_array_ap_fixed_105u_array_ap_fixed_16_6_5_3_0_32u_config2_U0">dense_array_ap_fixed_105u_array_ap_fixed_16_6_5_3_0_32u_config2_s, 3362, 3363, 16.810 us, 16.815 us, 3360, 3360, loop rewind stp(delay=0 clock cycles(s))</column>
-<column name="normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_U0">normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="linear_array_array_ap_fixed_16_6_5_3_0_32u_linear_config3_U0">linear_array_array_ap_fixed_16_6_5_3_0_32u_linear_config3_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="relu_array_ap_fixed_32u_array_ap_ufixed_15_0_4_0_0_32u_relu_config4_U0">relu_array_ap_fixed_32u_array_ap_ufixed_15_0_4_0_0_32u_relu_config4_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="normalize_array_ap_ufixed_32u_array_ap_fixed_16_6_5_3_0_32u_config5_U0">normalize_array_ap_ufixed_32u_array_ap_fixed_16_6_5_3_0_32u_config5_s, 30, 30, 0.150 us, 0.150 us, 30, 30, no</column>
-<column name="dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_16u_config6_U0">dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_16u_config6_s, 514, 515, 2.570 us, 2.575 us, 512, 512, loop rewind stp(delay=0 clock cycles(s))</column>
-<column name="normalize_array_ap_fixed_16u_array_ap_fixed_15_5_5_3_0_16u_config14_U0">normalize_array_ap_fixed_16u_array_ap_fixed_15_5_5_3_0_16u_config14_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="linear_array_array_ap_fixed_16_6_5_3_0_16u_linear_config7_U0">linear_array_array_ap_fixed_16_6_5_3_0_16u_linear_config7_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_U0">relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="normalize_array_ap_ufixed_16u_array_ap_fixed_16_6_5_3_0_16u_config9_U0">normalize_array_ap_ufixed_16u_array_ap_fixed_16_6_5_3_0_16u_config9_s, 15, 15, 75.000 ns, 75.000 ns, 15, 15, no</column>
-<column name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_U0">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_s, 49, 50, 0.245 us, 0.250 us, 48, 48, loop rewind stp(delay=0 clock cycles(s))</column>
-<column name="normalize_array_ap_fixed_3u_array_ap_fixed_15_5_5_3_0_3u_config15_U0">normalize_array_ap_fixed_3u_array_ap_fixed_15_5_5_3_0_3u_config15_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_U0">linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="softmax_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_U0">softmax_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_s, 8, 8, 40.000 ns, 40.000 ns, 8, 8, no</column>
+<column name="dense_array_ap_fixed_53u_array_ap_fixed_16_6_5_3_0_24u_config2_U0">dense_array_ap_fixed_53u_array_ap_fixed_16_6_5_3_0_24u_config2_s, 1274, 1275, 6.370 us, 6.375 us, 1272, 1272, loop rewind stp(delay=0 clock cycles(s))</column>
+<column name="normalize_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_24u_config4_U0">normalize_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_24u_config4_s, 23, 23, 0.115 us, 0.115 us, 23, 23, no</column>
+<column name="relu_array_ap_fixed_24u_array_ap_ufixed_15_0_4_0_0_24u_relu_config5_U0">relu_array_ap_fixed_24u_array_ap_ufixed_15_0_4_0_0_24u_relu_config5_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="dense_array_ap_ufixed_24u_array_ap_fixed_16_6_5_3_0_12u_config6_U0">dense_array_ap_ufixed_24u_array_ap_fixed_16_6_5_3_0_12u_config6_s, 290, 291, 1.450 us, 1.455 us, 288, 288, loop rewind stp(delay=0 clock cycles(s))</column>
+<column name="normalize_array_ap_fixed_12u_array_ap_fixed_16_6_5_3_0_12u_config8_U0">normalize_array_ap_fixed_12u_array_ap_fixed_16_6_5_3_0_12u_config8_s, 11, 11, 55.000 ns, 55.000 ns, 11, 11, no</column>
+<column name="relu_array_ap_fixed_12u_array_ap_ufixed_15_0_4_0_0_12u_relu_config9_U0">relu_array_ap_fixed_12u_array_ap_ufixed_15_0_4_0_0_12u_relu_config9_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="dense_array_ap_ufixed_12u_array_ap_fixed_16_6_5_3_0_1u_config10_U0">dense_array_ap_ufixed_12u_array_ap_fixed_16_6_5_3_0_1u_config10_s, 14, 15, 70.000 ns, 75.000 ns, 12, 12, loop rewind stp(delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -62,35 +55,28 @@
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
-<column name="FIFO">-, -, 8119, 4134, -</column>
-<column name="Instance">13, 6, 7440, 16616, -</column>
+<column name="FIFO">-, -, 4632, 2349, -</column>
+<column name="Instance">4, 5, 5199, 10037, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
-<specialColumn name="Utilization SLR (%)">~0, ~0, 1, 4, 0</specialColumn>
+<specialColumn name="Utilization SLR (%)">~0, ~0, 1, 2, 0</specialColumn>
 <specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
-<specialColumn name="Utilization (%)">~0, ~0, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="dense_array_ap_fixed_105u_array_ap_fixed_16_6_5_3_0_32u_config2_U0">dense_array_ap_fixed_105u_array_ap_fixed_16_6_5_3_0_32u_config2_s, 6, 1, 4451, 5459, 0</column>
-<column name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_U0">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_3u_config10_s, 0, 1, 365, 927, 0</column>
-<column name="dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_16u_config6_U0">dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_16u_config6_s, 1, 1, 1127, 2267, 0</column>
-<column name="linear_array_array_ap_fixed_16_6_5_3_0_16u_linear_config7_U0">linear_array_array_ap_fixed_16_6_5_3_0_16u_linear_config7_s, 0, 0, 3, 38, 0</column>
-<column name="linear_array_array_ap_fixed_16_6_5_3_0_32u_linear_config3_U0">linear_array_array_ap_fixed_16_6_5_3_0_32u_linear_config3_s, 0, 0, 3, 38, 0</column>
-<column name="linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_U0">linear_array_array_ap_fixed_16_6_5_3_0_3u_linear_config11_s, 0, 0, 3, 38, 0</column>
-<column name="normalize_array_ap_fixed_16u_array_ap_fixed_15_5_5_3_0_16u_config14_U0">normalize_array_ap_fixed_16u_array_ap_fixed_15_5_5_3_0_16u_config14_s, 0, 0, 3, 518, 0</column>
-<column name="normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_U0">normalize_array_ap_fixed_32u_array_ap_fixed_15_5_5_3_0_32u_config13_s, 0, 0, 3, 1030, 0</column>
-<column name="normalize_array_ap_fixed_3u_array_ap_fixed_15_5_5_3_0_3u_config15_U0">normalize_array_ap_fixed_3u_array_ap_fixed_15_5_5_3_0_3u_config15_s, 0, 0, 3, 128, 0</column>
-<column name="normalize_array_ap_ufixed_16u_array_ap_fixed_16_6_5_3_0_16u_config9_U0">normalize_array_ap_ufixed_16u_array_ap_fixed_16_6_5_3_0_16u_config9_s, 0, 1, 433, 838, 0</column>
-<column name="normalize_array_ap_ufixed_32u_array_ap_fixed_16_6_5_3_0_32u_config5_U0">normalize_array_ap_ufixed_32u_array_ap_fixed_16_6_5_3_0_32u_config5_s, 0, 1, 871, 1611, 0</column>
-<column name="relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_U0">relu_array_ap_fixed_16u_array_ap_ufixed_15_0_4_0_0_16u_relu_config8_s, 0, 0, 3, 1094, 0</column>
-<column name="relu_array_ap_fixed_32u_array_ap_ufixed_15_0_4_0_0_32u_relu_config4_U0">relu_array_ap_fixed_32u_array_ap_ufixed_15_0_4_0_0_32u_relu_config4_s, 0, 0, 3, 2150, 0</column>
-<column name="softmax_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_U0">softmax_array_array_ap_fixed_16_6_5_3_0_3u_softmax_config12_s, 6, 1, 169, 480, 0</column>
+<column name="dense_array_ap_fixed_53u_array_ap_fixed_16_6_5_3_0_24u_config2_U0">dense_array_ap_fixed_53u_array_ap_fixed_16_6_5_3_0_24u_config2_s, 3, 1, 2543, 3319, 0</column>
+<column name="dense_array_ap_ufixed_12u_array_ap_fixed_16_6_5_3_0_1u_config10_U0">dense_array_ap_ufixed_12u_array_ap_fixed_16_6_5_3_0_1u_config10_s, 0, 1, 668, 624, 0</column>
+<column name="dense_array_ap_ufixed_24u_array_ap_fixed_16_6_5_3_0_12u_config6_U0">dense_array_ap_ufixed_24u_array_ap_fixed_16_6_5_3_0_12u_config6_s, 1, 1, 854, 1805, 0</column>
+<column name="normalize_array_ap_fixed_12u_array_ap_fixed_16_6_5_3_0_12u_config8_U0">normalize_array_ap_fixed_12u_array_ap_fixed_16_6_5_3_0_12u_config8_s, 0, 1, 366, 633, 0</column>
+<column name="normalize_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_24u_config4_U0">normalize_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_24u_config4_s, 0, 1, 762, 1204, 0</column>
+<column name="relu_array_ap_fixed_12u_array_ap_ufixed_15_0_4_0_0_12u_relu_config9_U0">relu_array_ap_fixed_12u_array_ap_ufixed_15_0_4_0_0_12u_relu_config9_s, 0, 0, 3, 830, 0</column>
+<column name="relu_array_ap_fixed_24u_array_ap_ufixed_15_0_4_0_0_24u_relu_config5_U0">relu_array_ap_fixed_24u_array_ap_ufixed_15_0_4_0_0_24u_relu_config5_s, 0, 0, 3, 1622, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -103,19 +89,12 @@
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
-<column name="layer10_out_U">0, 133, 0, -, 1, 48, 48</column>
-<column name="layer11_out_U">0, 133, 0, -, 1, 48, 48</column>
-<column name="layer13_out_U">0, 1028, 0, -, 1, 480, 480</column>
-<column name="layer14_out_U">0, 516, 0, -, 1, 240, 240</column>
-<column name="layer15_out_U">0, 133, 0, -, 1, 45, 45</column>
-<column name="layer2_out_U">0, 1028, 0, -, 1, 512, 512</column>
-<column name="layer3_out_U">0, 1028, 0, -, 1, 512, 512</column>
-<column name="layer4_out_U">0, 1028, 0, -, 1, 480, 480</column>
-<column name="layer5_out_U">0, 1028, 0, -, 1, 512, 512</column>
-<column name="layer6_out_U">0, 516, 0, -, 1, 256, 256</column>
-<column name="layer7_out_U">0, 516, 0, -, 1, 256, 256</column>
-<column name="layer8_out_U">0, 516, 0, -, 1, 240, 240</column>
-<column name="layer9_out_U">0, 516, 0, -, 1, 256, 256</column>
+<column name="layer2_out_U">0, 1028, 0, -, 1, 384, 384</column>
+<column name="layer4_out_U">0, 1028, 0, -, 1, 384, 384</column>
+<column name="layer5_out_U">0, 1028, 0, -, 1, 360, 360</column>
+<column name="layer6_out_U">0, 516, 0, -, 1, 192, 192</column>
+<column name="layer8_out_U">0, 516, 0, -, 1, 192, 192</column>
+<column name="layer9_out_U">0, 516, 0, -, 1, 180, 180</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
@@ -138,12 +117,12 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
-<column name="y_timed_input_TDATA">in, 1680, axis, y_timed_input, pointer</column>
+<column name="y_timed_input_TDATA">in, 848, axis, y_timed_input, pointer</column>
 <column name="y_timed_input_TVALID">in, 1, axis, y_timed_input, pointer</column>
 <column name="y_timed_input_TREADY">out, 1, axis, y_timed_input, pointer</column>
-<column name="layer12_out_TDATA">out, 48, axis, layer12_out, pointer</column>
-<column name="layer12_out_TVALID">out, 1, axis, layer12_out, pointer</column>
-<column name="layer12_out_TREADY">in, 1, axis, layer12_out, pointer</column>
+<column name="layer10_out_TDATA">out, 16, axis, layer10_out, pointer</column>
+<column name="layer10_out_TVALID">out, 1, axis, layer10_out, pointer</column>
+<column name="layer10_out_TREADY">in, 1, axis, layer10_out, pointer</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, myproject, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, myproject, return value</column>
 <column name="ap_start">in, 1, ap_ctrl_hs, myproject, return value</column>

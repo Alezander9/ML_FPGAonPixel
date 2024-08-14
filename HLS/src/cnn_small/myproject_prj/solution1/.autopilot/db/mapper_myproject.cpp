@@ -351,22 +351,22 @@ class AESL_RUNTIME_BC {
 };
 unsigned int ap_apatb_y_timed_input_cap_bc;
 static AESL_RUNTIME_BC __xlx_y_timed_input_V_size_Reader("../tv/stream_size/stream_size_in_y_timed_input.dat");
-unsigned int ap_apatb_layer12_out_cap_bc;
-static AESL_RUNTIME_BC __xlx_layer12_out_V_size_Reader("../tv/stream_size/stream_size_out_layer12_out.dat");
+unsigned int ap_apatb_layer10_out_cap_bc;
+static AESL_RUNTIME_BC __xlx_layer10_out_V_size_Reader("../tv/stream_size/stream_size_out_layer10_out.dat");
 using hls::sim::Byte;
-struct __cosim_s210__ { char data[210]; };
-struct __cosim_s6__ { char data[6]; };
-struct __cosim_s256__ { char data[256]; };
-extern "C" void myproject(__cosim_s210__*, __cosim_s6__*);
-extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_timed_input, volatile void * __xlx_apatb_param_layer12_out) {
+struct __cosim_s106__ { char data[106]; };
+struct __cosim_s2__ { char data[2]; };
+struct __cosim_s128__ { char data[128]; };
+extern "C" void myproject(__cosim_s106__*, __cosim_s2__*);
+extern "C" void apatb_myproject_hw(volatile void * __xlx_apatb_param_y_timed_input, volatile void * __xlx_apatb_param_layer10_out) {
 using hls::sim::createStream;
-auto* sy_timed_input = createStream((hls::stream<__cosim_s210__>*)__xlx_apatb_param_y_timed_input);
-  //Create input buffer for layer12_out
-  ap_apatb_layer12_out_cap_bc = __xlx_layer12_out_V_size_Reader.read_size();
-  __cosim_s6__* __xlx_layer12_out_input_buffer= new __cosim_s6__[ap_apatb_layer12_out_cap_bc];
-auto* slayer12_out = createStream((hls::stream<__cosim_s6__>*)__xlx_apatb_param_layer12_out);
+auto* sy_timed_input = createStream((hls::stream<__cosim_s106__>*)__xlx_apatb_param_y_timed_input);
+  //Create input buffer for layer10_out
+  ap_apatb_layer10_out_cap_bc = __xlx_layer10_out_V_size_Reader.read_size();
+  __cosim_s2__* __xlx_layer10_out_input_buffer= new __cosim_s2__[ap_apatb_layer10_out_cap_bc];
+auto* slayer10_out = createStream((hls::stream<__cosim_s2__>*)__xlx_apatb_param_layer10_out);
   // DUT call
-  myproject(sy_timed_input->data<__cosim_s210__>(), slayer12_out->data<__cosim_s6__>());
-sy_timed_input->transfer((hls::stream<__cosim_s210__>*)__xlx_apatb_param_y_timed_input);
-slayer12_out->transfer((hls::stream<__cosim_s6__>*)__xlx_apatb_param_layer12_out);
+  myproject(sy_timed_input->data<__cosim_s106__>(), slayer10_out->data<__cosim_s2__>());
+sy_timed_input->transfer((hls::stream<__cosim_s106__>*)__xlx_apatb_param_y_timed_input);
+slayer10_out->transfer((hls::stream<__cosim_s2__>*)__xlx_apatb_param_layer10_out);
 }

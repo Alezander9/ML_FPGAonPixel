@@ -60,14 +60,7 @@ HLSConfig:
         weight: ap_fixed<15,5>
       Strategy: Resource
       Trace: true
-    output_softmax:
-      Precision:
-        bias: ap_fixed<15,5>
-        result: fixed<16,6>
-        weight: ap_fixed<15,5>
-      Strategy: Resource
-      Trace: true
-    q_activation_10:
+    q_activation_8:
       Precision:
         bias: ap_fixed<15,5>
         result: ufixed<15,0,RND_CONV,SAT>
@@ -99,6 +92,6 @@ KerasModel: !keras_model 'cnn_small//keras_model.h5'
 OutputDir: cnn_small/
 Part: xcvu13p-flga2577-2-e
 ProjectName: myproject
-Stamp: 3De138f0
+Stamp: acfB1Aee
 Version: 1.0.0
 XilinxPart: xcku040-ffva1156-2-e
