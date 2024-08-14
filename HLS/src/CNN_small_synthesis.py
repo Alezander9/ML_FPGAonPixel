@@ -23,7 +23,7 @@ _add_supported_quantized_objects(co)
 co['PruneLowMagnitude'] = pruning_wrapper.PruneLowMagnitude
 
 # Path to the saved model
-skl_model_path = '../../software/ALEX/DNN_L2_S32_best_performance.h5'
+skl_model_path = '/u1/hjia625/conifer/CNN_noBN_large_quantized_pruned.h5'
 # Load the model
 model = tf.keras.models.load_model(skl_model_path, custom_objects=co)
 for layer in model.layers:
@@ -40,8 +40,8 @@ model = strip_pruning(model)
 hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
 
 # Set the precision and reuse factor for the full model
-hls_config['Model']['Precision'] = 'ap_fixed<15,5>'
-hls_config['Model']['ReuseFactor'] = 10000 
+hls_config['Model']['Precision'] = 'ap_fixed<16,6>'
+hls_config['Model']['ReuseFactor'] = 1 
 
 # Create an entry for each layer, here you can for instance change the strategy for a layer to 'resource'
 # or increase the reuse factor individually for large layers.
@@ -51,8 +51,8 @@ hls_config['Model']['ReuseFactor'] = 10000
 for Layer in hls_config['LayerName'].keys():
     print(Layer)
     hls_config['LayerName'][Layer]['Strategy'] = 'Resource'
-    hls_config['LayerName'][Layer]['Precision']['weight'] = 'ap_fixed<15,5>'
-    hls_config['LayerName'][Layer]['Precision']['bias'] = 'ap_fixed<15,5>'
+    hls_config['LayerName'][Layer]['Precision']['weight'] = 'ap_fixed<16,6>'
+    hls_config['LayerName'][Layer]['Precision']['bias'] = 'ap_fixed<16,6>'
     #hls_config['LayerName'][Layer]['Precision']['result'] = 'ap_fixed<64,16>'
     #hls_config['LayerName'][Layer]['Precision'] = 'ap_fixed<64,16>'
     hls_config['LayerName'][Layer]['Trace'] = True
@@ -64,7 +64,7 @@ for Layer in hls_config['LayerName'].keys():
 #hls_config['LayerName']['dense2']['ReuseFactor'] = 1
 #hls_config['LayerName']['dense2']['ReuseFactor'] = 7
 # If you want best numerical performance for high-accuray models, while the default latency strategy is faster but numerically more unstable
-# hls_config['LayerName']['output_sigmoid']['Strategy'] = 'Stable'
+hls_config['LayerName']['output_sigmoid']['Strategy'] = 'Stable'
 #hls_config['LayerName']['output_sigmoid']['Precision'] = 'ap_fixed<64,16>'
 
 cfg = hls4ml.converters.create_config(backend='Vitis')
@@ -72,7 +72,7 @@ cfg = hls4ml.converters.create_config(backend='Vitis')
 cfg['IOType'] = 'io_stream'  # Must set this if using CNNs!
 cfg['HLSConfig'] = hls_config
 cfg['KerasModel'] = model
-cfg['OutputDir'] = 'cnn_small/'
+cfg['OutputDir'] = 'cnn_large/'
 cfg['XilinxPart'] = 'xcku040-ffva1156-2-e'
 #cfg['Precision'] = 'ap_fixed<32,8>'
 
@@ -86,8 +86,8 @@ hls4ml.model.profiling.numerical(model=model, hls_model=hls_model)
 hls4ml.utils.plot_model(hls_model, show_shapes=True, show_precision=True, to_file=None)
 hls4ml.report.read_vivado_report('./cnn_debug/myproject_prj')
 
-data_file_path = './tb_input_features_small.dat'
-out_file_path = './tb_output_predictions_small.dat'
+data_file_path = './tb_input_features_large.dat'
+out_file_path = './tb_output_predictions_large.dat'
 
 data = np.loadtxt(data_file_path)
 y_sum_test = np.loadtxt(out_file_path)
@@ -174,5 +174,3 @@ print(f"Signal Efficiency:{signal_efficiencies[index_997]*100:.1f}%",f"Backgroun
 #    print(hls_trace[layer][0])
 #print("now synthesis one")
 #print(keras_trace)
-
-
