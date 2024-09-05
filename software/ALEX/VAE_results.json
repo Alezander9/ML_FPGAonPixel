@@ -1,0 +1,309 @@
+{
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 15.426909446716309,
+        "pruned_val_loss": 15.426909446716309,
+        "val_reconstruction_loss": 11.721531867980957,
+        "val_kl_loss": 370.8999938964844
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 5.789458751678467,
+        "pruned_val_loss": 5.789458751678467,
+        "val_reconstruction_loss": 4.149085998535156,
+        "val_kl_loss": 820.955810546875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.734572410583496,
+        "pruned_val_loss": 6.734572410583496,
+        "val_reconstruction_loss": 5.683399677276611,
+        "val_kl_loss": 1052.1077880859375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 9.510045051574707,
+        "pruned_val_loss": 9.510045051574707,
+        "val_reconstruction_loss": 5.394140720367432,
+        "val_kl_loss": 411.9969482421875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.952306747436523,
+        "pruned_val_loss": 6.952306747436523,
+        "val_reconstruction_loss": 5.326308727264404,
+        "val_kl_loss": 813.801513671875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 5.358758926391602,
+        "pruned_val_loss": 5.358758926391602,
+        "val_reconstruction_loss": 4.182250022888184,
+        "val_kl_loss": 1177.6717529296875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 12, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.198534965515137,
+        "pruned_val_loss": 12.198534965515137,
+        "val_reconstruction_loss": 7.446487903594971,
+        "val_kl_loss": 475.6695556640625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 12, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 9.727205276489258,
+        "pruned_val_loss": 9.727205276489258,
+        "val_reconstruction_loss": 7.966720104217529,
+        "val_kl_loss": 881.0691528320312
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 12, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 5.640714168548584,
+        "pruned_val_loss": 5.640714168548584,
+        "val_reconstruction_loss": 4.374411106109619,
+        "val_kl_loss": 1267.4276123046875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 12, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 22.377540588378906,
+        "pruned_val_loss": 22.377540588378906,
+        "val_reconstruction_loss": 18.260229110717773,
+        "val_kl_loss": 412.13824462890625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 12, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.783756732940674,
+        "pruned_val_loss": 6.783756732940674,
+        "val_reconstruction_loss": 4.978399276733398,
+        "val_kl_loss": 903.5706787109375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 12, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 4.7921833992004395,
+        "pruned_val_loss": 4.7921833992004395,
+        "val_reconstruction_loss": 3.4701273441314697,
+        "val_kl_loss": 1323.36181640625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 14.70902156829834,
+        "pruned_val_loss": 14.70902156829834,
+        "val_reconstruction_loss": 8.879096031188965,
+        "val_kl_loss": 583.5621948242188
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.453314781188965,
+        "pruned_val_loss": 6.453314781188965,
+        "val_reconstruction_loss": 4.087762355804443,
+        "val_kl_loss": 1183.8865966796875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.742133140563965,
+        "pruned_val_loss": 6.742133140563965,
+        "val_reconstruction_loss": 5.221958160400391,
+        "val_kl_loss": 1521.52587890625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 13.26856803894043,
+        "pruned_val_loss": 13.26856803894043,
+        "val_reconstruction_loss": 7.110055923461914,
+        "val_kl_loss": 616.4592895507812
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.067586421966553,
+        "pruned_val_loss": 6.067586421966553,
+        "val_reconstruction_loss": 3.6798083782196045,
+        "val_kl_loss": 1195.0684814453125
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [48, 24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 16.19219970703125,
+        "pruned_val_loss": 16.19219970703125,
+        "val_reconstruction_loss": 14.864931106567383,
+        "val_kl_loss": 1328.5828857421875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 10.327043533325195,
+        "pruned_val_loss": 10.327043533325195,
+        "val_reconstruction_loss": 6.313775539398193,
+        "val_kl_loss": 401.7192077636719
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 16, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.818963527679443,
+        "pruned_val_loss": 7.818963527679443,
+        "val_reconstruction_loss": 6.193636894226074,
+        "val_kl_loss": 813.4266967773438
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 1, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 109.56026458740234,
+        "pruned_val_loss": 109.56026458740234,
+        "val_reconstruction_loss": 109.56026458740234,
+        "val_kl_loss": 5083.74609375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 1, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 109.17182159423828,
+        "pruned_val_loss": 109.17182159423828,
+        "val_reconstruction_loss": 109.17182159423828,
+        "val_kl_loss": 5245.24560546875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.90638256072998,
+        "pruned_val_loss": 12.90638256072998,
+        "val_reconstruction_loss": 6.773258686065674,
+        "val_kl_loss": 613.911865234375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 14.711544036865234,
+        "pruned_val_loss": 14.711544036865234,
+        "val_reconstruction_loss": 8.955428123474121,
+        "val_kl_loss": 576.17431640625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.461972713470459,
+        "pruned_val_loss": 7.461972713470459,
+        "val_reconstruction_loss": 5.185538291931152,
+        "val_kl_loss": 1139.284912109375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 11.980644226074219,
+        "pruned_val_loss": 11.980644226074219,
+        "val_reconstruction_loss": 9.825037002563477,
+        "val_kl_loss": 1078.81494140625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 4.963483810424805,
+        "pruned_val_loss": 4.963483810424805,
+        "val_reconstruction_loss": 3.313290596008301,
+        "val_kl_loss": 1651.65869140625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.362410545349121,
+        "pruned_val_loss": 6.362410545349121,
+        "val_reconstruction_loss": 4.771883964538574,
+        "val_kl_loss": 1591.9390869140625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.974006652832031,
+        "pruned_val_loss": 12.974006652832031,
+        "val_reconstruction_loss": 6.854301929473877,
+        "val_kl_loss": 612.574951171875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 15.963335990905762,
+        "pruned_val_loss": 15.963335990905762,
+        "val_reconstruction_loss": 10.167198181152344,
+        "val_kl_loss": 580.1862182617188
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.643084526062012,
+        "pruned_val_loss": 7.643084526062012,
+        "val_reconstruction_loss": 5.282810211181641,
+        "val_kl_loss": 1181.3033447265625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.1764044761657715,
+        "pruned_val_loss": 6.1764044761657715,
+        "val_reconstruction_loss": 3.7933545112609863,
+        "val_kl_loss": 1192.70166015625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.823178291320801,
+        "pruned_val_loss": 7.823178291320801,
+        "val_reconstruction_loss": 6.279306411743164,
+        "val_kl_loss": 1545.396728515625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.197185516357422,
+        "pruned_val_loss": 7.197185516357422,
+        "val_reconstruction_loss": 5.594390869140625,
+        "val_kl_loss": 1604.37939453125,
+        "TEST": "-----------------------------------------------------------------------------------------------"
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.467412948608398,
+        "pruned_val_loss": 12.467412948608398,
+        "val_reconstruction_loss": 6.182456016540527,
+        "val_kl_loss": 629.1102294921875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.872746467590332,
+        "pruned_val_loss": 12.872746467590332,
+        "val_reconstruction_loss": 6.604838848114014,
+        "val_kl_loss": 627.4033813476562
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 150, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 14.718955039978027,
+        "pruned_val_loss": 14.718955039978027,
+        "val_reconstruction_loss": 8.61695671081543,
+        "val_kl_loss": 610.7968139648438
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 150, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 14.7685546875,
+        "pruned_val_loss": 14.7685546875,
+        "val_reconstruction_loss": 8.959397315979004,
+        "val_kl_loss": 581.483642578125
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 10.644124031066895,
+        "pruned_val_loss": 10.644124031066895,
+        "val_reconstruction_loss": 8.482354164123535,
+        "val_kl_loss": 1081.898681640625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.520313262939453,
+        "pruned_val_loss": 7.520313262939453,
+        "val_reconstruction_loss": 5.112292766571045,
+        "val_kl_loss": 1205.1392822265625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 150, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 8.250824928283691,
+        "pruned_val_loss": 8.250824928283691,
+        "val_reconstruction_loss": 5.854362964630127,
+        "val_kl_loss": 1199.3548583984375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 150, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.33483362197876,
+        "pruned_val_loss": 7.33483362197876,
+        "val_reconstruction_loss": 5.011386871337891,
+        "val_kl_loss": 1162.813232421875
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 6.144488334655762,
+        "pruned_val_loss": 6.144488334655762,
+        "val_reconstruction_loss": 4.557409286499023,
+        "val_kl_loss": 1588.488525390625
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 8, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.001, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.257814407348633,
+        "pruned_val_loss": 7.257814407348633,
+        "val_reconstruction_loss": 5.733932018280029,
+        "val_kl_loss": 1525.237548828125
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.670158386230469,
+        "pruned_val_loss": 12.670158386230469,
+        "val_reconstruction_loss": 7.291781902313232,
+        "val_kl_loss": 538.3634643554688
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 11.882359504699707,
+        "pruned_val_loss": 11.882359504699707,
+        "val_reconstruction_loss": 6.513059616088867,
+        "val_kl_loss": 537.454833984375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.657520294189453,
+        "pruned_val_loss": 12.657520294189453,
+        "val_reconstruction_loss": 7.303630828857422,
+        "val_kl_loss": 535.9124145507812
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 100, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 12.404046058654785,
+        "pruned_val_loss": 12.404046058654785,
+        "val_reconstruction_loss": 7.124149322509766,
+        "val_kl_loss": 528.505615234375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 150, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 11.754698753356934,
+        "pruned_val_loss": 11.754698753356934,
+        "val_reconstruction_loss": 6.338346004486084,
+        "val_kl_loss": 542.1647338867188
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 275, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.01, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 150, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 13.065604209899902,
+        "pruned_val_loss": 13.065604209899902,
+        "val_reconstruction_loss": 8.04928970336914,
+        "val_kl_loss": 502.12200927734375
+    },
+    "{\"BATCH_SIZE\": 1024, \"CYCLE_EPOCHS\": 50, \"DECODER_LAYERS\": [24, 48], \"DNN_LAYERS\": [64, 32, 16, 8], \"DUMMY_INDEX\": 0, \"ENCODER_LAYERS\": [24], \"ENCODER_TIME_SLICES\": 8, \"ENCODING_NODES\": \"None\", \"EPOCHS\": 175, \"FINAL_SPARSITY\": 0.4, \"INCLUDE_X\": false, \"INPUT_SCALING\": \"Log\", \"IO_BITS\": 4, \"LATENT_SPACE\": 10, \"LEARNING_RATE\": 0.001, \"MODEL_TYPE\": \"VAE\", \"NUM_PRUNE_EPOCHS\": 10, \"NUM_TIME_SLICES\": 8, \"OUTPUT\": \"SOFTMAX\", \"PATIENCE\": 20, \"POST_PRUNE_EPOCHS\": 50, \"PRUNE_START_EPOCH\": 0, \"QUANTIZATION_BITS\": [10, 10, 0], \"TEST_PT_THRESHOLD\": 2, \"TRAIN_PT_THRESHOLD\": 2, \"VAE_BETA\": 0.002, \"VAE_BETA_START\": 0.0001, \"WARMUP_EPOCHS\": 50, \"Y0_SCALING\": \"Linear\"}": {
+        "val_loss": 7.474532604217529,
+        "pruned_val_loss": 7.474532604217529,
+        "val_reconstruction_loss": 5.429076671600342,
+        "val_kl_loss": 1023.6875
+    }
+}
