@@ -1,0 +1,144 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    concat:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    conv1:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    conv1_linear:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    conv2:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    conv2_linear:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    dense1:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    dense1_linear:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    dense2:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    dense2_linear:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    flattened:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    maxpool1:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    maxpool2:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    output_sigmoid:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Stable
+      Trace: true
+    q_activation_10:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ufixed<10,0,RND_CONV,SAT>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    q_activation_11:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ufixed<10,0,RND_CONV,SAT>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    q_activation_9:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ufixed<10,0,RND_CONV,SAT>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    y0_input:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+    y_profile_input:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<16,6>
+      Strategy: Resource
+      Trace: true
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'cnn_large//keras_model.h5'
+OutputDir: cnn_large/
+Part: xcvu13p-flga2577-2-e
+ProjectName: myproject
+Stamp: f1eCD33D
+Version: 1.0.0
+XilinxPart: xcku040-ffva1156-2-e

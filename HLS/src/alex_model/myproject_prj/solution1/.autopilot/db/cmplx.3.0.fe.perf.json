@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "6 7 3 2 5 1 4",
+    "calls": "4 2 7 6 3 1 5",
     "file": "myproject.cpp",
     "fileloc": 6,
     "instructions": 475,
@@ -10,90 +10,90 @@
       "T": 1
     },
     "name": "myproject",
-    "total_instructions": 14528
+    "total_instructions": 14741
   },
   "1": {
     "basicblocks": 37,
     "calls": "",
     "file": "nnet_activation.h",
     "fileloc": 39,
-    "instructions": 73,
-    "name": "relu<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, relu_config9>",
+    "instructions": 241,
+    "name": "relu<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 0, AP_RND_CONV, AP_SAT, 0>, relu_config9>",
     "stores": {
       "L": 24
     },
-    "total_instructions": 73
+    "total_instructions": 241
   },
   "2": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_dense_latency.h",
-    "fileloc": 13,
-    "instructions": 2498,
-    "name": "dense_latency<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, config6>",
+    "file": "nnet_batchnorm.h",
+    "fileloc": 31,
+    "instructions": 170,
+    "name": "normalize<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 170
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_batchnorm.h",
+    "fileloc": 31,
+    "instructions": 86,
+    "name": "normalize<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config8>",
     "stores": {
       "L": 12
     },
-    "total_instructions": 2498
-  },
-  "3": {
-    "basicblocks": 73,
-    "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 145,
-    "name": "relu<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, relu_config5>",
-    "stores": {
-      "L": 48
-    },
-    "total_instructions": 145
+    "total_instructions": 86
   },
   "4": {
     "basicblocks": 1,
     "calls": "",
     "file": "nnet_dense_latency.h",
     "fileloc": 13,
-    "instructions": 116,
-    "name": "dense_latency<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, config10>",
+    "instructions": 10713,
+    "name": "dense_latency<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config2>",
     "stores": {
-      "L": 1
+      "L": 24
     },
-    "total_instructions": 116
+    "total_instructions": 10713
   },
   "5": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_batchnorm.h",
-    "fileloc": 31,
-    "instructions": 146,
-    "name": "normalize<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, config8>",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 113,
+    "name": "dense_latency<ap_ufixed<10, 0, AP_RND_CONV, AP_SAT, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config10>",
     "stores": {
-      "L": 12
+      "L": 1
     },
-    "total_instructions": 146
+    "total_instructions": 113
   },
   "6": {
     "basicblocks": 1,
     "calls": "",
     "file": "nnet_dense_latency.h",
     "fileloc": 13,
-    "instructions": 10785,
-    "name": "dense_latency<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, config2>",
+    "instructions": 2462,
+    "name": "dense_latency<ap_ufixed<10, 0, AP_RND_CONV, AP_SAT, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config6>",
     "stores": {
-      "L": 24
+      "L": 12
     },
-    "total_instructions": 10785
+    "total_instructions": 2462
   },
   "7": {
-    "basicblocks": 1,
+    "basicblocks": 73,
     "calls": "",
-    "file": "nnet_batchnorm.h",
-    "fileloc": 31,
-    "instructions": 290,
-    "name": "normalize<ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 2, AP_TRN, AP_WRAP, 0>, config4>",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 481,
+    "name": "relu<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 0, AP_RND_CONV, AP_SAT, 0>, relu_config5>",
     "stores": {
-      "L": 24
+      "L": 48
     },
-    "total_instructions": 290
+    "total_instructions": 481
   }
 }

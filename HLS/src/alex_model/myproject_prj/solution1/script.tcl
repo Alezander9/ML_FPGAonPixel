@@ -12,7 +12,7 @@ add_files -tb firmware/weights -cflags "-Wno-unknown-pragmas"
 add_files -tb myproject_test.cpp -cflags "-std=c++0x -Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xcvu13p-flga2577-2-e}
-create_clock -period 5 -name default
+create_clock -period 25 -name default
 config_compile -name_max_length 80
 config_schedule -enable_dsp_full_reg=0
 set_clock_uncertainty 12.5%

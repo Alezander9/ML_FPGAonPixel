@@ -14,8 +14,9 @@ BIAS_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][0]
 ACTIVATION_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][1]
 INTEGER_BITS = HYPERPARAMETERS["QUANTIZATION_BITS"][2]
 
-skl_model_path = f'../../software/ALEX/hls_testing.h5'
-# skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_{WEIGHTS_BITS}_{ACTIVATION_BITS}_best.h5'
+skl_model_path = '../../software/ALEX/best_on_chip_classifier.h5'
+# skl_model_path = f'../../software/ALEX/best_VAE_best_recon_encoder_simplified.h5'
+# skl_model_path = f'../../software/ALEX/{NUM_TIME_SLICES}_slice_L2_S24_best_performance.h5'
 # skl_model_path = f'../../software/ALEX/40_24_8_log_scaling_encoder_best_performance_{WEIGHTS_BITS}_{ACTIVATION_BITS}_{INTEGER_BITS}.h5'
 
 # IMPORTS
@@ -57,13 +58,13 @@ hls_config = hls4ml.utils.config_from_keras_model(model, granularity='name')
 
 hls_config['Model']['ReuseFactor'] = 1
 
-for Layer in hls_config['LayerName'].keys():
-    print(Layer)
-    hls_config['LayerName'][Layer]['Strategy'] = 'Latency'
-    hls_config['LayerName'][Layer]['Precision']['weight'] = f'ap_fixed<{WEIGHTS_BITS},{INTEGER_BITS}>'
-    hls_config['LayerName'][Layer]['Precision']['bias'] = f'ap_fixed<{BIAS_BITS},{INTEGER_BITS}>'
-    hls_config['LayerName'][Layer]['Precision']['result'] = f'ap_fixed<{ACTIVATION_BITS},{INTEGER_BITS}>'
-    hls_config['LayerName'][Layer]['Trace'] = True
+# for Layer in hls_config['LayerName'].keys():
+#     print(Layer)
+#     hls_config['LayerName'][Layer]['Strategy'] = 'Latency'
+#     hls_config['LayerName'][Layer]['Precision']['weight'] = f'ap_fixed<{WEIGHTS_BITS},{INTEGER_BITS}>'
+#    hls_/config['LayerName'][Layer]['Precision']['bias'] = f'ap_fixed<{BIAS_BITS},{INTEGER_BITS}>'
+#    hls_config['LayerName'][Layer]['Precision']['result'] = f'ap_fixed<{ACTIVATION_BITS},{INTEGER_BITS}>'
+#    hls_config['LayerName'][Layer]['Trace'] = True
     
 cfg = hls4ml.converters.create_config(backend='Vitis')
 cfg['IOType'] = 'io_parallel'  # io_parallel is much faster. Must use io_stream if using CNNs

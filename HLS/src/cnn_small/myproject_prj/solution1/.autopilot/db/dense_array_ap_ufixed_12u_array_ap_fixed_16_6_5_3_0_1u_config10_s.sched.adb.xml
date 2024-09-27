@@ -1,0 +1,1121 @@
+<stg><name>dense<array<ap_ufixed,12u>,array<ap_fixed<16,6,5,3,0>,1u>,config10></name>
+
+
+<trans_list>
+
+<trans id="75" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="88" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="89" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="90" from="4" to="5">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="91" from="5" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="180" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i180 %layer9_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %layer10_out, void @empty_0, i32 1, i32 1, void @empty, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="32" op_0_bw="32" op_1_bw="0">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin:2 %rbegin = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @nnet_KD_KD_dense_resource_MD_ap_ufixed_MD_15_MC_AC_0_MC_AC_IC_ap_q_mode_JC_4_1
+
+]]></Node>
+<StgValue><ssdm name="rbegin"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin:3 %br_ln42 = br void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="br_ln42"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="10" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="1" op_0_bw="1" op_1_bw="0" op_2_bw="1" op_3_bw="0" op_4_bw="1" op_5_bw="0">
+<![CDATA[
+rewind_header:0 %do_init = phi i1 1, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i1 0, void %for.body13.split.i.i, i1 1, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="do_init"/></StgValue>
+</operation>
+
+<operation id="11" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="23" bw="4" op_0_bw="4" op_1_bw="0" op_2_bw="4" op_3_bw="0" op_4_bw="4" op_5_bw="0">
+<![CDATA[
+rewind_header:14 %in_index3 = phi i4 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i4 %in_index, void %for.body13.split.i.i, i4 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="in_index3"/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="66" bw="4" op_0_bw="4" op_1_bw="4">
+<![CDATA[
+for.body13.split.i.i:25 %in_index = add i4 %in_index3, i4 1
+
+]]></Node>
+<StgValue><ssdm name="in_index"/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="67" bw="1" op_0_bw="4" op_1_bw="4">
+<![CDATA[
+for.body13.split.i.i:26 %icmp_ln42 = icmp_eq  i4 %in_index3, i4 11
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln42"/></StgValue>
+</operation>
+
+<operation id="14" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="68" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+for.body13.split.i.i:27 %br_ln42 = br i1 %icmp_ln42, void %rewind_header, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="br_ln42"/></StgValue>
+</operation>
+
+<operation id="15" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln42" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="74" bw="0" op_0_bw="0">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end:4 %br_ln101 = br void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="br_ln101"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="16" st_id="3" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="26" bw="180" op_0_bw="180" op_1_bw="180">
+<![CDATA[
+rewind_init:0 %layer9_out_read = read i180 @_ssdm_op_Read.ap_fifo.volatile.i180P0A, i180 %layer9_out
+
+]]></Node>
+<StgValue><ssdm name="layer9_out_read"/></StgValue>
+</operation>
+
+<operation id="17" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="15" op_0_bw="180">
+<![CDATA[
+rewind_init:1 %data = trunc i180 %layer9_out_read
+
+]]></Node>
+<StgValue><ssdm name="data"/></StgValue>
+</operation>
+
+<operation id="18" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:2 %data_37 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 150, i32 164
+
+]]></Node>
+<StgValue><ssdm name="data_37"/></StgValue>
+</operation>
+
+<operation id="19" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="29" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:3 %data_3 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 165, i32 179
+
+]]></Node>
+<StgValue><ssdm name="data_3"/></StgValue>
+</operation>
+
+<operation id="20" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="30" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:4 %data_38 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 15, i32 29
+
+]]></Node>
+<StgValue><ssdm name="data_38"/></StgValue>
+</operation>
+
+<operation id="21" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="31" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:5 %data_39 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 30, i32 44
+
+]]></Node>
+<StgValue><ssdm name="data_39"/></StgValue>
+</operation>
+
+<operation id="22" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="32" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:6 %data_40 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 45, i32 59
+
+]]></Node>
+<StgValue><ssdm name="data_40"/></StgValue>
+</operation>
+
+<operation id="23" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="33" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:7 %data_41 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 60, i32 74
+
+]]></Node>
+<StgValue><ssdm name="data_41"/></StgValue>
+</operation>
+
+<operation id="24" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="34" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:8 %data_42 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 75, i32 89
+
+]]></Node>
+<StgValue><ssdm name="data_42"/></StgValue>
+</operation>
+
+<operation id="25" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="35" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:9 %data_43 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 90, i32 104
+
+]]></Node>
+<StgValue><ssdm name="data_43"/></StgValue>
+</operation>
+
+<operation id="26" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="36" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:10 %data_44 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 105, i32 119
+
+]]></Node>
+<StgValue><ssdm name="data_44"/></StgValue>
+</operation>
+
+<operation id="27" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="37" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:11 %data_45 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 120, i32 134
+
+]]></Node>
+<StgValue><ssdm name="data_45"/></StgValue>
+</operation>
+
+<operation id="28" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="38" bw="15" op_0_bw="15" op_1_bw="180" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+rewind_init:12 %data_4 = partselect i15 @_ssdm_op_PartSelect.i15.i180.i32.i32, i180 %layer9_out_read, i32 135, i32 149
+
+]]></Node>
+<StgValue><ssdm name="data_4"/></StgValue>
+</operation>
+
+<operation id="29" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="do_init" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="39" bw="0" op_0_bw="0">
+<![CDATA[
+rewind_init:13 %br_ln42 = br void %for.body13.split.i.i
+
+]]></Node>
+<StgValue><ssdm name="br_ln42"/></StgValue>
+</operation>
+
+<operation id="30" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="53" bw="64" op_0_bw="4">
+<![CDATA[
+for.body13.split.i.i:12 %zext_ln42 = zext i4 %in_index3
+
+]]></Node>
+<StgValue><ssdm name="zext_ln42"/></StgValue>
+</operation>
+
+<operation id="31" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="58" bw="4" op_0_bw="9" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+for.body13.split.i.i:17 %w10_addr = getelementptr i9 %w10, i64 0, i64 %zext_ln42
+
+]]></Node>
+<StgValue><ssdm name="w10_addr"/></StgValue>
+</operation>
+
+<operation id="32" st_id="3" stage="2" lat="2">
+<core>ROM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="59" bw="9" op_0_bw="4">
+<![CDATA[
+for.body13.split.i.i:18 %w = load i4 %w10_addr
+
+]]></Node>
+<StgValue><ssdm name="w"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="33" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:1 %data_4_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_4_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_4_rewind"/></StgValue>
+</operation>
+
+<operation id="34" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:2 %data_31_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_31_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_31_rewind"/></StgValue>
+</operation>
+
+<operation id="35" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:3 %data_30_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_30_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_30_rewind"/></StgValue>
+</operation>
+
+<operation id="36" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:4 %data_29_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_29_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_29_rewind"/></StgValue>
+</operation>
+
+<operation id="37" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:5 %data_28_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_28_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_28_rewind"/></StgValue>
+</operation>
+
+<operation id="38" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:6 %data_27_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_27_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_27_rewind"/></StgValue>
+</operation>
+
+<operation id="39" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:7 %data_26_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_26_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_26_rewind"/></StgValue>
+</operation>
+
+<operation id="40" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:8 %data_25_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_25_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_25_rewind"/></StgValue>
+</operation>
+
+<operation id="41" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:9 %data_24_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_24_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_24_rewind"/></StgValue>
+</operation>
+
+<operation id="42" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:10 %data_3_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_3_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_3_rewind"/></StgValue>
+</operation>
+
+<operation id="43" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:11 %data_32_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %data_32_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="data_32_rewind"/></StgValue>
+</operation>
+
+<operation id="44" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0" op_4_bw="15" op_5_bw="0">
+<![CDATA[
+rewind_header:12 %p_rewind = phi i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i15 %p_phi, void %for.body13.split.i.i, i15 0, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="p_rewind"/></StgValue>
+</operation>
+
+<operation id="45" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="22" bw="14" op_0_bw="14" op_1_bw="0" op_2_bw="14" op_3_bw="0" op_4_bw="14" op_5_bw="0">
+<![CDATA[
+rewind_header:13 %res4 = phi i14 16, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_begin, i14 %x, void %for.body13.split.i.i, i14 16, void %nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end
+
+]]></Node>
+<StgValue><ssdm name="res4"/></StgValue>
+</operation>
+
+<operation id="46" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="24" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+rewind_header:15 %br_ln0 = br i1 %do_init, void %for.body13.split.i.i, void %rewind_init
+
+]]></Node>
+<StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+
+<operation id="47" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="41" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:0 %data_4_phi = phi i15 %data_4, void %rewind_init, i15 %data_4_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_4_phi"/></StgValue>
+</operation>
+
+<operation id="48" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="42" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:1 %data_31_phi = phi i15 %data_45, void %rewind_init, i15 %data_31_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_31_phi"/></StgValue>
+</operation>
+
+<operation id="49" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="43" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:2 %data_30_phi = phi i15 %data_44, void %rewind_init, i15 %data_30_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_30_phi"/></StgValue>
+</operation>
+
+<operation id="50" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="44" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:3 %data_29_phi = phi i15 %data_43, void %rewind_init, i15 %data_29_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_29_phi"/></StgValue>
+</operation>
+
+<operation id="51" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="45" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:4 %data_28_phi = phi i15 %data_42, void %rewind_init, i15 %data_28_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_28_phi"/></StgValue>
+</operation>
+
+<operation id="52" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="46" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:5 %data_27_phi = phi i15 %data_41, void %rewind_init, i15 %data_27_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_27_phi"/></StgValue>
+</operation>
+
+<operation id="53" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="47" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:6 %data_26_phi = phi i15 %data_40, void %rewind_init, i15 %data_26_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_26_phi"/></StgValue>
+</operation>
+
+<operation id="54" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="48" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:7 %data_25_phi = phi i15 %data_39, void %rewind_init, i15 %data_25_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_25_phi"/></StgValue>
+</operation>
+
+<operation id="55" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="49" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:8 %data_24_phi = phi i15 %data_38, void %rewind_init, i15 %data_24_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_24_phi"/></StgValue>
+</operation>
+
+<operation id="56" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="50" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:9 %data_3_phi = phi i15 %data_3, void %rewind_init, i15 %data_3_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_3_phi"/></StgValue>
+</operation>
+
+<operation id="57" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="51" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:10 %data_32_phi = phi i15 %data_37, void %rewind_init, i15 %data_32_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="data_32_phi"/></StgValue>
+</operation>
+
+<operation id="58" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="52" bw="15" op_0_bw="15" op_1_bw="0" op_2_bw="15" op_3_bw="0">
+<![CDATA[
+for.body13.split.i.i:11 %p_phi = phi i15 %data, void %rewind_init, i15 %p_rewind, void %rewind_header
+
+]]></Node>
+<StgValue><ssdm name="p_phi"/></StgValue>
+</operation>
+
+<operation id="59" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="54" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<![CDATA[
+for.body13.split.i.i:13 %specpipeline_ln43 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1
+
+]]></Node>
+<StgValue><ssdm name="specpipeline_ln43"/></StgValue>
+</operation>
+
+<operation id="60" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="55" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+for.body13.split.i.i:14 %speclooptripcount_ln45 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 12, i64 12, i64 12
+
+]]></Node>
+<StgValue><ssdm name="speclooptripcount_ln45"/></StgValue>
+</operation>
+
+<operation id="61" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="56" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+for.body13.split.i.i:15 %specloopname_ln42 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5
+
+]]></Node>
+<StgValue><ssdm name="specloopname_ln42"/></StgValue>
+</operation>
+
+<operation id="62" st_id="4" stage="1" lat="1">
+<core>Multiplexer</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="57" bw="15" op_0_bw="15" op_1_bw="15" op_2_bw="15" op_3_bw="15" op_4_bw="15" op_5_bw="15" op_6_bw="15" op_7_bw="15" op_8_bw="15" op_9_bw="15" op_10_bw="15" op_11_bw="15" op_12_bw="15" op_13_bw="4">
+<![CDATA[
+for.body13.split.i.i:16 %a = mux i15 @_ssdm_op_Mux.ap_auto.12i15.i4, i15 %p_phi, i15 %data_24_phi, i15 %data_25_phi, i15 %data_26_phi, i15 %data_27_phi, i15 %data_28_phi, i15 %data_29_phi, i15 %data_30_phi, i15 %data_31_phi, i15 %data_4_phi, i15 %data_32_phi, i15 %data_3_phi, i4 %in_index3
+
+]]></Node>
+<StgValue><ssdm name="a"/></StgValue>
+</operation>
+
+<operation id="63" st_id="4" stage="1" lat="2">
+<core>ROM</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="59" bw="9" op_0_bw="4">
+<![CDATA[
+for.body13.split.i.i:18 %w = load i4 %w10_addr
+
+]]></Node>
+<StgValue><ssdm name="w"/></StgValue>
+</operation>
+
+<operation id="64" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="60" bw="24" op_0_bw="15">
+<![CDATA[
+for.body13.split.i.i:19 %zext_ln73 = zext i15 %a
+
+]]></Node>
+<StgValue><ssdm name="zext_ln73"/></StgValue>
+</operation>
+
+<operation id="65" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="61" bw="24" op_0_bw="9">
+<![CDATA[
+for.body13.split.i.i:20 %sext_ln73 = sext i9 %w
+
+]]></Node>
+<StgValue><ssdm name="sext_ln73"/></StgValue>
+</operation>
+
+<operation id="66" st_id="4" stage="1" lat="1">
+<core>Multiplier</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="62" bw="24" op_0_bw="24" op_1_bw="24">
+<![CDATA[
+for.body13.split.i.i:21 %mul_ln73 = mul i24 %zext_ln73, i24 %sext_ln73
+
+]]></Node>
+<StgValue><ssdm name="mul_ln73"/></StgValue>
+</operation>
+
+<operation id="67" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="63" bw="10" op_0_bw="10" op_1_bw="24" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+for.body13.split.i.i:22 %trunc_ln = partselect i10 @_ssdm_op_PartSelect.i10.i24.i32.i32, i24 %mul_ln73, i32 14, i32 23
+
+]]></Node>
+<StgValue><ssdm name="trunc_ln"/></StgValue>
+</operation>
+
+<operation id="68" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="64" bw="14" op_0_bw="10">
+<![CDATA[
+for.body13.split.i.i:23 %sext_ln53 = sext i10 %trunc_ln
+
+]]></Node>
+<StgValue><ssdm name="sext_ln53"/></StgValue>
+</operation>
+
+<operation id="69" st_id="4" stage="1" lat="1">
+<core>Adder</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="65" bw="14" op_0_bw="14" op_1_bw="14">
+<![CDATA[
+for.body13.split.i.i:24 %x = add i14 %sext_ln53, i14 %res4
+
+]]></Node>
+<StgValue><ssdm name="x"/></StgValue>
+</operation>
+
+<operation id="70" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln42" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="70" bw="16" op_0_bw="14">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end:0 %sext_ln111 = sext i14 %x
+
+]]></Node>
+<StgValue><ssdm name="sext_ln111"/></StgValue>
+</operation>
+
+<operation id="71" st_id="4" stage="2" lat="2">
+<core>axis</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln42" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="72" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end:2 %write_ln77 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %layer10_out, i16 %sext_ln111
+
+]]></Node>
+<StgValue><ssdm name="write_ln77"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="72" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln42" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="71" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end:1 %rend = specregionend i32 @_ssdm_op_SpecRegionEnd, void @nnet_KD_KD_dense_resource_MD_ap_ufixed_MD_15_MC_AC_0_MC_AC_IC_ap_q_mode_JC_4_1, i32 %rbegin
+
+]]></Node>
+<StgValue><ssdm name="rend"/></StgValue>
+</operation>
+
+<operation id="73" st_id="5" stage="1" lat="2">
+<core>axis</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln42" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="72" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end:2 %write_ln77 = write void @_ssdm_op_Write.axis.volatile.i16P128A, i16 %layer10_out, i16 %sext_ln111
+
+]]></Node>
+<StgValue><ssdm name="write_ln77"/></StgValue>
+</operation>
+
+<operation id="74" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln42" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="73" bw="0" op_0_bw="0">
+<![CDATA[
+nnet::dense_resource<ap_ufixed<15, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>.region_end:3 %return_ln101 = return void @_ssdm_op_Return
+
+]]></Node>
+<StgValue><ssdm name="return_ln101"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

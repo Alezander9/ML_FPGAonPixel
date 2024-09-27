@@ -33002,27 +33002,27 @@ template <typename T, unsigned N, T (*func)(T)> class lookup_table {
 # 40 "/afs/slac.stanford.edu/g/reseng/vol39/xilinx/2023.1/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdio" 3
 # 9 "firmware/defines.h" 2
 # 21 "firmware/defines.h"
-typedef ap_fixed<10,2> input_t;
+typedef ap_fixed<16,6> input_t;
 typedef ap_fixed<16,6> model_default_t;
-typedef ap_fixed<10,2> layer2_t;
+typedef ap_fixed<16,6> layer2_t;
 typedef ap_fixed<10,1> weight2_t;
 typedef ap_fixed<10,1> bias2_t;
 typedef ap_uint<1> layer2_index;
-typedef ap_fixed<10,2> layer4_t;
+typedef ap_fixed<16,6> layer4_t;
 typedef ap_fixed<16,6> batch_normalization_scale_t;
-typedef ap_fixed<10,2> batch_normalization_bias_t;
-typedef ap_fixed<10,2> layer5_t;
+typedef ap_fixed<16,6> batch_normalization_bias_t;
+typedef ap_ufixed<10,0,AP_RND_CONV,AP_SAT> layer5_t;
 typedef ap_fixed<18,8> q_activation_table_t;
-typedef ap_fixed<10,2> layer6_t;
+typedef ap_fixed<16,6> layer6_t;
 typedef ap_fixed<10,1> weight6_t;
 typedef ap_fixed<10,1> bias6_t;
 typedef ap_uint<1> layer6_index;
-typedef ap_fixed<10,2> layer8_t;
+typedef ap_fixed<16,6> layer8_t;
 typedef ap_fixed<16,6> batch_normalization_1_scale_t;
-typedef ap_fixed<10,2> batch_normalization_1_bias_t;
-typedef ap_fixed<10,2> layer9_t;
+typedef ap_fixed<16,6> batch_normalization_1_bias_t;
+typedef ap_ufixed<10,0,AP_RND_CONV,AP_SAT> layer9_t;
 typedef ap_fixed<18,8> q_activation_1_table_t;
-typedef ap_fixed<10,2> result_t;
+typedef ap_fixed<16,6> result_t;
 typedef ap_fixed<10,1> weight10_t;
 typedef ap_fixed<10,1> bias10_t;
 typedef ap_uint<1> layer10_index;
@@ -59062,7 +59062,7 @@ batch_normalization_scale_t s4[24] = {1.7623983622, 1.7985695601, 1.3614838123, 
 # 22 "firmware/parameters.h" 2
 # 1 "firmware/weights/b4.h" 1
 # 12 "firmware/weights/b4.h"
-batch_normalization_bias_t b4[24] = {0.82849914, -0.31472239, 0.18450618, -0.05432359, -0.17377937, 1.11067581, -0.13251880, -0.57764566, -0.07539222, 1.39744556, -1.03443074, -0.50870991, -1.10867202, -0.46244675, -0.06880929, 0.08754108, 0.19640985, -0.24885100, -0.62454951, -0.33501840, -0.32335654, -0.18511577, 0.50262374, 0.37274280};
+batch_normalization_bias_t b4[24] = {0.8284991384, -0.3147223890, 0.1845061779, -0.0543235913, -0.1737793684, 1.1106758118, -0.1325187981, -0.5776456594, -0.0753922164, 1.3974455595, -1.0344307423, -0.5087099075, -1.1086720228, -0.4624467492, -0.0688092932, 0.0875410810, 0.1964098513, -0.2488510013, -0.6245495081, -0.3350183964, -0.3233565390, -0.1851157695, 0.5026237369, 0.3727428019};
 # 23 "firmware/parameters.h" 2
 # 1 "firmware/weights/w6.h" 1
 # 12 "firmware/weights/w6.h"
@@ -59078,7 +59078,7 @@ batch_normalization_1_scale_t s8[12] = {1.8561798334, 1.0274608135, 3.7757623196
 # 26 "firmware/parameters.h" 2
 # 1 "firmware/weights/b8.h" 1
 # 12 "firmware/weights/b8.h"
-batch_normalization_1_bias_t b8[12] = {0.31653398, 0.26305091, 1.79728091, 0.34029785, -0.20138133, 0.56093752, 0.34047937, 0.09928825, 0.96692079, 1.38261867, -0.12004957, 1.11131561};
+batch_normalization_1_bias_t b8[12] = {0.3165339828, 0.2630509138, 1.7972809076, 0.3402978480, -0.2013813257, 0.5609375238, 0.3404793739, 0.0992882550, 0.9669207931, 1.3826186657, -0.1200495660, 1.1113156080};
 # 27 "firmware/parameters.h" 2
 # 1 "firmware/weights/w10.h" 1
 # 12 "firmware/weights/w10.h"
